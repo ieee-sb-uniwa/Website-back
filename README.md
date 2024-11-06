@@ -1,20 +1,25 @@
-# Elysia with Bun runtime
+# Backend for SB IEEE Website
 
-## Getting Started
+## Tech Stack
+- Runtime: Bun.js
+- Database: MongoDB
+- API: Elysia.js
+- Containerization: Docker
+- CI/CD: Github Actions
+- Reverse Proxy: Traefik
 
-To get started with this template, simply paste this command into your terminal:
+## Architecture
+1. Traefik is used for TLS termniation and for routing requests to the appropriate service
+2. Bun.js & Elysia.js are used for the Backend API
+3. MongoDB is used as the database
 
-```bash
-bun create elysia ./elysia-example
-```
+## Lead Branch
+- `dev`
 
-## Development
-
-To start the development server run:
-
-```bash
-bun run dev
-```
-
-Open http://localhost:3000/
-s
+## How to run
+1. Clone the repository
+2. Make sure you have Docker & Docker Compose installed, by running `docker -v` and `docker compose`
+3. Make sure Docker is running, by running `docker ps`
+4. Start Traefik by running: `docker compose -f docker-compose.traefik.yml up -d`
+5. Start the MongoDB by running: `docker compose -f docker-compose.mongo.yml up -d`
+6. Start the Backend API by running: `docker compose -f docker-compose.backend.dev.yml up -d`
