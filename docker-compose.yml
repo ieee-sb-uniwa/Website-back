@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  mongo:
+    container_name: mongo-container
+    build:
+      context: ./db
+    environment:
+      MONGO_INITDB_DATABASE: SBdata
+    ports:
+      - "27017:27017"
