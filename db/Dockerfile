@@ -1,5 +1,5 @@
 # Use official MongoDB image from Docker Hub
-FROM mongo:8
+FROM mongo:8.0.3
 
 # Add your JSON files to be loaded into MongoDB
 COPY ./data /data
