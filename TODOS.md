@@ -13,12 +13,12 @@
 
 ## Near future 🚧
 
-- [ ] Create a Dockerfile for the Elysia application.
-- [ ] Spin up a MongoDB instance in a Docker container using the provided Dockerfile.
+- [x] Create a Dockerfile for the Elysia application.
+- [x] Spin up a MongoDB instance in a Docker container using the provided Dockerfile.
 - [ ] Write tests for the Elysia App to verify that all operations work correctly.
-- [ ] Create a Traefik container to use as a reverse-proxy.
-- [ ] Create the final Docker-compose file.
-- [ ] Make the deployment process as easy & simple as possible.
+- [x] Create a Traefik container to use as a reverse-proxy.
+- [x] Create the final Docker-compose file.
+- [x] Make the deployment process as easy & simple as possible.
 
 ## Far future 🚀
 

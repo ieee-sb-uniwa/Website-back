@@ -1,4 +1,28 @@
 services:
+  traefik:
+    image: traefik:v2.11
+    container_name: traefik
+    restart: always
+    command:
+      - "--api=true" # Enable Traefik's dashboard
+      - "--api.dashboard=true"
+      - "--api.insecure=true" # Exposes the dashboard without authentication for testing
+      - "--providers.docker=true" # Enable Docker provider
+      - "--providers.docker.exposedByDefault=false" # Require explicit labels to expose services
+      - "--entrypoints.web.address=:80" # Define HTTP entrypoint
+      # - "--entrypoints.websecure.address=:443" # Define HTTPS entrypoint
+      # - "--certificatesresolvers.myresolver.acme.httpchallenge=true" # Use HTTP challenge for Let's Encrypt
+      # - "--certificatesresolvers.myresolver.acme.httpchallenge.entrypoint=web"
+      # - "--certificatesresolvers.myresolver.acme.email=youremail@example.com" # Replace with your email
+      # - "--certificatesresolvers.myresolver.acme.storage=/letsencrypt/acme.json" # Persist certificates
+    ports:
+      - "80:80" # HTTP
+      # - "443:443" # HTTPS
+      - "8080:8080" # Traefik dashboard
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro" # Allow Traefik to communicate with Docker
+      # - "./letsencrypt:/letsencrypt" # Persist certificates to a volume
+
   api:
     build: .
     restart: always
@@ -11,6 +35,13 @@ services:
     #   - /app/node_modules # Prevent node_modules from being overwritten
     working_dir: /app
     command: ["bun", "run", "start"]
+    labels:
+      - "traefik.enable=true" # Enable Traefik for this service
+      - "traefik.http.routers.api.rule=Host(`local.api.test`)" # Replace with your domain
+      - "traefik.http.routers.api.entrypoints=web" # Use HTTP entrypoint
+      # - "traefik.http.routers.api.entrypoints=websecure" # Use HTTPS entrypoint
+      # - "traefik.http.routers.api.tls.certresolver=myresolver" # Use the certificate resolver
+      - "traefik.http.services.api.loadbalancer.server.port=3000" # The app's internal port
     develop:
       watch:
         - action: sync+restart
@@ -45,6 +76,7 @@ services:
           path: package.json
     depends_on:
       - mongo
+      - traefik
 
   mongo:
     build:
@@ -56,24 +88,3 @@ services:
       - "27017:27017" # Map the MongoDB internal port to the host
     volumes:
       - ./data/mongo_internal_data:/data/db # Persist data to the host
-
-### For the Future
-# depends_on:
-#   mongo:
-#     condition: service_healthy
-#     labels:
-#       - "traefik.enable=true"
-#       - "traefik.http.routers.app.rule=Host(`yourdomain.com`)"
-#       - "traefik.http.services.app.loadbalancer.server.port=3000" # Adjust to your app's listening port
-#     networks:
-#       - traefik_proxy
-#       - mongo_network # Connects to the MongoDB network
-#       - backend
-
-# networks:
-#   backend:
-#     driver: bridge
-#   traefik_proxy:
-#     external: true
-#   mongo_network:
-#     external: true

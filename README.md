@@ -22,9 +22,11 @@
 ## How to run
 
 1. Clone the repository
-2. Make sure you have Docker & Docker Compose installed, by running `docker -v` and `docker compose`
-3. Make sure Docker is running, by running `docker ps`
+2. Make sure you have Docker & Docker Compose installed,
+   - to check run: `docker -v` and `docker compose`
+3. Make sure Docker is running,
+   - by executing `docker ps`
 4. Using the terminal (bash or whatever supports .sh), `./run-docker.sh`
-5. Depending on the _NODE_ENV_ environment variable (located at .env file), the application will run in either development or production mode
-   - In Dev Mode, Docker's watch functionality will be enabled, and the application will restart on file changes
-   - In Production Mode, the application will run in the background.
+   - Depending on the **NODE_ENV environment variable** (located at .env file), the application will run in either development or production mode
+   - In **Dev Mode**, Docker's watch functionality will be enabled, and the application will restart on SPECIFIC file changes
+   - In **Production Mode**, watch mode is disabled and the application will run in the background.
