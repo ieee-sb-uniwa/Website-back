@@ -1,0 +1,79 @@
+services:
+  api:
+    build: .
+    restart: always
+    container_name: bun-elysia-app
+    ports:
+      - "3000:3000" # Map the app's internal port to the host
+    env_file:
+      - ./.env # Load environment variables from a file
+    # volumes:
+    #   - /app/node_modules # Prevent node_modules from being overwritten
+    working_dir: /app
+    command: ["bun", "run", "start"]
+    develop:
+      watch:
+        - action: sync+restart
+          path: ./src
+          target: /app/src
+          ignore:
+            - node_modules/
+            - .git/
+            - bun.lockb
+        - action: sync+restart
+          path: ./db/services
+          target: /app/db/services
+          ignore:
+            - node_modules/
+            - .git/
+            - bun.lockb
+        - action: sync+restart
+          path: ./lib/elysia-endpoint-management
+          target: /app/lib/elysia-endpoint-management
+          ignore:
+            - node_modules/
+            - .git/
+            - bun.lockb
+        - action: sync+restart
+          path: ./db/mongoose_schemas
+          target: /app/db/mongoose_schemas
+          ignore:
+            - node_modules/
+            - .git/
+            - bun.lockb
+        - action: rebuild
+          path: package.json
+    depends_on:
+      - mongo
+
+  mongo:
+    build:
+      # dockerfile: ./db/Dockerfile
+      context: ./db
+    container_name: mongo-container
+    restart: always
+    ports:
+      - "27017:27017" # Map the MongoDB internal port to the host
+    volumes:
+      - ./data/mongo_internal_data:/data/db # Persist data to the host
+
+### For the Future
+# depends_on:
+#   mongo:
+#     condition: service_healthy
+#     labels:
+#       - "traefik.enable=true"
+#       - "traefik.http.routers.app.rule=Host(`yourdomain.com`)"
+#       - "traefik.http.services.app.loadbalancer.server.port=3000" # Adjust to your app's listening port
+#     networks:
+#       - traefik_proxy
+#       - mongo_network # Connects to the MongoDB network
+#       - backend
+
+# networks:
+#   backend:
+#     driver: bridge
+#   traefik_proxy:
+#     external: true
+#   mongo_network:
+#     external: true

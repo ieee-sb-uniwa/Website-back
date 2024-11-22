@@ -16,7 +16,8 @@ export const thirdPartySchema = new Schema({
   ],
 });
 
-export const ThirdParty = model("ThirdParty", thirdPartySchema);
+export const ThirdPartyEn = model("ThirdParty", thirdPartySchema, "third_party_en");
+export const ThirdPartyGr = model("ThirdParty", thirdPartySchema, "third_part_gr");
 
 // Council schema
 const councilSchema = new Schema({
@@ -27,7 +28,8 @@ const councilSchema = new Schema({
   photo: { type: String, required: true },
 });
 
-export const Council = model("Council", councilSchema);
+export const CouncilEn = model("Council", councilSchema, "council_en");
+export const CouncilGr = model("Council", councilSchema, "council_gr");
 
 // Counselor schema
 const counselorSchema = new Schema({
@@ -38,7 +40,9 @@ const counselorSchema = new Schema({
   photo: { type: String, required: true },
 });
 
-export const Counselor = model("Counselor", counselorSchema);
+export const CounselorEn = model("Counselor", counselorSchema, "counselor_en");
+export const CounselorGr = model("Counselor", counselorSchema, "counselor_gr");
+
 
 // Department schema
 const departmentSchema = new Schema({
@@ -49,7 +53,8 @@ const departmentSchema = new Schema({
   description: { type: String, required: true },
 });
 
-export const Department = model("Department", departmentSchema);
+export const DepartmentEn = model("Department", departmentSchema, "dep_en");
+export const DepartmentGr = model("Department", departmentSchema, "dep_gr");
 
 // Event schema
 const eventSchema = new Schema({
@@ -68,7 +73,8 @@ const eventSchema = new Schema({
   ],
 });
 
-export const Event = model("Event", eventSchema);
+export const EventEn = model("Event", eventSchema, "events_en");
+export const EventGr = model("Event", eventSchema, "events_gr");
 
 // News schema
 const newsSchema = new Schema({
@@ -86,7 +92,8 @@ const newsSchema = new Schema({
   ],
 });
 
-export const News = model("News", newsSchema);
+export const NewsEn = model("News", newsSchema, "news_en");
+export const NewsGr = model("News", newsSchema, "news_gr");
 
 // SG schema
 const sgSchema = new Schema({
@@ -105,4 +112,5 @@ const sgSchema = new Schema({
   ],
 });
 
-export const SG = model("SG", sgSchema);
+export const SG_En = model("SG", sgSchema, "sg_en");
+export const SG_Gr = model("SG", sgSchema, "sg_gr");

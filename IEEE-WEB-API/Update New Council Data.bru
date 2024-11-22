@@ -1,0 +1,21 @@
+meta {
+  name: Update New Council Data
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:3000/api/council_en/12
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": 12,
+    "role": "ccccc",
+    "name": "ccccc",
+    "email": "ccccc",
+    "photo": "/assets/photos/evangelos-mitikas.png"
+  }
+}

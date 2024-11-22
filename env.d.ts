@@ -7,5 +7,6 @@ declare namespace NodeJS {
     NODE_ENV: "development" | "production" | "test"; // Example of a limited set of values
     MONGODB_URL: string;
     ELYSIA_API_PORT: string;
+    ENABLE_MONGO_CONNECTION: "true" | "false";
   }
 }

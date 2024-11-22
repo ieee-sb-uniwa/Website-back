@@ -1,0 +1,22 @@
+meta {
+  name: Insert New Council Data
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:3000/api/council_en
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": 12,
+    "role": "AAAAA",
+    "name": "AAAAA",
+    "email": "AAAAAAA",
+    "photo": "/assets/photos/evangelos-mitikas.png",
+    "aaaa": "bbbb"
+  }
+}

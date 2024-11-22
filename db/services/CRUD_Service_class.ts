@@ -23,6 +23,7 @@ class MongoCrudService {
     model: Model<T>,
     query: FilterQuery<T> = {}
   ): Promise<T[]> {
+    // console.log("$$$ Running findAll $$$");
     return await model.find(query);
   }
 

@@ -12,7 +12,7 @@ console.log("🚀 ~ endpoints:", endpoints);
 console.log("🚀 ~ corsAllowlist:", corsAllowlist);
 
 // For Configuartion see: .env.development or .env.production
-await connectWithMongoDB(); // Throws if connection fails
+if (Boolean(process.env.ENABLE_MONGO_CONNECTION)) await connectWithMongoDB(); // Throws if connection fails
 
 // Initialize the Elysia app
 const app = new Elysia();
