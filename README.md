@@ -33,7 +33,8 @@
 
 ## How to access the API and Traefik Dashboard
 
-- API: [http://localhost:3000](http://localhost:3000)
+- API (Root): [http://local.api.test](http://local.api.test)
+- API (ex. Council info in English): [http://local.api.test/api/council_en](http://local.api.test/api/council_en)
 - Traefik Dashboard: [http://localhost:8080](http://localhost:8080)
 
 ## Using Bruno Client API Tool to test the API
