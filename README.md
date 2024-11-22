@@ -30,3 +30,17 @@
    - Depending on the **NODE_ENV environment variable** (located at .env file), the application will run in either development or production mode
    - In **Dev Mode**, Docker's watch functionality will be enabled, and the application will restart on SPECIFIC file changes
    - In **Production Mode**, watch mode is disabled and the application will run in the background.
+
+## How to access the API and Traefik Dashboard
+
+- API: [http://localhost:3000](http://localhost:3000)
+- Traefik Dashboard: [http://localhost:8080](http://localhost:8080)
+
+## Using Bruno Client API Tool to test the API
+
+1. Install Bruno [(Official Website)](https://www.usebruno.com/downloads)
+2. Open Bruno
+3. At the 2nd Bruno Logo, you will find three dots, click on them
+4. Click on "Import Collection"
+5. Find/Click the `IEEE-WEB-API` folder/directory
+6. Select the `bruno.json` file
