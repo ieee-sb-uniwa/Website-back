@@ -41,7 +41,7 @@ services:
       - "traefik.http.routers.api.entrypoints=web" # Use HTTP entrypoint
       # - "traefik.http.routers.api.entrypoints=websecure" # Use HTTPS entrypoint
       # - "traefik.http.routers.api.tls.certresolver=myresolver" # Use the certificate resolver
-      - "traefik.http.services.api.loadbalancer.server.port=3000" # The app's internal port
+      - "traefik.http.services.api.loadbalancer.server.port=${ELYSIA_API_PORT}" # The app's internal port
     develop:
       watch:
         - action: sync+restart
