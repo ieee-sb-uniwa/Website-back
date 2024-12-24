@@ -1,4 +1,4 @@
-import { Schema, model } from "mongoose";
+import { Schema, model, InferRawDocType } from "mongoose";
 
 // Third party schema
 export const thirdPartySchema = new Schema({
@@ -14,10 +14,19 @@ export const thirdPartySchema = new Schema({
       url: { type: String, required: true },
     },
   ],
-});
+} as const);
 
-export const ThirdPartyEn = model("ThirdParty", thirdPartySchema, "third_party_en");
-export const ThirdPartyGr = model("ThirdParty", thirdPartySchema, "third_part_gr");
+export type ThirdPartyDocument = InferRawDocType<typeof thirdPartySchema>;
+export const ThirdPartyEn = model<ThirdPartyDocument>(
+  "ThirdParty",
+  thirdPartySchema,
+  "third_party_en"
+);
+export const ThirdPartyGr = model<ThirdPartyDocument>(
+  "ThirdParty",
+  thirdPartySchema,
+  "third_part_gr"
+);
 
 // Council schema
 const councilSchema = new Schema({
@@ -26,10 +35,19 @@ const councilSchema = new Schema({
   name: { type: String, required: true },
   email: { type: String, required: true },
   photo: { type: String, required: true },
-});
+} as const);
 
-export const CouncilEn = model("Council", councilSchema, "council_en");
-export const CouncilGr = model("Council", councilSchema, "council_gr");
+export type CouncilDocument = InferRawDocType<typeof councilSchema>;
+export const CouncilEn = model<CouncilDocument>(
+  "Council",
+  councilSchema,
+  "council_en"
+);
+export const CouncilGr = model<CouncilDocument>(
+  "Council",
+  councilSchema,
+  "council_gr"
+);
 
 // Counselor schema
 const counselorSchema = new Schema({
@@ -38,11 +56,19 @@ const counselorSchema = new Schema({
   name: { type: String, required: true },
   email: { type: String, required: true },
   photo: { type: String, required: true },
-});
+} as const);
 
-export const CounselorEn = model("Counselor", counselorSchema, "counselor_en");
-export const CounselorGr = model("Counselor", counselorSchema, "counselor_gr");
-
+export type CounselorDocument = InferRawDocType<typeof counselorSchema>;
+export const CounselorEn = model<CounselorDocument>(
+  "Counselor",
+  counselorSchema,
+  "counselor_en"
+);
+export const CounselorGr = model<CounselorDocument>(
+  "Counselor",
+  counselorSchema,
+  "counselor_gr"
+);
 
 // Department schema
 const departmentSchema = new Schema({
@@ -51,10 +77,19 @@ const departmentSchema = new Schema({
   logo: { type: String, default: "" },
   leader: { type: String, required: true },
   description: { type: String, required: true },
-});
+} as const);
 
-export const DepartmentEn = model("Department", departmentSchema, "dep_en");
-export const DepartmentGr = model("Department", departmentSchema, "dep_gr");
+export type DepartmentDocument = InferRawDocType<typeof departmentSchema>;
+export const DepartmentEn = model<DepartmentDocument>(
+  "Department",
+  departmentSchema,
+  "dep_en"
+);
+export const DepartmentGr = model<DepartmentDocument>(
+  "Department",
+  departmentSchema,
+  "dep_gr"
+);
 
 // Event schema
 const eventSchema = new Schema({
@@ -71,10 +106,11 @@ const eventSchema = new Schema({
       url: { type: String, required: true },
     },
   ],
-});
+} as const);
 
-export const EventEn = model("Event", eventSchema, "events_en");
-export const EventGr = model("Event", eventSchema, "events_gr");
+export type EventDocument = InferRawDocType<typeof eventSchema>;
+export const EventEn = model<EventDocument>("Event", eventSchema, "events_en");
+export const EventGr = model<EventDocument>("Event", eventSchema, "events_gr");
 
 // News schema
 const newsSchema = new Schema({
@@ -90,10 +126,11 @@ const newsSchema = new Schema({
       url: { type: String, required: true },
     },
   ],
-});
+} as const);
 
-export const NewsEn = model("News", newsSchema, "news_en");
-export const NewsGr = model("News", newsSchema, "news_gr");
+export type NewsDocument = InferRawDocType<typeof newsSchema>;
+export const NewsEn = model<NewsDocument>("News", newsSchema, "news_en");
+export const NewsGr = model<NewsDocument>("News", newsSchema, "news_gr");
 
 // SG schema
 const sgSchema = new Schema({
@@ -110,7 +147,8 @@ const sgSchema = new Schema({
       keys: { type: [String], default: [] },
     },
   ],
-});
+} as const);
 
-export const SG_En = model("SG", sgSchema, "sg_en");
-export const SG_Gr = model("SG", sgSchema, "sg_gr");
+export type SGDocument = InferRawDocType<typeof sgSchema>;
+export const SG_En = model<SGDocument>("SG", sgSchema, "sg_en");
+export const SG_Gr = model<SGDocument>("SG", sgSchema, "sg_gr");

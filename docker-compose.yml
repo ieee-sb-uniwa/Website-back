@@ -10,7 +10,7 @@ services:
       - "--providers.docker=true" # Enable Docker provider
       - "--providers.docker.exposedByDefault=false" # Require explicit labels to expose services
       - "--entrypoints.web.address=:80" # Define HTTP entrypoint
-      # - "--entrypoints.websecure.address=:443" # Define HTTPS entrypoint
+      - "--entrypoints.websecure.address=:443" # Define HTTPS entrypoint
       # - "--certificatesresolvers.myresolver.acme.httpchallenge=true" # Use HTTP challenge for Let's Encrypt
       # - "--certificatesresolvers.myresolver.acme.httpchallenge.entrypoint=web"
       # - "--certificatesresolvers.myresolver.acme.email=youremail@example.com" # Replace with your email
@@ -88,3 +88,5 @@ services:
       - "27017:27017" # Map the MongoDB internal port to the host
     volumes:
       - ./data/mongo_internal_data:/data/db # Persist data to the host
+    depends_on:
+      - traefik

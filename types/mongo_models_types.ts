@@ -1,3 +1,6 @@
+import aaa from "../db/data/council_en.json";
+
+export type Aaa = typeof aaa;
 export interface ThirdParty {
   id: number;
   date: string;

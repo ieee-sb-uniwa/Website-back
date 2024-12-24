@@ -1,14 +1,16 @@
 import { Elysia, error, t } from "elysia";
 
-import { EndpointFromConfig } from "../../types/config_types";
+import { EndpointFromConfig, HttpMethod } from "../../types/config_types";
 import MongoCrudService from "../../db/services/CRUD_Service_class";
 import {
   endpoint_mongoModels_map,
+  modelsMap,
+  MongoDocumentsTypesMap,
   MongoModelsMap,
 } from "../../constants/endpoint_mongoModels_map";
 import { isKeyOfMap } from "../../types/type_guards";
 
-type ElysiaHTTPMethods = "get" | "post" | "put" | "delete";
+// type HttpMethod = "get" | "post" | "put" | "delete";
 interface HandlerParams {
   mongo_crud: MongoCrudService;
   params: { id: number };
@@ -16,24 +18,26 @@ interface HandlerParams {
 }
 
 export const addEndpoint = (endpoint: EndpointFromConfig, app: Elysia) => {
-  const httpMethods = endpoint.httpMethods.map((method) =>
-    method.toLowerCase()
-  ) as ElysiaHTTPMethods[]; // Cast to ensure the array contains valid methods
+  // const httpMethods = endpoint.httpMethods.map((method) =>
+  //   method.toLowerCase()
+  // ) as HttpMethod[]; // Cast to ensure the array contains valid methods
 
-  httpMethods.forEach((method) => {
+  endpoint.httpMethods.forEach((method) => {
     switch (method) {
-      case "get":
+      case "GET":
+        // Get all records
         app.get(endpoint.path, async ({ mongo_crud }: HandlerParams) => {
           const pathSegment = endpoint.path.split("/")[2];
           const tsHappy = isKeyOfMap(pathSegment, endpoint_mongoModels_map);
 
           if (tsHappy) {
-            const mongooseModel = endpoint_mongoModels_map.get(
-              pathSegment as keyof MongoModelsMap
-            );
+            const modelKey = pathSegment as keyof MongoDocumentsTypesMap;
+
+            const mongooseModel = endpoint_mongoModels_map.get(modelKey);
 
             if (mongooseModel) {
               console.log("Using model:", mongooseModel.modelName);
+
               const result = await mongo_crud.findAll<any>(mongooseModel); // Use the model here
               // const result = await mongooseModel.find();
               if (result) return result;
@@ -44,12 +48,14 @@ export const addEndpoint = (endpoint: EndpointFromConfig, app: Elysia) => {
           }
         });
 
+        // Get one record
         if (endpoint.hasManyRecords) {
           app.get(
             `${endpoint.path}/:id`,
             async ({ mongo_crud, params: { id } }: HandlerParams) => {
               const pathSegment = endpoint.path.split("/")[2];
               const tsHappy = isKeyOfMap(pathSegment, endpoint_mongoModels_map);
+              console.log("Id type: ", typeof id);
 
               if (tsHappy) {
                 const mongooseModel = endpoint_mongoModels_map.get(
@@ -81,7 +87,7 @@ export const addEndpoint = (endpoint: EndpointFromConfig, app: Elysia) => {
         }
 
         break;
-      case "post":
+      case "POST":
         app.post(
           `${endpoint.path}`,
           async ({ mongo_crud, body }: HandlerParams) => {
@@ -109,7 +115,7 @@ export const addEndpoint = (endpoint: EndpointFromConfig, app: Elysia) => {
         );
 
         break;
-      case "put":
+      case "PUT":
         app.put(
           `${endpoint.path}/:id`,
           async ({ mongo_crud, params: { id }, body }: HandlerParams) => {
@@ -143,7 +149,7 @@ export const addEndpoint = (endpoint: EndpointFromConfig, app: Elysia) => {
         );
 
         break;
-      case "delete":
+      case "DELETE":
         app.delete(
           `${endpoint.path}/:id`,
           async ({ mongo_crud, params: { id } }: HandlerParams) => {

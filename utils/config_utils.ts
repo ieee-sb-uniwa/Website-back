@@ -15,10 +15,10 @@ export const readConfig = async () => {
   }
 };
 
-export const getConfig = () => {
-  const path = "src";
-  const regex = /\.(yaml|yml)$/i;
-
+// Gets the config file.
+// If no path is provided, it defaults to "src" directory.
+// If no regex is provided, it defaults to /\.(yaml|yml)$/i
+export const getConfig = (path = "src", regex = /\.(yaml|yml)$/i) => {
   try {
     const configFiles = findFilesByPattern(path, regex);
     if (configFiles.length === 0) {

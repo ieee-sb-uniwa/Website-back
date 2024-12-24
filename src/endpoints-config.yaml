@@ -1,3 +1,9 @@
+# Array of allowed domains for CORS
+corsAllowlist:
+  - https://example.com
+  - https://anotherdomain.com
+  - http://localhost:3000 # Allow localhost for testing
+
 # Array of endpoints for the API
 endpoints:
   - path: /api/council_en
@@ -125,9 +131,3 @@ endpoints:
       - DELETE
     authenticationRequired: false
     hasManyRecords: true
-
-# Array of allowed domains for CORS
-corsAllowlist:
-  - https://example.com
-  - https://anotherdomain.com
-  - http://localhost:3000 # Allow localhost for testing
