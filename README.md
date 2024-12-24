@@ -17,7 +17,7 @@
 
 ## Lead Branch
 
-- `dev`
+- `dynamic-endpoints-basedon-json`
 
 ## How to run
 
@@ -30,6 +30,25 @@
    - Depending on the **NODE_ENV environment variable** (located at .env file), the application will run in either development or production mode
    - In **Dev Mode**, Docker's watch functionality will be enabled, and the application will restart on SPECIFIC file changes
    - In **Production Mode**, watch mode is disabled and the application will run in the background.
+5. To stop the application, use `./stop-docker.sh`
+
+## When making changes to JSON files
+
+1. Stop the application: `./stop-docker.sh`
+2. Delete the `website-back-mongo` image: Run: `./db/cleanup-mongo-image.sh`
+3. In case you want to **add a new JSON file** to the database, follow the steps below:
+
+   - Add the JSON file to the `./db/data` directory
+   - Go to the `./db/init-mongo.sh`
+   - Then add the JSON file you want to import to the `mongoimport` command at the end, like so:
+
+   ```bash
+   import_collection "test_2" "/my-data/test_2.json" // replace test_2 with the file's name
+   ```
+
+4. Run the application: `./run-docker.sh`
+
+If you simply made some changes to some JSON file(s), you can skip step 3.
 
 ## How to access the API and Traefik Dashboard
 

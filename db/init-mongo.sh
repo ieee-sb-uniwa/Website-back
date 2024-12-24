@@ -42,5 +42,6 @@ import_collection "events_gr" "/my-data/events_gr.json"
 import_collection "third_party_en" "/my-data/third_party_en.json"
 import_collection "third_party_gr" "/my-data/third_party_gr.json"
 import_collection "test_en" "/my-data/test_en.json"
+import_collection "test_2" "/my-data/test_2.json"
 
 echo "Data import completed successfully."
