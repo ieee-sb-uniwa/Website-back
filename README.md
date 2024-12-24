@@ -40,7 +40,7 @@
 
    - Add the JSON file to the `./db/data` directory
    - Go to the `./db/init-mongo.sh`
-   - Then add the JSON file you want to import to the `mongoimport` command at the end, like so:
+   - Then add the JSON file you want to import to the end, like so:
 
    ```bash
    import_collection "test_2" "/my-data/test_2.json" // replace test_2 with the file's name
@@ -48,7 +48,7 @@
 
 4. Run the application: `./run-docker.sh`
 
-If you simply made some changes to some JSON file(s), you can skip step 3.
+If you simply made some changes to some **existing JSON file(s)**, you can _skip step 3_.
 
 ## How to access the API and Traefik Dashboard
 
