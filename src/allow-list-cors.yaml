@@ -1,0 +1,5 @@
+# Array of allowed domains for CORS
+corsAllowlist:
+  - https://example.com
+  - https://anotherdomain.com
+  - http://localhost:3000 # Allow localhost for testing

@@ -3,18 +3,26 @@ import { swagger } from "@elysiajs/swagger";
 import { cors } from "@elysiajs/cors";
 
 import { readConfig } from "../utils/config_utils";
-import { addEndpoint } from "../lib/elysia-endpoint-management/adding_endpoints";
+// import {
+//   addEndpoint,
+// } from "../lib/elysia-endpoint-management/adding_endpoints";
 import { connectWithMongoDB } from "../db/connection";
 import MongoCrudService from "../db/services/CRUD_Service_class";
 import { CouncilGr } from "../db/mongoose_schemas/models_and_schemas";
+import { processJsonFiles } from "../lib/dynamic-endpoints-json/process-json-files";
+import { createMongooseModels } from "../db/models/createModels";
+import { setupDyanmicEndpoints } from "../lib/dynamic-endpoints-json/create-endpoints";
 
 // This does the following:
 //  1. automatically searches for .yaml or .yml files in the /src directory
 //  2. reads the file and parses the YAML content
-const { endpoints, corsAllowlist } = await readConfig();
+const { corsAllowlist } = await readConfig();
+const jsonContents = await processJsonFiles();
 
-console.log("🚀 ~ endpoints:", endpoints);
 console.log("🚀 ~ corsAllowlist:", corsAllowlist);
+
+// Create Mongoose models from the JSON Data
+const models = createMongooseModels(jsonContents);
 
 // 🧪 I use this for testing purposes, to control the connection to the database
 if (process.env.ENABLE_MONGO_CONNECTION === "true") await connectWithMongoDB(); // Throws if connection fails
@@ -72,9 +80,7 @@ app.get("/ping", () => {
 app.decorate("mongo_crud", new MongoCrudService());
 
 // Programmatically registring the endpoints based on YAML config
-endpoints.forEach((endpoint) => {
-  addEndpoint(endpoint, app);
-});
+setupDyanmicEndpoints(app, models);
 
 app.listen(process.env.ELYSIA_API_PORT || 3000);
 

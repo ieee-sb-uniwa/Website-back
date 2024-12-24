@@ -27,7 +27,7 @@ class MongoCrudService {
     data: Partial<T>
   ): Promise<T> {
     const document = new model(data);
-    return await document.save();
+    return document.save();
   }
 
   /**
@@ -41,7 +41,7 @@ class MongoCrudService {
     model: Model<T>,
     query: FilterQuery<T>
   ): Promise<T | null> {
-    return await model.findOne(query);
+    return model.findOne(query);
   }
 
   /**
@@ -55,7 +55,7 @@ class MongoCrudService {
     model: Model<T>,
     query: FilterQuery<T> = {}
   ): Promise<T[]> {
-    return await model.find(query);
+    return model.find(query);
   }
 
   /**
@@ -71,7 +71,7 @@ class MongoCrudService {
     query: FilterQuery<T>,
     update: UpdateQuery<T>
   ): Promise<T | null> {
-    return await model.findOneAndUpdate(query, update, { new: true });
+    return model.findOneAndUpdate(query, update, { new: true });
   }
 
   /**
@@ -85,7 +85,7 @@ class MongoCrudService {
     model: Model<T>,
     query: FilterQuery<T>
   ): Promise<T | null> {
-    return await model.findOneAndDelete(query);
+    return model.findOneAndDelete(query);
   }
 }
 

@@ -86,7 +86,7 @@ services:
     restart: always
     ports:
       - "27017:27017" # Map the MongoDB internal port to the host
-    volumes:
-      - ./data/mongo_internal_data:/data/db # Persist data to the host
+    # volumes:
+    #   - ./data/mongo_internal_data:/data/db # Persist data to the host
     depends_on:
       - traefik
