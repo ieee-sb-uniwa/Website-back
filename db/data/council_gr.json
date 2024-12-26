@@ -1,30 +1,78 @@
 [
     {
         "id": 0,
-        "role": "Πρόεδρος",
+        "role": "ΠΡΟΕΔΡΟΣ",
         "name": "Σταύρος Αλεξίου",
         "email": "eee20387006@uniwa.gr",
-        "photo": "/assets/photos/stavros-alexiou.png"
+        "photo": "/assets/photos/stavros-alexiou.png",
+        "socials": [
+          {
+            "id": "0",
+            "type": "email",
+            "url": "mailto:eeexxxxxx@uniwa.gr"
+          },
+          {
+            "id": "1",
+            "type": "linkedin",
+            "url": "https://www.linkedin.com/in/stavros-alexiou-468767252/"
+          }
+        ]
     },
     {
         "id": 1,
-        "role": "Αντιπρόεδρος",
+        "role": "ΑΝΤΙΠΡΟΕΔΡΟΣ",
         "name": "Ανδρέας Κυρκιώτης",
         "email": "eee20387123@uniwa.gr",
-        "photo": "/assets/photos/andreas-kyrkiotis.png"
+        "photo": "/assets/photos/andreas-kyrkiotis.png",
+        "socials": [
+          {
+            "id": "0",
+            "type": "email",
+            "url": "mailto:eeexxxxxx@uniwa.gr"
+          },
+          {
+            "id": "1",
+            "type": "linkedin",
+            "url": "https://www.linkedin.com/in/andreas-kyrkiotis-8ba048290/"
+          }
+        ]
     },
     {
         "id": 2,
-        "role": "Γραμματέας",
+        "role": "ΓΡΑΜΜΑΤΕΑΣ",
         "name": "Ευάγγελος Μητίκας",
         "email": "eee19387165@uniwa.gr",
-        "photo": "/assets/photos/evangelos-mitikas.png"
+        "photo": "/assets/photos/evangelos-mitikas.png",
+        "socials": [
+          {
+            "id": "0",
+            "type": "email",
+            "url": "mailto:eeexxxxxx@uniwa.gr"
+          },
+          {
+            "id": "1",
+            "type": "linkedin",
+            "url": "https://www.linkedin.com/in/evangelos-mitikas/"
+          }
+        ]
     },
     {
         "id": 3,
-        "role": "Ταμίας",
+        "role": "ΤΑΜΙΑΣ",
         "name": "Ιωάννης Χριστόπουλος",
         "email": "eee20387291@uniwa.gr",
-        "photo": "/assets/photos/ioannis-christopoulos.png"
+        "photo": "/assets/photos/ioannis-christopoulos.png",
+        "socials": [
+          {
+            "id": "0",
+            "type": "email",
+            "url": "mailto:eee20387291@uniwa.gr"
+          },
+          {
+            "id": "1",
+            "type": "linkedin",
+            "url": "https://www.linkedin.com/in/ioannis-christopoulos-3abab6227/"
+          }
+        ]
     }
 ]
