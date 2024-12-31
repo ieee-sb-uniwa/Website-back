@@ -3,13 +3,12 @@
         "id": 0,
         "role": "ΠΡΟΕΔΡΟΣ",
         "name": "Σταύρος Αλεξίου",
-        "email": "eee20387006@uniwa.gr",
         "photo": "/assets/photos/stavros-alexiou.png",
         "socials": [
           {
             "id": "0",
             "type": "email",
-            "url": "mailto:eeexxxxxx@uniwa.gr"
+            "url": "mailto:eee20387006@uniwa.gr"
           },
           {
             "id": "1",
@@ -22,13 +21,12 @@
         "id": 1,
         "role": "ΑΝΤΙΠΡΟΕΔΡΟΣ",
         "name": "Ανδρέας Κυρκιώτης",
-        "email": "eee20387123@uniwa.gr",
         "photo": "/assets/photos/andreas-kyrkiotis.png",
         "socials": [
           {
             "id": "0",
             "type": "email",
-            "url": "mailto:eeexxxxxx@uniwa.gr"
+            "url": "mailto:eee20387123@uniwa.gr"
           },
           {
             "id": "1",
@@ -41,13 +39,12 @@
         "id": 2,
         "role": "ΓΡΑΜΜΑΤΕΑΣ",
         "name": "Ευάγγελος Μητίκας",
-        "email": "eee19387165@uniwa.gr",
         "photo": "/assets/photos/evangelos-mitikas.png",
         "socials": [
           {
             "id": "0",
             "type": "email",
-            "url": "mailto:eeexxxxxx@uniwa.gr"
+            "url": "mailto:eee19387165@uniwa.gr"
           },
           {
             "id": "1",
@@ -60,7 +57,6 @@
         "id": 3,
         "role": "ΤΑΜΙΑΣ",
         "name": "Ιωάννης Χριστόπουλος",
-        "email": "eee20387291@uniwa.gr",
         "photo": "/assets/photos/ioannis-christopoulos.png",
         "socials": [
           {
