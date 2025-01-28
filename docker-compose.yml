@@ -28,7 +28,7 @@ services:
     restart: always
     container_name: bun-elysia-app
     ports:
-      - "3000:3000" # Map the app's internal port to the host
+      - "${ELYSIA_API_PORT}:${ELYSIA_API_PORT}" # Map the app's internal port to the host
     env_file:
       - ./.env # Load environment variables from a file
     # volumes:
