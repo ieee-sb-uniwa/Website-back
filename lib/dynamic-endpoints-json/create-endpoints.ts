@@ -33,8 +33,11 @@ export const setupDyanmicEndpoints = (
       `/api/${name}/:id`,
       async ({ mongo_crud, params }: HandlerParams) => {
         // Check if the parameters are present
-        if (!params || !params.id) {
-          return elysiaError(400, "Bad Request: Missing parameters");
+        if (!params || isNaN(Number(params.id))) {
+          return elysiaError(
+            400,
+            "Bad Request: Missing parameters (id) to be precise"
+          );
         }
         const { id } = params;
         try {
@@ -73,7 +76,7 @@ export const setupDyanmicEndpoints = (
     app.put(
       `/api/${name}/:id`,
       async ({ mongo_crud, params, body }: HandlerParams) => {
-        if (!params || !params.id) {
+        if (!params || isNaN(Number(params.id))) {
           return elysiaError(
             400,
             `PUT (/${name}/:id) | Bad Request: Missing parameters`
@@ -100,7 +103,7 @@ export const setupDyanmicEndpoints = (
     app.delete(
       `/api/${name}/:id`,
       async ({ mongo_crud, params }: HandlerParams) => {
-        if (!params || !params.id) {
+        if (!params || isNaN(Number(params.id))) {
           return elysiaError(
             400,
             `DELETE (/${name}/:id) | Bad Request: Missing parameters`
