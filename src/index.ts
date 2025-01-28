@@ -48,7 +48,7 @@ app.use(
     origin: (request) => {
       const origin = request.headers.get("Origin");
       if (process.env.NODE_ENV === "development") {
-        console.log("Headers: ", request.headers);
+        // console.log("Headers: ", request.headers);
         return true; // Allow all origins in development mode
       } else {
         if (origin && corsAllowlist.includes(origin)) {
