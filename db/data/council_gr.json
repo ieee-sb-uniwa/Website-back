@@ -1,6 +1,6 @@
 [
     {
-        "id": 0,
+        "id": "0",
         "role": "ΠΡΟΕΔΡΟΣ",
         "name": "Σταύρος Αλεξίου",
         "photo": "/assets/photos/stavros-alexiou.png",
@@ -18,7 +18,7 @@
         ]
     },
     {
-        "id": 1,
+        "id": "1",
         "role": "ΑΝΤΙΠΡΟΕΔΡΟΣ",
         "name": "Ανδρέας Κυρκιώτης",
         "photo": "/assets/photos/andreas-kyrkiotis.png",
@@ -36,7 +36,7 @@
         ]
     },
     {
-        "id": 2,
+        "id": "2",
         "role": "ΓΡΑΜΜΑΤΕΑΣ",
         "name": "Ευάγγελος Μητίκας",
         "photo": "/assets/photos/evangelos-mitikas.png",
@@ -54,7 +54,7 @@
         ]
     },
     {
-        "id": 3,
+        "id": "3",
         "role": "ΤΑΜΙΑΣ",
         "name": "Ιωάννης Χριστόπουλος",
         "photo": "/assets/photos/ioannis-christopoulos.png",
