@@ -44,7 +44,7 @@ services:
     command: ['bun', 'run', 'start']
     labels:
       - 'traefik.enable=true' # Enable Traefik for this service
-      - 'traefik.http.routers.api.rule=Host(`local.api.test`)' # Replace with your domain
+      - 'traefik.http.routers.api.rule=Host(`${ELYSIA_API_DOMAIN}`)' # Replace with your domain
       - 'traefik.http.routers.api.entrypoints=web' # Use HTTP entrypoint
       # - "traefik.http.routers.api.entrypoints=websecure" # Use HTTPS entrypoint
       # - "traefik.http.routers.api.tls.certresolver=myresolver" # Use the certificate resolver
@@ -88,7 +88,7 @@ services:
         condition: service_healthy
 
     healthcheck:
-      test: ['CMD', 'curl', '-fsSL', 'http://localhost:5000/ping']
+      test: ['CMD', 'curl', '-fsSL', 'http://localhost:${ELYSIA_API_PORT}/ping']
       interval: 5s
       retries: 5
       timeout: 3s

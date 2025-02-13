@@ -1,0 +1,16 @@
+meta {
+  name: [Docker] Get With Limits
+  type: http
+  seq: 11
+}
+
+get {
+  url: http://local.api.test/api/events_en?limit=3&sortedBy=date
+  body: none
+  auth: none
+}
+
+params:query {
+  limit: 3
+  sortedBy: date
+}

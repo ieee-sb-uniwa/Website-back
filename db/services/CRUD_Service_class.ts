@@ -1,4 +1,4 @@
-import type { Model, Document, FilterQuery, UpdateQuery } from "mongoose";
+import type { Model, Document, FilterQuery, UpdateQuery } from 'mongoose';
 
 // SQL    -  NoSQL
 // Table  - Collection
@@ -52,10 +52,22 @@ class MongoCrudService {
    * @returns {Promise<T[]>} An array of all found documents
    */
   async findAll<T extends Document>(
-    model: Model<T>,
-    query: FilterQuery<T> = {}
+    model: Model<T>
+    // query: FilterQuery<T> = {}
   ): Promise<T[]> {
-    return model.find(query);
+    return model.find();
+  }
+
+  async findHead<T extends Document>(
+    model: Model<T>,
+    // query: FilterQuery<T> = {},
+    sortedBy: string,
+    amount: number
+  ): Promise<T[]> {
+    return model
+      .find()
+      .sort({ [sortedBy]: -1 })
+      .limit(amount);
   }
 
   /**
