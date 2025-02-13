@@ -13,30 +13,26 @@
   `http://local.api.test/api/events_en?limit=1&sortedBy=date`
   returns:
 
-````json
+```json
 [
- {
-   "_id": "67ade2ba81f09df3e5cda156",
-   "id": "1",
-   "date": "2024-10-26T03:00:00",
-   "location": "UniWA - Campus 2 - ZB001",
-   "title": "IEEEXtreme 18.0",
-   "images": [
-     "/assets/thumbnails/IEEEXtreme_18.0.png"
-   ],
-   "keywords": [
-     "Hackathon"
-   ],
-   "description": "✨ We invite you to IEEE SB UniWA's first on-site workshop on version control with Git and GitHub! Git and GitHub are two related tools widely used for code tracking and management. 🖥️👨‍💻 Git is a version control system that allows developers to track changes in their code, keep a history of these changes, and collaborate with others on shared projects. 💾 GitHub is a Git repository hosting platform that offers an environment for code sharing and collaboration, combining Git’s features with an online platform. 🌐✅ This workshop will be conducted by Spyros Saridakis and will cover all the essential knowledge needed to effectively work on team projects involving code and more! 👥📅 Date: Saturday, October 12 - 12:00 p.m. 📍 Location: University of West Attica 🔷 To register, please fill out the form below. 🚀 Don’t miss the chance to boost your productivity and collaborate effectively with others! 😎",
-   "links": [
-     {
-       "title": "Participation Form",
-       "url": "https://forms.gle/jhdutWgsPr9rqXXq8"
-     }
-   ]
- }
+  {
+    "_id": "67ade2ba81f09df3e5cda156",
+    "id": "1",
+    "date": "2024-10-26T03:00:00",
+    "location": "UniWA - Campus 2 - ZB001",
+    "title": "IEEEXtreme 18.0",
+    "images": ["/assets/thumbnails/IEEEXtreme_18.0.png"],
+    "keywords": ["Hackathon"],
+    "description": "✨ We invite you to IEEE SB UniWA's first on-site workshop on version control with Git and GitHub! Git and GitHub are two related tools widely used for code tracking and management. 🖥️👨‍💻 Git is a version control system that allows developers to track changes in their code, keep a history of these changes, and collaborate with others on shared projects. 💾 GitHub is a Git repository hosting platform that offers an environment for code sharing and collaboration, combining Git’s features with an online platform. 🌐✅ This workshop will be conducted by Spyros Saridakis and will cover all the essential knowledge needed to effectively work on team projects involving code and more! 👥📅 Date: Saturday, October 12 - 12:00 p.m. 📍 Location: University of West Attica 🔷 To register, please fill out the form below. 🚀 Don’t miss the chance to boost your productivity and collaborate effectively with others! 😎",
+    "links": [
+      {
+        "title": "Participation Form",
+        "url": "https://forms.gle/jhdutWgsPr9rqXXq8"
+      }
+    ]
+  }
 ]
-   ```
+```
 
 ### Updated
 
@@ -45,4 +41,3 @@
 ### Fixed
 
 - Made sure Traefik and the Elysia API App play well together. Health checks were added in both Elysia and Traefik to ensure that the API App is discovered by Traefik.
-````
