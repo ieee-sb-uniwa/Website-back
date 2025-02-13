@@ -1,47 +1,54 @@
 services:
   traefik:
-    image: traefik:v2.11
+    image: traefik:v3.3
     container_name: traefik
     restart: always
     command:
-      - "--api=true" # Enable Traefik's dashboard
-      - "--api.dashboard=true"
-      - "--api.insecure=true" # Exposes the dashboard without authentication for testing
-      - "--providers.docker=true" # Enable Docker provider
-      - "--providers.docker.exposedByDefault=false" # Require explicit labels to expose services
-      - "--entrypoints.web.address=:80" # Define HTTP entrypoint
-      - "--entrypoints.websecure.address=:443" # Define HTTPS entrypoint
+      - '--api=true' # Enable Traefik's dashboard
+      - '--log.level=DEBUG'
+      - '--api.dashboard=true'
+      - '--api.insecure=true' # Exposes the dashboard without authentication for testing
+      - '--providers.docker=true' # Enable Docker provider
+      - '--providers.docker.exposedByDefault=false' # Require explicit labels to expose services
+      - '--entrypoints.web.address=:80' # Define HTTP entrypoint
+      - '--entrypoints.websecure.address=:443' # Define HTTPS entrypoint
       # - "--certificatesresolvers.myresolver.acme.httpchallenge=true" # Use HTTP challenge for Let's Encrypt
       # - "--certificatesresolvers.myresolver.acme.httpchallenge.entrypoint=web"
       # - "--certificatesresolvers.myresolver.acme.email=youremail@example.com" # Replace with your email
       # - "--certificatesresolvers.myresolver.acme.storage=/letsencrypt/acme.json" # Persist certificates
     ports:
-      - "80:80" # HTTP
+      - '80:80' # HTTP
       # - "443:443" # HTTPS
-      - "8080:8080" # Traefik dashboard
+      - '8080:8080' # Traefik dashboard
     volumes:
-      - "/var/run/docker.sock:/var/run/docker.sock:ro" # Allow Traefik to communicate with Docker
+      - '/var/run/docker.sock:/var/run/docker.sock:ro' # Allow Traefik to communicate with Docker
       # - "./letsencrypt:/letsencrypt" # Persist certificates to a volume
+    healthcheck:
+      test:
+        ['CMD', 'wget', '--spider', '-q', 'http://localhost:8080/api/rawdata']
+      interval: 5s
+      retries: 10
+      start_period: 5s
 
   api:
     build: .
     restart: always
     container_name: bun-elysia-app
     ports:
-      - "${ELYSIA_API_PORT}:${ELYSIA_API_PORT}" # Map the app's internal port to the host
+      - '${ELYSIA_API_PORT}:${ELYSIA_API_PORT}' # Map the app's internal port to the host
     env_file:
       - ./.env # Load environment variables from a file
     # volumes:
     #   - /app/node_modules # Prevent node_modules from being overwritten
     working_dir: /app
-    command: ["bun", "run", "start"]
+    command: ['bun', 'run', 'start']
     labels:
-      - "traefik.enable=true" # Enable Traefik for this service
-      - "traefik.http.routers.api.rule=Host(`local.api.test`)" # Replace with your domain
-      - "traefik.http.routers.api.entrypoints=web" # Use HTTP entrypoint
+      - 'traefik.enable=true' # Enable Traefik for this service
+      - 'traefik.http.routers.api.rule=Host(`local.api.test`)' # Replace with your domain
+      - 'traefik.http.routers.api.entrypoints=web' # Use HTTP entrypoint
       # - "traefik.http.routers.api.entrypoints=websecure" # Use HTTPS entrypoint
       # - "traefik.http.routers.api.tls.certresolver=myresolver" # Use the certificate resolver
-      - "traefik.http.services.api.loadbalancer.server.port=${ELYSIA_API_PORT}" # The app's internal port
+      - 'traefik.http.services.api.loadbalancer.server.port=${ELYSIA_API_PORT}' # The app's internal port
     develop:
       watch:
         - action: sync+restart
@@ -75,8 +82,17 @@ services:
         - action: rebuild
           path: package.json
     depends_on:
-      - mongo
-      - traefik
+      mongo:
+        condition: service_started
+      traefik:
+        condition: service_healthy
+
+    healthcheck:
+      test: ['CMD', 'curl', '-fsSL', 'http://localhost:5000/ping']
+      interval: 5s
+      retries: 5
+      timeout: 3s
+      start_period: 10s
 
   mongo:
     build:
@@ -85,8 +101,8 @@ services:
     container_name: mongo-container
     restart: always
     ports:
-      - "27017:27017" # Map the MongoDB internal port to the host
+      - '27017:27017' # Map the MongoDB internal port to the host
     # volumes:
     #   - ./data/mongo_internal_data:/data/db # Persist data to the host
-    depends_on:
-      - traefik
+    # depends_on:
+    #   - traefik
