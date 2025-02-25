@@ -25,6 +25,9 @@ export const setupDyanmicEndpoints = (
       async ({ mongo_crud, query }: HandlerParams) => {
         const { limit, sortedBy } = query || {};
         try {
+          // If both the "limit" AND "sortedBy" params have been provided.
+          // It will use them in the DB query
+          // Else it will fetch all documents/records of the requested resource.
           const result =
             limit !== undefined && sortedBy !== undefined
               ? await mongo_crud.findHead<any>(model, sortedBy, limit)
