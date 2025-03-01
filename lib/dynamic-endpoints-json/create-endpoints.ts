@@ -24,20 +24,29 @@ export const setupDyanmicEndpoints = (
       `/api/${name}`,
       async ({ mongo_crud, query }: HandlerParams) => {
         const { limit, sortBy } = query || {};
-        try {
-          // If both the "limit" AND "sortBy" params have been provided.
-          // It will use them in the DB query
-          // Else it will fetch all documents/records of the requested resource.
-          if (isNaN(Number(limit))) throw new Error('Limit must be a number');
-          const result =
-            limit !== undefined && sortBy !== undefined
-              ? await mongo_crud.findHead<any>(model, sortBy, Number(limit))
-              : await mongo_crud.findAll<any>(model);
-
-          return result;
-        } catch (error) {
-          console.error(`Error | GET (/${name}) : `, error);
-          return elysiaError(404, 'Not found');
+        if (limit && sortBy && !isNaN(Number(limit))) {
+          try {
+            // If both the "limit" AND "sortBy" params have been provided.
+            // It will use them in the DB query
+            // Else it will fetch all documents/records of the requested resource.
+            const result = await mongo_crud.findHead<any>(
+              model,
+              sortBy,
+              Number(limit)
+            );
+            return result;
+          } catch (error) {
+            console.error(`Error | GET (/${name}) : `, error);
+            return elysiaError(404, 'Not found');
+          }
+        } else {
+          try {
+            const result = await mongo_crud.findAll<any>(model);
+            return result;
+          } catch (error) {
+            console.error(`Error | GET (/${name}) : `, error);
+            return elysiaError(404, 'Not found');
+          }
         }
       },
       {
