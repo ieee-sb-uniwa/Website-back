@@ -59,6 +59,13 @@ services:
             - .git/
             - bun.lockb
         - action: sync+restart
+          path: ./lib
+          target: /app/lib
+          ignore:
+            - node_modules/
+            - .git/
+            - bun.lockb
+        - action: sync+restart
           path: ./db/services
           target: /app/db/services
           ignore:

@@ -1,5 +1,5 @@
 export interface QueryParamsTypes {
-  limit?: number;
-  sortedBy?: string;
+  limit?: string;
+  sortBy?: string;
   // searchBy?: string;
 }

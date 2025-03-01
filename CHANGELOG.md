@@ -2,6 +2,50 @@
 
 <hr />
 
+## VERSION: 1.1.1
+
+### Changed
+
+The `query` parameter `sortedBy` to `sortBy` in the `create-endpoints.ts` file.
+
+### Fixed
+
+- At `create-endpoints.ts` the `query` params were not being parsed correctly. The issue was that `Elysia` requires the use (as I believe at least) of type validation object that is passed the 3rd argument of the `get` method. For example:
+
+```ts
+app.get(
+  `/api/${name}`,
+  async ({ mongo_crud, query }: HandlerParams) => {
+    const { limit, sortBy } = query || {};
+    try {
+      // If both the "limit" AND "sortBy" params have been provided.
+      // It will use them in the DB query
+      // Else it will fetch all documents/records of the requested resource.
+      if (isNaN(Number(limit))) throw new Error('Limit must be a number');
+      const result =
+        limit !== undefined && sortBy !== undefined
+          ? await mongo_crud.findHead<any>(model, sortBy, Number(limit))
+          : await mongo_crud.findAll<any>(model);
+
+      return result;
+    } catch (error) {
+      console.error(`Error | GET (/${name}) : `, error);
+      return elysiaError(404, 'Not found');
+    }
+  },
+  -------------------------------------
+  // The type validation object
+  {
+    query: t.Object({
+      limit: t.Optional(t.String()),
+      sortBy: t.Optional(t.String()),
+    }),
+  }
+);
+```
+
+<hr />
+
 ## VERSION: 1.1.0
 
 ### Added

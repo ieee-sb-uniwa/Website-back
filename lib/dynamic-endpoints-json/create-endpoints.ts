@@ -23,16 +23,17 @@ export const setupDyanmicEndpoints = (
     app.get(
       `/api/${name}`,
       async ({ mongo_crud, query }: HandlerParams) => {
-        const { limit, sortedBy } = query || {};
+        const { limit, sortBy } = query || {};
         try {
-          // If both the "limit" AND "sortedBy" params have been provided.
+          // If both the "limit" AND "sortBy" params have been provided.
           // It will use them in the DB query
           // Else it will fetch all documents/records of the requested resource.
+          if (isNaN(Number(limit))) throw new Error('Limit must be a number');
           const result =
-            limit !== undefined && sortedBy !== undefined
-              ? await mongo_crud.findHead<any>(model, sortedBy, limit)
+            limit !== undefined && sortBy !== undefined
+              ? await mongo_crud.findHead<any>(model, sortBy, Number(limit))
               : await mongo_crud.findAll<any>(model);
-          console.log('Result: ', result);
+
           return result;
         } catch (error) {
           console.error(`Error | GET (/${name}) : `, error);
@@ -41,7 +42,8 @@ export const setupDyanmicEndpoints = (
       },
       {
         query: t.Object({
-          limit: t.Optional(t.Number()),
+          limit: t.Optional(t.String()),
+          sortBy: t.Optional(t.String()),
         }),
       }
     );
@@ -145,6 +147,5 @@ export const setupDyanmicEndpoints = (
     );
 
     return app;
-    // });
   });
 };
