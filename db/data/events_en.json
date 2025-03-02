@@ -73,5 +73,20 @@
           "url": "https://forms.gle/7SLwdmAxsr2gh22BA"
       }
   ]
+},
+{
+    "id": "5",
+    "date": "2025-03-11T13:00:00",
+    "location": "UniWA - Campus 2 - ZB109",
+    "title": "IEEE Xplore Research & Publishing Event",
+    "images": ["/assets/thumbnails/IEEEXplore_Paper_Writing_Event.png"],
+    "keywords": ["Seminar"],
+    "description": "✨ We invite you to IEEE SB UniWA's first on-site workshop on version control with Git and GitHub! Git and GitHub are two related tools widely used for code tracking and management. 🖥️👨‍💻 Git is a version control system that allows developers to track changes in their code, keep a history of these changes, and collaborate with others on shared projects. 💾 GitHub is a Git repository hosting platform that offers an environment for code sharing and collaboration, combining Git’s features with an online platform. 🌐✅ This workshop will be conducted by Spyros Saridakis and will cover all the essential knowledge needed to effectively work on team projects involving code and more! 👥📅 Date: Saturday, October 12 - 12:00 p.m. 📍 Location: University of West Attica 🔷 To register, please fill out the form below. 🚀 Don’t miss the chance to boost your productivity and collaborate effectively with others! 😎",
+    "links": [
+        {
+            "title": "Φόρμα δήλωσης ενδιαφέροντος",
+            "url": "https://registerieeexplore.wufoo.com/forms/xkkwpox04pts03/"
+        }
+    ]
 }
   ]
