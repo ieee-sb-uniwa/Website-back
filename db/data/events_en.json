@@ -61,7 +61,7 @@
 },
 {
   "id": "4",
-  "date": "2024-03-25T00:00:00",
+  "date": "",
   "location": "MS Teams",
   "title": "Python OOP",
   "images": ["/assets/thumbnails/Python_OOP.png"],
@@ -86,6 +86,21 @@
         {
             "title": "Φόρμα δήλωσης ενδιαφέροντος",
             "url": "https://registerieeexplore.wufoo.com/forms/xkkwpox04pts03/"
+        }
+    ]
+},
+{
+    "id": "6",
+    "date": "2024-12-07T10:00:00",
+    "location": "UniWA - Campus 2 - Conference Centre",
+    "title": "Trust in Online Social Networks",
+    "images": ["/assets/thumbnails/TrustInOnlineSocialNetworks.png"],
+    "keywords": ["Seminar"],
+    "description": "✨ We invite you to IEEE SB UniWA's first on-site workshop on version control with Git and GitHub! Git and GitHub are two related tools widely used for code tracking and management. 🖥️👨‍💻 Git is a version control system that allows developers to track changes in their code, keep a history of these changes, and collaborate with others on shared projects. 💾 GitHub is a Git repository hosting platform that offers an environment for code sharing and collaboration, combining Git’s features with an online platform. 🌐✅ This workshop will be conducted by Spyros Saridakis and will cover all the essential knowledge needed to effectively work on team projects involving code and more! 👥📅 Date: Saturday, October 12 - 12:00 p.m. 📍 Location: University of West Attica 🔷 To register, please fill out the form below. 🚀 Don’t miss the chance to boost your productivity and collaborate effectively with others! 😎",
+    "links": [
+        {
+            "title": "Φόρμα δήλωσης ενδιαφέροντος",
+            "url": "https://www.tickettailor.com/events/universityofwestattica/1478668"
         }
     ]
 }
