@@ -113,3 +113,33 @@ services:
     #   - ./data/mongo_internal_data:/data/db # Persist data to the host
     # depends_on:
     #   - traefik
+
+  minio:
+    image: minio/minio
+    container_name: minio
+    command: server /data --console-address ":9001"
+    env_file:
+      - ./.env
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+
+  uploader:
+    image: minio/mc
+    container_name: minio_uploader
+    depends_on:
+      - minio
+    env_file:
+      - ./.env
+    entrypoint: >
+      /bin/sh -c "
+      sleep 5;
+      mc alias set myminio http://minio:9000 $MINIO_ROOT_USER $MINIO_ROOT_PASSWORD;
+      mc mb --ignore-existing myminio/images;
+      mc cp --recursive /images/ myminio/images;
+      mc anonymous set-json /readonly-policy.json myminio/images;
+      exit 0;
+      "
+    volumes:
+      - ./min-io/images:/images
+      - ./min-io/readonly-policy.json:/readonly-policy.json
