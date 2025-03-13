@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Variables
-# MONGO_INITDB_DATABASE="test"
+MONGO_INITDB_DATABASE="test"
 
 echo "Waiting for MongoDB to be ready..."
 until mongosh --eval "db.runCommand({ ping: 1 })" --quiet; do
