@@ -33,8 +33,14 @@ const councilSchema = new Schema({
   id: { type: Number, required: true },
   role: { type: String, required: true },
   name: { type: String, required: true },
-  email: { type: String, required: true },
   photo: { type: String, required: true },
+  links: [
+    {
+      id: { type: Number, required: true },
+      title: { type: String, required: true },
+      url: { type: String, required: true },
+    },
+  ]
 } as const);
 
 export type CouncilDocument = InferRawDocType<typeof councilSchema>;
@@ -54,8 +60,14 @@ const counselorSchema = new Schema({
   id: { type: Number, required: true },
   role: { type: String, required: true },
   name: { type: String, required: true },
-  email: { type: String, required: true },
   photo: { type: String, required: true },
+  links: [
+    {
+      id: { type: Number, required: true },
+      title: { type: String, required: true },
+      url: { type: String, required: true },
+    },
+  ]
 } as const);
 
 export type CounselorDocument = InferRawDocType<typeof counselorSchema>;
@@ -74,7 +86,7 @@ export const CounselorGr = model<CounselorDocument>(
 const departmentSchema = new Schema({
   id: { type: Number, required: true },
   name: { type: String, required: true },
-  logo: { type: String, default: "" },
+  logo: { type: String, required: true },
   leader: { type: String, required: true },
   description: { type: String, required: true },
 } as const);
@@ -97,11 +109,15 @@ const eventSchema = new Schema({
   date: { type: String, required: true },
   location: { type: String, required: true },
   title: { type: String, required: true },
-  images: { type: [String], default: [] },
-  keywords: { type: [String], default: [] },
-  description: { type: String, required: true },
+  thumbnail: { type: String, required: true },
+  keywords: { type: [String], required: true },
+  description: { type: [String], required: true },
+  registration_form: { type: String, required: true },
+  registration_deadline: { type: String, required: true },
+  images: { type: [String], required: true },
   links: [
     {
+      id: { type: Number, required: true },
       title: { type: String, required: true },
       url: { type: String, required: true },
     },

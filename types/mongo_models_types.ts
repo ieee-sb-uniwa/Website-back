@@ -8,23 +8,23 @@ export interface ThirdParty {
   title: string;
   images: string[];
   description: string;
-  links: { title: string; url: string }[];
+  socials: { id: number; title: string; url: string }[];
 }
 
 export interface Council {
   id: number;
   role: string;
   name: string;
-  email: string;
   photo: string;
+  socials: { id: number; type: string; url: string}[];
 }
 
 export interface Counselor {
   id: number;
   role: string;
   name: string;
-  email: string;
   photo: string;
+  links: { id: number; type: string; url: string}[];
 }
 
 export interface Department {
@@ -40,10 +40,13 @@ export interface Event {
   date: string;
   location: string;
   title: string;
-  images: string[];
+  thumbnail: string;
   keywords: string[];
-  description: string;
-  links: { title: string; url: string }[];
+  description: string[];
+  registration_form: string;
+  registration_deadline: string;
+  images: string[];
+  links: { id: number; title: string; url: string }[];
 }
 
 export interface News {
