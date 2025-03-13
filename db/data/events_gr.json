@@ -54,10 +54,12 @@
         "images": ["/events/ieeextreme17.jpg"],
         "links": [
             {
+                "id": 0,
                 "title": "CS academy old tasks",
                 "url": "https://csacademy.com/ieeextreme-practice/tasks/"
             },
             {
+                "id": 1,
                 "title": "Δήλωση ομάδας",
                 "url": "https://xtreme.vtools.ieee.org/"
             }
@@ -99,6 +101,7 @@
         "images": ["/events/python-oop.png"],
         "links": [
             {
+                "id": 0,
                 "title": "Φόρμα συμμετοχής στα μαθήματα Python OOP",
                 "url": "https://forms.gle/7SLwdmAxsr2gh22BA"
             }
@@ -130,6 +133,7 @@
         "images": ["/events/ieeextreme-countdown-1.jpg", "/events/ieeextreme-countdown-2.jpg"],
         "links": [
             {
+                "id": 0,
                 "title": "Σύνδεσμος για όλα τα workshop",
                 "url": "https://uowm-gr.zoom.us/my/uowm.p32"
             }
@@ -158,6 +162,7 @@
         "images": ["/events/git-github-workshop.png"],
         "links": [
             {
+                "id": 0,
                 "title": "Φόρμα συμμετοχής",
                 "url": "https://forms.gle/8ubz9qhCwxtUmjbU8"
             }
@@ -196,10 +201,12 @@
         "images": ["/events/ieeextreme18.png"],
         "links": [
             {
+                "id": 0,
                 "title": "Φόρμα δήλωσης ενδιαφέροντος",
                 "url": "https://forms.gle/LFt3Q9fLRXZhaJxc8"
             },
             {
+                "id": 1,
                 "title": "Παλιά προβλήματα του διαγωνισμού",
                 "url": "https://csacademy.com/ieeextreme-practice/tasks/"
             }
@@ -233,6 +240,7 @@
         "images": ["/events/ieee-open-day.png"],
         "links": [
             {
+                "id": 0,
                 "title": "Φόρμα παρευρισκόμενων",
                 "url": "https://forms.gle/jhdutWgsPr9rqXXq8"
             }
@@ -263,14 +271,17 @@
         "images": ["/events/trust-social.png"],
         "links": [
             {
+                "id": 0,
                 "title": "Δήλωση συμμετοχής",
                 "url": "https://www.tickettailor.com/events/universityofwestattica/1478668"
             },
             {
+                "id": 1,
                 "title": "Ατζέντα ημερίδας",
                 "url": "/events/trust-social-agenda.pdf"
             },
             {
+                "id": 2,
                 "title": "Ζωντανή μετάδοση στο Youtube",
                 "url": "https://www.youtube.com/live/-2tCg-tYBCg"
             }
@@ -293,10 +304,12 @@
         "images": ["/events/ieeexplore.png"],
         "links": [
             {
+                "id": 0,
                 "title": "Φόρμα συμμετοχής",
                 "url": "https://registerieeexplore.wufoo.com/forms/xkkwpox04pts03/"
             },
             {
+                "id": 1,
                 "title": "Ατζέντα εκδήλωσης",
                 "url": "/events/ieeexplore-agenda.pdf"
             }
