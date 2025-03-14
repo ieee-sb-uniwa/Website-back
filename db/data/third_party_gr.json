@@ -1,15 +1,46 @@
 [
     {
         "id": 0,
-        "date": "",
+        "date": "2024-06-01T09:00:00",
         "title": "HIAS Summer School in AI",
-        "keywords": [],
-        "images": [],
+        "location": "NCSR “Demokritos” Συνεδριακό Κέντρο - Αθήνα",
+        "keywords": ["μαθηματα", "AI"],
+        "images": ["/assets/thumbnails/HIASSummerSchool.jpg"],
         "description": "The Hellenic Institute of Advanced Studies is proud to organize this course that brings together distinguished AI leaders from the Hellenic diaspora and Greece to teach this summer course in AI. This course aims to review the foundations of AI and highlight recent advances (foundational models, Generative AI, LLMs). Lectures are aimed for participants who have some basic knowledge of AI.",
         "links": [
             {
                 "title": "Information and registration",
                 "url": "https://hellenic-ias.org/aicourse2024/"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "date": "2024-05-24T09:00:00",
+        "location": "ΠΑΔΑ - Π2 - Συνεδριακό Κέντρο",
+        "title": "Security BSides Athens 2024",
+        "keywords": ["συνεδριο", "ΔΙΑ ΖΩΣΗΣ"],
+        "images": ["/assets/thumbnails/SecurityBesidesAthens.jpg"],
+        "description": "The Hellenic Institute of Advanced Studies is proud to organize this course that brings together distinguished AI leaders from the Hellenic diaspora and Greece to teach this summer course in AI. This course aims to review the foundations of AI and highlight recent advances (foundational models, Generative AI, LLMs). Lectures are aimed for participants who have some basic knowledge of AI.",
+        "links": [
+            {
+                "title": "Information and registration",
+                "url": "https://hellenic-ias.org/aicourse2024/"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "date": "2024-08-25T16:00:00",
+        "location": "Google Meet",
+        "keywords": ["Σειρα Webinar"],
+        "title": "Sustainability in Healthcare",
+        "images": [""],
+        "description": "The IEEE Region 8 Humanitarian Technology Activities Committee invites you to attend our upcoming webinar series on 'Sustainability in Healthcare.' These webinars provide valuable insights into the global Sustainable Development Goals, particularly Goal 3: 'Good Health and Well-being.' We are excited to collaborate with various SIGHT groups across the region to present a series of five webinars featuring experts from diverse backgrounds.",
+        "links": [
+            {
+                "title": "Registration Form",
+                "url": "https://enotice.mmsend.com/link.cfm?r=iUU1QKqsQj4GVLEU2w-P9Q~~&pe=YqrP1XBquoWELet1WVtJ6T5KZURNT2hMtNijyJLOtfYTOd72pvqg34VbaIePSmRtqxismC6xi-XoTADgcYwO6g~~&t=EQDDWZF0fS4gc3StfYUPLQ~~"
             }
         ]
     }
