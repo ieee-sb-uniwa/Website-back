@@ -4,8 +4,8 @@
         "date": "2023-10-06T18:00:00",
         "location": "MS Teams",
         "title": "ΙΕΕEXtreme Crash Course",
-        "thumbnail": "/events/ieeextreme-crash-course.jpg",
-        "keywords": ["Seminar"],
+        "thumbnail": "/events/ieeextreme-crash-course.png",
+        "keywords": ["SEMINAR"],
         "description": [
             "The IEEEXtreme Crash Course is a series of open online programming lectures in Python!",
             "",
@@ -23,7 +23,7 @@
         ],
         "registration_form": "https://forms.gle/LGt7gzzCsiAmBdRJ7",
         "registration_deadline": "2023-10-06T00:00:00",
-        "images": ["/events/ieeextreme-crash-course.jpg"],
+        "images": ["/events/ieeextreme-crash-course.png"],
         "links": [
         ]
     },
@@ -33,7 +33,7 @@
         "location": "ZB001, Campus2, UniWA",
         "title": "IEEEXtreme 17.0",
         "thumbnail": "/events/ieeextreme17.jpg",
-        "keywords": ["Hackathon"],
+        "keywords": ["HACKATHON"],
         "description": [
             "For the first time since the establishment of the University of West Attica, the IEEE Student Branch UniWA is actively participating in the international programming competition IEEEXtreme, not only with teams of our student branch's students but also as the host for the IEEE Student Branch UniPi teams from the University of Piraeus!",
             "",
@@ -71,7 +71,7 @@
         "location": "MS Teams",
         "title": "Python OOP",
         "thumbnail": "/events/python-oop.png",
-        "keywords": ["Seminar"],
+        "keywords": ["SEMINAR"],
         "description": [
             "🌟Ready to dive into the world of Python programming, but never had the chance?🐍Join IEEE SB UniWA's online Python courses and unlock the secrets of one of the most popular programming languages!🚀",
             "",
@@ -107,7 +107,7 @@
         "location": "Zoom",
         "title": "IEEEXtreme Countdown",
         "thumbnail": "/events/ieeextreme-countdown-1.jpg",
-        "keywords": ["Seminar"],
+        "keywords": ["SEMINAR"],
         "description": [
             "🚀The IEEEXtreme Countdown is starting!🔥",
             "Get ready for a unique series of workshops on competitive programming!",
@@ -141,7 +141,7 @@
         "location": "K16.001, Campus1, UniWA",
         "title": "Git-Github Workshop",
         "thumbnail": "/events/git-github-workshop.png",
-        "keywords": ["Seminar"],
+        "keywords": ["SEMINAR"],
         "description": [
             "✨We invite you to the first on-site workshop of IEEE SB UniWA on version control with Git and GitHub! 🖥️ Git and GitHub are essential tools widely used for tracking and managing code.",
             "",
@@ -170,7 +170,7 @@
         "location": "ZB001, Campus2, UniWA",
         "title": "IEEEXtreme 18.0",
         "thumbnail": "/events/ieeextreme18.png",
-        "keywords": ["Hackathon"],
+        "keywords": ["HACKATHON"],
         "description": [
             "👨‍💻IEEEXtreme, IEEE's global programming competition, is returning for another year at the University of West Attica!🎉🌐",
             "",
@@ -214,7 +214,7 @@
         "location": "Amph.Hatzinikolaou, Campus2, UniWA",
         "title": "IEEE Open Day",
         "thumbnail": "/events/ieee-open-day.png",
-        "keywords": ["Seminar"],
+        "keywords": ["SEMINAR"],
         "description": [
             "✨Join us for IEEE Open Day, an event where the IEEE Student Branch will introduce itself and its activities to the university community!🎯This open day aims to connect students and faculty with IEEE’s student branch of University of West Attica.🚀",
             "",
@@ -245,7 +245,7 @@
         "location": "Conference Centre, Campus2, UniWA",
         "title": "Trust in Online Social Networks",
         "thumbnail": "/events/trust-social.png",
-        "keywords": ["Conference"],
+        "keywords": ["CONFERENCE"],
         "description": [
             "Who can you trust on social media?",
             "How can you distinguish reliable information on social media?",
@@ -282,11 +282,11 @@
     },
     {
         "id": 8,
-        "date": "2024-03-11T13:00:00",
+        "date": "2025-03-11T13:00:00",
         "location": "ZA008-009, Campus2, UniWA",
         "title": "ΙΕΕΕ Xplore Research & Publishing Event",
         "thumbnail": "/events/ieeexplore.png",
-        "keywords": ["Seminar"],
+        "keywords": ["SEMINAR"],
         "description": [
             "On March 11, at 13:00 at the Ancient Olive Grove Campus, we are co-organizing the IEEE Xplore Research & Publishing Event with Eszter Lukacs (IEEE Client Services Manager).",
             "",
@@ -295,7 +295,7 @@
             "Attendees will receive a certificate from IEEE. Participation is free, but seats are limited, and registration is required. You can register using the following link."
         ],
         "registration_form": "https://registerieeexplore.wufoo.com/forms/xkkwpox04pts03/",
-        "registration_deadline": "2024-03-11T13:00:00",
+        "registration_deadline": "2025-03-11T13:00:00",
         "images": ["/events/ieeexplore.png"],
         "links": [
             {

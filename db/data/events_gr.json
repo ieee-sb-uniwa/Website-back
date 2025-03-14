@@ -4,8 +4,8 @@
         "date": "2023-10-06T18:00:00",
         "location": "MS Teams",
         "title": "ΙΕΕEXtreme Crash Course",
-        "thumbnail": "/events/ieeextreme-crash-course.jpg",
-        "keywords": ["Σεμινάριο"],
+        "thumbnail": "/events/ieeextreme-crash-course.png",
+        "keywords": ["ΣΕΜΙΝΑΡΙΟ"],
         "description": [
             "Το IEEEXtreme Crash Course είναι μία σειρά ανοικτών διαδικτυακών διαλέξεων προγραμματισμού στην Python!",
             "",
@@ -23,7 +23,7 @@
         ],
         "registration_form": "https://forms.gle/LGt7gzzCsiAmBdRJ7",
         "registration_deadline": "2023-10-06T00:00:00",
-        "images": ["/events/ieeextreme-crash-course.jpg"],
+        "images": ["/events/ieeextreme-crash-course.png"],
         "links": [
         ]
     },
@@ -33,7 +33,7 @@
         "location": "ΖΒ001, Π2, ΠΑΔΑ",
         "title": "IEEEXtreme 17.0",
         "thumbnail": "/events/ieeextreme17.jpg",
-        "keywords": ["Διαγωνισμός"],
+        "keywords": ["ΔΙΑΓΩΝΙΣΜΟΣ"],
         "description": [
             "Για πρώτη φορά από την ίδρυση του Πανεπιστημίου Δυτικής Αττικής, το IEEE Student Branch UniWA συμμετέχει δυναμικά στον διεθνή διαγωνισμό προγραμματισμού IEEEXtreme, όχι μόνο με ομάδες φοιτητών/τριών του παραρτήματός μας, αλλά και ως οικοδεσπότης των ομάδων του IEEE Student Branch UniPi του Πανεπιστημίου Πειραιά!",
             "",
@@ -71,7 +71,7 @@
         "location": "MS Teams",
         "title": "Python OOP",
         "thumbnail": "/events/python-oop.png",
-        "keywords": ["Σεμινάριο"],
+        "keywords": ["ΣΕΜΙΝΑΡΙΟ"],
         "description": [
             "Θέλετε να μάθετε τις βασικές αρχές προγραμματισμού στην Python, μία από τις πιο δημοφιλείς γλώσσες προγραμματισμού, αλλά δεν σας δόθηκε ποτέ η ευκαιρία;",
             "",
@@ -113,7 +113,7 @@
         "location": "Zoom",
         "title": "IEEEXtreme Countdown",
         "thumbnail": "/events/ieeextreme-countdown.png",
-        "keywords": ["Σεμινάριο"],
+        "keywords": ["ΣΕΜΙΝΑΡΙΟ"],
         "description": [
             "🚀Το IEEEXtreme Countdown ξεκινάει!🔥",
             "Ετοιμαστείτε για μια μοναδική σειρά από workshops πάνω στο competitive programming!👨‍💻 Μέσα από αυτά, θα κάνουμε αναδρομή σε όλες τις προηγούμενες χρονιές του IEEEXtreme για να προετοιμάσουμε τους φοιτητές για τον επερχόμενο IEEEXtreme 18.0!🎯",
@@ -145,7 +145,7 @@
         "location": "Κ16.001, Π1, ΠΑΔΑ",
         "title": "Git-Github Workshop",
         "thumbnail": "/events/git-github-workshop.png",
-        "keywords": ["Σεμινάριο"],
+        "keywords": ["ΣΕΜΙΝΑΡΙΟ"],
         "description": [
             "✨Σας προσκαλούμε στο πρώτο on site workshop του IEEE SB UniWA με θέμα version control με Git και GitHub! Το Git και το GitHub είναι δύο συναφή εργαλεία που χρησιμοποιούνται ευρέως για την παρακολούθηση και διαχείριση κώδικα.🖥️",
             "",
@@ -174,7 +174,7 @@
         "location": "ΖΒ001, Π2, ΠΑΔΑ",
         "title": "IEEEXtreme 18.0",
         "thumbnail": "/events/ieeextreme18.png",
-        "keywords": ["Διαγωνισμός"],
+        "keywords": ["ΔΙΑΓΩΝΙΣΜΟΣ"],
         "description": [
             "👨‍💻Ο ΙΕΕΕΧtreme, ο παγκόσμιος διαγωνισμός προγραμματισμού του ΙΕΕΕ, επιστρέφει για ακόμα μία χρονιά στο Πανεπιστήμιο Δυτικής Αττικής!🎉🌐",
             "",
@@ -218,7 +218,7 @@
         "location": "Αμφ.Χατζηνικολάου, Π2, ΠΑΔΑ",
         "title": "IEEE Open Day",
         "thumbnail": "/events/ieee-open-day.png",
-        "keywords": ["Σεμινάριο"],
+        "keywords": ["ΣΕΜΙΝΑΡΙΟ"],
         "description": [
             "✨Σας προσκαλούμε στο ΙΕΕΕ Open Day, μία εκδήλωση στην οποία το φοιτητικό παράρτημα του IEEE παρουσιάζει τον εαυτό του και τις δράσεις του στην ακαδημαϊκή κοινότητα του πανεπιστημίου!  🎯  Στόχος της συγκεκριμένης ημερίδας είναι η γνωριμία των φοιτητών και των καθηγητών με το φοιτητικό παράρτημα του IEEE.🚀",
             "",
@@ -252,7 +252,7 @@
         "location": "Συνεδριακό Κέντρο, Π2, ΠΑΔΑ",
         "title": "Trust in Online Social Networks",
         "thumbnail": "/events/trust-social.png",
-        "keywords": ["Ημερίδα"],
+        "keywords": ["ΗΜΕΡΙΔΑ"],
         "description": [
             "Ποιον μπορείς να εμπιστεύεσαι στα social media;",
             "Πώς μπορείς να διακρίνεις την αξιόπιστη πληροφορία στα social media;",
@@ -289,18 +289,18 @@
     },
     {
         "id": 8,
-        "date": "2024-03-11T13:00:00",
+        "date": "2025-03-11T13:00:00",
         "location": "ΖΑ008-009, Π2, ΠΑΔΑ",
         "title": "ΙΕΕΕ Xplore Research & Publishing Event",
         "thumbnail": "/events/ieeexplore.png",
-        "keywords": ["Σεμινάριο"],
+        "keywords": ["ΣΕΜΙΝΑΡΙΟ"],
         "description": [
             "Στις 11 Μαρτίου, στις 13.00 στην Πανεπιστημιούπολη Αρχαίου Ελαιώνα, μαζί με την Eszter Lukacs (IEEE Client Services Manager), συνδιοργανώνουμε το ΙΕΕΕ Xplore Research & Publishing Event. Στα 90 λεπτά του event, θα μπορέσετε να πληροφορηθείτε για το IEEE Xplore Digital Library, πώς να ενισχύσετε την απήχηση των αποτελεσμάτων της έρευνάς σας, πως να επιλέξετε το κατάλληλο συνέδριο ή περιοδικό του ΙΕΕΕ για να δημοσιεύσετε, τι προσέχουν οι αξιολογητές σε μία δημοσίευση (και γιατί μπορεί να απορριφθεί μία υποβολή), διαθέσιμα εργαλεία που μπορείτε να χρησιμοποιήσετε, και να καταλάβετε πως λειτουργεί η διαδικασία αξιολόγησης μίας δημοσίευσης στο ΙΕΕΕ, και τέλος, πως να δημοσιεύσετε εκμεταλλευόμενοι/ες τη συμφωνία HEAL-Link",
             "",
             "Σε όσους/ες παρακολουθήσουν το event, θα δοθεί πιστοποιητικό από το ΙΕΕΕ. Η συμμετοχή είναι δωρεάν, αλλά οι θέσεις είναι περιορισμένες, και είναι αναγκαία η εγγραφή σας, η οποία μπορεί να γίνει με χρήση του ακόλουθου συνδέσμου."
         ],
         "registration_form": "https://registerieeexplore.wufoo.com/forms/xkkwpox04pts03/",
-        "registration_deadline": "2024-03-11T13:00:00",
+        "registration_deadline": "2025-03-11T13:00:00",
         "images": ["/events/ieeexplore.png"],
         "links": [
             {
