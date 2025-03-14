@@ -1,0 +1,4 @@
+[submodule "web"]
+	path = web
+	url = git@github.com:ieee-sb-uniwa/Website-front.git
+	branch = deploy/develop

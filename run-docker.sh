@@ -11,10 +11,10 @@ fi
 # Check the value of NODE_ENV
 if [ "$NODE_ENV" == "development" ]; then
     echo "Running in development mode..."
-    docker compose -f docker-compose.yml watch
+    docker compose -f docker-compose.yml up -d --build
 elif [ "$NODE_ENV" == "production" ]; then
     echo "Running in production mode..."
-    docker compose -f docker-compose.yml up -d
+    docker compose -f docker-compose.yml up -d --build
 else
     echo "NODE_ENV is not set or has an invalid value. Use 'development' or 'production'."
     exit 1
