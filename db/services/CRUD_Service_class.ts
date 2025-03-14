@@ -55,7 +55,9 @@ class MongoCrudService {
     model: Model<T>
     // query: FilterQuery<T> = {}
   ): Promise<T[]> {
-    return model.find();
+    return model
+      .find()
+      .sort({ ["id"]: -1 });
   }
 
   async findHead<T extends Document>(
