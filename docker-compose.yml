@@ -144,14 +144,14 @@ services:
       - ./min-io/images:/images
       - ./min-io/readonly-policy.json:/readonly-policy.json
 
-  web:
-    build:
-      context: ./web
-      args:
-        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL}
-        NEXT_PUBLIC_IMAGES_STORAGE_URL: ${NEXT_PUBLIC_IMAGES_STORAGE_URL}
-    ports:
-      - "4000:3000"
-    env_file:
-      - .env
-    restart: always
+  # web:
+  #   build:
+  #     context: ./web
+  #     args:
+  #       NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL}
+  #       NEXT_PUBLIC_IMAGES_STORAGE_URL: ${NEXT_PUBLIC_IMAGES_STORAGE_URL}
+  #   ports:
+  #     - "4000:3000"
+  #   env_file:
+  #     - .env
+  #   restart: always
