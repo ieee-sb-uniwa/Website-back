@@ -1,7 +1,7 @@
 [
     {
       "id": 0,
-      "role": "Chair",
+      "role": "CHAIR",
       "photo": "/photos/stavros-alexiou-bg.png",
       "name": "Stavros Alexiou",
       "socials": [
@@ -19,7 +19,7 @@
     },
     {
       "id": 1,
-      "role": "Vice-Chair",
+      "role": "VICE-CHAIR",
       "photo": "/photos/andreas-kyrkiotis-bg.png",
       "name": "Andreas Kyrkiotis",
       "socials": [
@@ -37,7 +37,7 @@
     },
     {
       "id": 2,
-      "role": "Secretary",
+      "role": "SECRETARY",
       "photo": "/photos/evangelos-mitikas-bg.png",
       "name": "Evangelos Mitikas",
       "socials": [
@@ -55,7 +55,7 @@
     },
     {
       "id": 3,
-      "role": "Treasurer",
+      "role": "TREASURER",
       "photo": "/photos/ioannis-christopoulos-bg.png",
       "name": "Ioannis Christopoulos",
       "socials": [
