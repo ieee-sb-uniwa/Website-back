@@ -1,9 +1,9 @@
 [
     {
         "id": 0,
-        "role": "Πρόεδρος",
+        "role": "ΠΡΟΕΔΡΟΣ",
         "name": "Σταύρος Αλεξίου",
-        "photo": "/people/stavros-alexiou.png",
+        "photo": "/photos/stavros-alexiou-bg.png",
         "socials": [
           {
             "id": 0,
@@ -19,9 +19,9 @@
     },
     {
         "id": 1,
-        "role": "Αντιπρόεδρος",
+        "role": "ΑΝΤΙΠΡΟΕΔΡΟΣ",
         "name": "Ανδρέας Κυρκιώτης",
-        "photo": "/people/andreas-kyrkiotis.png",
+        "photo": "/photos/andreas-kyrkiotis-bg.png",
         "socials": [
           {
             "id": 0,
@@ -37,9 +37,9 @@
     },
     {
         "id": 2,
-        "role": "Γραμματέας",
+        "role": "ΓΡΑΜΜΑΤΕΑΣ",
         "name": "Ευάγγελος Μητίκας",
-        "photo": "/people/evangelos-mitikas.png",
+        "photo": "/photos/evangelos-mitikas-bg.png",
         "socials": [
           {
             "id": 0,
@@ -55,9 +55,9 @@
     },
     {
         "id": 3,
-        "role": "Ταμίας",
+        "role": "ΤΑΜΙΑΣ",
         "name": "Ιωάννης Χριστόπουλος",
-        "photo": "/people/ioannis-christopoulos.png",
+        "photo": "/photos/ioannis-christopoulos-bg.png",
         "socials": [
           {
             "id": 0,

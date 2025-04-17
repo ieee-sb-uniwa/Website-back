@@ -1,8 +1,8 @@
 [
     {
       "id": 0,
-      "role": "Chair",
-      "photo": "/people/stavros-alexiou.png",
+      "role": "CHAIR",
+      "photo": "/photos/stavros-alexiou-bg.png",
       "name": "Stavros Alexiou",
       "socials": [
         {
@@ -19,8 +19,8 @@
     },
     {
       "id": 1,
-      "role": "Vice-Chair",
-      "photo": "/people/andreas-kyrkiotis.png",
+      "role": "VICE-CHAIR",
+      "photo": "/photos/andreas-kyrkiotis-bg.png",
       "name": "Andreas Kyrkiotis",
       "socials": [
         {
@@ -37,8 +37,8 @@
     },
     {
       "id": 2,
-      "role": "Secretary",
-      "photo": "/people/evangelos-mitikas.png",
+      "role": "SECRETARY",
+      "photo": "/photos/evangelos-mitikas-bg.png",
       "name": "Evangelos Mitikas",
       "socials": [
         {
@@ -55,8 +55,8 @@
     },
     {
       "id": 3,
-      "role": "Treasurer",
-      "photo": "/people/ioannis-christopoulos.png",
+      "role": "TREASURER",
+      "photo": "/photos/ioannis-christopoulos-bg.png",
       "name": "Ioannis Christopoulos",
       "socials": [
         {
