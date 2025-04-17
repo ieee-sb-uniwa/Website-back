@@ -105,6 +105,24 @@ services:
       retries: 3
       start_period: 10s
 
+  minio-init:
+    image: minio/mc
+    depends_on:
+      minio:
+        condition: service_healthy
+    entrypoint: >
+      /bin/sh -c "
+        mc alias set myminio http://minio:9000 \$MINIO_ROOT_USER \$MINIO_ROOT_PASSWORD &&
+        mc mb -p myminio/files &&
+        mc policy set-json /policy.json myminio/files &&
+        mc mirror --overwrite /files myminio/files
+      "
+    env_file:
+      - ./.env
+    volumes:
+      - ./minio/policy.json:/policy.json:ro
+      - ./minio/files:/files:ro
+
   web:
     container_name: web
     build:
