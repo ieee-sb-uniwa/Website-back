@@ -23,7 +23,7 @@ services:
       start_period: 5s
 
   api:
-    build: .
+    build: ./api
     restart: always
     container_name: bun-elysia-app
     env_file:
