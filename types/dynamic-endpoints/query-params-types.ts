@@ -1,5 +1,6 @@
 export interface QueryParamsTypes {
-  limit?: string;
+  keyword?: string;
+  limitAmount?: number;
   sortBy?: string;
   // searchBy?: string;
 }

@@ -3,6 +3,7 @@ import { MongooseModelsMap } from '../../types/dynamic-endpoints/model-types';
 import MongoCrudService from '../../db/services/CRUD_Service_class';
 import { error as elysiaError } from 'elysia';
 import { QueryParamsTypes } from '../../types/dynamic-endpoints/query-params-types';
+import { Types } from 'mongoose';
 
 interface HandlerParams {
   mongo_crud: MongoCrudService;
@@ -23,36 +24,28 @@ export const setupDyanmicEndpoints = (
     app.get(
       `/api/${name}`,
       async ({ mongo_crud, query }: HandlerParams) => {
-        const { limit, sortBy } = query || {};
-        if (limit && sortBy && !isNaN(Number(limit))) {
-          try {
-            // If both the "limit" AND "sortBy" params have been provided.
-            // It will use them in the DB query
-            // Else it will fetch all documents/records of the requested resource.
-            const result = await mongo_crud.findHead<any>(
-              model,
-              sortBy,
-              Number(limit)
-            );
-            return result;
-          } catch (error) {
-            console.error(`Error | GET (/${name}) : `, error);
-            return elysiaError(404, 'Not found');
-          }
-        } else {
-          try {
-            const result = await mongo_crud.findAll<any>(model);
-            return result;
-          } catch (error) {
-            console.error(`Error | GET (/${name}) : `, error);
-            return elysiaError(404, 'Not found');
-          }
+        const { limitAmount, sortBy, keyword } = query || {};
+
+        const mongoQuery = keyword ? { keywords: keyword } : {};
+
+        try {
+          const result = await mongo_crud.findAll<any>(
+            model,
+            mongoQuery,
+            sortBy,
+            limitAmount ? Number(limitAmount) : undefined
+          );
+          return result;
+        } catch (error) {
+          console.error(`Error | GET (/${name}) : `, error);
+          return elysiaError(404, 'Not found');
         }
       },
       {
         query: t.Object({
-          limit: t.Optional(t.String()),
+          limitAmount: t.Optional(t.Number()),
           sortBy: t.Optional(t.String()),
+          keyword: t.Optional(t.String()),
         }),
       }
     );
@@ -61,99 +54,110 @@ export const setupDyanmicEndpoints = (
     app.get(
       `/api/${name}/:id`,
       async ({ mongo_crud, params }: HandlerParams) => {
-        // Check if the parameters are present
-        if (!params || isNaN(Number(params.id))) {
-          return elysiaError(
-            400,
-            'Bad Request: Missing parameters (id) to be precise'
-          );
+        if (!params?.id || !Types.ObjectId.isValid(params.id)) {
+          return elysiaError(400, 'Bad Request: Invalid MongoDB ObjectId');
         }
+    
         const { id } = params;
+    
         try {
-          const result = await mongo_crud.findOne<any>(model, {
-            id,
+          const result = await mongo_crud.findOne<any>(
+            model,
+            { _id: new Types.ObjectId(id) }
+          );
+    
+          if (!result) {
+            return elysiaError(404, 'Not found');
+          }
+    
+          return new Response(JSON.stringify(result), {
+            headers: {
+              'Content-Type': 'application/json'
+            }
           });
-          return result;
         } catch (error) {
           console.error(`Error | GET (/${name}/:id) : `, error);
-          return elysiaError(404, 'Not found');
+          return elysiaError(500, 'Internal Server Error');
         }
       },
       {
         params: t.Object({
-          id: t.Number(),
+          id: t.String(),
         }),
+        response: t.Object({}, { additionalProperties: true })
       }
     );
+    
+    
+    
+    // // POST a new record (document)
+    // app.post(`/api/${name}`, async ({ mongo_crud, body }: HandlerParams) => {
+    //   if (!body) {
+    //     return elysiaError(400, `POST (/${name}) | Bad Request: Missing body`);
+    //   }
 
-    // POST a new record (document)
-    app.post(`/api/${name}`, async ({ mongo_crud, body }: HandlerParams) => {
-      if (!body) {
-        return elysiaError(400, `POST (/${name}) | Bad Request: Missing body`);
-      }
+    //   try {
+    //     const result = await mongo_crud.create<any>(model, body);
+    //     return result;
+    //   } catch (error) {
+    //     console.error(`Error | POST (/${name}) : `, error);
+    //     return elysiaError(400, 'Bad Request');
+    //   }
+    // });
 
-      try {
-        const result = await mongo_crud.create<any>(model, body);
-        return result;
-      } catch (error) {
-        console.error(`Error | POST (/${name}) : `, error);
-        return elysiaError(400, 'Bad Request');
-      }
-    });
+    // // PUT (update) a record (document)
+    // app.put(
+    //   `/api/${name}/:id`,
+    //   async ({ mongo_crud, params, body }: HandlerParams) => {
+    //     if (!params || isNaN(Number(params.id))) {
+    //       return elysiaError(
+    //         400,
+    //         `PUT (/${name}/:id) | Bad Request: Missing parameters`
+    //       );
+    //     }
+    //     const { id } = params;
 
-    // PUT (update) a record (document)
-    app.put(
-      `/api/${name}/:id`,
-      async ({ mongo_crud, params, body }: HandlerParams) => {
-        if (!params || isNaN(Number(params.id))) {
-          return elysiaError(
-            400,
-            `PUT (/${name}/:id) | Bad Request: Missing parameters`
-          );
-        }
-        const { id } = params;
+    //     try {
+    //       const result = await mongo_crud.update<any>(model, { id }, body);
+    //       return result;
+    //     } catch (error) {
+    //       console.error(`Error | PUT (/${name}/${id}) : `, error);
+    //       return elysiaError(404, 'Not found');
+    //     }
+    //   },
+    //   {
+    //     params: t.Object({
+    //       id: t.Number(),
+    //     }),
+    //   }
+    // );
 
-        try {
-          const result = await mongo_crud.update<any>(model, { id }, body);
-          return result;
-        } catch (error) {
-          console.error(`Error | PUT (/${name}/${id}) : `, error);
-          return elysiaError(404, 'Not found');
-        }
-      },
-      {
-        params: t.Object({
-          id: t.Number(),
-        }),
-      }
-    );
+    // // DELETE a record (document)
+    // app.delete(
+    //   `/api/${name}/:id`,
+    //   async ({ mongo_crud, params }: HandlerParams) => {
+    //     if (!params || isNaN(Number(params.id))) {
+    //       return elysiaError(
+    //         400,
+    //         `DELETE (/${name}/:id) | Bad Request: Missing parameters`
+    //       );
+    //     }
+    //     const { id } = params;
 
-    // DELETE a record (document)
-    app.delete(
-      `/api/${name}/:id`,
-      async ({ mongo_crud, params }: HandlerParams) => {
-        if (!params || isNaN(Number(params.id))) {
-          return elysiaError(
-            400,
-            `DELETE (/${name}/:id) | Bad Request: Missing parameters`
-          );
-        }
-        const { id } = params;
-
-        try {
-          const result = await mongo_crud.delete<any>(model, { id });
-          return result;
-        } catch (error) {
-          console.error(`Error | DELETE (/${name}/${id}) : `, error);
-          return elysiaError(404, 'Not found');
-        }
-      },
-      {
-        params: t.Object({
-          id: t.Number(),
-        }),
-      }
-    );
+  //       try {
+  //         const result = await mongo_crud.delete<any>(model, { id });
+  //         return result;
+  //       } catch (error) {
+  //         console.error(`Error | DELETE (/${name}/${id}) : `, error);
+  //         return elysiaError(404, 'Not found');
+  //       }
+  //     },
+  //     {
+  //       params: t.Object({
+  //         id: t.Number(),
+  //       }),
+  //     }
+  //   );
 
     return app;
   });

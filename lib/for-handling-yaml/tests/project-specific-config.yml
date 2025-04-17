@@ -3,30 +3,30 @@ endpoints:
   - endpoint: /api/users
     httpMethods:
       - GET
-      - POST
+      # - POST
     description: Retrieve and create users
     authenticationRequired: true
 
   - endpoint: /api/users/{id}
     httpMethods:
       - GET
-      - PUT
-      - DELETE
+      # - PUT
+      # - DELETE
     description: Retrieve, update, or delete a user by ID
     authenticationRequired: true
 
   - endpoint: /api/products
     httpMethods:
       - GET
-      - POST
+      # - POST
     description: Retrieve and create products
     authenticationRequired: false
 
   - endpoint: /api/products/{id}
     httpMethods:
       - GET
-      - PUT
-      - DELETE
+      # - PUT
+      # - DELETE
     description: Retrieve, update, or delete a product by ID
     authenticationRequired: false
 

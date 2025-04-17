@@ -62,24 +62,24 @@ app.use(
 );
 
 // Just a simple welcome message, useful for checking if the server is up
-app.get(
-  '/',
-  () => 'Hello and Welcome to Elysia JS App for IEEE SB Uniwa Website Backend!'
-);
+// app.get(
+//   '/',
+//   () => 'Hello and Welcome to Elysia JS App for IEEE SB Uniwa Website Backend!'
+// );
 
-app.get(
-  '/test',
-  ({ query }: { query: { limit?: string; sorted?: boolean } }) => {
-    console.log('The Query: ', query);
-    return { query: query };
-  },
-  {
-    query: t.Object({
-      limit: t.Optional(t.String()),
-      sorted: t.Boolean({ default: false }),
-    }),
-  }
-);
+// app.get(
+//   '/test',
+//   ({ query }: { query: { limit?: string; sorted?: boolean } }) => {
+//     console.log('The Query: ', query);
+//     return { query: query };
+//   },
+//   {
+//     query: t.Object({
+//       limit: t.Optional(t.String()),
+//       sorted: t.Boolean({ default: false }),
+//     }),
+//   }
+// );
 
 // Useful for checking if the server is up (less verbose than the previous one)
 app.get('/ping', () => {

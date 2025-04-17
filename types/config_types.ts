@@ -1,4 +1,4 @@
-export type HttpMethod = "GET" | "POST" | "PUT" | "DELETE";
+export type HttpMethod = "GET"; // | "POST" | "PUT" | "DELETE";
 
 export interface EndpointFromConfig {
   path: string;

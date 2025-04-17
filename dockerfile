@@ -1,5 +1,5 @@
 # Use the Bun official image
-FROM oven/bun:latest
+FROM oven/bun:1.2.10
 
 # Install curl
 RUN apt-get update && apt-get install -y curl

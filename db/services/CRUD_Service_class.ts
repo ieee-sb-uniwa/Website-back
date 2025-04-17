@@ -52,55 +52,62 @@ class MongoCrudService {
    * @returns {Promise<T[]>} An array of all found documents
    */
   async findAll<T extends Document>(
-    model: Model<T>
+    model: Model<T>,
+    query: FilterQuery<T> = {},
+    sortBy: string = "id",
+    limitAmount?: number
     // query: FilterQuery<T> = {}
   ): Promise<T[]> {
-    return model
-      .find()
-      .sort({ ["id"]: -1 });
+    let queryBuilder = model.find(query).sort({ [sortBy]: -1 });
+
+    if (limitAmount !== undefined) {
+      queryBuilder = queryBuilder.limit(limitAmount);
+    }
+  
+    return queryBuilder;
   }
 
-  async findHead<T extends Document>(
-    model: Model<T>,
-    // query: FilterQuery<T> = {},
-    sortedBy: string,
-    amount: number
-  ): Promise<T[]> {
-    return model
-      .find()
-      .sort({ [sortedBy]: -1 })
-      .limit(amount);
-  }
-
-  /**
-   * Update one document in a collection
-   * @method update
-   * @param {Model<T>} model - The document's Mongoose Model
-   * @param {FilterQuery<T>} query - The query to find the document
-   * @param {UpdateQuery<T>} update - The update to apply to the document
-   * @returns {Promise<T | null>} The updated document or null if not found
-   */
-  async update<T extends Document>(
-    model: Model<T>,
-    query: FilterQuery<T>,
-    update: UpdateQuery<T>
-  ): Promise<T | null> {
-    return model.findOneAndUpdate(query, update, { new: true });
-  }
+  // async findHead<T extends Document>(
+  //   model: Model<T>,
+  //   // query: FilterQuery<T> = {},
+  //   sortedBy: string,
+  //   amount: number
+  // ): Promise<T[]> {
+  //   return model
+  //     .find()
+  //     .sort({ [sortedBy]: -1 })
+  //     .limit(amount);
+  // }
 
   /**
-   * Delete one document from a collection
-   * @method delete
-   * @param {Model<T>} model - The document's Mongoose Model
-   * @param {FilterQuery<T>} query - The query to find the document
-   * @returns {Promise<T | null>} The deleted document or null if not found
-   */
-  async delete<T extends Document>(
-    model: Model<T>,
-    query: FilterQuery<T>
-  ): Promise<T | null> {
-    return model.findOneAndDelete(query);
-  }
+  //  * Update one document in a collection
+  //  * @method update
+  //  * @param {Model<T>} model - The document's Mongoose Model
+  //  * @param {FilterQuery<T>} query - The query to find the document
+  //  * @param {UpdateQuery<T>} update - The update to apply to the document
+  //  * @returns {Promise<T | null>} The updated document or null if not found
+  //  */
+  // async update<T extends Document>(
+  //   model: Model<T>,
+  //   query: FilterQuery<T>,
+  //   update: UpdateQuery<T>
+  // ): Promise<T | null> {
+  //   return model.findOneAndUpdate(query, update, { new: true });
+  // }
+
+  // /**
+  //  * Delete one document from a collection
+  //  * @method delete
+  //  * @param {Model<T>} model - The document's Mongoose Model
+  //  * @param {FilterQuery<T>} query - The query to find the document
+  //  * @returns {Promise<T | null>} The deleted document or null if not found
+  //  */
+  // async delete<T extends Document>(
+  //   model: Model<T>,
+  //   query: FilterQuery<T>
+  // ): Promise<T | null> {
+  //   return model.findOneAndDelete(query);
+  // }
 }
 
 export default MongoCrudService;
