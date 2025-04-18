@@ -75,7 +75,7 @@ services:
       - '27017:27017'
 
   minio:
-    image: minio/minio
+    image: minio/minio:RELEASE.2025-03-12T18-04-18Z
     container_name: minio
     command: server /data --console-address ":9001"
     env_file:
@@ -106,23 +106,26 @@ services:
       start_period: 10s
 
   minio-init:
-    image: minio/mc
+    image: minio/mc:RELEASE.2025-03-12T17-29-24Z
+    container_name: minio-init
     depends_on:
       minio:
         condition: service_healthy
     entrypoint: >
       /bin/sh -c "
-        mc alias set myminio http://minio:9000 \$MINIO_ROOT_USER \$MINIO_ROOT_PASSWORD &&
-        mc mb -p myminio/files &&
-        mc policy set-json /policy.json myminio/files &&
-        mc mirror --overwrite /files myminio/files
+        sleep 5;
+        mc alias set myminio http://minio:9000 $MINIO_ROOT_USER $MINIO_ROOT_PASSWORD &&
+        mc mb --ignore-existing myminio/files &&
+        mc cp --recursive /files/ myminio/files &&
+        mc anonymous set-json /readonly-policy.json myminio/files;
+        exit 0;
       "
     env_file:
       - ./.env
     volumes:
-      - ./min-io/policy.json:/policy.json
+      - ./min-io/readonly-policy.json:/readonly-policy.json
       - ./min-io/files:/files
-
+      
   web:
     container_name: web
     build:
@@ -141,4 +144,4 @@ services:
 
 volumes:
   minio-data:
-    # external: true
+    external: true
