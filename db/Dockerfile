@@ -2,7 +2,7 @@
 FROM mongo:8.0.3
 
 # Add your JSON files to be loaded into MongoDB
-COPY ./data /data
+COPY ./data /my-data
 
 # Add initialization scripts
 COPY ./init-mongo.sh /docker-entrypoint-initdb.d/

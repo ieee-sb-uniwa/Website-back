@@ -1,0 +1,74 @@
+[
+    {
+        "id": 0,
+        "role": "Πρόεδρος",
+        "name": "Σταύρος Αλεξίου",
+        "photo": "/people/stavros-alexiou.png",
+        "socials": [
+          {
+            "id": 0,
+            "type": "email",
+            "url": "mailto:eee20387006@uniwa.gr"
+          },
+          {
+            "id": 1,
+            "type": "linkedin",
+            "url": "https://www.linkedin.com/in/stavros-alexiou-468767252/"
+          }
+        ]
+    },
+    {
+        "id": 1,
+        "role": "Αντιπρόεδρος",
+        "name": "Ανδρέας Κυρκιώτης",
+        "photo": "/people/andreas-kyrkiotis.png",
+        "socials": [
+          {
+            "id": 0,
+            "type": "email",
+            "url": "mailto:eee20387123@uniwa.gr"
+          },
+          {
+            "id": 1,
+            "type": "linkedin",
+            "url": "https://www.linkedin.com/in/andreas-kyrkiotis-8ba048290/"
+          }
+        ]
+    },
+    {
+        "id": 2,
+        "role": "Γραμματέας",
+        "name": "Ευάγγελος Μητίκας",
+        "photo": "/people/evangelos-mitikas.png",
+        "socials": [
+          {
+            "id": 0,
+            "type": "email",
+            "url": "mailto:eee19387165@uniwa.gr"
+          },
+          {
+            "id": 1,
+            "type": "linkedin",
+            "url": "https://www.linkedin.com/in/evangelos-mitikas/"
+          }
+        ]
+    },
+    {
+        "id": 3,
+        "role": "Ταμίας",
+        "name": "Ιωάννης Χριστόπουλος",
+        "photo": "/people/ioannis-christopoulos.png",
+        "socials": [
+          {
+            "id": 0,
+            "type": "email",
+            "url": "mailto:eee20387291@uniwa.gr"
+          },
+          {
+            "id": 1,
+            "type": "linkedin",
+            "url": "https://www.linkedin.com/in/ioannis-christopoulos-3abab6227/"
+          }
+        ]
+    }
+]

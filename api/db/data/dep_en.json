@@ -1,0 +1,37 @@
+[
+    {
+        "id": 0,
+        "name": "Human Resources (HR)",
+        "logo": "/departments/HR.svg",
+        "leader": "",
+        "description": "The Human Resources Department is responsible for managing the student branch's human resources. Its main duties include communicating with new members and ensuring their smooth integration into the student branch. Additionally, it handles internal communication, member organization, and related tasks."
+    },
+    {
+        "id": 1,
+        "name": "Fund Raising (FR)",
+        "logo": "/departments/FR.svg",
+        "leader": "Zenia Fragaki",
+        "description": "The Fundraising Department aims to seek and secure funds or resources for the student branch's initiatives. It communicates with companies and organizations to obtain sponsorships for the student branch, such as providing equipment for its teams, food for events, merchandise sponsorships, and more."
+    },
+    {
+        "id": 2,
+        "name": "Event Planning (EP)",
+        "logo": "/departments/EP.svg",
+        "leader": "",
+        "description": "The Event Planning Department is responsible for all necessary actions involved in organizing an event. It generates event ideas, outlines the required steps for event organization, recruits the necessary personnel, and communicates with guests and sponsors. Additionally, it includes the student branch's volunteers who will provide on-site assistance on the day of the event."
+    },
+    {
+        "id": 3,
+        "name": "Graphic Design (GD)",
+        "logo": "/departments/GD.svg",
+        "leader": "Stavros Alexiou",
+        "description": "The Graphic Design Department is responsible for creating all necessary visuals to meet the student branch's needs. These designs may include website graphics, social media posts, posters, banners, merchandise, and more."
+    },
+    {
+        "id": 3,
+        "name": "Social Media & Marketing (SM)",
+        "logo": "/departments/SM.svg",
+        "leader": "Stavros Alexiou",
+        "description": "The Social Media and Marketing Department is responsible for managing social media, promoting, and advertising the student branch. Its goal is to build a strong online presence for IEEE SB UniWA."
+    }
+]

@@ -1,16 +1,311 @@
 [
     {
         "id": 0,
-        "date": "",
-        "location": "",
-        "title": "Git-Github Workshop",
-        "images": [],
-        "keywords": [],
-        "description": "✨ We invite you to IEEE SB UniWA's first on-site workshop on version control with Git and GitHub! Git and GitHub are two related tools widely used for code tracking and management. 🖥️👨‍💻 Git is a version control system that allows developers to track changes in their code, keep a history of these changes, and collaborate with others on shared projects. 💾 GitHub is a Git repository hosting platform that offers an environment for code sharing and collaboration, combining Git’s features with an online platform. 🌐✅ This workshop will be conducted by Spyros Saridakis and will cover all the essential knowledge needed to effectively work on team projects involving code and more! 👥📅 Date: Saturday, October 12 - 12:00 p.m. 📍 Location: University of West Attica 🔷 To register, please fill out the form below. 🚀 Don’t miss the chance to boost your productivity and collaborate effectively with others! 😎",
+        "date": "2023-10-06T18:00:00",
+        "location": "MS Teams",
+        "title": "ΙΕΕEXtreme Crash Course",
+        "thumbnail": "/events/ieeextreme-crash-course.png",
+        "keywords": ["SEMINAR"],
+        "description": [
+            "The IEEEXtreme Crash Course is a series of open online programming lectures in Python!",
+            "",
+            "📈 Its goal is to provide a general understanding of fundamental programming and algorithm concepts so that anyone can participate in the IEEEXtreme competition!",
+            "",
+            "✅ Of course, you can attend the lectures regardless of whether you plan to participate in the competition or not!",
+            "",
+            "📆 The lecture series consists of four sessions:",
+            "1) Friday, 06/10: Introduction to Algorithmic Thinking.",
+            "2) Monday, 09/10: Introduction to Python (Part 1).",
+            "3) Thursday, 12/10: Introduction to Python (Part 2).",
+            "4) Sunday, 15/10: Let's go IEEEXtreme!",
+            "",
+            "❗ The lectures will be held on Microsoft Teams!"
+        ],
+        "registration_form": "https://forms.gle/LGt7gzzCsiAmBdRJ7",
+        "registration_deadline": "2023-10-06T00:00:00",
+        "images": ["/events/ieeextreme-crash-course.png"],
+        "links": [
+        ]
+    },
+    {
+        "id": 1,
+        "date": "2023-10-28T03:00:00",
+        "location": "ZB001, Campus2, UniWA",
+        "title": "IEEEXtreme 17.0",
+        "thumbnail": "/events/ieeextreme17.jpg",
+        "keywords": ["HACKATHON"],
+        "description": [
+            "For the first time since the establishment of the University of West Attica, the IEEE Student Branch UniWA is actively participating in the international programming competition IEEEXtreme, not only with teams of our student branch's students but also as the host for the IEEE Student Branch UniPi teams from the University of Piraeus!",
+            "",
+            "🔹 What is IEEEXtreme?",
+            "It is a global 24-hour programming competition, organized annually by IEEE, bringing together students from all over the world. This year's competition will take place from Saturday, October 28, at 03:00 AM until Sunday, October 29, at 03:00 AM.",
+            "",
+            "🔹 Who can participate?",
+            "Teams of 1 to 3 members from any university can compete by solving programming challenges in 20+ available programming languages. The competition is held on the CSacademy platform, where you can practice with problems from previous years to prepare effectively.",
+            "",
+            "📌 Interested in learning more or joining?",
+            "The student branch invites everyone interested in participating or learning more information to contact us:",
+            "📧 Email: ieeesb@uniwa.gr",
+            "💬 Discord: Send a message on our Discord server",
+            "Don't miss the chance to experience IEEEXtreme and compete alongside programmers from around the world! 🚀"
+        ],
+        "registration_form": "https://forms.gle/PA6Vag1a3GDWACy27 ",
+        "registration_deadline": "2023-10-14T00:00:00",
+        "images": ["/events/ieeextreme17.jpg"],
         "links": [
             {
-                "title": "Workshop Participation Form",
+                "id": 0,
+                "title": "CS academy old tasks",
+                "url": "https://csacademy.com/ieeextreme-practice/tasks/"
+            },
+            {
+                "id": 1,
+                "title": "Δήλωση ομάδας",
+                "url": "https://xtreme.vtools.ieee.org/"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "date": "2024-03-25T19:00:00",
+        "location": "MS Teams",
+        "title": "Python OOP",
+        "thumbnail": "/events/python-oop.png",
+        "keywords": ["SEMINAR"],
+        "description": [
+            "🌟Ready to dive into the world of Python programming, but never had the chance?🐍Join IEEE SB UniWA's online Python courses and unlock the secrets of one of the most popular programming languages!🚀",
+            "",
+            "🔍Python is versatile and widely used, from AI to machine learning and beyond. Whether you're a beginner or seeking to deepen your knowledge, our courses are tailored for all levels of expertise.",
+            "",
+            "💻Led by Stelios Georgaras, a seasoned member of IEEE SB UniWA with professional experience in machine learning, computer vision, and Big Data, our courses will equip you with essential Python skills and object-oriented programming techniques.During the course, small compulsory tasks will be given, where upon their completion the student will receive a certificate of attendance, signed by the CONSERT laboratory of the Department of Electrical and Electronics Engineering of UniWA.",
+            "",
+            "🎓Who can join? All students interested in mastering Python and object-oriented programming, regardless of experience level. Simply fill out the participation form by Sunday, March 17th, to secure your spot.",
+            "",
+            "📌Course details:",
+            "- Duration: Ten weekly sessions",
+            "- Platform: Microsoft Teams",
+            "- Start date: Week of March 25th - March 29th",
+            "- Sessions will be scheduled based on participants' availability, with the first session determined by responses in the participation form.",
+            "",
+            "Ready to embark on your Python journey? Don't miss this opportunity to enhance your programming skills and dive into the world of tech!🌐💡"
+        ],
+        "registration_form": "https://forms.gle/7SLwdmAxsr2gh22BA",
+        "registration_deadline": "2024-03-17T00:00:00",
+        "images": ["/events/python-oop.png"],
+        "links": [
+            {
+                "id": 0,
+                "title": "Participation Form",
+                "url": "https://forms.gle/7SLwdmAxsr2gh22BA"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "date": "2024-09-29T17:00:00",
+        "location": "Zoom",
+        "title": "IEEEXtreme Countdown",
+        "thumbnail": "/events/ieeextreme-countdown-1.jpg",
+        "keywords": ["SEMINAR"],
+        "description": [
+            "🚀The IEEEXtreme Countdown is starting!🔥",
+            "Get ready for a unique series of workshops on competitive programming!",
+            "",
+            "👨‍💻Through these workshops, we'll look back at all the previous IEEEXtreme years to prepare students for the upcoming IEEEXtreme 18.0!🎯",
+            "",
+            "💡Each workshop is organized in collaboration between two IEEE Student Branches and focuses on two different years of the competition. A total of 8 IEEE Student Branches from the Greece Section will participate in this learning experience!🌍💻",
+            "",
+            "🔗All workshops will take place via the Zoom platform! Don't miss out!🔥",
+            "",
+            "📆Event Schedule:",
+            "1) Sunday 29/09 at 17:00, Throwback to IEEEXtreme 10.0 and 11.0 by the IEEE Student Branch of the University of Thessaly in Volos and the International Hellenic University in Serres. IEEE Volos Student Branch & IEEE Student Branch - International Hellenic University (Serres)",
+            "2) Sunday 06/10 at 17:00, Throwback to IEEEXtreme 12.0 and 13.0 by the IEEE Student Branch of the University of Western Attica and the University of Patras. IEEE SB UniWA & IEEE SB UPatras",
+            "3) Sunday 13/10 at 17:00, Throwback to IEEEXtreme 14.0 and 15.0 by the IEEE Student Branch of the University of Macedonia and the University of Western Macedonia in Kastoria. UoM IEEE Student Branch & IEEE Student Branch University of Western Macedonia (Kastoria)",
+            "4) Sunday 20/10 at 17:00, Throwback to IEEEXtreme 16.0 and 17.0 by the IEEE Student Branch of Democritus University of Thrace and the University of Piraeus. IEEE Democritus University of Thrace Student Branch & IEEE University of Piraeus Student Branch"
+        ],
+        "registration_form": "",
+        "registration_deadline": "",
+        "images": ["/events/ieeextreme-countdown-1.jpg", "/events/ieeextreme-countdown-2.jpg"],
+        "links": [
+            {
+                "id": 0,
+                "title": "Zoom room",
+                "url": "https://uowm-gr.zoom.us/my/uowm.p32"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "date": "2024-10-12T12:00:00",
+        "location": "K16.001, Campus1, UniWA",
+        "title": "Git-Github Workshop",
+        "thumbnail": "/events/git-github-workshop.png",
+        "keywords": ["SEMINAR"],
+        "description": [
+            "✨We invite you to the first on-site workshop of IEEE SB UniWA on version control with Git and GitHub! 🖥️ Git and GitHub are essential tools widely used for tracking and managing code.",
+            "",
+            "👨‍💻Git is a version control system that allows developers to track changes in their code, maintain a history of those changes, and collaborate on shared projects. 💾 GitHub is a platform for hosting Git repositories, offering a collaborative environment that combines the features of Git with an online interface.🌐",
+            "",
+            "✔️ This workshop will be held by Spyros Saridakis, member of our student branch, and will cover all the knowledge you need to effectively manage group projects involving code - and much more! 👥",
+            "",
+            "🔷To participate, please fill out the form below.",
+            "",
+            "🚀Don't miss this opportunity to boost your productivity and collaborate efficiently with others! 😎"
+        ],
+        "registration_form": "https://forms.gle/8ubz9qhCwxtUmjbU8",
+        "registration_deadline": "2024-10-11T00:00:00",
+        "images": ["/events/git-github-workshop.png"],
+        "links": [
+            {
+                "id": 0,
+                "title": "Participation Form",
                 "url": "https://forms.gle/8ubz9qhCwxtUmjbU8"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "date": "2024-10-16T03:00:00",
+        "location": "ZB001, Campus2, UniWA",
+        "title": "IEEEXtreme 18.0",
+        "thumbnail": "/events/ieeextreme18.png",
+        "keywords": ["HACKATHON"],
+        "description": [
+            "👨‍💻IEEEXtreme, IEEE's global programming competition, is returning for another year at the University of West Attica!🎉🌐",
+            "",
+            "🚀IEEEXtreme is a 24-hour programming competition where IEEE student members worldwide compete against each other. It is the largest event organized by IEEE for Student Branches. The competition is held online, and UniWA teams will gather at the hub set up by the IEEE SB UniWA at the university.",
+            "",
+            "📅Date: October 26 (Saturday 03:00 - Sunday 03:00)",
+            "📍Location: Building Z, Ancient Olive Grove Campus, UniWA",
+            "",
+            "Useful Information:",
+            "1) Registration is open until October 14.",
+            "2) It lasts for 24 hours and takes place simultaneously worldwide.",
+            "3) Teams consist of 1 to 3 members. Teams looking for additional members can reach out to us on our Discord server.",
+            "4) The competition takes place on the CSacademy platform, where past competition problems are also available.",
+            "5) Any programming language supported by CSacademy is allowed.",
+            "6) The chapter will provide meals and energy drinks throughout the day for all participants. Competitors are free to bring or order anything else they may need during the event.",
+            "7) The Student Branches of Greece are organizing workshops where past competition problems are solved to help participants prepare. You can find relevant details in a previous post.",
+            "",
+            "❗Additionally, on Sunday, October 6, at 13:00, an informational call will be held on the chapter's Discord server to address any questions from interested participants.👥",
+            "",
+            "✨Don't miss the opportunity to participate in this unique event and challenge your programming skills alongside your fellow students!🎉"
+        ],
+        "registration_form": "https://forms.gle/LFt3Q9fLRXZhaJxc8",
+        "registration_deadline": "2024-10-11T00:00:00",
+        "images": ["/events/ieeextreme18.png"],
+        "links": [
+            {
+                "id": 0,
+                "title": "Participation Form",
+                "url": "https://forms.gle/LFt3Q9fLRXZhaJxc8"
+            },
+            {
+                "id": 1,
+                "title": "CS academy old tasks",
+                "url": "https://csacademy.com/ieeextreme-practice/tasks/"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "date": "2024-11-30T12:00:00",
+        "location": "Amph.Hatzinikolaou, Campus2, UniWA",
+        "title": "IEEE Open Day",
+        "thumbnail": "/events/ieee-open-day.png",
+        "keywords": ["SEMINAR"],
+        "description": [
+            "✨Join us for IEEE Open Day, an event where the IEEE Student Branch will introduce itself and its activities to the university community!🎯This open day aims to connect students and faculty with IEEE’s student branch of University of West Attica.🚀",
+            "",
+            "💪If you’re interested in becoming a part of IEEE SB UniWA, this is the perfect opportunity! ✅Get to know our branch, discover our teams and projects, and of course, meet us in person.👥",
+            "",
+            "🔷Event Highlights:",
+            "1) Introduction to IEEE and the Student Branch by Professor and Branch Counselor, Charalampos Patrikakis.",
+            "2) Detailed presentation of IEEE SB UniWA by Branch Chair, Stavros Alexiou.",
+            "3) Team and Scientific Group presentations by group leads.",
+            "4) Finally, you'll have the opportunity to network during the lunch prepared, where we will showcase live demos of branch projects!",
+            "",
+            "🚀Don’t miss this chance to discover how you can join one of the largest student organizations at the University of West Attica!"
+        ],
+        "registration_form": "https://forms.gle/jhdutWgsPr9rqXXq8",
+        "registration_deadline": "2024-11-30T00:00:00",
+        "images": ["/events/ieee-open-day.png"],
+        "links": [
+            {
+                "id": 0,
+                "title": "Attendance form",
+                "url": "https://forms.gle/jhdutWgsPr9rqXXq8"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "date": "2024-12-07T10:00:00",
+        "location": "Conference Centre, Campus2, UniWA",
+        "title": "Trust in Online Social Networks",
+        "thumbnail": "/events/trust-social.png",
+        "keywords": ["CONFERENCE"],
+        "description": [
+            "Who can you trust on social media?",
+            "How can you distinguish reliable information on social media?",
+            "When does social media usage become dangerous, and what is its impact on society?",
+            "",
+            "The CoNSeRT research laboratory of the Department of Electrical and Electronics Engineering at the University of West Attica is organizing the IEEE Communication Society-sponsored seminar on: “Trust in Online Social Networks.”",
+            "",
+            "The seminar will take place at the Conference Center of the Ancient Olive Grove Campus on Saturday, December 7, from 10:00 to 16:00, and is supported by the IEEE Student Branch UniWA.",
+            "",
+            "Academics, journalists, researchers, and representatives from authorities and social media platforms will analyze the topic of social media usage and the trust within these networks from different perspectives. The goal is to provide a comprehensive understanding of their proper use. The event is open to the public, but registration is required for attendees at the Conference Center via the link below.",
+            "",
+            "Attendees will receive a certificate of participation and will have the opportunity to learn from researchers about methodologies for combating misinformation, ask authorities about threats within social media, communicate with social media representatives about the challenges of accurate information dissemination, and express their ethical concerns regarding these issues."
+        ],
+        "registration_form": "https://www.tickettailor.com/events/universityofwestattica/1478668",
+        "registration_deadline": "2024-12-07T10:00:00",
+        "images": ["/events/trust-social.png"],
+        "links": [
+            {
+                "id": 0,
+                "title": "Participation Form",
+                "url": "https://www.tickettailor.com/events/universityofwestattica/1478668"
+            },
+            {
+                "id": 1,
+                "title": "Conference agenda",
+                "url": "/events/trust-social-agenda.pdf"
+            },
+            {
+                "id": 2,
+                "title": "Live Steaming on Youtube",
+                "url": "https://www.youtube.com/live/-2tCg-tYBCg"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "date": "2025-03-11T13:00:00",
+        "location": "ZA008-009, Campus2, UniWA",
+        "title": "ΙΕΕΕ Xplore Research & Publishing Event",
+        "thumbnail": "/events/ieeexplore.png",
+        "keywords": ["SEMINAR"],
+        "description": [
+            "On March 11, at 13:00 at the Ancient Olive Grove Campus, we are co-organizing the IEEE Xplore Research & Publishing Event with Eszter Lukacs (IEEE Client Services Manager).",
+            "",
+            "During the 90-minute event, you will learn about the IEEE Xplore Digital Library, how to increase the impact of your research findings, how to select the right IEEE conference or journal for publication, what reviewers look for in a submission (and why a paper might be rejected), available tools you can use, how the IEEE peer review process works, and finally, how to publish under the HEAL-Link agreement.",
+            "",
+            "Attendees will receive a certificate from IEEE. Participation is free, but seats are limited, and registration is required. You can register using the following link."
+        ],
+        "registration_form": "https://registerieeexplore.wufoo.com/forms/xkkwpox04pts03/",
+        "registration_deadline": "2025-03-11T13:00:00",
+        "images": ["/events/ieeexplore.png"],
+        "links": [
+            {
+                "id": 0,
+                "title": "Participation Form",
+                "url": "https://registerieeexplore.wufoo.com/forms/xkkwpox04pts03/"
+            },
+            {
+                "id": 1,
+                "title": "Seminar agenda",
+                "url": "/events/ieeexplore-agenda.pdf"
             }
         ]
     }

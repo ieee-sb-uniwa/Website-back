@@ -1,0 +1,47 @@
+# Basic scalar values
+title: "Sample API Configuration"
+version: 1.2
+enabled: true
+description: |
+  This configuration file is a comprehensive example
+  showcasing YAML's features for an API server setup.
+
+# Sequence of items
+allowed_origins:
+  - "https://example.com"
+  - "https://another.com"
+
+# Nested mappings with inline and multiline formats
+cors:
+  allowed_methods: ["GET", "POST", "DELETE"]
+  allowed_headers:
+    - "Content-Type"
+    - "Authorization"
+  max_age: 3600 # 1 hour
+
+# Using anchors (&) and aliases (*)
+databases:
+  main_db: &db_connection
+    type: postgres
+    host: "localhost"
+    port: 5432
+    username: "admin"
+    password: "password123"
+  logging_db:
+    <<: *db_connection # Merges the main_db configuration
+    host: "logging-db.example.com"
+
+# Mapping with a sequence of mappings
+routes:
+  - path: "/api/v1/users"
+    methods: ["GET", "POST"]
+    auth_required: true
+    rate_limit:
+      max_requests: 100
+      per_minutes: 15
+  - path: "/api/v1/products"
+    methods: ["GET"]
+    auth_required: false
+    rate_limit:
+      max_requests: 500
+      per_minutes: 60

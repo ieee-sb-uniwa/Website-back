@@ -1,10 +1,148 @@
-version: "3.8"
 services:
+  traefik:
+    image: traefik:v3.3
+    container_name: traefik
+    restart: always
+    command:
+      - '--api=true'
+      - '--log.level=DEBUG'
+      - '--api.dashboard=true'
+      - '--api.insecure=true'
+      - '--providers.docker=true'
+      - '--providers.docker.exposedByDefault=false'
+      - '--entrypoints.web.address=:80'
+    ports:
+      - '80:80'
+      - '8080:8080'
+    volumes:
+      - '/var/run/docker.sock:/var/run/docker.sock:ro'
+    healthcheck:
+      test: ['CMD', 'wget', '--spider', '-q', 'http://localhost:8080/api/rawdata']
+      interval: 5s
+      retries: 10
+      start_period: 5s
+
+  api:
+    build: ./api
+    restart: always
+    container_name: bun-elysia-app
+    env_file:
+      - ./.env
+    working_dir: /app
+    command: ['bun', 'run', 'start']
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.http.routers.api.rule=PathPrefix(`/api`)'
+      - 'traefik.http.routers.api.entrypoints=web'
+      - 'traefik.http.services.api.loadbalancer.server.port=${ELYSIA_API_PORT}'
+    develop:
+      watch:
+        - action: sync+restart
+          path: ./src
+          target: /app/src
+        - action: sync+restart
+          path: ./lib
+          target: /app/lib
+        - action: sync+restart
+          path: ./db/services
+          target: /app/db/services
+        - action: sync+restart
+          path: ./lib/elysia-endpoint-management
+          target: /app/lib/elysia-endpoint-management
+        - action: sync+restart
+          path: ./db/mongoose_schemas
+          target: /app/db/mongoose_schemas
+        - action: rebuild
+          path: package.json
+    depends_on:
+      mongo:
+        condition: service_started
+      traefik:
+        condition: service_healthy
+    healthcheck:
+      test: ['CMD', 'curl', '-fsSL', 'http://localhost:${ELYSIA_API_PORT}/ping']
+      interval: 5s
+      retries: 5
+      timeout: 3s
+      start_period: 10s
+
   mongo:
-    container_name: mongo-container
     build:
       context: ./db
-    environment:
-      MONGO_INITDB_DATABASE: SBdata
+    container_name: mongo-container
+    restart: always
     ports:
-      - "27017:27017"
+      - '27017:27017'
+
+  minio:
+    image: minio/minio:RELEASE.2025-03-12T18-04-18Z
+    container_name: minio
+    command: server /data --console-address ":9001"
+    env_file:
+      - ./.env
+    volumes:
+      - minio-data:/data
+    labels:
+      - 'traefik.enable=true'
+
+      ## ➤ MinIO Console at http://minio.localhost
+      - 'traefik.http.routers.minio-console.rule=Host(`minio.localhost`)'
+      - 'traefik.http.routers.minio-console.entrypoints=web'
+      - 'traefik.http.routers.minio-console.service=minio-console-svc'
+      - 'traefik.http.services.minio-console-svc.loadbalancer.server.port=9001'
+
+      ## ➤ MinIO S3 API at http://localhost/files
+      - 'traefik.http.routers.minio-api.rule=PathPrefix(`/files`)'
+      - 'traefik.http.routers.minio-api.entrypoints=web'
+      # - 'traefik.http.routers.minio-api.middlewares=strip-files-prefix'
+      # - 'traefik.http.middlewares.strip-files-prefix.stripPrefix.prefixes=/files'
+      - 'traefik.http.routers.minio-api.service=minio-api-svc'
+      - 'traefik.http.services.minio-api-svc.loadbalancer.server.port=9000'
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  minio-init:
+    image: minio/mc:RELEASE.2025-03-12T17-29-24Z
+    container_name: minio-init
+    depends_on:
+      minio:
+        condition: service_healthy
+    entrypoint: >
+      /bin/sh -c "
+        sleep 5;
+        mc alias set myminio http://minio:9000 $MINIO_ROOT_USER $MINIO_ROOT_PASSWORD &&
+        mc mb --ignore-existing myminio/files &&
+        mc cp --recursive /files/ myminio/files &&
+        mc anonymous set-json /readonly-policy.json myminio/files;
+        exit 0;
+      "
+    env_file:
+      - ./.env
+    volumes:
+      - ./min-io/readonly-policy.json:/readonly-policy.json
+      - ./min-io/files:/files
+      
+  web:
+    container_name: web
+    build:
+      context: ./web
+      args:
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL}
+        NEXT_PUBLIC_IMAGES_STORAGE_URL: ${NEXT_PUBLIC_IMAGES_STORAGE_URL}
+    env_file:
+      - .env
+    restart: always
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.http.routers.web.rule=PathPrefix(`/`)'
+      - 'traefik.http.routers.web.entrypoints=web'
+      - 'traefik.http.services.web.loadbalancer.server.port=3000'
+
+volumes:
+  minio-data:
+    external: true
+

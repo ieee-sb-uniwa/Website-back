@@ -1,0 +1,20 @@
+[
+    {
+        "id": 0,
+        "role": "Counselor",
+        "name": "Charalampos Patrikakis",
+        "photo": "/people/charalampos-patrikakis.jpg",
+        "socials": [
+            {
+                "id": 0,
+                "type": "email",
+                "url": "mailto:bpatr@uniwa.gr"
+            },
+            {
+                "id": 1,
+                "type": "linkedin",
+                "url": "https://www.linkedin.com/in/charalampos-patrikakis-9a52855/"
+            }
+        ]
+    }
+]

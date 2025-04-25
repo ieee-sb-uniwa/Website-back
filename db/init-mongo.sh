@@ -1,41 +1,48 @@
 #!/bin/bash
 
+# Variables
+MONGO_INITDB_DATABASE="test"
+
 echo "Waiting for MongoDB to be ready..."
-mongosh --eval "print('MongoDB is ready.')" --quiet
+until mongosh --eval "db.runCommand({ ping: 1 })" --quiet; do
+    echo "MongoDB is not ready yet. Retrying..."
+    sleep 2
+done
+echo "MongoDB is ready."
 
-# Council
-echo "Importing council data..."
-mongoimport --db "$MONGO_INITDB_DATABASE" --collection council_en --file /data/council_en.json --jsonArray
-mongoimport --db "$MONGO_INITDB_DATABASE" --collection council_gr --file /data/council_gr.json --jsonArray
+# Function to import a collection
+import_collection() {
+    local collection=$1
+    local file=$2
 
-# Counselor
-echo "Importing counselor data..."
-mongoimport --db "$MONGO_INITDB_DATABASE" --collection counselor_en --file /data/counselor_en.json --jsonArray
-mongoimport --db "$MONGO_INITDB_DATABASE" --collection counselor_gr --file /data/counselor_gr.json --jsonArray
+    if [ -f "$file" ]; then
+        echo "Importing $collection data..."
+        if ! mongoimport --db "$MONGO_INITDB_DATABASE" --collection "$collection" --file "$file" --jsonArray; then
+            echo "Failed to import $collection data. Exiting..."
+            exit 1
+        fi
+    else
+        echo "File $file not found. Skipping..."
+    fi
+}
 
-# Scientific Groups
-echo "Importing sg data..."
-mongoimport --db "$MONGO_INITDB_DATABASE" --collection sg_en --file /data/sg_en.json --jsonArray
-mongoimport --db "$MONGO_INITDB_DATABASE" --collection sg_gr --file /data/sg_gr.json --jsonArray
+# Import data
+import_collection "council_en" "/my-data/council_en.json"
+import_collection "council_gr" "/my-data/council_gr.json"
+import_collection "counselor_en" "/my-data/counselor_en.json"
+import_collection "counselor_gr" "/my-data/counselor_gr.json"
+import_collection "sg_en" "/my-data/sg_en.json"
+import_collection "sg_gr" "/my-data/sg_gr.json"
+import_collection "dep_en" "/my-data/dep_en.json"
+import_collection "dep_gr" "/my-data/dep_gr.json"
+import_collection "news_en" "/my-data/news_en.json"
+import_collection "news_gr" "/my-data/news_gr.json"
+import_collection "events_en" "/my-data/events_en.json"
+import_collection "events_gr" "/my-data/events_gr.json"
+import_collection "third_party_en" "/my-data/third_party_en.json"
+import_collection "third_party_gr" "/my-data/third_party_gr.json"
+import_collection "test_en" "/my-data/test_en.json"
+import_collection "test_2" "/my-data/test_2.json"
+# Add any new json files here
 
-# Departments
-echo "Importing dep data..."
-mongoimport --db "$MONGO_INITDB_DATABASE" --collection dep_en --file /data/dep_en.json --jsonArray
-mongoimport --db "$MONGO_INITDB_DATABASE" --collection dep_gr --file /data/dep_gr.json --jsonArray
-
-# News
-echo "Importing news data..."
-mongoimport --db "$MONGO_INITDB_DATABASE" --collection news_en --file /data/news_en.json --jsonArray
-mongoimport --db "$MONGO_INITDB_DATABASE" --collection news_gr --file /data/news_gr.json --jsonArray
-
-# Events
-echo "Importing events data..."
-mongoimport --db "$MONGO_INITDB_DATABASE" --collection events_en --file /data/events_en.json --jsonArray
-mongoimport --db "$MONGO_INITDB_DATABASE" --collection events_gr --file /data/events_gr.json --jsonArray
-
-# Third-party Events
-echo "Importing third_party data..."
-mongoimport --db "$MONGO_INITDB_DATABASE" --collection third_party_en --file /data/third_party_en.json --jsonArray
-mongoimport --db "$MONGO_INITDB_DATABASE" --collection third_part_gr --file /data/third_party_gr.json --jsonArray
-
-echo "Data import completed."
+echo "Data import completed successfully."
