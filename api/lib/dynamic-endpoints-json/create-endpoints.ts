@@ -19,12 +19,12 @@ export const setupDyanmicEndpoints = (
   console.log('Models: ', models);
   // Iterate over the models and create the endpoints
   Object.entries(models).forEach(([name, model]) => {
-    // app.group('/api', (app) => {
+    // app.group('', (app) => {
     // GET all records (documents)
     app.get(
-      `/api/${name}`,
+      `/${name}`,
       async ({ mongo_crud, query }: HandlerParams) => {
-        const { limitAmount, sortBy, keyword } = query || {};
+        const { lang, limitAmount, sortBy, keyword } = query || {};
 
         const mongoQuery = keyword ? { keywords: keyword } : {};
 
@@ -32,6 +32,7 @@ export const setupDyanmicEndpoints = (
           const result = await mongo_crud.findAll<any>(
             model,
             mongoQuery,
+            lang,
             sortBy,
             limitAmount ? Number(limitAmount) : undefined
           );
@@ -43,6 +44,7 @@ export const setupDyanmicEndpoints = (
       },
       {
         query: t.Object({
+          lang: t.Optional(t.String()),
           limitAmount: t.Optional(t.Number()),
           sortBy: t.Optional(t.String()),
           keyword: t.Optional(t.String()),
@@ -52,12 +54,12 @@ export const setupDyanmicEndpoints = (
 
     // GET one record (document)
     app.get(
-      `/api/${name}/:id`,
+      `/${name}/:id`,
       async ({ mongo_crud, params }: HandlerParams) => {
         if (!params?.id || !Types.ObjectId.isValid(params.id)) {
           return elysiaError(400, 'Bad Request: Invalid MongoDB ObjectId');
         }
-    
+            
         const { id } = params;
     
         try {
@@ -91,7 +93,7 @@ export const setupDyanmicEndpoints = (
     
     
     // // POST a new record (document)
-    // app.post(`/api/${name}`, async ({ mongo_crud, body }: HandlerParams) => {
+    // app.post(`/${name}`, async ({ mongo_crud, body }: HandlerParams) => {
     //   if (!body) {
     //     return elysiaError(400, `POST (/${name}) | Bad Request: Missing body`);
     //   }
@@ -107,7 +109,7 @@ export const setupDyanmicEndpoints = (
 
     // // PUT (update) a record (document)
     // app.put(
-    //   `/api/${name}/:id`,
+    //   `/${name}/:id`,
     //   async ({ mongo_crud, params, body }: HandlerParams) => {
     //     if (!params || isNaN(Number(params.id))) {
     //       return elysiaError(
@@ -134,7 +136,7 @@ export const setupDyanmicEndpoints = (
 
     // // DELETE a record (document)
     // app.delete(
-    //   `/api/${name}/:id`,
+    //   `/${name}/:id`,
     //   async ({ mongo_crud, params }: HandlerParams) => {
     //     if (!params || isNaN(Number(params.id))) {
     //       return elysiaError(

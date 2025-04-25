@@ -3,7 +3,7 @@ import { join, resolve } from "path";
 
 // Load JSON files and generate TypeScript types
 export const processJsonFiles = async (
-  dataDir = resolve(__dirname, "../../db/data")
+  dataDir = resolve(__dirname, "../../db/container/data")
   // typesDir = resolve(__dirname, "../../types/dynamic-endpoints")
 ) => {
   // Read all JSON files in the data directory

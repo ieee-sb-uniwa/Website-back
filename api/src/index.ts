@@ -8,7 +8,7 @@ import { readConfig } from '../utils/config_utils';
 // } from "../lib/elysia-endpoint-management/adding_endpoints";
 import { connectWithMongoDB } from '../db/connection';
 import MongoCrudService from '../db/services/CRUD_Service_class';
-import { CouncilGr } from '../db/mongoose_schemas/models_and_schemas';
+// import { CouncilGr } from '../db/mongoose_schemas/models_and_schemas';
 import { processJsonFiles } from '../lib/dynamic-endpoints-json/process-json-files';
 import { createMongooseModels } from '../db/models/createModels';
 import { setupDyanmicEndpoints } from '../lib/dynamic-endpoints-json/create-endpoints';

@@ -54,17 +54,33 @@ class MongoCrudService {
   async findAll<T extends Document>(
     model: Model<T>,
     query: FilterQuery<T> = {},
+    lang: string = "gr",
     sortBy: string = "id",
     limitAmount?: number
     // query: FilterQuery<T> = {}
   ): Promise<T[]> {
-    let queryBuilder = model.find(query).sort({ [sortBy]: -1 });
 
+    let pipeline = [
+      { $match: query },
+      { $sort: { [sortBy]: -1 } },
+      {
+        $replaceRoot: {
+          newRoot: {
+            $mergeObjects: [
+              "$$ROOT",
+              { $getField: { field: lang, input: "$info" } }
+            ]
+          }
+        }
+      },
+      { $unset: "info" }
+    ];
+    
     if (limitAmount !== undefined) {
-      queryBuilder = queryBuilder.limit(limitAmount);
+      pipeline.push({ $limit: limitAmount });
     }
-  
-    return queryBuilder;
+    
+    return model.aggregate(pipeline);
   }
 
   // async findHead<T extends Document>(
