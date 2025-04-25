@@ -145,3 +145,4 @@ services:
 volumes:
   minio-data:
     external: true
+
