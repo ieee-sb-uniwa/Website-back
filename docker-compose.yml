@@ -11,9 +11,9 @@ services:
       - '--api.insecure=true'
       - '--providers.docker=true'
       - '--providers.docker.exposedByDefault=false'
-      - '--entrypoints.web.address=:8081'
+      - '--entrypoints.web.address=:80'
     ports:
-      - "8081:8081"
+      - "80:80"
     volumes:
       - '/var/run/docker.sock:/var/run/docker.sock:ro'
     healthcheck:
@@ -28,12 +28,13 @@ services:
     container_name: bun-elysia-app
     env_file:
       - ./.env
-    # volumes:
-    #   - ./db/data:/app/db/data
-    working_dir: /app
+    environment:
+      - MONGODB_URL=mongodb://mongo:27017/${MONGO_DB_NAME}
     command: ['bun', 'run', 'start']
-    ports:
-      - 8000:5000
+    # ports:
+    #   - 8000:5000
+    volumes:
+      - ./db-container/data:/app/db/data
     labels:
       - 'traefik.enable=true'
       - 'traefik.http.routers.api.rule=PathPrefix(`/api`)'
@@ -44,22 +45,12 @@ services:
     develop:
       watch:
         - action: sync+restart
-          path: ./src
-          target: /app/src
-        - action: sync+restart
-          path: ./lib
-          target: /app/lib
-        - action: sync+restart
-          path: ./db/services
-          target: /app/db/services
-        - action: sync+restart
-          path: ./lib/elysia-endpoint-management
-          target: /app/lib/elysia-endpoint-management
-        - action: sync+restart
-          path: ./db/mongoose_schemas
-          target: /app/db/mongoose_schemas
+          path: ./api
+          target: /app
         - action: rebuild
-          path: package.json
+          path: ./api/package.json
+        - action: rebuild
+          path: ./api/bun.lockb
     depends_on:
       mongo:
         condition: service_started
@@ -74,13 +65,15 @@ services:
 
   mongo:
     build:
-      context: ./api/db/container
+      context: ./db-container
     container_name: mongo
     restart: always
     env_file:
       - ./.env
-    ports:
-      - '27017:27017'
+    volumes:
+      - web-mongo-data:/data/db
+    # ports:
+    #   - '27017:27017'
 
   minio:
     image: minio/minio:RELEASE.2025-03-12T18-04-18Z
@@ -89,19 +82,19 @@ services:
     env_file:
       - ./.env
     environment:
-      - MINIO_BROWSER_REDIRECT_URL=http://$SERVER_URL/minio-console
+      - MINIO_BROWSER_REDIRECT_URL=http://${SERVER_NAME}/minio-console
     labels:
       - 'traefik.enable=true'
 
-      ## ➤ MinIO Console at http://localhost:8081/minio-console
+      ## ➤ MinIO Console
       - 'traefik.http.routers.minio-console.rule=PathPrefix(`/minio-console`)'
       - 'traefik.http.routers.minio-console.entrypoints=web'
-      - 'traefik.http.routers.minio-console.middlewares=strip-minio-console-prefix'
       - 'traefik.http.routers.minio-console.service=minio-console-svc'
       - 'traefik.http.services.minio-console-svc.loadbalancer.server.port=9001'
+      - 'traefik.http.routers.minio-console.middlewares=strip-minio-console-prefix'
       - 'traefik.http.middlewares.strip-minio-console-prefix.stripPrefix.prefixes=/minio-console'
 
-      ## ➤ MinIO S3 API at http://localhost/files
+      ## ➤ MinIO S3 API
       - 'traefik.http.routers.minio-api.rule=PathPrefix(`/files`)'
       - 'traefik.http.routers.minio-api.entrypoints=web'
       - 'traefik.http.routers.minio-api.service=minio-api-svc'
@@ -116,33 +109,26 @@ services:
       start_period: 10s
 
   minio-init:
-    image: minio/mc:RELEASE.2025-03-12T17-29-24Z
     container_name: minio-init
+    build:
+      context: ./minio
     depends_on:
       minio:
         condition: service_healthy
-    entrypoint: >
-      /bin/sh -c "
-        sleep 5;
-        mc alias set myminio http://minio:9000 $MINIO_ROOT_USER $MINIO_ROOT_PASSWORD &&
-        mc mb --ignore-existing myminio/files &&
-        mc cp --recursive /files/ myminio/files &&
-        mc anonymous set-json /readonly-policy.json myminio/files;
-        exit 0;
-      "
     env_file:
       - ./.env
-    volumes:
-      - ./min-io/readonly-policy.json:/readonly-policy.json
-      - ./min-io/files:/files
+    develop:
+      watch:
+        - action: rebuild
+          path: ./minio
       
   web:
     container_name: web
     build:
       context: ./web
       args:
-        NEXT_PUBLIC_API_URL: "http://${SERVER_URL}/api"
-        NEXT_PUBLIC_IMAGES_STORAGE_URL: "http://${SERVER_URL}/files"
+        NEXT_PUBLIC_API_URL: "http://${SERVER_NAME}/api"
+        NEXT_PUBLIC_IMAGES_STORAGE_URL: "http://${SERVER_NAME}/files"
     env_file:
       - .env
     restart: always

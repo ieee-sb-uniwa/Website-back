@@ -19,24 +19,6 @@ export type MongoDocumentsTypesMap = {
 export type MongoModelsMap = {
   [K in keyof MongoDocumentsTypesMap]: Model<MongoDocumentsTypesMap[K]>;
 };
-// - The above type is the same as the type below type
-//
-// export type MongoModelsMap2 = {
-//   council_en: typeof CouncilEn;
-//   council_gr: typeof CouncilGr;
-//   counselor_en: typeof CounselorEn;
-//   counselor_gr: typeof CounselorGr;
-//   sg_en: typeof SG_En;
-//   sg_gr: typeof SG_Gr;
-//   dep_en: typeof DepartmentEn;
-//   dep_gr: typeof DepartmentGr;
-//   news_en: typeof NewsEn;
-//   news_gr: typeof NewsGr;
-//   events_en: typeof EventEn;
-//   events_gr: typeof EventGr;
-//   third_party_en: typeof ThirdPartyEn;
-//   third_part_gr: typeof ThirdPartyGr;
-// };
 
 export const modelsMap: MongoModelsMap = {
   council: Council,

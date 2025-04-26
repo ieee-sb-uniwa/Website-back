@@ -96,7 +96,7 @@ app.decorate('mongo_crud', new MongoCrudService());
 // Programmatically registring the endpoints based on YAML config
 setupDyanmicEndpoints(app, models);
 
-app.listen(process.env.ELYSIA_API_PORT || 3000);
+app.listen(5000);
 
 console.log(
   `🦊 Elysia is listening at PORT: ${app.server?.hostname}:${app.server?.port}`
