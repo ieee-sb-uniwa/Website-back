@@ -55,17 +55,20 @@ export const setupDyanmicEndpoints = (
     // GET one record (document)
     app.get(
       `/${name}/:id`,
-      async ({ mongo_crud, params }: HandlerParams) => {
+      async ({ mongo_crud, params, query }: HandlerParams) => {
         if (!params?.id || !Types.ObjectId.isValid(params.id)) {
           return elysiaError(400, 'Bad Request: Invalid MongoDB ObjectId');
         }
             
         const { id } = params;
+        const { lang } = query || {};
+
     
         try {
           const result = await mongo_crud.findOne<any>(
             model,
-            { _id: new Types.ObjectId(id) }
+            { _id: new Types.ObjectId(id) },
+            lang
           );
     
           if (!result) {
@@ -85,6 +88,10 @@ export const setupDyanmicEndpoints = (
       {
         params: t.Object({
           id: t.String(),
+
+        }),
+        query: t.Object({
+          lang: t.Optional(t.String())
         }),
         response: t.Object({}, { additionalProperties: true })
       }

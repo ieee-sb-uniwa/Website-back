@@ -66,6 +66,8 @@ services:
   mongo:
     build:
       context: ./db-container
+      args:
+        - MONGO_DB_NAME=${MONGO_DB_NAME}
     container_name: mongo
     restart: always
     env_file:

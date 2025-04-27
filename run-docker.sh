@@ -8,6 +8,10 @@ else
     exit 1
 fi
 
+docker volume create minio-data
+docker volume create web-mongo-data
+echo "Created external volumes"
+
 # Check the value of NODE_ENV
 if [ "$NODE_ENV" == "development" ]; then
     echo "Running in development mode..."

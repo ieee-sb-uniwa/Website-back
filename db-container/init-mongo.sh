@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Variables
-MONGO_INITDB_DATABASE="sb-data"
+# MONGO_INITDB_DATABASE="sb-data"
 
 echo "Waiting for MongoDB to be ready..."
 until mongosh --eval "db.runCommand({ ping: 1 })" --quiet; do
@@ -17,7 +17,7 @@ import_collection() {
 
     if [ -f "$file" ]; then
         echo "Importing $collection data..."
-        if ! mongoimport --db "$MONGO_INITDB_DATABASE" --collection "$collection" --file "$file" --jsonArray; then
+        if ! mongoimport --db "$MONGO_DB_NAME" --collection "$collection" --file "$file" --jsonArray; then
             echo "Failed to import $collection data. Exiting..."
             exit 1
         fi

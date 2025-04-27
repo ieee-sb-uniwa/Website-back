@@ -12,9 +12,15 @@ fi
 if [ "$NODE_ENV" == "development" ]; then
     echo "Stopping and removing development containers..."
     docker compose -f docker-compose.yml down
+    docker volume rm minio-data
+    docker volume rm web-mongo-data
+    echo "Removed external volumes"
 elif [ "$NODE_ENV" == "production" ]; then
     echo "Stopping and removing production containers..."
     docker compose -f docker-compose.yml down
+    docker volume rm minio-data
+    docker volume rm web-mongo-data
+    echo "Removed external volumes"
 else
     echo "NODE_ENV is not set or has an invalid value. Use 'development' or 'production'."
     exit 1

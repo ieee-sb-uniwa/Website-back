@@ -39,9 +39,30 @@ class MongoCrudService {
    */
   async findOne<T extends Document>(
     model: Model<T>,
-    query: FilterQuery<T>
+    query: FilterQuery<T>,
+    lang: string = "gr"
   ): Promise<T | null> {
-    return model.findOne(query);
+
+    if (lang != "gr" && lang != "en") {
+      lang="gr";
+    }
+    
+    let pipeline = [
+      { $match: query },
+      {
+        $replaceRoot: {
+          newRoot: {
+            $mergeObjects: [
+              "$$ROOT",
+              { $getField: { field: lang, input: "$info" } }
+            ]
+          }
+        }
+      },
+      { $unset: "info" }
+    ];
+    
+    return model.aggregate(pipeline);
   }
 
   /**
@@ -59,7 +80,10 @@ class MongoCrudService {
     limitAmount?: number
     // query: FilterQuery<T> = {}
   ): Promise<T[]> {
-
+    if (lang != "gr" && lang != "en") {
+      lang="gr";
+    }
+    
     let pipeline = [
       { $match: query },
       { $sort: { [sortBy]: -1 } },
