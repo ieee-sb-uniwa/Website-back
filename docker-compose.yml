@@ -74,8 +74,8 @@ services:
       - ./.env
     volumes:
       - web-mongo-data:/data/db
-    # ports:
-    #   - '27017:27017'
+    ports:
+      - '27017:27017'
 
   minio:
     image: minio/minio:RELEASE.2025-03-12T18-04-18Z
