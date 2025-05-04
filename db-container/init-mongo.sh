@@ -27,10 +27,10 @@ import_collection() {
 }
 
 # Import data
-import_collection "council" "/data/council.json"
-import_collection "counselor" "/data/counselor.json"
-import_collection "events" "/data/events.json"
-import_collection "third_party" "/data/thirdparty.json"
+import_collection "council" "./data/council.json"
+import_collection "counselor" "./data/counselor.json"
+import_collection "events" "./data/events.json"
+import_collection "thirdparty" "./data/thirdparty.json"
 # Add any new json files here
 
 echo "Data import completed successfully."

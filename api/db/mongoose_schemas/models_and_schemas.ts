@@ -167,7 +167,7 @@ export type ThirdPartyDocument = InferRawDocType<typeof thirdPartySchema>;
 export const ThirdParty = model<ThirdPartyDocument>(
   "ThirdParty",
   thirdPartySchema,
-  "third_party"
+  "thirdparty"
 );
 
 // News schema
