@@ -75,7 +75,7 @@ export const setupDyanmicEndpoints = (
             return elysiaError(404, 'Not found');
           }
     
-          return new Response(JSON.stringify(result), {
+          return new Response(JSON.stringify(result[0]), {
             headers: {
               'Content-Type': 'application/json'
             }
