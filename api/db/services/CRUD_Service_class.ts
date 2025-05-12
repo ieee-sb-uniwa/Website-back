@@ -62,7 +62,18 @@ class MongoCrudService {
       { $unset: "info" }
     ];
     
-    return model.aggregate(pipeline);;
+    const aggregatedData = await model.aggregate(pipeline);
+
+    const baseUrl = process.env.MINIO_URL;
+
+    return aggregatedData.map((datum: Model<T>) => {
+
+      let jsonString = JSON.stringify(datum)
+
+      jsonString = jsonString.replace(/"\//g, `"${baseUrl}\/`);
+
+      return JSON.parse(jsonString);
+    });
   }
 
   /**
@@ -100,28 +111,6 @@ class MongoCrudService {
       { $unset: "info" },
       
     ];
-
-    const minioPaths = [
-      "thumbnail"
-    ]
-
-    // minioPaths.forEach((mpath) => {
-    //   pipeline.push(
-    //     {
-    //       $addFields: {
-    //         mpath: {
-    //           $cond: {
-    //             if: { $regexMatch: { input: mpath, regex: "^/" } },
-    //             then: { $concat: ["https://mywebsite.com", mpath] },
-    //             else: mpath
-    //           }
-    //         }
-    //       }
-    //     }
-    //   )
-    // })
-
-
     
     if (limitAmount !== undefined) {
       pipeline.push({ $limit: limitAmount });
