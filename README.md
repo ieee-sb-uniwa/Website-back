@@ -77,7 +77,7 @@ All API routes are accessible via Traefik following the pattern `/api/{API Route
 | URL Parameter | Available Values | Description |
 | --- | --- | --- |
 | `lang` | `gr` or `en` | Specifies the language. Defaults to `gr` if unset or invalid. |
-| `keyword` | Any string | Filters entries containing the specified keyword in their `keywords` field. |
+| `keywords` | Any string | Filters entries containing the specified keyword in their `keywords` field. Multiple keywords can be used, separated by comma. |
 | `limitAmount` | Any number | Limits the number of entries returned. |
 | `sortBy` | Any valid object key | Sorts entries in descending order based on the specified field. Defaults to `id`. |
 
