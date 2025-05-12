@@ -28,8 +28,6 @@ export const setupDyanmicEndpoints = (
 
         const mongoQuery = keywords ? { [`info.${lang}.keywords`]: {$in: keywords.toUpperCase().split(',')} } : {};
 
-        console.log(mongoQuery)
-
         try {
           const result = await mongo_crud.findAll<any>(
             model,
