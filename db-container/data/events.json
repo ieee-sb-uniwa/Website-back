@@ -242,7 +242,7 @@
                 "location": "Αμφ.Χατζηνικολάου, Π2, ΠΑΔΑ",
                 "title": "IEEE Open Day",
                 "keywords": ["ΣΕΜΙΝΑΡΙΟ"],
-                "description": "✨Σας προσκαλούμε στο ΙΕΕΕ Open Day, μία εκδήλωση στην οποία το φοιτητικό παράρτημα του IEEE παρουσιάζει τον εαυτό του και τις δράσεις του στην ακαδημαϊκή κοινότητα του πανεπιστημίου! 🎯 Στόχος της συγκεκριμένης ημερίδας είναι η γνωριμία των φοιτητών και των καθηγητών με το φοιτητικό παράρτημα του IEEE.🚀\n\n💪Αν ενδιαφέρεστε να γίνετε μέλη του IEEE SB UniWA τότε αυτή είναι η καλύτερη ευκαιρία!  ✅  Πρόκειται για μία εκδήλωση στην οποία θα έρθετε σε επαφή με το branch, θα μάθετε για τις ομάδες και τα projects μας και θα μπορέσετε να μας γνωρίσετε από κοντά!👥\n\n📅Ημερομηνία: Σάββατο 30 Νοεμβρίου - 12:00 μ.μ.\n📍Τοποθεσία: Αμφιθέατρο Χατζηνικολάου, Πανεπιστημιούπολη Αρχαίου Ελαιώνα\n\n🔷 Η εκδήλωση περιλαμβάνει:\n1) Εισαγωγή στο τι είναι το ΙΕΕΕ και το Student Branch από τον υπεύθυνο καθηγητή και Counselor του παραρτήματος, Πατρικάκη Χαράλαμπο.\n2) Αναλυτική παρουσίαση του IEEE SB UniWA από τον Πρόεδρο του παραρτήματος, Αλεξίου Σταύρο.\n3) Παρουσίαση των Department και των Scientific Group από τους υπεύθυνους ομάδων.\n4) Τέλος θα έχετε την ευκαιρία να συζητήσετε μαζί μας στο lunch που θα έχουμε ετοιμάσει, στο οποίο θα έχουμε στήσει live demos από τα project του παραρτήματος!\n\n🚀Μην χάσετε την ευκαιρία να γνωρίσετε και να μάθετε πως μπορείτε να γίνεται μέλη σε μία από τις μεγαλύτερες ομάδες του Πανεπιστημίου Δυτικής Αττικής!",
+                "description": "✨Σας προσκαλούμε στο ΙΕΕΕ Open Day, μία εκδήλωση στην οποία το φοιτητικό παράρτημα του IEEE παρουσιάζει τον εαυτό του και τις δράσεις του στην ακαδημαϊκή κοινότητα του πανεπιστημίου! 🎯 Στόχος της συγκεκριμένης ημερίδας είναι η γνωριμία των φοιτητών και των καθηγητών με το φοιτητικό παράρτημα του IEEE.🚀\n\n💪Αν ενδιαφέρεστε να γίνετε μέλη του IEEE SB UniWA τότε αυτή είναι η καλύτερη ευκαιρία!  ✅  Πρόκειται για μία εκδήλωση στην οποία θα έρθετε σε επαφή με το branch, θα μάθετε για τις ομάδες και τα projects μας και θα μπορέσετε να μας γνωρίσετε από κοντά!👥\n\n📅Ημερομηνία: Σάββατο 30 Νοεμβρίου - 12:00 μ.μ.\n\n📍Τοποθεσία: Αμφιθέατρο Χατζηνικολάου, Πανεπιστημιούπολη Αρχαίου Ελαιώνα\n\n🔷 Η εκδήλωση περιλαμβάνει:\n1) Εισαγωγή στο τι είναι το ΙΕΕΕ και το Student Branch από τον υπεύθυνο καθηγητή και Counselor του παραρτήματος, Πατρικάκη Χαράλαμπο.\n2) Αναλυτική παρουσίαση του IEEE SB UniWA από τον Πρόεδρο του παραρτήματος, Αλεξίου Σταύρο.\n3) Παρουσίαση των Department και των Scientific Group από τους υπεύθυνους ομάδων.\n4) Τέλος θα έχετε την ευκαιρία να συζητήσετε μαζί μας στο lunch που θα έχουμε ετοιμάσει, στο οποίο θα έχουμε στήσει live demos από τα project του παραρτήματος!\n\n🚀Μην χάσετε την ευκαιρία να γνωρίσετε και να μάθετε πως μπορείτε να γίνεται μέλη σε μία από τις μεγαλύτερες ομάδες του Πανεπιστημίου Δυτικής Αττικής!",
                 "links": [
                     {
                         "id": 0,
@@ -369,5 +369,63 @@
                 ]
             }
         }
-    }    
+    },
+    {
+        "id": 9,
+        "date": "2025-03-28T17:30:00",
+        "end_date": "2025-03-29T14:30:00",
+        "registration_deadline": "2025-03-28T17:30:00",
+        "registration_form": "https://docs.google.com/forms/d/1R34Jctk42vr1qmRWPi8FjxbD9d4Gy-wBupLlI3z1TVI/edit",
+        "thumbnail": "/events/biomedical-workshop.jpg",
+        "images": ["/events/biomedical-workshop.jpg"],
+        "info": {
+            "gr": {
+                "location": "Κ10.120 (ΕΙΣΕ), Π1, ΠΑΔΑ",
+                "title": "Biomedical Workshop",
+                "keywords": ["Workshop"],
+                "description": "Με μεγάλη χαρά σας προσκαλούμε στο Workshop που διοργανώνεται από το Biomed SG του IEEE Student Branch του ΠΑΔΑ, σε συνεργασία με το Τμήμα Μηχανικών Βιοϊατρικής του Πανεπιστημίου Δυτικής Αττικής· περιλαμβάνει: 📌 MATLAB (Παρασκευή 28 Μαρτίου, 17:30–19:30): βασικές λειτουργίες του Simulink, Συστήματα Αυτομάτου Ελέγχου, εισαγωγή στην Ασαφή Λογική & το Fuzzy Toolbox· 📌 Python (Σάββατο 29 Μαρτίου, 12:00–14:30): Web Scraping, Μηχανική Μάθηση, εισαγωγή στα Large Language Models (LLMs)· 📌 Επιπλέον: παρουσίαση του IEEE SB, των πρότζεκτ της ομάδας BIOMED και ευκαιρίες συμμετοχής· το workshop είναι δωρεάν, διοργανώνεται από φοιτητές και απευθύνεται σε φοιτητές του Τμήματος και μέλη του παραρτήματος· ✅ Απαιτείται εξοικείωση με προγραμματιστικά περιβάλλοντα λόγω διαδραστικού χαρακτήρα· 📢 Περιορισμένες θέσεις για φυσική παρουσία – κάποιοι συμμετέχοντες ενδέχεται να παρακολουθήσουν εξ αποστάσεως· όσοι συμμετέχουν με laptop θα πρέπει να έχουν εγκατεστημένα το Simulink στο MATLAB και το Anaconda για Python· σύνδεσμος εγγραφής στο τέλος του μηνύματος.",
+                "links": []
+            },
+            "en": {
+                "location": "Κ10.120, Campus1, UniWa",
+                "title": "Biomedical Workshop",
+                "keywords": ["Workshop"],
+                "description": "We are excited to invite you to the Workshop organized by the Biomed SG of the IEEE Student Branch of UniWA, in collaboration with the Department of Biomedical Engineering of the University of West Attica; it includes: 📌 MATLAB (Fri, Mar 28, 17:30–19:30): Simulink basics, Control Systems, Intro to Fuzzy Logic & Toolbox; 📌 Python (Sat, Mar 29, 12:00–14:30): Web Scraping, Machine Learning, Intro to LLMs; 📌 Plus: Overview of IEEE SB, BIOMED projects & participation opportunities; the workshop is free, student-led, and aimed at Biomedical Engineering students & IEEE members; ✅ Familiarity with programming is REQUIRED as the workshop is interactive; 📢 Limited in-person seats – some may attend remotely; participants with laptops must have Simulink (MATLAB) and Anaconda (Python) installed; registration form link at the end of the message.",
+                "links": []
+            }
+        }
+    },
+       {
+        "id": 10,
+        "date": "2025-05-31T12:00:00",
+        "end_date": "2025-05-31T14:30:00",
+        "registration_deadline": "2025-05-30T12:00:00",
+        "registration_form": "https://docs.google.com/forms/d/1Gyvcye9u7SQsnPRuXOfxCHUTgVmIxQxm6LGAPnPwgEg/",
+        "thumbnail": "/events/GameDev-Workshop.png",
+        "images": ["/events/GameDev-Workshop.png"],
+        "info": {
+            "gr": {
+                "location": "ΚΖΒ.109, Π2, ΠΑΔΑ",
+                "title": "GameDev Workshop",
+                "keywords": ["Workshop"],
+                "description": "Η ομάδα **GameDev** του παραρτήματος **IEEE** σας προσκαλεί στο εισαγωγικό workshop **\"Εισαγωγή στο Godot και τη GDScript\"** την **Παρασκευή 31 Μαΐου, 12:00 μ.μ.**, με εξοικείωση στο Godot, GDScript και κατασκευή platformer· στο τέλος θα δοθεί **πιστοποίηση συμμετοχής**.",
+                "links":  [{
+                        "id": 0,
+                        "title": "Φόρμα συμμετοχής",
+                        "url": "https://docs.google.com/forms/d/1Gyvcye9u7SQsnPRuXOfxCHUTgVmIxQxm6LGAPnPwgEg/"
+                }]
+            },
+            "en": {
+                "location": "ΚΖΒ.109, Campus2, UniWa",
+                "title": "GameDev Workshop",
+                "keywords": ["Workshop"],
+                "description": "The **IEEE** branch's **GameDev** team invites you to the introductory workshop **\"Introduction to Godot and GDScript\"** on **Friday, May 31st at 12:00 PM**, featuring familiarization with the Godot environment, first steps in GDScript, and building a simple platformer game; a certificate of participation will be provided at the end.",
+                "links":  [{
+                        "id": 0,
+                        "title": "Participation Form",
+                        "url": "https://docs.google.com/forms/d/1Gyvcye9u7SQsnPRuXOfxCHUTgVmIxQxm6LGAPnPwgEg/"
+                }]
+            }
+        }
+    }
 ]
