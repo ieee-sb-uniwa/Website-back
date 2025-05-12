@@ -81,8 +81,6 @@ All API routes are accessible via Traefik following the pattern `/api/{API Route
 | `limitAmount` | Any number | Limits the number of entries returned. |
 | `sortBy` | Any valid object key | Sorts entries in descending order based on the specified field. Defaults to `id`. |
 
-**Note:** Corrected "limitAmount" duplication; the second was meant to be "sortBy".
-
 ### MONGO
 MongoDB service stores all website data and is **not accessible externally**.  
 Sample data structures can be found [here](./db-container/data/).
