@@ -125,21 +125,21 @@ services:
         - action: rebuild
           path: ./minio
       
-  web:
-    container_name: web
-    build:
-      context: ./web
-      args:
-        NEXT_PUBLIC_API_URL: "http://${SERVER_NAME}/api"
-        NEXT_PUBLIC_IMAGES_STORAGE_URL: "http://${SERVER_NAME}/files"
-    env_file:
-      - .env
-    restart: always
-    labels:
-      - 'traefik.enable=true'
-      - 'traefik.http.routers.web.rule=PathPrefix(`/`)'
-      - 'traefik.http.routers.web.entrypoints=web'
-      - 'traefik.http.services.web.loadbalancer.server.port=3000'
+  # web:
+  #   container_name: web
+  #   build:
+  #     context: ./web
+  #     args:
+  #       NEXT_PUBLIC_API_URL: "http://${SERVER_NAME}/api"
+  #       NEXT_PUBLIC_IMAGES_STORAGE_URL: "http://${SERVER_NAME}/files"
+  #   env_file:
+  #     - .env
+  #   restart: always
+  #   labels:
+  #     - 'traefik.enable=true'
+  #     - 'traefik.http.routers.web.rule=PathPrefix(`/`)'
+  #     - 'traefik.http.routers.web.entrypoints=web'
+  #     - 'traefik.http.services.web.loadbalancer.server.port=3000'
 
 volumes:
   minio-data:
