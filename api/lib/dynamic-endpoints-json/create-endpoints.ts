@@ -26,8 +26,8 @@ export const setupDyanmicEndpoints = (
       async ({ mongo_crud, query }: HandlerParams) => {
         const { lang="gr", limitAmount, sortBy, keywords } = query || {};
 
-        const mongoQuery = keywords ? { [`info.${lang}.keywords`]: {$in: keywords.toUpperCase().split(',')} } : {};
-        console.log(mongoQuery. lang)
+        const mongoQuery = keywords ? { [`info.${lang}.keywords`]: {$in: keywords.toUpperCase().split(',').map((keyword)=>new RegExp(keyword.trim(), 'i'))} } : {};
+        console.log(mongoQuery);
 
         try {
           const result = await mongo_crud.findAll<any>(
