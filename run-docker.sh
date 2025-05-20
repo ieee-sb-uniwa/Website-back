@@ -8,6 +8,8 @@ else
     exit 1
 fi
 
+git submodule update --remote --merge
+
 docker volume create minio-data
 docker volume create web-mongo-data
 echo "Created external volumes"
