@@ -1,0 +1,63 @@
+[
+    {
+        "id": 0,
+        "sg": "Web",
+        "name": "UniWA Notifier",
+        "status": "Active",
+        "thumbnail": "/projects/notifier.jpg",
+        "images": ["/projects/notifier.jpg"],
+            "technologies": ["python"],
+        "info": {
+            "gr": {
+                "leader": {
+                    "name": "Evangelos Mitikas",
+                    "photo": "/photos/EvangelosMitikas.jpg",
+                    "socials": [
+                        {
+                            "id": 0,
+                            "type": "email",
+                            "url": "mailto:emitikas@uniwa.gr"
+                        },
+                        {
+                            "id": 1,
+                            "type": "linkedin",
+                            "url": "https://www.linkedin.com/in/evangelos-mitikas/"
+                        }
+                    ]
+                },
+                "description": "Ομάδα υλοποίησης διαδικτυακών εφαρμογών. Ελάτε στην ομάδα για να δημιουργήσουμε δυναμικές ιστοσελίδες που αλληλεπιδρούν με τον έξω κόσμο και εξυπηρετούν μια πραγματική εφαρμογή με χρήση σύγχρονων τεχνολογιών.",
+                "links": [
+                    {
+                        "id": 0,
+                        "title": "Παλιά προβλήματα στο CS academy",
+                        "url": "https://csacademy.com/ieeextreme-practice/tasks/"
+                    },
+                    {
+                        "id": 1,
+                        "title": "Δήλωση ομάδας",
+                        "url": "https://xtreme.vtools.ieee.org/"
+                    }
+                ]
+            },
+            "en": {
+                "leader": {
+                    "name": "Evangelos Mitikas",
+                    "photo": "/path",
+                    "socials": [
+                        {
+                            "id": 0,
+                            "type": "email",
+                            "url": "mailto:eee20387006@uniwa.gr"
+                        },
+                        {
+                            "id": 1,
+                            "type": "linkedin",
+                            "url": "https://www.linkedin.com/in/stavros-alexiou-468767252/"
+                        }
+                    ]
+                },
+                "description": "Hello world"
+            }
+        }
+    }
+]

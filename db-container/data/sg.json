@@ -1,0 +1,49 @@
+[
+    {
+        "id": 0,
+        "name": "Web",
+        "name_short": "Web",
+        "thumbnail": "/projects/notifier.jpg",
+        "images": ["/projects/notifier.jpg"],
+        "info": {
+            "gr": {
+                "leader": {
+                    "name": "Evangelos Mitikas",
+                    "photo": "/path",
+                    "socials": [
+                        {
+                            "id": 0,
+                            "type": "email",
+                            "url": "mailto:eee20387006@uniwa.gr"
+                        },
+                        {
+                            "id": 1,
+                            "type": "linkedin",
+                            "url": "https://www.linkedin.com/in/stavros-alexiou-468767252/"
+                        }
+                    ]
+                },
+                "description": "Hello world"
+            },
+            "en": {
+                "leader": {
+                    "name": "Evangelos Mitikas",
+                    "photo": "/path",
+                    "socials": [
+                        {
+                            "id": 0,
+                            "type": "email",
+                            "url": "mailto:eee20387006@uniwa.gr"
+                        },
+                        {
+                            "id": 1,
+                            "type": "linkedin",
+                            "url": "https://www.linkedin.com/in/stavros-alexiou-468767252/"
+                        }
+                    ]
+                },
+                "description": "Hello world"
+            }
+        }
+    }
+]
