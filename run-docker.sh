@@ -8,13 +8,21 @@ else
     exit 1
 fi
 
+git submodule update --remote --merge --init
+
+docker volume create minio-data
+docker volume create web-mongo-data
+echo "Created external volumes"
+
+docker compose -f docker-compose.yml build --no-cache
+
 # Check the value of NODE_ENV
-if [ "$NODE_ENV" == "development" ]; then
+if [ "$NODE_ENV" = "development" ]; then
     echo "Running in development mode..."
-    docker compose -f docker-compose.yml up -d --build
-elif [ "$NODE_ENV" == "production" ]; then
+    docker compose -f docker-compose.yml watch
+elif [ "$NODE_ENV" = "production" ]; then
     echo "Running in production mode..."
-    docker compose -f docker-compose.yml up -d --build
+    docker compose -f docker-compose.yml up -d
 else
     echo "NODE_ENV is not set or has an invalid value. Use 'development' or 'production'."
     exit 1

@@ -39,9 +39,41 @@ class MongoCrudService {
    */
   async findOne<T extends Document>(
     model: Model<T>,
-    query: FilterQuery<T>
+    query: FilterQuery<T>,
+    lang: string = "gr"
   ): Promise<T | null> {
-    return model.findOne(query);
+
+    if (lang != "gr" && lang != "en") {
+      lang="gr";
+    }
+    
+    let pipeline = [
+      { $match: query },
+      {
+        $replaceRoot: {
+          newRoot: {
+            $mergeObjects: [
+              "$$ROOT",
+              { $getField: { field: lang, input: "$info" } }
+            ]
+          }
+        }
+      },
+      { $unset: "info" }
+    ];
+    
+    const aggregatedData = await model.aggregate(pipeline);
+
+    const baseUrl = process.env.MINIO_URL;
+
+    return aggregatedData.map((datum: Model<T>) => {
+
+      let jsonString = JSON.stringify(datum)
+
+      jsonString = jsonString.replace(/"\//g, `"${baseUrl}\/`);
+
+      return JSON.parse(jsonString);
+    });
   }
 
   /**
@@ -54,17 +86,50 @@ class MongoCrudService {
   async findAll<T extends Document>(
     model: Model<T>,
     query: FilterQuery<T> = {},
+    lang: string = "gr",
     sortBy: string = "id",
     limitAmount?: number
     // query: FilterQuery<T> = {}
   ): Promise<T[]> {
-    let queryBuilder = model.find(query).sort({ [sortBy]: -1 });
-
-    if (limitAmount !== undefined) {
-      queryBuilder = queryBuilder.limit(limitAmount);
+    if (lang != "gr" && lang != "en") {
+      lang="gr";
     }
-  
-    return queryBuilder;
+    
+    let pipeline = [
+      { $match: query },
+      { $sort: { [sortBy]: -1 } },
+      {
+        $replaceRoot: {
+          newRoot: {
+            $mergeObjects: [
+              "$$ROOT",
+              { $getField: { field: lang, input: "$info" } }
+            ]
+          }
+        }
+      },
+      { $unset: "info" },
+      
+    ];
+    
+    if (limitAmount !== undefined) {
+      pipeline.push({ $limit: limitAmount });
+    }
+
+    const aggregatedData = await model.aggregate(pipeline);
+
+    const baseUrl = process.env.MINIO_URL;
+
+    return aggregatedData.map((datum: Model<T>) => {
+
+      let jsonString = JSON.stringify(datum)
+
+      jsonString = jsonString.replace(/"\//g, `"${baseUrl}\/`);
+
+      return JSON.parse(jsonString); 
+
+    });
+    
   }
 
   // async findHead<T extends Document>(
