@@ -1,0 +1,17 @@
+[
+    {
+        "id": 0,
+        "name": "Web",
+        "name_short": "Web",
+        "wallpaper": "/test.jpg",
+        "images": ["/projects/notifier.jpg"],
+        "info": {
+            "gr": {
+                "description": "Hello world"
+            },
+            "en": {
+                "description": "Hello world"
+            }
+        }
+    }
+]

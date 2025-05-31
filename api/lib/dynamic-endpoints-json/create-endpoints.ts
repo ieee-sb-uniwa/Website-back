@@ -17,16 +17,51 @@ export const setupDyanmicEndpoints = (
   models: MongooseModelsMap
 ) => {
   console.log('Models: ', models);
-  // Iterate over the models and create the endpoints
+
   Object.entries(models).forEach(([name, model]) => {
-    // app.group('', (app) => {
-    // GET all records (documents)
     app.get(
       `/${name}`,
       async ({ mongo_crud, query }: HandlerParams) => {
-        const { lang="gr", limitAmount, sortBy, keywords } = query || {};
+        const { lang="gr", limitAmount, sortBy, keywords, roles, scientific_group } = query || {};
 
-        const mongoQuery = keywords ? { [`info.${lang}.keywords`]: {$in: keywords.toUpperCase().split(',').map((keyword)=>new RegExp(keyword.trim(), 'i'))} } : {};
+        const mongoQuery: Record<string, any> = {};
+
+        const orConditions: Record<string, any>[] = [];
+
+        if (keywords) {
+          const regexArray = keywords
+            .toUpperCase()
+            .split(',')
+            .map((kw) => new RegExp(kw.trim(), 'i'));
+
+          orConditions.push(
+            { ["info.gr.keywords"]: { $in: regexArray } },
+            { ["info.en.keywords"]: { $in: regexArray } }
+          );
+        }
+
+        let froles = roles=="council"? "CHAIR,VICECHAIR,SECRETARY,TREASURER": roles;
+
+        if (froles) {
+          const regexArray = froles
+            .toUpperCase()
+            .split(',')
+            .map((role) => new RegExp(role.trim(), 'i'));
+
+          orConditions.push(
+            { ["info.gr.roles"]: { $in: regexArray } },
+            { ["info.en.roles"]: { $in: regexArray } }
+          );
+        }
+
+        if (orConditions.length > 0) {
+          mongoQuery.$or = orConditions;
+        }
+
+        if (scientific_group) {
+          mongoQuery["sg"] = new RegExp(scientific_group.trim(), 'i');
+        }
+
         console.log(mongoQuery);
 
         try {
@@ -49,6 +84,8 @@ export const setupDyanmicEndpoints = (
           limitAmount: t.Optional(t.Number()),
           sortBy: t.Optional(t.String()),
           keywords: t.Optional(t.String()),
+          roles: t.Optional(t.String()),
+          scientific_group: t.Optional(t.String())
         }),
       }
     );
