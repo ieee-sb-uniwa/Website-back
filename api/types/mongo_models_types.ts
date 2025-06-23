@@ -35,10 +35,12 @@ export interface ScientificGroup {
   id: number,
   name: string,
   name_short: string,
+  meetings: {room: string, day: string, time: string},
   wallpaper: string,
-  images: string[]
+  wallpaper_caption: string,
+  logo: string,
   info: {
-    gr: {description: string}
+    gr: {description: string},
     en: {description: string}
   }
 }

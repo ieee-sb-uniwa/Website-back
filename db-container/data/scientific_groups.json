@@ -3,8 +3,14 @@
         "id": 0,
         "name": "Web",
         "name_short": "Web",
+        "meetings": {
+            "room": "Incubation Center",
+            "day": "Friday",
+            "time": "11:00-14:00"
+        },
         "wallpaper": "/test.jpg",
-        "images": ["/projects/notifier.jpg"],
+        "wallpaper_caption": "This is an image",
+        "logo": "",
         "info": {
             "gr": {
                 "description": "Hello world"

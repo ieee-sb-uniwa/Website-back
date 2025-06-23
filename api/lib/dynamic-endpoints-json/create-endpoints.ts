@@ -94,18 +94,19 @@ export const setupDyanmicEndpoints = (
     app.get(
       `/${name}/:id`,
       async ({ mongo_crud, params, query }: HandlerParams) => {
-        if (!params?.id || !Types.ObjectId.isValid(params.id)) {
-          return elysiaError(400, 'Bad Request: Invalid MongoDB ObjectId');
-        }
+        // if (!params?.id || !Types.ObjectId.isValid(params.id)) {
+        //   return elysiaError(400, 'Bad Request: Invalid MongoDB ObjectId');
+        // }
             
         const { id } = params;
         const { lang } = query || {};
-
+        
+        let mongo_query = (name !== "scientific_groups")? { _id: new Types.ObjectId(id) } : { name: id };
     
         try {
           const result = await mongo_crud.findOne<any>(
             model,
-            { _id: new Types.ObjectId(id) },
+            mongo_query,
             lang
           );
     

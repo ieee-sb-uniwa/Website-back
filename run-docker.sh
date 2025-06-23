@@ -19,9 +19,9 @@ docker volume create minio-data
 docker volume create web-mongo-data
 echo "Created external volumes"
 
-docker compose -f docker-compose.yml build --no-cache mongo
+# docker compose -f docker-compose.yml build --no-cache mongo
 
-# docker compose -f docker-compose.yml build --no-cache
+docker compose -f docker-compose.yml build --no-cache
 
 # Check the value of NODE_ENV
 if [ "$NODE_ENV" = "development" ]; then

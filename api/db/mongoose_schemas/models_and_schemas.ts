@@ -66,8 +66,14 @@ const scientificGroupSchema = new Schema({
   id: { type: Number, required: true },
   name: { type: String, required: true },
   name_short: { type: String, required: true },
+  meetings: {
+    room: { type: String, required: true },
+    day: { type: String, required: true },
+    time: { type: String, required: true }
+  },
   wallpaper: { type: String, required: true },
-  images: [{ type: String, required: true }],
+  wallpaper_caption: { type: String, required: true },
+  logo: { type: String, required: true },
   info: {
     gr: {
       description: { type: String, required: true },
