@@ -31,6 +31,10 @@ import_collection "council" "./data/council.json"
 import_collection "counselor" "./data/counselor.json"
 import_collection "events" "./data/events.json"
 import_collection "thirdparty" "./data/thirdparty.json"
+import_collection "people" "./data/people.json"
+import_collection "scientific_groups" "./data/scientific_groups.json"
+import_collection "projects" "./data/projects.json"
+
 # Add any new json files here
 
 echo "Data import completed successfully."

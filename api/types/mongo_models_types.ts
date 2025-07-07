@@ -21,6 +21,44 @@ export interface Counselor {
   };
 }
 
+export interface People {
+  id: number;
+  photo: string;
+  socials: { id: number; type: string; url: string}[];
+  info: {
+    gr: {roles: string[]; name: string }
+    en: {roles: string[]; name: string }
+  };
+}
+
+export interface ScientificGroup {
+  id: number,
+  name: string,
+  name_short: string,
+  meetings: {room: string, day: string, time: string},
+  wallpaper: string,
+  wallpaper_caption: string,
+  logo: string,
+  info: {
+    gr: {description: string},
+    en: {description: string}
+  }
+}
+
+export interface Project {
+  id: 0,
+  sg: string,
+  name: string,
+  status: string,
+  thumbnail: string,
+  images: string[],
+  technologies: string[],
+  info: {
+    gr: {description: string, links: {id: number; title: string; url: string}[]}
+    en: {description: string, links: {id: number; title: string; url: string}[]}
+  }
+}
+
 export interface Event {
   id: number
   date: string;

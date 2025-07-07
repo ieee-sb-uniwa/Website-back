@@ -31,6 +31,110 @@ export const Council = model<CouncilDocument>(
   "council"
 );
 
+const peopleSchema = new Schema({
+  id: { type: Number, required: true },
+  photo: { type: String, required: true },
+  socials: [
+    {
+      id: { type: Number, required: true },
+      type: { type: String, required: true },
+      url: { type: String, required: true },
+    },
+  ],
+  info: {
+    gr: {
+      roles: [{ type: String, required: true }],
+      name: { type: String, required: true },
+    },
+    en: {
+      roles: [{ type: String, required: true }],
+      name: { type: String, required: true },
+    },
+  },
+} as const);
+
+export type PeopleDocument = InferRawDocType<typeof peopleSchema>;
+
+export const PeopleModel = model<PeopleDocument>(
+  "People",
+  peopleSchema,
+  "people"
+);
+
+
+const scientificGroupSchema = new Schema({
+  id: { type: Number, required: true },
+  name: { type: String, required: true },
+  name_short: { type: String, required: true },
+  meetings: {
+    room: { type: String, required: true },
+    day: { type: String, required: true },
+    time: { type: String, required: true }
+  },
+  wallpaper: { type: String, required: true },
+  wallpaper_caption: { type: String, required: true },
+  logo: { type: String, required: true },
+  info: {
+    gr: {
+      description: { type: String, required: true },
+    },
+    en: {
+      description: { type: String, required: true },
+    },
+  },
+} as const);
+
+export type ScientificGroupDocument = InferRawDocType<typeof scientificGroupSchema>;
+
+export const ScientificGroupModel = model<ScientificGroupDocument>(
+  "ScientificGroup",
+  scientificGroupSchema,
+  "scientific_groups"
+);
+
+
+const projectSchema = new Schema({
+  id: { type: Number, required: true },
+  sg: { type: String, required: true },
+  name: { type: String, required: true },
+  status: { type: String, required: true },
+  thumbnail: { type: String, required: true },
+  images: [{ type: String, required: true }],
+  technologies: [{ type: String, required: true }],
+  info: {
+    gr: {
+      description: { type: String, required: true },
+      links: [
+        {
+          id: { type: Number, required: true },
+          title: { type: String, required: true },
+          url: { type: String, required: true },
+        },
+      ],
+    },
+    en: {
+      description: { type: String, required: true },
+      links: [
+        {
+          id: { type: Number, required: true },
+          title: { type: String, required: true },
+          url: { type: String, required: true },
+        },
+      ],
+    },
+  },
+} as const);
+
+export type ProjectDocument = InferRawDocType<typeof projectSchema>;
+
+export const ProjectModel = model<ProjectDocument>(
+  "Project",
+  projectSchema,
+  "projects"
+);
+
+
+
 // Counselor schema
 const counselorSchema = new Schema({
   id: { type: Number, required: true },

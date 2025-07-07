@@ -1,6 +1,8 @@
 export interface QueryParamsTypes {
   lang?: string,
-  keywords?: string;
-  limitAmount?: number;
+  keywords?: string,
+  roles?: string,
+  scientific_group?: string,
+  limitAmount?: number,
   sortBy?: string;
 }
