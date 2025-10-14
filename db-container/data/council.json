@@ -1,107 +1,91 @@
 [
     {
       "id": 0,
-      "photo": "/photos/stavros-alexiou-bg.png",
+      "photo": "/people/spyros-saridakis.jpg",
       "socials": [
         {
           "id": 0,
-          "type": "email",
-          "url": "mailto:eee20387006@uniwa.gr"
-        },
-        {
-          "id": 1,
           "type": "linkedin",
-          "url": "https://www.linkedin.com/in/stavros-alexiou-468767252/"
+          "url": "https://www.linkedin.com/in/spyros-saridakis"
         }
       ],
       "info": {
         "gr": {
           "role": "ΠΡΟΕΔΡΟΣ",
-          "name": "Σταύρος Αλεξίου"
+          "name": "Σπύρος Σαριδάκης"
         },
         "en": {
           "role": "CHAIR",
-          "name": "Stavros Alexiou"
+          "name": "Spyros Saridakis"
         }
       }
     },
     {
       "id": 1,
-      "photo": "/photos/andreas-kyrkiotis-bg.png",
+      "photo": "/people/evelina-amaxopoulou.jpg",
       "socials": [
         {
           "id": 0,
-          "type": "email",
-          "url": "mailto:eee20387123@uniwa.gr"
-        },
-        {
-          "id": 1,
           "type": "linkedin",
-          "url": "https://www.linkedin.com/in/andreas-kyrkiotis-8ba048290/"
+          "url": "https://www.linkedin.com/in/evelyn-amaxopoulou"
         }
       ],
       "info": {
         "gr": {
           "role": "ΑΝΤΙΠΡΟΕΔΡΟΣ",
-          "name": "Ανδρέας Κυρκιώτης"
+          "name": "Εβελίνα Αμαξοπούλου"
         },
         "en": {
           "role": "VICE-CHAIR",
-          "name": "Andreas Kyrkiotis"
+          "name": "Evelina Amaxopoulou"
         }
       }
     },
     {
       "id": 2,
-      "photo": "/photos/evangelos-mitikas-bg.png",
+      "photo": "/people/vasilis-papanastasiou.jpg",
       "socials": [
         {
           "id": 0,
-          "type": "email",
-          "url": "mailto:eee19387165@uniwa.gr"
-        },
-        {
-          "id": 1,
           "type": "linkedin",
-          "url": "https://www.linkedin.com/in/evangelos-mitikas/"
+          "url": "https://www.linkedin.com/in/βασίλειος-παπαναστασίου-266038338"
         }
       ],
       "info": {
         "gr": {
           "role": "ΓΡΑΜΜΑΤΕΑΣ",
-          "name": "Ευάγγελος Μήτικας"
+          "name": "Βασίλης Παπαναστασίου"
         },
         "en": {
           "role": "SECRETARY",
-          "name": "Evangelos Mitikas"
+          "name": "Vasileios Papanastasiou"
         }
       }
     },
     {
       "id": 3,
       "role": "TREASURER",
-      "photo": "/photos/ioannis-christopoulos-bg.png",
-      "name": "Ioannis Christopoulos",
+      "photo": "/people/panagiotis-nikolopoulos.jpg",
       "socials": [
         {
           "id": 0,
           "type": "email",
-          "url": "mailto:eee20387291@uniwa.gr"
+          "url": "mailto:panosnik11@gmail.com"
         },
         {
           "id": 1,
           "type": "linkedin",
-          "url": "https://www.linkedin.com/in/ioannis-christopoulos-3abab6227/"
+          "url": "https://www.linkedin.com/in/panagiotis-nikolopoulos-28658b143"
         }
       ],
       "info": {
         "gr": {
           "role": "ΤΑΜΕΙΑΣ",
-          "name": "Ιωάννης Χριστόπουλος"
+          "name": "Παναγιώτης Νικολόπουλος"
         },
         "en": {
           "role": "TREASURER",
-          "name": "Ioannis Christopoulos"
+          "name": "Panagiotis Nikolopoulos"
         }
       }
     }
