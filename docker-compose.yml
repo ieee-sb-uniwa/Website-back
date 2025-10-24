@@ -31,10 +31,11 @@ services:
     environment:
       - MONGODB_URL=mongodb://mongo:27017/${MONGO_DB_NAME}
       - MINIO_URL=http://${SERVER_NAME}/files
-    command: ['bun', 'run', 'start']
-    # ports:
-    #   - 8000:5000
+    command: ['bun', 'run', 'dev']
+    #ports:
+     #- 5000:5000
     volumes:
+      - ./api:/app
       - ./db-container/data:/app/db/data
     labels:
       - 'traefik.enable=true'

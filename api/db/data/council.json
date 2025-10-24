@@ -1,0 +1,108 @@
+[
+    {
+      "id": 0,
+      "photo": "/photos/stavros-alexiou-bg.png",
+      "socials": [
+        {
+          "id": 0,
+          "type": "email",
+          "url": "mailto:eee20387006@uniwa.gr"
+        },
+        {
+          "id": 1,
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/stavros-alexiou-468767252/"
+        }
+      ],
+      "info": {
+        "gr": {
+          "role": "ΠΡΟΕΔΡΟΣ",
+          "name": "Σταύρος Αλεξίου"
+        },
+        "en": {
+          "role": "CHAIR",
+          "name": "Stavros Alexiou"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "photo": "/photos/andreas-kyrkiotis-bg.png",
+      "socials": [
+        {
+          "id": 0,
+          "type": "email",
+          "url": "mailto:eee20387123@uniwa.gr"
+        },
+        {
+          "id": 1,
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/andreas-kyrkiotis-8ba048290/"
+        }
+      ],
+      "info": {
+        "gr": {
+          "role": "ΑΝΤΙΠΡΟΕΔΡΟΣ",
+          "name": "Ανδρέας Κυρκιώτης"
+        },
+        "en": {
+          "role": "VICE-CHAIR",
+          "name": "Andreas Kyrkiotis"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "photo": "/photos/evangelos-mitikas-bg.png",
+      "socials": [
+        {
+          "id": 0,
+          "type": "email",
+          "url": "mailto:eee19387165@uniwa.gr"
+        },
+        {
+          "id": 1,
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/evangelos-mitikas/"
+        }
+      ],
+      "info": {
+        "gr": {
+          "role": "ΓΡΑΜΜΑΤΕΑΣ",
+          "name": "Ευάγγελος Μήτικας"
+        },
+        "en": {
+          "role": "SECRETARY",
+          "name": "Evangelos Mitikas"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "role": "TREASURER",
+      "photo": "/photos/ioannis-christopoulos-bg.png",
+      "name": "Ioannis Christopoulos",
+      "socials": [
+        {
+          "id": 0,
+          "type": "email",
+          "url": "mailto:eee20387291@uniwa.gr"
+        },
+        {
+          "id": 1,
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/ioannis-christopoulos-3abab6227/"
+        }
+      ],
+      "info": {
+        "gr": {
+          "role": "ΤΑΜΕΙΑΣ",
+          "name": "Ιωάννης Χριστόπουλος"
+        },
+        "en": {
+          "role": "TREASURER",
+          "name": "Ioannis Christopoulos"
+        }
+      }
+    }
+  ]

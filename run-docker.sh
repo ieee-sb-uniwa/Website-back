@@ -13,7 +13,7 @@ fi
 
 NODE_ENV=$(echo "$NODE_ENV" | tr -d '\r' | xargs)
 
-git submodule update --remote --merge --init
+#git submodule update --remote --merge --init
 
 docker volume create minio-data
 docker volume create web-mongo-data
