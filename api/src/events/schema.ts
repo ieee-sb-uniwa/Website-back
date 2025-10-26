@@ -24,5 +24,6 @@ const eventSchema = new Schema({
   info: { type: infoSchema, required: true }
 });
 
-export const Events = model('Events', eventSchema, 'events');
+const Events = model('Events', eventSchema, 'events');
 
+export default Events;

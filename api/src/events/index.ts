@@ -1,17 +1,18 @@
-import { Elysia, error as elysiaError, t } from 'elysia';
+import { Elysia, t } from 'elysia';
 
 import { findAll, findOne } from '../common/database/service';
-import { baseQuery, notFound } from '../common/model';
+import { notFound } from '../common/model';
 
-import { Events } from './schema';
+import Events from './schema';
 import { FilterQuery, Types } from 'mongoose';
+import { EventByIdParams, EventByIdQuery, EventsQuery } from './model'
 
 export const events = new Elysia({ prefix: '/events' })
-  .get('/', async ({ query }) => {
+  .get('/', async ({ query, status }) => {
       try {
-        const { lang = "gr", limitAmount, keywords, sortBy } = query;
+        const { lang = "gr", limitAmount, keywords } = query;
+        const mongoQuery: FilterQuery<Record<string, RegExp>> = {};
 
-        const mongoQuery: FilterQuery<any> = {};
         if (keywords) {
           const keywordArray = keywords
             .split(',')
@@ -21,7 +22,6 @@ export const events = new Elysia({ prefix: '/events' })
 
         const result = await findAll(Events, {
           lang,
-          sortBy,
           query: mongoQuery,
           limit: limitAmount ? Number(limitAmount) : undefined
         });
@@ -29,37 +29,37 @@ export const events = new Elysia({ prefix: '/events' })
         return result;
       } catch (error) {
         console.error(`Error | GET (/events):`, error);
-        return elysiaError(404, 'Not found');
+        return status(404, 'Entity not found');
       }
     },
-    { 
-      query: baseQuery, 
-      response: { 
-        400: notFound,
+    {
+      query: EventsQuery,
+      response: {
+        404: notFound,
       }
     }
   )
-  .get('/:id', async ({ query, params }) => {
+  .get('/:id', async ({ query, params, status }) => {
       try {
         const { lang = "gr" } = query;
         const { id } = params;
 
         const result = await findOne(Events, { _id: new Types.ObjectId(id) }, { lang });
-        
+
         if (!result) {
-          return elysiaError(404, 'Event not found');
+          return status(404, 'Event not found');
         }
-        
+
         return result;
       } catch (error) {
         console.error(`Error | GET (/events/${params.id}):`, error)
       }
     },
-    { 
-      params: t.Object({ id: t.String() }),
-      query: t.Object({ lang: t.Optional(t.String()) }), 
-      response: { 
-        400: notFound,
+    {
+      params: EventByIdParams,
+      query: EventByIdQuery,
+      response: {
+        404: notFound,
       }
     }
   )
