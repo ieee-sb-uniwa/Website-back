@@ -7,4 +7,4 @@ export const baseQuery = t.Object({
   keywords: t.Optional(t.String())
 })
 
-export const notFound = t.Literal('Not found');
+export const notFound = t.String();

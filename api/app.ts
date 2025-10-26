@@ -1,6 +1,7 @@
 import { Elysia } from 'elysia';
 import { cors } from '@elysiajs/cors';
 import { swagger } from '@elysiajs/swagger';
+import { logger } from '@grotto/logysia';
 
 import { council } from './src/council';
 import { getConfig } from './src/common/helpers';
@@ -27,16 +28,30 @@ app.use(cors({
     return corsAllowList.includes(origin);
   },
 }))
+  .use(logger({
+    logIP: false,
+    writer: {
+      write(msg: string) {
+        console.log(msg)
+      }
+    }
+  }))
 
 app
-  .get('/ping', () => 'ok')
+  .get('/ping', () => ({ test: 'ok' }))
   .use(council)
   .use(counselor)
   .use(events)
   .use(thirdPary)
 
 if (process.env.NODE_ENV === "development") {
-  app.use(swagger());
+  app.use(swagger({
+    scalarConfig: {
+      spec: {
+        url: "/api/swagger/json"
+      }
+    }
+  }));
 }
 
 app.listen(PORT, () => {
