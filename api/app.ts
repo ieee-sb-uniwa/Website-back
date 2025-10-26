@@ -1,4 +1,4 @@
-import { Elysia } from 'elysia';
+import { Elysia, t } from 'elysia';
 import { cors } from '@elysiajs/cors';
 import { swagger } from '@elysiajs/swagger';
 import { logger } from '@grotto/logysia';
@@ -38,7 +38,19 @@ app.use(cors({
   }))
 
 app
-  .get('/ping', () => ({ test: 'ok' }))
+  .get('/ping',
+    () => ({ test: 'ok' } as const),
+    {
+      response: {
+        200: t.Object({
+          test: t.Literal('ok'),
+        })
+      },
+      detail: {
+        tags: ['Healthcheck']
+      }
+    }
+  )
   .use(council)
   .use(counselor)
   .use(events)

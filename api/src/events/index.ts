@@ -36,6 +36,9 @@ export const events = new Elysia({ prefix: '/events' })
       query: EventsQuery,
       response: {
         404: notFound,
+      },
+      detail: {
+        tags: ['Events']
       }
     }
   )
@@ -60,6 +63,9 @@ export const events = new Elysia({ prefix: '/events' })
       query: EventByIdQuery,
       response: {
         404: notFound,
+      },
+      detail: {
+        tags: ['Events']
       }
     }
   )
