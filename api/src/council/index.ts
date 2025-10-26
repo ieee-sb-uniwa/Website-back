@@ -37,7 +37,7 @@ export const council = new Elysia({ prefix: '/council' })
         404: notFound,
       },
       detail: {
-        tags: ['Councelor - Council']
+        tags: ['Counselor - Council']
       }
     }
   )
