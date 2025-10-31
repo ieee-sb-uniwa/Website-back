@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 5000;
 
 if (process.env.ENABLE_MONGO_CONNECTION === "true") await connectMongo();
 
-const app = new Elysia();
+export const app = new Elysia();
 
 app
   .use(
@@ -44,7 +44,7 @@ app
   );
 
 app
-  .get("/ping", () => ({ test: "ok" } as const), {
+  .get("/ping", () => ({ test: "ok" }) as const, {
     response: {
       200: t.Object({
         test: t.Literal("ok"),

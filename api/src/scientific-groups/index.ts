@@ -1,4 +1,4 @@
-import { Elysia, error as elysiaError, t } from "elysia";
+import { Elysia, t } from "elysia";
 
 import { findAll, findOne } from "../common/database/service";
 import { baseQuery, notFound } from "../common/model";
@@ -9,7 +9,7 @@ import { FilterQuery, Types } from "mongoose";
 export const scientificGroups = new Elysia({ prefix: "/scientific_groups" })
   .get(
     "/",
-    async ({ query }) => {
+    async ({ query, status }) => {
       try {
         const { lang = "gr", limitAmount, keywords, sortBy } = query;
 
@@ -31,7 +31,7 @@ export const scientificGroups = new Elysia({ prefix: "/scientific_groups" })
         return result;
       } catch (error) {
         console.error(`Error | GET (/scientific_groups):`, error);
-        return elysiaError(404, "Not found");
+        return status(404, "Not found");
       }
     },
     {
@@ -46,7 +46,7 @@ export const scientificGroups = new Elysia({ prefix: "/scientific_groups" })
   )
   .get(
     "/:name",
-    async ({ query, params }) => {
+    async ({ query, params, status }) => {
       try {
         const { lang = "gr" } = query;
         const { name } = params;
@@ -54,7 +54,7 @@ export const scientificGroups = new Elysia({ prefix: "/scientific_groups" })
         const result = await findOne(ScientificGroups, { name }, { lang });
 
         if (!result) {
-          return elysiaError(404, "Scientific group not found");
+          return status(404, "Scientific group not found");
         }
 
         return result;
