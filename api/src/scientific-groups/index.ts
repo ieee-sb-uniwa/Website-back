@@ -39,6 +39,9 @@ export const scientificGroups = new Elysia({ prefix: "/scientific_groups" })
       response: {
         400: notFound,
       },
+      detail: {
+        tags: ["Scientific Groups"],
+      },
     }
   )
   .get(
@@ -69,7 +72,7 @@ export const scientificGroups = new Elysia({ prefix: "/scientific_groups" })
         400: notFound,
       },
       detail: {
-        tags: ["Scientific Groups - Scientific Group"],
+        tags: ["Scientific Groups"],
       },
     }
   );
