@@ -1,21 +1,23 @@
-import { Elysia, error as elysiaError, t } from 'elysia';
+import { Elysia, error as elysiaError, t } from "elysia";
 
-import { findAll, findOne } from '../common/database/service';
-import { baseQuery, notFound } from '../common/model';
+import { findAll, findOne } from "../common/database/service";
+import { baseQuery, notFound } from "../common/model";
 
-import { ScientificGroups } from './schema';
-import { FilterQuery, Types } from 'mongoose';
+import ScientificGroups from "./schema";
+import { FilterQuery, Types } from "mongoose";
 
-export const scientificGroups = new Elysia({ prefix: '/scientific_groups' })
-  .get('/', async ({ query }) => {
+export const scientificGroups = new Elysia({ prefix: "/scientific_groups" })
+  .get(
+    "/",
+    async ({ query }) => {
       try {
         const { lang = "gr", limitAmount, keywords, sortBy } = query;
 
         const mongoQuery: FilterQuery<any> = {};
         if (keywords) {
           const keywordArray = keywords
-            .split(',')
-            .map(k => new RegExp(k.trim(), 'i'));
+            .split(",")
+            .map((k) => new RegExp(k.trim(), "i"));
           mongoQuery[`info.${lang}.keywords`] = { $in: keywordArray };
         }
 
@@ -23,43 +25,51 @@ export const scientificGroups = new Elysia({ prefix: '/scientific_groups' })
           lang,
           sortBy,
           query: mongoQuery,
-          limit: limitAmount ? Number(limitAmount) : undefined
+          limit: limitAmount ? Number(limitAmount) : undefined,
         });
 
         return result;
       } catch (error) {
-        console.error(`Error | GET (/events):`, error);
-        return elysiaError(404, 'Not found');
+        console.error(`Error | GET (/scientific_groups):`, error);
+        return elysiaError(404, "Not found");
       }
     },
-    { 
-      query: baseQuery, 
-      response: { 
+    {
+      query: baseQuery,
+      response: {
         400: notFound,
-      }
+      },
     }
   )
-  .get('/:id', async ({ query, params }) => {
+  .get(
+    "/:name",
+    async ({ query, params }) => {
       try {
         const { lang = "gr" } = query;
-        const { id } = params;
+        const { name } = params;
 
-        const result = await findOne(ScientificGroups, { _id: new Types.ObjectId(id) }, { lang });
-        
+        const result = await findOne(ScientificGroups, { name }, { lang });
+
         if (!result) {
-          return elysiaError(404, 'Event not found');
+          return elysiaError(404, "Scientific group not found");
         }
-        
+
         return result;
       } catch (error) {
-        console.error(`Error | GET (/events/${params.id}):`, error)
+        console.error(
+          `Error | GET (/scientific_groups/${params.name}):`,
+          error
+        );
       }
     },
-    { 
-      params: t.Object({ id: t.String() }),
-      query: t.Object({ lang: t.Optional(t.String()) }), 
-      response: { 
+    {
+      params: t.Object({ name: t.String() }),
+      query: t.Object({ lang: t.Optional(t.String()) }),
+      response: {
         400: notFound,
-      }
+      },
+      detail: {
+        tags: ["Scientific Groups - Scientific Group"],
+      },
     }
-  )
+  );
