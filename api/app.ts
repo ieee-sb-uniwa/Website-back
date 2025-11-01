@@ -9,6 +9,7 @@ import { connectMongo } from './src/common/database/connect';
 import { counselor } from './src/counselor';
 import { events } from './src/events';
 import { thirdPary } from './src/thirdparty';
+import { projects } from './src/projects';
 
 const { corsAllowList } = getConfig('./config.yml');
 
@@ -55,6 +56,7 @@ app
   .use(counselor)
   .use(events)
   .use(thirdPary)
+  .use(projects)
 
 if (process.env.NODE_ENV === "development") {
   app.use(swagger({
