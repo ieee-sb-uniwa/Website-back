@@ -15,6 +15,6 @@ export const EventsQueryMin = t.Object({
 })
 
 export const EventsSearchQuery = t.Object({
-  query: t.String(),
+  query: t.String({ description: 'event title'}),
   lang: t.Optional(t.String()),
 })
