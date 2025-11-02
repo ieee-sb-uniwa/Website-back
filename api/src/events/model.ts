@@ -10,6 +10,6 @@ export const EventByIdParams = t.Object({
   id: t.String(),
 })
 
-export const EventByIdQuery = t.Object({
+export const EventsQueryMin = t.Object({
   lang: t.Optional(t.String()),
 })
