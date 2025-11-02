@@ -13,3 +13,8 @@ export const EventByIdParams = t.Object({
 export const EventsQueryMin = t.Object({
   lang: t.Optional(t.String()),
 })
+
+export const EventsSearchQuery = t.Object({
+  query: t.String(),
+  lang: t.Optional(t.String()),
+})

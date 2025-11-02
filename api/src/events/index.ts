@@ -5,7 +5,7 @@ import { notFound } from '../common/model';
 
 import Events from './schema';
 import { FilterQuery, Types } from 'mongoose';
-import { EventByIdParams, EventsQueryMin, EventsQuery } from './model'
+import { EventByIdParams, EventsQueryMin, EventsQuery, EventsSearchQuery } from './model'
 
 export const events = new Elysia({ prefix: '/events' })
   .get('/', async ({ query, status }) => {
@@ -102,3 +102,45 @@ export const events = new Elysia({ prefix: '/events' })
       }
     }
   )
+  .get('/search', async ({ query, status }) => {
+    try {
+      const { lang = 'gr', query: q } = query;
+
+      const response = await Events.aggregate([
+        {
+          $match: {
+            [`info.${lang}.title`]: q ? { $regex: q, $options: 'i' } : q
+          }
+        },
+        {
+          $replaceRoot: {
+            newRoot: {
+              $mergeObjects: [
+                "$$ROOT",
+                { $getField: { field: lang, input: "$info" } }
+              ]
+            }
+          }
+        },
+        { $unset: "info" }
+      ]);
+
+      return response;
+    } catch (error) {
+      console.error(`Error | GET (/events/search): `, error)
+
+      throw status(500, 'Internal Server Error');
+    }
+  }, {
+    query: EventsSearchQuery,
+    response: {
+      422: t.String(),
+      500: t.String()
+    },
+    detail: {
+      tags: [
+        'Events'
+      ]
+    }
+  }
+)
