@@ -1,52 +1,49 @@
 import { Elysia, t } from "elysia";
 
 import { findAll, findOne } from "../common/database/service";
-import { baseQuery, notFound } from "../common/model";
 
 import ScientificGroups from "./schema";
-import { FilterQuery, Types } from "mongoose";
+import {
+  responseScientificGroup,
+  ScientificGroupsQuery,
+  ScientificGroupsByName,
+} from "./model";
 
 export const scientificGroups = new Elysia({ prefix: "/scientific_groups" })
+  // GET /scientific_groups
   .get(
     "/",
-    async ({ query, status }) => {
+    async ({ status, query }) => {
       try {
-        const { lang = "gr", limitAmount, keywords, sortBy } = query;
-
-        const mongoQuery: FilterQuery<any> = {};
-        if (keywords) {
-          const keywordArray = keywords
-            .split(",")
-            .map((k) => new RegExp(k.trim(), "i"));
-          mongoQuery[`info.${lang}.keywords`] = { $in: keywordArray };
-        }
+        const { lang = "gr" } = query;
 
         const result = await findAll(ScientificGroups, {
           lang,
-          sortBy,
-          query: mongoQuery,
-          limit: limitAmount ? Number(limitAmount) : undefined,
         });
 
         return result;
       } catch (error) {
         console.error(`Error | GET (/scientific_groups):`, error);
-        return status(404, "Not found");
+
+        return status(500, "Internal Server Error");
       }
     },
     {
-      query: baseQuery,
+      query: ScientificGroupsQuery,
       response: {
-        400: notFound,
+        200: t.Array(responseScientificGroup),
+        500: t.String(),
       },
       detail: {
         tags: ["Scientific Groups"],
       },
     }
   )
+
+  // GET /scientific_groups/:name
   .get(
     "/:name",
-    async ({ query, params, status }) => {
+    async ({ status, query, params }) => {
       try {
         const { lang = "gr" } = query;
         const { name } = params;
@@ -54,6 +51,7 @@ export const scientificGroups = new Elysia({ prefix: "/scientific_groups" })
         const result = await findOne(ScientificGroups, { name }, { lang });
 
         if (!result) {
+          // Return 404 if the scientific group does not exist
           return status(404, "Scientific group not found");
         }
 
@@ -63,13 +61,17 @@ export const scientificGroups = new Elysia({ prefix: "/scientific_groups" })
           `Error | GET (/scientific_groups/${params.name}):`,
           error
         );
+
+        return status(500, "Internal Server Error");
       }
     },
     {
-      params: t.Object({ name: t.String() }),
-      query: t.Object({ lang: t.Optional(t.String()) }),
+      params: ScientificGroupsByName,
+      query: ScientificGroupsQuery,
       response: {
-        400: notFound,
+        200: responseScientificGroup,
+        404: t.String(),
+        500: t.String(),
       },
       detail: {
         tags: ["Scientific Groups"],
