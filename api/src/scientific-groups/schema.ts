@@ -1,24 +1,46 @@
-import mongoose, { model } from 'mongoose';
+import { Schema, model } from "mongoose";
 
-const scientificGroupsSchema = new mongoose.Schema({
-  name: { type: String, required: true },
-  name_short: { type: String },
-  meetings: {
-    room: { type: String },
-    day: { type: String },
-    time: { type: String }
-  },
-  wallpaper: { type: String },
-  wallpaper_caption: { type: String },
-  logo: { type: String },
-  info: {
-    gr: {
-      description: { type: String }
+const scientificGroupsSchema = new Schema(
+  {
+    name: {
+      type: String,
+      required: true,
+      description: "The name of the scientific group",
     },
-    en: {
-      description: { type: String }
-    }
-  }
-}, { timestamps: true });
+    name_short: {
+      type: String,
+      description: "The short name of the scientific group",
+    },
+    wallpaper: {
+      type: String,
+      description: "The wallpaper image URL of the scientific group",
+    },
+    logo: {
+      type: String,
+      description: "The logo image URL of the scientific group",
+    },
+    info: {
+      gr: {
+        description: {
+          type: String,
+          description: "The description of the scientific group in Greek",
+        },
+      },
+      en: {
+        description: {
+          type: String,
+          description: "The description of the scientific group in English",
+        },
+      },
+    },
+  },
+  { timestamps: true }
+);
 
-export const ScientificGroups = model('ScientificGroups', scientificGroupsSchema, 'scientific_groups');
+const ScientificGroups = model(
+  "ScientificGroups",
+  scientificGroupsSchema,
+  "scientific_groups"
+);
+
+export default ScientificGroups;

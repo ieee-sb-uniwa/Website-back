@@ -1,24 +1,18 @@
 [
-    {
-        "id": 0,
-        "name": "Web",
-        "name_short": "Web",
-        "meetings": {
-            "room": "Incubation Center",
-            "day": "Friday",
-            "time": "11:00-14:00"
-        },
-        "wallpaper": "/test.jpg",
-        "wallpaper_caption": "This is an image",
-        "logo": "",
-        "info": {
-            "gr": {
-                "description": "Hello world"
-            },
-            "en": {
-                "description": "Hello world"
-            }
-        }
+  {
+    "id": 0,
+    "name": "Game Development",
+    "name_short": "GameDev",
+    "wallpaper": "/assets/photos/Gamedev.JPG",
+    "images": ["/projects/notifier.jpg"],
+    "logo": "/assets/logos/scientific_groups/gamedev.svg",
+    "info": {
+      "gr": {
+        "description": "Entry level game development team. Το Game Development είναι ένας κλάδος που έχει ανάγκη από ανθρώπους με διαφορετικά προσόντα και δεξιότητες. Ελάτε στην ομάδας μας για να δημιουργήσετε τους κόσμους και τους χαρακτήρες των παιχνιδιών ή τα γραφικά και τα εφέ. Επίσης μπορείτε να δημιουργήσετε τον κώδικα που καθοδηγεί τα παιχνίδια ή να συνεισφέρετε στην ιστορία και τα σενάρια."
+      },
+      "en": {
+        "description": "Entry level game development team. Game Development is an industry that needs people with different qualifications and skills. Join our team to create game worlds and characters or graphics and effects. You can also create the code that drives the games or contribute to the story and scenarios."
+      }
     }
+  }
 ]
-
