@@ -3,13 +3,14 @@ import { cors } from "@elysiajs/cors";
 import { swagger } from "@elysiajs/swagger";
 import { logger } from "@grotto/logysia";
 
-import { council } from "./src/council";
-import { getConfig } from "./src/common/helpers";
-import { connectMongo } from "./src/common/database/connect";
-import { counselor } from "./src/counselor";
-import { events } from "./src/events";
+import { council } from './src/council';
+import { getConfig } from './src/common/helpers';
+import { connectMongo } from './src/common/database/connect';
+import { counselor } from './src/counselor';
+import { events } from './src/events';
 import { scientificGroups } from "./src/scientific-groups";
-import { thirdParty } from "./src/thirdparty";
+import { thirdPary } from './src/thirdparty';
+import { projects } from './src/projects';
 
 const { corsAllowList } = getConfig("./config.yml");
 
@@ -57,8 +58,9 @@ app
   .use(council)
   .use(counselor)
   .use(events)
+  .use(thirdPary)
+  .use(projects)
   .use(scientificGroups)
-  .use(thirdParty);
 
 if (process.env.NODE_ENV === "development") {
   app.use(

@@ -5,7 +5,7 @@ import { notFound } from '../common/model';
 
 import Events from './schema';
 import { FilterQuery, Types } from 'mongoose';
-import { EventByIdParams, EventByIdQuery, EventsQuery } from './model'
+import { EventByIdParams, EventsQueryMin, EventsQuery, EventsSearchQuery } from './model'
 
 export const events = new Elysia({ prefix: '/events' })
   .get('/', async ({ query, status }) => {
@@ -60,7 +60,7 @@ export const events = new Elysia({ prefix: '/events' })
     },
     {
       params: EventByIdParams,
-      query: EventByIdQuery,
+      query: EventsQueryMin,
       response: {
         404: notFound,
       },
@@ -69,3 +69,78 @@ export const events = new Elysia({ prefix: '/events' })
       }
     }
   )
+  .get('/keywords', async ({ query, status }) => {
+    try {
+      const { lang = 'gr' } = query;
+
+      const response = await Events.aggregate([
+        { $unwind: `$info.${lang}.keywords` },
+        {
+          $group: {
+            _id: null,
+            unique: { $addToSet: `$info.${lang}.keywords` },
+          },
+        }
+      ])
+
+      return response[0].unique;
+    } catch (error) {
+      console.error(`Error | GET (/events/keywords):`, error)
+
+      throw status(500, 'Internal Server Error');
+    }
+  }, {
+      query: EventsQueryMin,
+      response: {
+        200: t.Array(t.String()),
+        500: t.String()
+      },
+      detail: {
+        tags: [
+          'Events'
+        ]
+      }
+    }
+  )
+  .get('/search', async ({ query, status }) => {
+    try {
+      const { lang = 'gr', query: q } = query;
+
+      const response = await Events.aggregate([
+        {
+          $match: {
+            [`info.${lang}.title`]: q ? { $regex: q, $options: 'i' } : q
+          }
+        },
+        {
+          $replaceRoot: {
+            newRoot: {
+              $mergeObjects: [
+                "$$ROOT",
+                { $getField: { field: lang, input: "$info" } }
+              ]
+            }
+          }
+        },
+        { $unset: "info" }
+      ]);
+
+      return response;
+    } catch (error) {
+      console.error(`Error | GET (/events/search): `, error)
+
+      throw status(500, 'Internal Server Error');
+    }
+  }, {
+    query: EventsSearchQuery,
+    response: {
+      422: t.String(),
+      500: t.String()
+    },
+    detail: {
+      tags: [
+        'Events'
+      ]
+    }
+  }
+)

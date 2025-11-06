@@ -11,14 +11,14 @@
             "gr": {
                 "location": "MS Teams",
                 "title": "ΙΕΕEXtreme Crash Course",
-                "keywords": ["SEMINAR"],
+                "keywords": ["ΣΕΜΙΝΑΡΙΟ"],
                 "description": "The IEEEXtreme Crash Course is a series of open online programming lectures in Python!\n\n📈 Its goal is to provide a general understanding of fundamental programming and algorithm concepts so that anyone can participate in the IEEEXtreme competition!\n\n✅ Of course, you can attend the lectures regardless of whether you plan to participate in the competition or not!\n\n📆 The lecture series consists of four sessions:\n1) Friday, 06/10: Introduction to Algorithmic Thinking.\n2) Monday, 09/10: Introduction to Python (Part 1).\n3) Thursday, 12/10: Introduction to Python (Part 2).\n4) Sunday, 15/10: Let's go IEEEXtreme!\n\n❗ The lectures will be held on Microsoft Teams!",
                 "links": []
             },
             "en": {
                 "location": "MS Teams",
                 "title": "ΙΕΕEXtreme Crash Course",
-                "keywords": ["ΣΕΜΙΝΑΡΙΟ"],
+                "keywords": ["SEMINAR"],
                 "description": "The IEEEXtreme Crash Course is a series of open online programming lectures in Python!\n\n📈 Its goal is to provide a general understanding of fundamental programming and algorithm concepts so that anyone can participate in the IEEEXtreme competition!\n\n✅ Of course, you can attend the lectures regardless of whether you plan to participate in the competition or not!\n\n📆 The lecture series consists of four sessions:\n1) Friday, 06/10: Introduction to Algorithmic Thinking.\n2) Monday, 09/10: Introduction to Python (Part 1).\n3) Thursday, 12/10: Introduction to Python (Part 2).\n4) Sunday, 15/10: Let's go IEEEXtreme!\n\n❗ The lectures will be held on Microsoft Teams!",
                 "links": []
             }
@@ -107,7 +107,7 @@
                 ]
             }
         }
-    },    
+    },
     {
         "id": 3,
         "date": "2024-09-29T17:00:00",
@@ -144,7 +144,7 @@
                 ]
             }
         }
-    },    
+    },
     {
         "id": 4,
         "date": "2024-10-12T12:00:00",
@@ -181,7 +181,7 @@
                 ]
             }
         }
-    },    
+    },
     {
         "id": 5,
         "date": "2024-10-26T03:00:00",
@@ -228,7 +228,7 @@
                 ]
             }
         }
-    },    
+    },
     {
         "id": 6,
         "date": "2024-11-30T12:00:00",
@@ -265,7 +265,7 @@
                 ]
             }
         }
-    },    
+    },
     {
         "id": 7,
         "date": "2024-12-07T10:00:00",
@@ -322,7 +322,7 @@
                 ]
             }
         }
-    },    
+    },
     {
         "id": 8,
         "date": "2025-03-11T13:00:00",
