@@ -301,7 +301,7 @@
             "en": {
                 "location": "Conference Centre, Campus2, UniWA",
                 "title": "Trust in Online Social Networks",
-                "keywords": ["CONFERENCE"],
+                "keywords": ["ONE-DAY SEMINAR"],
                 "description": "Who can you trust on social media?\nHow can you distinguish reliable information on social media?\nWhen does social media usage become dangerous, and what is its impact on society?\n\nThe CoNSeRT research laboratory of the Department of Electrical and Electronics Engineering at the University of West Attica is organizing the IEEE Communication Society-sponsored seminar on: “Trust in Online Social Networks.”\n\nThe seminar will take place at the Conference Center of the Ancient Olive Grove Campus on Saturday, December 7, from 10:00 to 16:00, and is supported by the IEEE Student Branch UniWA.\n\nAcademics, journalists, researchers, and representatives from authorities and social media platforms will analyze the topic of social media usage and the trust within these networks from different perspectives. The goal is to provide a comprehensive understanding of their proper use. The event is open to the public, but registration is required for attendees at the Conference Center via the link below.\n\nAttendees will receive a certificate of participation and will have the opportunity to learn from researchers about methodologies for combating misinformation, ask authorities about threats within social media, communicate with social media representatives about the challenges of accurate information dissemination, and express their ethical concerns regarding these issues.",
                 "links": [
                     {
@@ -424,6 +424,49 @@
                         "id": 0,
                         "title": "Participation Form",
                         "url": "https://docs.google.com/forms/d/1Gyvcye9u7SQsnPRuXOfxCHUTgVmIxQxm6LGAPnPwgEg/"
+                }]
+            }
+        }
+    },
+    {
+        "id": 11,
+        "date": "2025-06-15T10:30:00",
+        "end_date": "2025-06-15T19:00:00",
+        "registration_deadline": "2025-06-14T10:30:00",
+        "registration_form": "https://www.tickettailor.com/events/ieeesbuniwa/1705983",
+        "thumbnail": "/events/Engineering-Careers.png",
+        "images": ["/events/Engineering-Careers.png"],
+        "info": {
+            "gr": {
+                "location": "Συνεδριακό Κέντρο, Π1, ΠΑΔΑ",
+                "title": "Engineering Careers",
+                "keywords": ["ΗΜΕΡΙΔΑ"],
+                "description": "Το *Engineering Careers*, το πρώτο career day αποκλειστικά για μηχανικούς, έρχεται στο Πανεπιστήμιο Δυτικής Αττικής, την Κυριακή 15/6, και σας προσκαλεί να ζήσετε μια μοναδική εμπειρία γεμάτη ευκαιρίες!\n\nΗ εκδήλωση, η οποία διοργανώνεται εκ μέρους του **IEEE SB UniWA**, θα λάβει χώρα στο **Συνεδριακό Κέντρο** της **Πανεπιστημιούπολης Αρχαίου Ελαιώνα** από τις **10:30 έως και τις 19:00**. Θεματικά πάνελ συζητήσεων με καταξιωμένους επαγγελματίες, παρουσιάσεις εταιρειών από κορυφαίους στον χώρο της μηχανικής, πολλές ευκαιρίες networking καθώς και ατελείωτη περιήγηση στα περίπτερα των εταιρειών για παραπάνω συζήτηση.\n\nΣτο συγκεκριμένο career day, θα δώσουν το παρόν κορυφαίες εταιρείες και όμιλοι του κλάδου της μηχανικής και της τεχνολογίας όπως η **Aktor**, **HP**, **Oracle**, **Kalamarakis**, **CMA**, **Gizelis**, **Gizelis Robotics** καθώς και πολλές ακόμη που θα ανακοινωθούν μέσα στις επόμενες ημέρες στους λογαριασμούς μας στα social media.\n\nΤο συγκεκριμένο event μπορεί να αποτελέσει το πρώτο σου βήμα προς την αγορά εργασίας!\n\n",
+                "links":  [{
+                        "id": 0,
+                        "title": "Φόρμα Συμμετοχής",
+                        "url": " https://www.tickettailor.com/events/ieeesbuniwa/1705983"
+                },
+                {
+                        "id": 1,
+                        "title": "Πρόγραμμα του Engineering Careers",
+                        "url": "/events/Engineering Careers Agenda.pdf"
+                }]
+            },
+            "en": {
+                "location": "Conference Centre, Campus1, UniWA",
+                "title": "Engineering Careers",
+                "keywords": ["ONE-DAY SEMINAR"],
+                "description": "*Engineering Careers*, the first career day exclusively for engineers, is coming to the **University of West Attica** on **Sunday, June 15**, inviting you to experience a unique event full of opportunities!\n\nOrganized by **IEEE SB UniWA**, the event will take place at the **Conference Center** of the **Ancient Olive Grove Campus** from **10:30 to 19:00**. Themed discussion panels with distinguished professionals, company presentations by top names in engineering, abundant networking opportunities, and endless exploration of company booths for further conversation.\n\nAt this specific career day, leading companies and groups from the engineering and technology sector will be present, such as **Aktor**, **HP**, **Oracle**, **Kalamarakis**, **CMA**, **Gizelis**, **Gizelis Robotics**, as well as many more that will be announced in the coming days on our social media accounts.\n\nThis event could be your first step into the job market!\n\n",
+                "links":  [{
+                        "id": 0,
+                        "title": "Participation Form",
+                        "url": " https://www.tickettailor.com/events/ieeesbuniwa/1705983"
+                },
+                {
+                        "id": 1,
+                        "title": "Engineering Careers Agenda",
+                        "url": "/events/Engineering Careers Agenda.pdf"
                 }]
             }
         }
