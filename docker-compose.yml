@@ -12,7 +12,7 @@ services:
       - "--providers.docker.exposedByDefault=false"
       - "--entrypoints.web.address=:80"
     ports:
-      - "80:80"
+      - "8081:80"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
     healthcheck:
@@ -130,7 +130,7 @@ services:
     build:
       context: ./web
       args:
-        NEXT_PUBLIC_API_URL: "http://${SERVER_NAME}/api"
+        NEXT_PUBLIC_API_URL: "http://api:5000"
         NEXT_PUBLIC_IMAGES_STORAGE_URL: "http://${SERVER_NAME}/files"
     env_file:
       - .env
