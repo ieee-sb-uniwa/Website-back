@@ -1,18 +1,25 @@
 #!/bin/bash
 
-# Load environment variables from .env file
+set -e
+
 if [ -f .env ]; then
-    export $(cat .env | grep -v '#' | awk '/=/ {print $1}')
+    set -o allexport
+    source .env
+    set +o allexport
 else
     echo ".env file not found!"
     exit 1
 fi
 
-git submodule update --remote --merge --init
+NODE_ENV=$(echo "$NODE_ENV" | tr -d '\r' | xargs)
+
+#git submodule update --remote --merge --init
 
 docker volume create minio-data
 docker volume create web-mongo-data
 echo "Created external volumes"
+
+# docker compose -f docker-compose.yml build --no-cache mongo
 
 docker compose -f docker-compose.yml build --no-cache
 

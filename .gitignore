@@ -2,7 +2,7 @@
 data/mongo_internal_data
 
 # dependencies
-/node_modules
+node_modules
 /.pnp
 .pnp.js
 

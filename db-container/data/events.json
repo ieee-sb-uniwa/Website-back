@@ -11,14 +11,14 @@
             "gr": {
                 "location": "MS Teams",
                 "title": "ΙΕΕEXtreme Crash Course",
-                "keywords": ["SEMINAR"],
+                "keywords": ["ΣΕΜΙΝΑΡΙΟ"],
                 "description": "The IEEEXtreme Crash Course is a series of open online programming lectures in Python!\n\n📈 Its goal is to provide a general understanding of fundamental programming and algorithm concepts so that anyone can participate in the IEEEXtreme competition!\n\n✅ Of course, you can attend the lectures regardless of whether you plan to participate in the competition or not!\n\n📆 The lecture series consists of four sessions:\n1) Friday, 06/10: Introduction to Algorithmic Thinking.\n2) Monday, 09/10: Introduction to Python (Part 1).\n3) Thursday, 12/10: Introduction to Python (Part 2).\n4) Sunday, 15/10: Let's go IEEEXtreme!\n\n❗ The lectures will be held on Microsoft Teams!",
                 "links": []
             },
             "en": {
                 "location": "MS Teams",
                 "title": "ΙΕΕEXtreme Crash Course",
-                "keywords": ["ΣΕΜΙΝΑΡΙΟ"],
+                "keywords": ["SEMINAR"],
                 "description": "The IEEEXtreme Crash Course is a series of open online programming lectures in Python!\n\n📈 Its goal is to provide a general understanding of fundamental programming and algorithm concepts so that anyone can participate in the IEEEXtreme competition!\n\n✅ Of course, you can attend the lectures regardless of whether you plan to participate in the competition or not!\n\n📆 The lecture series consists of four sessions:\n1) Friday, 06/10: Introduction to Algorithmic Thinking.\n2) Monday, 09/10: Introduction to Python (Part 1).\n3) Thursday, 12/10: Introduction to Python (Part 2).\n4) Sunday, 15/10: Let's go IEEEXtreme!\n\n❗ The lectures will be held on Microsoft Teams!",
                 "links": []
             }
@@ -107,7 +107,7 @@
                 ]
             }
         }
-    },    
+    },
     {
         "id": 3,
         "date": "2024-09-29T17:00:00",
@@ -144,7 +144,7 @@
                 ]
             }
         }
-    },    
+    },
     {
         "id": 4,
         "date": "2024-10-12T12:00:00",
@@ -157,7 +157,7 @@
             "gr": {
                 "location": "Κ16.001, Π1, ΠΑΔΑ",
                 "title": "Git-Github Workshop",
-                "keywords": ["ΣΕΜΙΝΑΡΙΟ"],
+                "keywords": ["WORKSHOP"],
                 "description": "✨Σας προσκαλούμε στο πρώτο on site workshop του IEEE SB UniWA με θέμα version control με Git και GitHub! Το Git και το GitHub είναι δύο συναφή εργαλεία που χρησιμοποιούνται ευρέως για την παρακολούθηση και διαχείριση κώδικα.🖥️\n\n👨‍💻Το Git είναι ένα σύστημα ελέγχου εκδόσεων (version control system), το οποίο επιτρέπει στους προγραμματιστές να παρακολουθούν αλλαγές στον κώδικα τους, να διατηρούν ιστορικό των αλλαγών αυτών και να συνεργάζονται με άλλους σε κοινά έργα.💾 Το GitHub είναι μια πλατφόρμα φιλοξενίας αποθετηρίων Git (repositories) και προσφέρει ένα περιβάλλον που επιτρέπει την κοινή χρήση και συνεργασία στον κώδικα, συνδυάζοντας τα χαρακτηριστικά του Git με μια διαδικτυακή πλατφόρμα.🌐\n\n✅Το συγκεκριμένο Workshop θα διεξαχθεί από τον Σπύρο Σαριδάκη, μέλος του παραρτήματός μας, και θα καλύψει όλες τις απαραίτητες γνώσεις που χρειάζεται κάποιος ώστε να ασχοληθεί αποτελεσματικά σε ομαδικά project που περιλαμβάνουν κώδικα και όχι μόνο!👥\n\n🔷Για να δηλώσετε συμμετοχή είναι απαραίτητο να συμπληρώστε την παρακάτω φόρμα\n\n🚀Μην χάσετε την ευκαιρία να αυξήσετε την παραγωγικότητά σας και να συνεργαστείτε αποτελεσματικά με άλλους!😎",
                 "links": [
                     {
@@ -170,7 +170,7 @@
             "en": {
                 "location": "K16.001, Campus1, UniWA",
                 "title": "Git-Github Workshop",
-                "keywords": ["SEMINAR"],
+                "keywords": ["WORKSHOP"],
                 "description": "✨We invite you to the first on-site workshop of IEEE SB UniWA on version control with Git and GitHub! 🖥️ Git and GitHub are essential tools widely used for tracking and managing code.\n\n👨‍💻Git is a version control system that allows developers to track changes in their code, maintain a history of those changes, and collaborate on shared projects. 💾 GitHub is a platform for hosting Git repositories, offering a collaborative environment that combines the features of Git with an online interface.🌐\n\n✔️ This workshop will be held by Spyros Saridakis, member of our student branch, and will cover all the knowledge you need to effectively manage group projects involving code - and much more! 👥\n\n🔷To participate, please fill out the form below.\n\n🚀Don't miss this opportunity to boost your productivity and collaborate efficiently with others! 😎",
                 "links": [
                     {
@@ -181,7 +181,7 @@
                 ]
             }
         }
-    },    
+    },
     {
         "id": 5,
         "date": "2024-10-26T03:00:00",
@@ -228,7 +228,7 @@
                 ]
             }
         }
-    },    
+    },
     {
         "id": 6,
         "date": "2024-11-30T12:00:00",
@@ -265,7 +265,7 @@
                 ]
             }
         }
-    },    
+    },
     {
         "id": 7,
         "date": "2024-12-07T10:00:00",
@@ -322,7 +322,7 @@
                 ]
             }
         }
-    },    
+    },
     {
         "id": 8,
         "date": "2025-03-11T13:00:00",
@@ -382,14 +382,14 @@
             "gr": {
                 "location": "Κ10.120 (ΕΙΣΕ), Π1, ΠΑΔΑ",
                 "title": "Biomedical Workshop",
-                "keywords": ["Workshop"],
+                "keywords": ["WORKSHOP"],
                 "description": "Με μεγάλη χαρά σας προσκαλούμε στο Workshop που διοργανώνεται από το Biomed SG του IEEE Student Branch του ΠΑΔΑ, σε συνεργασία με το Τμήμα Μηχανικών Βιοϊατρικής του Πανεπιστημίου Δυτικής Αττικής· περιλαμβάνει: 📌 MATLAB (Παρασκευή 28 Μαρτίου, 17:30–19:30): βασικές λειτουργίες του Simulink, Συστήματα Αυτομάτου Ελέγχου, εισαγωγή στην Ασαφή Λογική & το Fuzzy Toolbox· 📌 Python (Σάββατο 29 Μαρτίου, 12:00–14:30): Web Scraping, Μηχανική Μάθηση, εισαγωγή στα Large Language Models (LLMs)· 📌 Επιπλέον: παρουσίαση του IEEE SB, των πρότζεκτ της ομάδας BIOMED και ευκαιρίες συμμετοχής· το workshop είναι δωρεάν, διοργανώνεται από φοιτητές και απευθύνεται σε φοιτητές του Τμήματος και μέλη του παραρτήματος· ✅ Απαιτείται εξοικείωση με προγραμματιστικά περιβάλλοντα λόγω διαδραστικού χαρακτήρα· 📢 Περιορισμένες θέσεις για φυσική παρουσία – κάποιοι συμμετέχοντες ενδέχεται να παρακολουθήσουν εξ αποστάσεως· όσοι συμμετέχουν με laptop θα πρέπει να έχουν εγκατεστημένα το Simulink στο MATLAB και το Anaconda για Python· σύνδεσμος εγγραφής στο τέλος του μηνύματος.",
                 "links": []
             },
             "en": {
                 "location": "Κ10.120, Campus1, UniWa",
                 "title": "Biomedical Workshop",
-                "keywords": ["Workshop"],
+                "keywords": ["WORKSHOP"],
                 "description": "We are excited to invite you to the Workshop organized by the Biomed SG of the IEEE Student Branch of UniWA, in collaboration with the Department of Biomedical Engineering of the University of West Attica; it includes: 📌 MATLAB (Fri, Mar 28, 17:30–19:30): Simulink basics, Control Systems, Intro to Fuzzy Logic & Toolbox; 📌 Python (Sat, Mar 29, 12:00–14:30): Web Scraping, Machine Learning, Intro to LLMs; 📌 Plus: Overview of IEEE SB, BIOMED projects & participation opportunities; the workshop is free, student-led, and aimed at Biomedical Engineering students & IEEE members; ✅ Familiarity with programming is REQUIRED as the workshop is interactive; 📢 Limited in-person seats – some may attend remotely; participants with laptops must have Simulink (MATLAB) and Anaconda (Python) installed; registration form link at the end of the message.",
                 "links": []
             }
@@ -407,7 +407,7 @@
             "gr": {
                 "location": "ΚΖΒ.109, Π2, ΠΑΔΑ",
                 "title": "GameDev Workshop",
-                "keywords": ["Workshop"],
+                "keywords": ["WORKSHOP"],
                 "description": "Η ομάδα **GameDev** του παραρτήματος **IEEE** σας προσκαλεί στο εισαγωγικό workshop **\"Εισαγωγή στο Godot και τη GDScript\"** την **Παρασκευή 31 Μαΐου, 12:00 μ.μ.**, με εξοικείωση στο Godot, GDScript και κατασκευή platformer· στο τέλος θα δοθεί **πιστοποίηση συμμετοχής**.",
                 "links":  [{
                         "id": 0,
@@ -418,7 +418,7 @@
             "en": {
                 "location": "ΚΖΒ.109, Campus2, UniWa",
                 "title": "GameDev Workshop",
-                "keywords": ["Workshop"],
+                "keywords": ["WORKSHOP"],
                 "description": "The **IEEE** branch's **GameDev** team invites you to the introductory workshop **\"Introduction to Godot and GDScript\"** on **Friday, May 31st at 12:00 PM**, featuring familiarization with the Godot environment, first steps in GDScript, and building a simple platformer game; a certificate of participation will be provided at the end.",
                 "links":  [{
                         "id": 0,
