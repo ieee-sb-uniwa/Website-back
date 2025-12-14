@@ -19,7 +19,7 @@ const InfoSchema = new mongoose.Schema({
 
 const ProjectSchema = new mongoose.Schema({
   id: { type: Number, required: true },
-  sg: { type: String, required: true },
+  sg: { type: String, required: true, lowercase: true, index: true },
   name: { type: String, required: true },
   status: { type: String, required: true },
   thumbnail: { type: String },
