@@ -7,10 +7,10 @@ COPY ./data /docker-entrypoint-initdb.d/data
 # Add initialization scripts
 COPY ./init-mongo.sh /docker-entrypoint-initdb.d/
 
-ARG MONGO_DB_NAME
-
 # Clear and crlf from windows
 RUN sed -i 's/\r$//' /docker-entrypoint-initdb.d/init-mongo.sh
+
+RUN chmod +x /docker-entrypoint-initdb.d/init-mongo.sh
 
 # Expose MongoDB port
 EXPOSE 27017
