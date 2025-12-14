@@ -29,7 +29,7 @@ services:
     env_file:
       - ./.env
     environment:
-      - MONGODB_URL=mongodb://mongo:27017/${MONGO_DB_NAME}
+      - MONGODB_URL=mongodb://${MONGO_INITDB_ROOT_USERNAME}:${MONGO_INITDB_ROOT_PASSWORD}@mongo:27017/${MONGO_INITDB_DATABASE}?authSource=admin
       - MINIO_URL=http://${SERVER_NAME}/files
     command: ["bun", "run", "start"]
     # ports:
@@ -67,9 +67,11 @@ services:
   mongo:
     build:
       context: ./db-container
-      args:
-        - MONGO_DB_NAME=${MONGO_DB_NAME}
     container_name: mongo
+    environment:
+      - MONGO_INITDB_DATABASE=${MONGO_INITDB_DATABASE}
+      - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
     restart: always
     env_file:
       - ./.env
