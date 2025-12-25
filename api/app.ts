@@ -9,7 +9,7 @@ import { connectMongo } from './src/common/database/connect';
 import { counselor } from './src/counselor';
 import { events } from './src/events';
 import { scientificGroups } from "./src/scientific-groups";
-import { thirdPary } from './src/thirdparty';
+import { thirdParty } from './src/thirdparty';
 import { projects } from './src/projects';
 
 const { corsAllowList } = getConfig("./config.yml");
@@ -58,7 +58,7 @@ app
   .use(council)
   .use(counselor)
   .use(events)
-  .use(thirdPary)
+  .use(thirdParty)
   .use(projects)
   .use(scientificGroups)
 
