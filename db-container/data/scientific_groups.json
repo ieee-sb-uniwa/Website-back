@@ -2,7 +2,7 @@
   {
     "id": 0,
     "name": "Game Development",
-    "name_short": "GameDev",
+    "name_short": "gamedev",
     "wallpaper": "/assets/photos/Gamedev.JPG",
     "images": ["/projects/notifier.jpg"],
     "logo": "/assets/logos/scientific_groups/gamedev.svg",

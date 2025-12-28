@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "sg": "Web",
+    "sg": "web",
     "name": "UniWA Notifier",
     "status": "Active",
     "thumbnail": "/projects/notifier.jpg",
