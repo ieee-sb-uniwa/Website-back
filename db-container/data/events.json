@@ -470,5 +470,39 @@
                 }]
             }
         }
+    },
+    {
+        "id": 12,
+        "date": "2025-10-17T10:30:00",
+        "end_date": "2025-10-17T19:00:00",
+        "registration_deadline": "2025-10-17T10:30:00",
+        "registration_form": "https://forms.gle/7JaUKwrSBeSw6FZa6",
+        "thumbnail": "/events/IEEE_DAY_2025.png",
+        "images": ["/events/IEEE_DAY_2025.png"],
+        "info": {
+            "gr": {
+                "location": "Συνεδριακό Κέντρο, Π1, ΠΑΔΑ",
+                "title": "IEEE Day 2025",
+                "keywords": ["ΗΜΕΡΙΔΑ"],
+                "description": "Η Καθιερωμένη εκδήλωση **παρουσίασης των δράσεων του παραρτήματος και των project του.** Φέτος, τα **8 Student Scientific Group** μας θα παρουσιάσουν **πάνω από 20 project** σε ένα ευρύ φάσμα τομέων — από την **Τεχνητή Νοημοσύνη** και τη **Ρομποτική**, μέχρι τη **Βιοϊατρική**, την **Ενέργεια**, τη **Ναυτιλία**, τα **VR** περιβάλλοντα και το **Software Development**!\n\nH εκδήλωση περιλαμβάνει επίσης **περιήγηση στα booth** που θα έχουν στήσει όλα τα SG ώστε να μπορέσουμε να συζητήσουμε από κοντά πως μπορείτε και εσείς να γίνεται ενεργά μέλη του **IEEE SB UniWA!**",
+                "links":  [{
+                        "id": 0,
+                        "title": "Φόρμα Συμμετοχής",
+                        "url": "https://forms.gle/7JaUKwrSBeSw6FZa6"
+                }]
+            },
+            "en": {
+                "location": "Conference Centre, Campus1, UniWA",
+                "title": "IEEE Day 2025",
+                "keywords": ["ONE-DAY SEMINAR"],
+                "description": "Event for **presenting the branch’s activities and its projects.** This year, our **8 Student Scientific Groups** will present **more than 20 projects** across a wide range of fields — from **Artificial Intelligence** and **Robotics**, to **Biomedical Engineering**, **Energy**, **Maritime**, **VR** environments, and **Software Development**!\n\n The event also includes a **tour of the booths** that will be set up by all SGs, giving us the opportunity to discuss in person how you too can become active members of **IEEE SB UniWA!**",
+                "links":  [{
+                        "id": 0,
+                        "title": "Participation Form",
+                        "url": "https://forms.gle/7JaUKwrSBeSw6FZa6"
+                }]
+            }
+        }
     }
+	
 ]
