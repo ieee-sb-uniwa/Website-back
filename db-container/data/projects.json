@@ -1,42 +1,20 @@
 [
   {
     "id": 0,
-    "sg": "web",
-    "name": "UniWA Notifier",
+    "sg": "GameDev",
+    "name": "Cyber-Quest",
     "status": "Active",
-    "thumbnail": "/projects/notifier.jpg",
-    "images": ["/projects/notifier.jpg"],
-    "technologies": ["python"],
+    "thumbnail": "/projects/gamedev/Thumbnail_CyberQuest.png",
+    "images": ["/projects/gamedev/CyberQuestPhoto.png","/projects/gamedev/CyberQuestScreen1.png","/projects/gamedev/CyberQuestScreen2.png","/projects/gamedev/CyberQuestScreen3.png"],
+    "technologies": ["Godot", "Photoshop", "GDScript", "Aseprite", "Pixelorama"],
     "info": {
       "gr": {
-        "description": "Ομάδα υλοποίησης διαδικτυακών εφαρμογών. Ελάτε στην ομάδα για να δημιουργήσουμε δυναμικές ιστοσελίδες που αλληλεπιδρούν με τον έξω κόσμο και εξυπηρετούν μια πραγματική εφαρμογή με χρήση σύγχρονων τεχνολογιών.",
-        "links": [
-          {
-            "id": 0,
-            "title": "Παλιά προβλήματα στο CS academy",
-            "url": "https://csacademy.com/ieeextreme-practice/tasks/"
-          },
-          {
-            "id": 1,
-            "title": "Δήλωση ομάδας",
-            "url": "https://xtreme.vtools.ieee.org/"
-          }
-        ]
+        "description": "Ανάπτυξη εκπαιδευτικού 2D παιχνιδιού για παιδιά δημοτικού με θέμα την ασφάλεια στο διαδίκτυο. Μέσα από διαδραστικές αποστολές, οι μαθητές μαθαίνουν πώς να προστατεύονται online, να αναγνωρίζουν κινδύνους και να υιοθετούν καλές πρακτικές για ασφαλή χρήση του διαδικτύου. Ακόμα οι εκπαιδευτικοί μπορούν να το αξιοποιήσουν ως εργαλείο για πιο ενεργό και ευχάριστο μάθημα πληροφορικής.\n\n🕹️  Το project αναπτύσσεται με μοντέρνες τεχνολογίες και έχει σχεδιαστεί ώστε να προσφέρει εκπαιδευτική αξία μέσα από διασκεδαστικό gameplay.",
+        "links": []
       },
       "en": {
-        "description": "Hello world",
-        "links": [
-          {
-            "id": 0,
-            "title": "Old tasks",
-            "url": "https://csacademy.com/ieeextreme-practice/tasks/"
-          },
-          {
-            "id": 1,
-            "title": "Vtools",
-            "url": "https://xtreme.vtools.ieee.org/"
-          }
-        ]
+        "description": "Development of an educational 2D game for elementary school children focused on internet safety. Through interactive missions, students learn how to stay safe online, recognize potential risks, and adopt best practices for secure internet use. In addition, teachers can utilize it as a tool for a more engaging and enjoyable computer science lesson.\n\n🕹️  The project is developed using modern technologies and is designed to provide educational value through fun and engaging gameplay.",
+        "links": []
       }
     }
   }
