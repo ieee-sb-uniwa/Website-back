@@ -43,7 +43,7 @@ export const projects = new Elysia({ prefix: '/projects' })
       const { sgName } = params;
 
       const result = await findAll(Project, {
-        query: { sg: sgName.toLowerCase() },
+        query: { sg: sgName },
         lang: lang,
         limit: limitAmount
       });
