@@ -48,7 +48,7 @@ export const scientificGroups = new Elysia({ prefix: "/scientific_groups" })
         const { lang = "gr" } = query;
         const { name } = params;
 
-        const result = await findOne(ScientificGroups, { name_short: name.toLocaleLowerCase() }, { lang });
+        const result = await findOne(ScientificGroups, { name_short: name }, { lang });
 
         if (!result) {
           // Return 404 if the scientific group does not exist
