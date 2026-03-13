@@ -14,7 +14,7 @@ services:
       - "--providers.docker.exposedByDefault=false"
       - "--entrypoints.web.address=:80"
     ports:
-      - "8081:80"
+      - "${TRAEFIK_PORT:-80}:80" #80 for localhost 8081 for prod
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
     healthcheck:
