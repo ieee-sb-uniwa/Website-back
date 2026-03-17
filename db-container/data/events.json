@@ -503,6 +503,233 @@
                 }]
             }
         }
+    },
+    {
+        "id": 13,
+        "date": "2025-10-25T03:00:00+03:00",
+        "end_date": "2025-10-26T03:00:00+03:00",
+        "registration_deadline": "2025-10-14T23:59:59+03:00",
+        "registration_form": "https://forms.gle/sFGc9BqZut2cJX7Q9",
+        "thumbnail": "/events/ieeextreme-19-uwa-hub.png",
+        "images": ["/events/ieeextreme-19-uwa-hub.png"],
+        "info": {
+            "gr": {
+                "location": "Κτήριο Ζ, Αίθουσα ΖΒ001, Πανεπιστημιούπολη Αρχαίου Ελαιώνα (Π2), ΠαΔΑ",
+                "title": "IEEEXtreme 19.0 @ UniWA Hub",
+                "keywords": ["ΔΙΑΓΩΝΙΣΜΟΣ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΥ", "IEEE", "IEEEXtreme"],
+                "description": "Ο IEEEXtreme, ο παγκόσμιος διαγωνισμός προγραμματισμού του IEEE, επιστρέφει στο ΠΑΔΑ! Για ακόμη μια χρονιά οι ομάδες του ΠΑΔΑ θα ενωθούν στο hub του IEEE SB UniWA και θα ανταγωνιστούν με παραρτήματα από όλο τον κόσμο!\n\nΟι εγγραφές είναι ανοιχτές μέχρι 14 Οκτωβρίου. Ο διαγωνισμός διαρκεί 24 ώρες και διεξάγεται ταυτόχρονα σε όλο τον κόσμο. Οι ομάδες αποτελούνται από 1 έως και 3 άτομα. Όλα τα μέλη της ομάδας πρέπει να έχουν ενεργή συνδρομή στο IEEE. Διεξάγεται στην πλατφόρμα του csacademy όπου είναι ανεβασμένα και τα θέματα παλαιότερων διαγωνισμών. Το παράρτημα θα παρέχει γεύματα και ενεργειακά ποτά για όλους τους διαγωνιζόμενους. Θα υπάρξει workshop επίλυσης θεμάτων παλαιότερων ετών για προετοιμασία.",
+                "links":  [{
+                        "id": 0,
+                        "title": "IEEE Membership",
+                        "url": "https://www.ieee.org/"
+                }]
+            },
+            "en": {
+                "location": "Building Z, Room ZB001, Ancient Olive Grove Campus (P2), UniWA",
+                "title": "IEEEXtreme 19.0 @ UniWA Hub",
+                "keywords": ["PROGRAMMING COMPETITION", "IEEE", "IEEEXtreme"],
+                "description": "IEEEXtreme, IEEE’s global programming competition, is returning to UniWA! Once again, UniWA teams will gather at the IEEE SB UniWA hub and compete with student branches from all over the world.\n\nRegistrations are open until October 14. The competition lasts 24 hours and is held simultaneously worldwide. Teams can have 1 to 3 members. All team members must have an active IEEE membership. The contest is hosted on the csacademy platform, where past competition problems are also available. The branch will provide meals and energy drinks throughout the day for all participants. A workshop with solutions to previous years’ problems will also be held for proper preparation.",
+                "links":  [{
+                        "id": 0,
+                        "title": "IEEE Membership",
+                        "url": "https://www.ieee.org/"
+                }]
+            }
+        }
+    },
+    {
+        "id": 14,
+        "date": "2025-10-19T12:00:00+03:00",
+        "end_date": "2025-10-19T15:00:00+03:00",
+        "registration_deadline": "2025-10-16T15:00:00+03:00",
+        "registration_form": "https://www.tickettailor.com/events/ieeesbuniwa1/1882460",
+        "thumbnail": "/events/ieeextreme-19-workshop.png",
+        "images": ["/events/ieeextreme-19-workshop.png"],
+        "info": {
+            "gr": {
+                "location": "",
+                "title": "IEEEXtreme 19.0 Workshop",
+                "keywords": ["WORKSHOP", "IEEE", "IEEEXtreme"],
+                "description": "Θες να προετοιμαστείς κατάλληλα για τον IEEEXtreme 19.0; Τότε μην χάσεις το IEEEXtreme Workshop, που πραγματοποιείται σε συνεργασία με τα IEEE SB NTUA & IEEE SB Piraeus!\n\nΣε αυτό το workshop θα λύσουμε παλαιά tasks του διαγωνισμού, θα απαντήσουμε σε απορίες και θα μοιραστούμε tips & tricks για να είσαι πανέτοιμος για τη μεγάλη 24ωρη μάχη του κώδικα!\n\nΑν και δικαίωμα συμμετοχής στον διαγωνισμό έχουν μόνο τα επίσημα μέλη του IEEE, το workshop μας είναι ανοιχτό σε όλους — ελάτε να μάθουμε, να προγραμματίσουμε και να γνωριστούμε!",
+                "links": []
+            },
+            "en": {
+                "location": "",
+                "title": "IEEEXtreme 19.0 Workshop",
+                "keywords": ["WORKSHOP", "IEEE", "IEEEXtreme"],
+                "description": "Want to prepare properly for IEEEXtreme 19.0? Then don’t miss the IEEEXtreme Workshop, organized in collaboration with IEEE SB NTUA & IEEE SB Piraeus!\n\nIn this workshop, we will solve past competition tasks, answer questions, and share tips & tricks so you can be fully ready for the big 24-hour coding battle!\n\nAlthough only official IEEE members are eligible to participate in the competition, our workshop is open to everyone — come learn, code, and connect with us!",
+                "links": []
+            }
+        }
+    },
+    {
+        "id": 16,
+        "date": "2025-11-29T12:00:00+03:00",
+        "end_date": "2025-11-29T12:00:00+03:00",
+        "registration_deadline": "",
+        "registration_form": "https://buytickets.at/softwaresg/1940579",
+        "thumbnail": "/events/3d-printing-fundamentals.png",
+        "images": ["/events/3d-printing-fundamentals.png"],
+        "info": {
+            "gr": {
+                "location": "",
+                "title": "3D Printing Fundamentals Seminar",
+                "keywords": ["SEMINAR", "3D Printing"],
+                "description": "Θέλεις να ξεκινήσεις το ταξίδι σου στον κόσμο του 3D printing, αλλά δεν ξέρεις από πού να αρχίσεις;\nΤο 3D Printing Fundamentals Seminar είναι το ιδανικό πρώτο βήμα!\n\nΘα γνωρίσεις:\n• Τις βασικές τεχνολογίες εκτύπωσης (FDM, SLA, SLS)\n• Τα υλικά που χρησιμοποιούνται και πώς να επιλέγεις το κατάλληλο\n• πώς δουλεύει ένας 3D printer\n• Τις ρυθμίσεις που καθορίζουν την ποιότητα και την ακρίβεια της εκτύπωσης\n…και πολλά ακόμα\n\nΤο σεμινάριο είναι ανοιχτό για όλους. Ωστόσο, αν είσαι μέλος του IEEE SB UniWA Hub, θα λάβεις και βεβαίωση συμμετοχής!\nΑν όχι, προλαβαίνεις ακόμα — κάνε τη συνδρομή σου στον ΙΕΕΕ και γίνε ένας από εμάς!\n\nΔήλωσε δωρεάν συμμετοχή στην ακόλουθη φόρμα: https://buytickets.at/softwaresg/1940579",
+                "links": [
+                ]
+            },
+            "en": {
+                "location": "",
+                "title": "3D Printing Fundamentals Seminar",
+                "keywords": ["SEMINAR", "3D Printing"],
+                "description": "Do you want to start your journey into the world of 3D printing but don’t know where to begin?\nThe 3D Printing Fundamentals Seminar is the ideal first step!\n\nYou will learn:\n• The basic printing technologies (FDM, SLA, SLS)\n• The materials used and how to choose the right one\n• How a 3D printer works\n• The settings that determine print quality and accuracy\n…and much more\n\nThe seminar is open to everyone. However, if you are a member of the IEEE SB UniWA Hub, you will also receive a certificate of participation!\nIf not, there’s still time — get your IEEE membership and become one of us!\n\nRegister for free through the following form: https://buytickets.at/softwaresg/1940579",
+                "links": [
+                ]
+            }
+        }
+    },
+    {
+        "id": 17,
+        "date": "2025-12-05T18:00:00+02:00",
+        "end_date": "2025-12-05T20:00:00+02:00",
+        "registration_deadline": "",
+        "registration_form": "https://buytickets.at/softwaresg/1956010",
+        "thumbnail": "/events/cpp-oop-course.png",
+        "images": ["/events/cpp-oop-course.png"],
+        "info": {
+            "gr": {
+                "location": "Online (MS Teams)",
+                "title": "Μαθήματα C++: Εισαγωγή στον Αντικειμενοστραφή Προγραμματισμό",
+                "keywords": ["COURSE", "C++", "Object-Oriented Programming"],
+                "description": "Δήλωσε συμμετοχή στα μαθήματα C++ και κάνε τα πρώτα σου βήματα στον αντικειμενοστραφή προγραμματισμό!\nΜάθε τα μυστικά της C++ και του αντικειμενοστραφούς προγραμματισμού μέσα από πρακτικά παραδείγματα και διαδραστικά sessions που θα σε βοηθήσουν να κατανοήσεις τη λογική πίσω από τον κώδικα!\n\nΤα μαθήματα διεξάγονται online μέσω MS Teams και ξεκινούν από την Παρασκευή 5/12!\n\nΤα μαθήματα είναι ανοιχτά σε όλους, όμως αν είσαι μέλος του IEEE SB UniWA Hub και παραδώσεις την τελική εργασία, θα λάβεις και βεβαίωση συμμετοχής!\nΑν όχι, προλαβαίνεις ακόμα — κάνε τη συνδρομή σου στο ΙΕΕΕ και γίνε ένας από εμάς!",
+                "links": [
+                ]
+            },
+            "en": {
+                "location": "Online (MS Teams)",
+                "title": "C++ Classes: Introduction to Object-Oriented Programming",
+                "keywords": ["COURSE", "C++", "Object-Oriented Programming"],
+                "description": "Sign up for the C++ classes and take your first steps into object-oriented programming!\nLearn the essentials of C++ and OOP through practical examples and interactive sessions that will help you understand the logic behind the code.\n\nThe classes are held online via MS Teams and start on Friday 5/12!\n\nThe classes are open to everyone, but if you are a member of the IEEE SB UniWA Hub and submit the final project, you will receive a certificate of participation.\nIf not, there’s still time — get your IEEE membership and become one of us!",
+                "links": [
+                ]
+            }
+        }
+    },
+    {
+        "id": 18,
+        "date": "2026-01-10T18:00:00+02:00",
+        "end_date": "2026-01-10T21:00:00+02:00",
+        "registration_deadline": "",
+        "registration_form": "https://www.tickettailor.com/events/softwaresg/1991159",
+        "thumbnail": "/events/git-github-fundamentals.png",
+        "images": ["/events/git-github-fundamentals.png"],
+        "info": {
+            "gr": {
+                "location": "",
+                "title": "Git/GitHub Fundamentals Workshop",
+                "keywords": ["WORKSHOP", "Git", "GitHub", "Version Control"],
+                "description": "Το Git/GitHub Fundamentals Workshop έρχεται στις 10 Ιανουαρίου και κάνει deep dive σε δύο εργαλεία που χρησιμοποιούνται ευρέως για την παρακολούθηση και τη διαχείριση κώδικα! Αν σπουδάζεις μηχανικός ή ασχολείσαι γενικά με προγραμματισμό, τότε η κατανόηση του GitHub είναι must!\n\nΤο workshop έχει πρακτικό χαρακτήρα, οπότε προτείνουμε να φέρεις laptop για να δοκιμάσεις τα παραδείγματα που θα παρουσιάζονται live.\n\nΚαι φυσικά, αν είσαι μέλος του IEEE SB UniWA HUB, θα λάβεις βεβαίωση παρακολούθησης! Αν δεν έχεις ακόμα συνδρομή, μπορείς να κάνεις την συνδρομή σου τώρα και να γίνεις ένας από εμάς!",
+                "links": []
+            },
+            "en": {
+                "location": "",
+                "title": "Git/GitHub Fundamentals Workshop",
+                "keywords": ["WORKSHOP", "Git", "GitHub", "Version Control"],
+                "description": "The Git/GitHub Fundamentals Workshop is coming on January 10 and goes into a deep dive on two widely used tools for tracking and managing code! If you are an engineering student or work with programming in general, understanding GitHub is a must!\n\nThe workshop is hands-on, so we recommend bringing your laptop to follow along and try the examples live.\n\nAnd of course, if you are a member of the IEEE SB UniWA HUB, you will receive a certificate of attendance! If you are not yet a member, you can still get your IEEE membership now and become one of us!",
+                "links": []
+            }
+        }
+    },
+    {
+        "id": 19,
+        "date": "2026-03-14T12:00:00+02:00",
+        "end_date": "2026-03-14T15:00:00+02:00",
+        "registration_deadline": "",
+        "registration_form": "https://buytickets.at/ieeesbuniwa2/2051574",
+        "thumbnail": "/events/game-graphics-seminar.png",
+        "images": ["/events/game-graphics-seminar.png"],
+        "info": {
+            "gr": {
+                "location": "",
+                "title": "Game Graphics Seminar",
+                "keywords": ["SEMINAR", "Game Development", "Graphics"],
+                "description": "Θέλεις να ξεκινήσεις δυναμικά το νέο εξάμηνο;\nΤο Game Graphics Seminar είναι για εσένα!\n\nΕκεί θα γνωρίσεις τη διαδικασία δημιουργίας ενός παιχνιδιού και τα απαραίτητα στοιχεία για την υλοποίησή του, ενώ θα μάθεις πώς να σχεδιάζεις τα δικά σου 2D και 3D assets χρησιμοποιώντας τα Photoshop και Blender.\n\nΤο σεμινάριο είναι ανοιχτό για όλους. Ωστόσο, αν είσαι μέλος του IEEE SB UniWA Hub, θα λάβεις και βεβαίωση συμμετοχής.\nΑν όχι, προλαβαίνεις ακόμα — κάνε τη συνδρομή σου στο κανάλι ieee-registration και γίνε ένας από εμάς!",
+                "links": [
+                ]
+            },
+            "en": {
+                "location": "",
+                "title": "Game Graphics Seminar",
+                "keywords": ["SEMINAR", "Game Development", "Graphics"],
+                "description": "Do you want to kick-start the new semester in a dynamic way?\nThe Game Graphics Seminar is for you!\n\nYou will get to know the process of creating a game and the essential components needed to implement it, while also learning how to design your own 2D and 3D assets using Photoshop and Blender.\n\nThe seminar is open to everyone. However, if you are a member of the IEEE SB UniWA Hub, you will receive a certificate of participation.\nIf not, there’s still time — get your IEEE membership and become one of us!",
+                "links": [
+                ]
+            }
+        }
+    },
+    {
+        "id": 20,
+        "date": "2026-03-21T12:00:00+02:00",
+        "end_date": "2026-03-21T16:00:00+02:00",
+        "registration_deadline": "",
+        "registration_form": "https://docs.google.com/forms/d/e/1FAIpQLScGtDVnBR4utxzBH3ZZPSHELJHYNMWF87tWIA8HFgn6ah3lEQ/viewform?usp=dialog",
+        "thumbnail": "/events/animation-workshop.png",
+        "images": ["/events/animation-workshop.png"],
+        "info": {
+            "gr": {
+                "location": "",
+                "title": "Animation Workshop",
+                "keywords": ["WORKSHOP", "Animation", "Game Development"],
+                "description": "Έρχεται το Animation Workshop!\n\nΣτην πρώτη ενότητα θα παρουσιαστούν οι τεχνικές και οι βασικές αρχές του animation, ενώ στη δεύτερη ενότητα θα εστιάσουμε στους τρόπους χρήσης τεχνικών animation στα video games. Δεδομένου ότι το workshop είναι διαδραστικό, συστήνουμε οι συμμετέχοντες να έχουν μαζί τους τάμπλετ ή λάπτοπ.\n\nΟι θέσεις είναι περιορισμένες κι έτσι θα τηρηθεί σειρά προτεραιότητας. Αν είσαι μέλος του IEEE SB UniWA Hub, έχεις περισσότερες πιθανότητες να επιλεχθείς και θα λάβεις βεβαίωση συμμετοχής!\nΑν όχι, προλαβαίνεις ακόμα — κάνε τη συνδρομή σου στο ieee-registration και γίνε ένας από εμάς!",
+                "links": [
+                ]
+            },
+            "en": {
+                "location": "Panepistimioupoli 2, Arxaiou Eleona, Building Z, Class ZB109",
+                "title": "Animation Workshop",
+                "keywords": ["WORKSHOP", "Animation", "Game Development"],
+                "description": "The Animation Workshop is coming!\n\nIn the first part, we will present the techniques and fundamental principles of animation, while in the second part we will focus on how to apply animation techniques in video games. Since this workshop is interactive, we recommend that participants bring a tablet or laptop.\n\nSeats are limited and will be allocated on a first-come, first-served basis. If you are a member of the IEEE SB UniWA Hub, you have a higher chance of being selected and you will receive a certificate of participation!\nIf not, there’s still time — get your IEEE membership and become one of us!",
+                "links": [
+                ]
+            }
+        }
+    },
+    {
+        "id": 21,
+        "date": "2026-03-29T09:00:00+02:00",
+        "end_date": "2026-03-29T21:00:00+02:00",
+        "registration_deadline": "",
+        "registration_form": "https://buytickets.at/ieeesbuniwa2/2082623",
+        "thumbnail": "/events/game-jam.png",
+        "images": ["/events/game-jam.png"],
+        "info": {
+            "gr": {
+                "location": "",
+                "title": "Game Jam Competition",
+                "keywords": ["COMPETITION", "Game Jam", "Game Development"],
+                "description": "Ψάχνεις το απόλυτο game development challenge;\nΤότε δεν πρέπει να χάσεις τον διαγωνισμό Game Jam!\n\nΘα εργαστείς σε ομάδες 1-5 ατόμων με στόχο τη δημιουργία ενός πρωτότυπου παιχνιδιού μέσα σε 24 ώρες. Η οργανωτική επιτροπή θα επιλέξει τα 5 καλύτερα παιχνίδια, τα οποία θα τεθούν σε ψηφοφορία από τους ίδιους τους συμμετέχοντες για την τελική ανάδειξη των νικητών.",
+                "links": [
+                    {
+                        "id": 0,
+                        "title": "Discord Server Game Jam",
+                        "url": "https://discord.gg/FXyqMvGcJv"
+                    }
+                ]
+            },
+            "en": {
+                "location": "",
+                "title": "Game Jam Competition",
+                "keywords": ["COMPETITION", "Game Jam", "Game Development"],
+                "description": "Looking for the ultimate game development challenge?\nThen you can’t miss the Game Jam competition!\n\nYou will work in teams of 1–5 people to create an original game within 24 hours. The organizing committee will select the 5 best games, which will then be voted on by the participants themselves to determine the final winners.",
+                "links": [
+                    {
+                        "id": 0,
+                        "title": "Game Jam Discord Server",
+                        "url": "https://discord.gg/FXyqMvGcJv"
+                    }
+                ]
+            }
+        }
     }
-	
 ]
