@@ -1,17 +1,16 @@
 services:
   traefik:
-    image: traefik:v3.6.8
+    image: traefik:latest
     container_name: traefik
     restart: always
-    environment:
-      - DOCKER_API_VERSION=1.44
     command:
-      - "--api=true"
-      - "--log.level=DEBUG"
+      - "--log.level=INFO"
       - "--api.dashboard=true"
-      - "--api.insecure=true"
+      # Set to false so we can secure it with a router/auth
+      - "--api.insecure=false"
       - "--providers.docker=true"
       - "--providers.docker.exposedByDefault=false"
+      # Entrypoints
       - "--entrypoints.web.address=:80"
     ports:
       - "8081:80"
