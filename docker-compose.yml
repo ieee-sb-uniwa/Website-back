@@ -5,9 +5,11 @@ services:
     restart: always
     command:
       - "--log.level=INFO"
-      - "--api.dashboard=true"
+      - "--api.dashboard=false"
       # Set to false so we can secure it with a router/auth
       - "--api.insecure=false"
+      - "--ping=true"
+      - "--ping.entrypoint=web"
       - "--providers.docker=true"
       - "--providers.docker.exposedByDefault=false"
       # Entrypoints
@@ -16,8 +18,11 @@ services:
       - "8081:80"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
+    labels:
+      - "traefik.enable=true"
+      # Create a router for the internal API/Dashboard on the web entrypoint
     healthcheck:
-      test: ["CMD", "wget", "--spider", "-q", "http://localhost:8080/ping"]
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost/ping"]
       interval: 5s
       retries: 10
       start_period: 5s
