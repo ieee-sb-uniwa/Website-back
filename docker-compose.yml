@@ -35,7 +35,7 @@ services:
       - ./.env
     environment:
       - MONGODB_URL=mongodb://${MONGO_INITDB_ROOT_USERNAME}:${MONGO_INITDB_ROOT_PASSWORD}@mongo:27017/${MONGO_INITDB_DATABASE}?authSource=admin
-      - MINIO_URL=http://${SERVER_NAME}:${TRAEFIK_PORT}/files
+      - MINIO_URL=http://${SERVER_NAME}:80/files
     command: ["bun", "run", "start"]
     # ports:
     #   - 8000:5000
