@@ -16,8 +16,14 @@ import_collection() {
     local file=$2
 
     if [ -f "$file" ]; then
-        echo "Importing $collection data to "$MONGO_DB_NAME"..."
-        if ! mongoimport --db "$MONGO_DB_NAME" --collection "$collection" --file "$file" --jsonArray; then
+        echo "Importing $collection data to "$MONGO_INITDB_DATABASE"..."
+        if ! mongoimport --username "$MONGO_INITDB_ROOT_USERNAME" \
+            --password "$MONGO_INITDB_ROOT_PASSWORD" \
+            --authenticationDatabase admin \
+            --db "$MONGO_INITDB_DATABASE" \
+            --collection "$collection" \
+            --file "$file" \
+            --jsonArray; then
             echo "Failed to import $collection data. Exiting..."
             exit 1
         fi
@@ -27,14 +33,14 @@ import_collection() {
 }
 
 # Import data
-import_collection "council" "./data/council.json"
-import_collection "counselor" "./data/counselor.json"
-import_collection "events" "./data/events.json"
-import_collection "thirdparty" "./data/thirdparty.json"
-import_collection "people" "./data/people.json"
-import_collection "scientific_groups" "./data/scientific_groups.json"
-import_collection "projects" "./data/projects.json"
+import_collection "council" "/docker-entrypoint-initdb.d/data/council.json"
+import_collection "counselor" "/docker-entrypoint-initdb.d/data/counselor.json"
+import_collection "events" "/docker-entrypoint-initdb.d/data/events.json"
+import_collection "thirdparty" "/docker-entrypoint-initdb.d/data/thirdparty.json"
+import_collection "people" "/docker-entrypoint-initdb.d/data/people.json"
+import_collection "scientific_groups" "/docker-entrypoint-initdb.d/data/scientific_groups.json"
+import_collection "projects" "/docker-entrypoint-initdb.d/data/projects.json"
 
 # Add any new json files here
 
-echo "Data import completed successfully."
+ echo "Data import completed successfully."

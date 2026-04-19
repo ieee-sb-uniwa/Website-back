@@ -7,3 +7,8 @@ export const paramsSchema = t.Optional(
 export const querySchema = t.Object({
   lang: t.Optional(t.String()),
 });
+
+export const querySchemaSg = t.Object({
+  lang: t.Optional(t.String()),
+  limitAmount: t.Optional(t.Number()),
+})

@@ -1,23 +1,28 @@
 services:
   traefik:
-    image: traefik:v3.3
+    image: traefik:latest
     container_name: traefik
     restart: always
     command:
-      - "--api=true"
-      - "--log.level=DEBUG"
-      - "--api.dashboard=true"
-      - "--api.insecure=true"
+      - "--log.level=INFO"
+      - "--api.dashboard=false"
+      # Set to false so we can secure it with a router/auth
+      - "--api.insecure=false"
+      - "--ping=true"
+      - "--ping.entrypoint=web"
       - "--providers.docker=true"
       - "--providers.docker.exposedByDefault=false"
+      # Entrypoints
       - "--entrypoints.web.address=:80"
     ports:
-      - "8081:80"
+      - "0.0.0.0:${TRAEFIK_PORT}:80"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
+    labels:
+      - "traefik.enable=true"
+      # Create a router for the internal API/Dashboard on the web entrypoint
     healthcheck:
-      test:
-        ["CMD", "wget", "--spider", "-q", "http://localhost:8080/api/rawdata"]
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost/ping"]
       interval: 5s
       retries: 10
       start_period: 5s
@@ -29,8 +34,8 @@ services:
     env_file:
       - ./.env
     environment:
-      - MONGODB_URL=mongodb://mongo:27017/${MONGO_DB_NAME}
-      - MINIO_URL=http://${SERVER_NAME}/files
+      - MONGODB_URL=mongodb://${MONGO_INITDB_ROOT_USERNAME}:${MONGO_INITDB_ROOT_PASSWORD}@mongo:27017/${MONGO_INITDB_DATABASE}?authSource=admin
+      - MINIO_URL=http://${SERVER_NAME}:80/files
     command: ["bun", "run", "start"]
     # ports:
     #   - 8000:5000
@@ -67,9 +72,11 @@ services:
   mongo:
     build:
       context: ./db-container
-      args:
-        - MONGO_DB_NAME=${MONGO_DB_NAME}
     container_name: mongo
+    environment:
+      - MONGO_INITDB_DATABASE=${MONGO_INITDB_DATABASE}
+      - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
     restart: always
     env_file:
       - ./.env
@@ -79,13 +86,15 @@ services:
     # - "27017:27017"
 
   minio:
-    image: minio/minio:RELEASE.2025-03-12T18-04-18Z
+    image: minio/minio:latest
     container_name: minio
     command: server /data --console-address ":9001"
     env_file:
       - ./.env
     environment:
-      - MINIO_BROWSER_REDIRECT_URL=http://${SERVER_NAME}/minio-console
+      #- MINIO_BROWSER_REDIRECT_URL=http://${SERVER_NAME}:${TRAEFIK_PORT}/minio-console
+      #- MINIO_BROWSER_REDIRECT_URL=http://${SERVER_NAME}/minio-console
+      - MINIO_BROWSER=off
     labels:
       - "traefik.enable=true"
 
