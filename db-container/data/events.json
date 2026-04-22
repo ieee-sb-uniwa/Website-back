@@ -1,792 +1,735 @@
 [
-  {
-    "id": 0,
-    "date": "2023-10-06T18:00:00",
-    "end_date": "2023-10-15T19:00:00",
-    "registration_deadline": "2023-10-06T00:00:00",
-    "registration_form": "https://forms.gle/LGt7gzzCsiAmBdRJ7",
-    "thumbnail": "/events/ieeextreme-crash-course.png",
-    "images": ["/events/ieeextreme-crash-course.png"],
-    "info": {
-      "gr": {
-        "location": "MS Teams",
-        "title": "ΙΕΕEXtreme Crash Course",
-        "keywords": ["ΣΕΜΙΝΑΡΙΟ"],
-        "description": "The IEEEXtreme Crash Course is a series of open online programming lectures in Python!\n\n📈 Its goal is to provide a general understanding of fundamental programming and algorithm concepts so that anyone can participate in the IEEEXtreme competition!\n\n✅ Of course, you can attend the lectures regardless of whether you plan to participate in the competition or not!\n\n📆 The lecture series consists of four sessions:\n1) Friday, 06/10: Introduction to Algorithmic Thinking.\n2) Monday, 09/10: Introduction to Python (Part 1).\n3) Thursday, 12/10: Introduction to Python (Part 2).\n4) Sunday, 15/10: Let's go IEEEXtreme!\n\n❗ The lectures will be held on Microsoft Teams!",
-        "links": []
-      },
-      "en": {
-        "location": "MS Teams",
-        "title": "ΙΕΕEXtreme Crash Course",
-        "keywords": ["SEMINAR"],
-        "description": "The IEEEXtreme Crash Course is a series of open online programming lectures in Python!\n\n📈 Its goal is to provide a general understanding of fundamental programming and algorithm concepts so that anyone can participate in the IEEEXtreme competition!\n\n✅ Of course, you can attend the lectures regardless of whether you plan to participate in the competition or not!\n\n📆 The lecture series consists of four sessions:\n1) Friday, 06/10: Introduction to Algorithmic Thinking.\n2) Monday, 09/10: Introduction to Python (Part 1).\n3) Thursday, 12/10: Introduction to Python (Part 2).\n4) Sunday, 15/10: Let's go IEEEXtreme!\n\n❗ The lectures will be held on Microsoft Teams!",
-        "links": []
-      }
+    {
+        "id": 0,
+        "date": "2023-10-06T18:00:00",
+        "end_date": "2023-10-15T19:00:00",
+        "registration_deadline": "2023-10-06T00:00:00",
+        "registration_form": "https://forms.gle/LGt7gzzCsiAmBdRJ7",
+        "thumbnail": "/events/ieeextreme-crash-course.png",
+        "images": ["/events/ieeextreme-crash-course.png"],
+        "info": {
+            "gr": {
+                "location": "MS Teams",
+                "title": "ΙΕΕEXtreme Crash Course",
+                "keywords": ["ΣΕΜΙΝΑΡΙΟ"],
+                "description": "The IEEEXtreme Crash Course is a series of open online programming lectures in Python!\n\n📈 Its goal is to provide a general understanding of fundamental programming and algorithm concepts so that anyone can participate in the IEEEXtreme competition!\n\n✅ Of course, you can attend the lectures regardless of whether you plan to participate in the competition or not!\n\n📆 The lecture series consists of four sessions:\n1) Friday, 06/10: Introduction to Algorithmic Thinking.\n2) Monday, 09/10: Introduction to Python (Part 1).\n3) Thursday, 12/10: Introduction to Python (Part 2).\n4) Sunday, 15/10: Let's go IEEEXtreme!\n\n❗ The lectures will be held on Microsoft Teams!",
+                "links": []
+            },
+            "en": {
+                "location": "MS Teams",
+                "title": "ΙΕΕEXtreme Crash Course",
+                "keywords": ["SEMINAR"],
+                "description": "The IEEEXtreme Crash Course is a series of open online programming lectures in Python!\n\n📈 Its goal is to provide a general understanding of fundamental programming and algorithm concepts so that anyone can participate in the IEEEXtreme competition!\n\n✅ Of course, you can attend the lectures regardless of whether you plan to participate in the competition or not!\n\n📆 The lecture series consists of four sessions:\n1) Friday, 06/10: Introduction to Algorithmic Thinking.\n2) Monday, 09/10: Introduction to Python (Part 1).\n3) Thursday, 12/10: Introduction to Python (Part 2).\n4) Sunday, 15/10: Let's go IEEEXtreme!\n\n❗ The lectures will be held on Microsoft Teams!",
+                "links": []
+            }
+        }
+    },
+    {
+        "id": 1,
+        "date": "2023-10-28T03:00:00",
+        "end_date": "2023-10-29T03:00:00",
+        "registration_deadline": "2023-10-14T00:00:00",
+        "registration_form": "https://forms.gle/PA6Vag1a3GDWACy27",
+        "thumbnail": "/events/ieeextreme17.jpg",
+        "images": ["/events/ieeextreme17.jpg"],
+        "info": {
+            "gr": {
+                "location": "ΖΒ001, Π2, ΠΑΔΑ",
+                "title": "IEEEXtreme 17.0",
+                "keywords": ["ΔΙΑΓΩΝΙΣΜΟΣ"],
+                "description": "Για πρώτη φορά από την ίδρυση του Πανεπιστημίου Δυτικής Αττικής, το IEEE Student Branch UniWA συμμετέχει δυναμικά στον διεθνή διαγωνισμό προγραμματισμού IEEEXtreme, όχι μόνο με ομάδες φοιτητών/τριών του παραρτήματός μας, αλλά και ως οικοδεσπότης των ομάδων του IEEE Student Branch UniPi του Πανεπιστημίου Πειραιά!\n\n🔹 Τι είναι το IEEEXtreme;\nΠρόκειται για έναν παγκόσμιο 24ωρο διαγωνισμό προγραμματισμού, που διοργανώνεται ετησίως από το IEEE και συγκεντρώνει φοιτητές και φοιτήτριες από όλο τον κόσμο. Ο φετινός διαγωνισμός θα διεξαχθεί από το Σάββατο 28 Οκτωβρίου στις 03:00 π.μ. έως την Κυριακή 29 Οκτωβρίου στις 03:00 π.μ.\n\n🔹 Ποιος μπορεί να συμμετάσχει;\nΟμάδες 1 έως 3 ατόμων από οποιοδήποτε πανεπιστήμιο μπορούν να διαγωνιστούν, επιλύοντας προγραμματιστικά προβλήματα σε 20+ διαθέσιμες γλώσσες προγραμματισμού. Ο διαγωνισμός διεξάγεται μέσω της πλατφόρμας CSacademy, όπου μπορείτε να δοκιμάσετε προβλήματα προηγούμενων ετών και να προετοιμαστείτε κατάλληλα.\n\n📌 Ενδιαφέρεσαι να μάθεις περισσότερα ή να συμμετάσχεις;\nΤο παράρτημα προσκαλεί όλους και όλες που ενδιαφέρονται να συμμετάσχουν ή να μάθουν περισσότερες πληροφορίες, να επικοινωνήσουν μαζί μας:\n📧 Email: ieeesb@uniwa.gr\n💬 Discord: Στείλε μήνυμα στον Discord server μας\nΜην χάσεις την ευκαιρία να ζήσεις την εμπειρία του IEEEXtreme και να διαγωνιστείς μαζί με προγραμματιστές από όλο τον κόσμο! 🚀",
+                "links": [
+                    {
+                        "id": 0,
+                        "title": "Παλιά προβλήματα στο CS academy",
+                        "url": "https://csacademy.com/ieeextreme-practice/tasks/"
+                    },
+                    {
+                        "id": 1,
+                        "title": "Δήλωση ομάδας",
+                        "url": "https://xtreme.vtools.ieee.org/"
+                    }
+                ]
+            },
+            "en": {
+                "location": "ZB001, Campus2, UniWA",
+                "title": "IEEEXtreme 17.0",
+                "keywords": ["HACKATHON"],
+                "description": "For the first time since the establishment of the University of West Attica, the IEEE Student Branch UniWA is actively participating in the international programming competition IEEEXtreme, not only with teams of our student branch's students but also as the host for the IEEE Student Branch UniPi teams from the University of Piraeus!\n\n🔹 What is IEEEXtreme?\nIt is a global 24-hour programming competition, organized annually by IEEE, bringing together students from all over the world. This year's competition will take place from Saturday, October 28, at 03:00 AM until Sunday, October 29, at 03:00 AM.\n\n🔹 Who can participate?\nTeams of 1 to 3 members from any university can compete by solving programming challenges in 20+ available programming languages. The competition is held on the CSacademy platform, where you can practice with problems from previous years to prepare effectively.\n\n📌 Interested in learning more or joining?\nThe student branch invites everyone interested in participating or learning more information to contact us:\n📧 Email: ieeesb@uniwa.gr\n💬 Discord: Send a message on our Discord server\nDon't miss the chance to experience IEEEXtreme and compete alongside programmers from around the world! 🚀",
+                "links": [
+                    {
+                        "id": 0,
+                        "title": "CS academy old tasks",
+                        "url": "https://csacademy.com/ieeextreme-practice/tasks/"
+                    },
+                    {
+                        "id": 1,
+                        "title": "Team registration",
+                        "url": "https://xtreme.vtools.ieee.org/"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": 2,
+        "date": "2024-03-25T19:00:00",
+        "end_date": "2024-06-14T21:00:00",
+        "registration_deadline": "2024-03-17T00:00:00",
+        "registration_form": "https://forms.gle/7SLwdmAxsr2gh22BA",
+        "thumbnail": "/events/python-oop.png",
+        "images": ["/events/python-oop.png"],
+        "info": {
+            "gr": {
+                "location": "MS Teams",
+                "title": "Python OOP",
+                "keywords": ["ΣΕΜΙΝΑΡΙΟ"],
+                "description": "Θέλετε να μάθετε τις βασικές αρχές προγραμματισμού στην Python, μία από τις πιο δημοφιλείς γλώσσες προγραμματισμού, αλλά δεν σας δόθηκε ποτέ η ευκαιρία;\n\nΗ Python είναι μια από τις πιο διαδεδομένες και χρήσιμες γλώσσες προγραμματισμού παγκοσμίως. Χρησιμοποιείται ευρέως σε εφαρμογές όπως το AI, Machine Learning κ.ο.κ.\n\nΟ IEEE SB UniWA, το φοιτητικό παράρτημα του IEEE στο ΠΑΔΑ, διοργανώνει μια σειρά διαδικτυακών μαθημάτων για την εξοικείωση και την εμβάθυνση στη Python! Το εγχείρημα αυτό έχει ως στόχο οι φοιτητές να μπορούν να αναπτύσσουν λογισμικό χρησιμοποιώντας τεχνικές αντικειμενοστραφή προγραμματισμού.\n\nΚατά την διάρκεια των μαθημάτων θα δοθούν μικρές υποχρεωτικές εργασίες, όπου με την ολοκλήρωση τους ο φοιτητής θα λάβει βεβαίωση παρακολούθησης, υπογεγραμμένη από το εργαστήριο CONSERT του τμήματος Ηλεκτρολόγων και Ηλεκτρονικών Μηχανικών του ΠΑΔΑ.\n\nΠοιοι μπορούν να παρακολουθήσουν τα μαθήματα;\nΔικαίωμα παρακολούθησης έχουν όλοι οι φοιτητές του ΠΑΔΑ, εφόσον συμπληρώσουν την φόρμα συμμετοχής. Οι εγγραφές θα παραμείνουν ανοιχτές μέχρι και την Παρασκευή 22/03.\n\nΓια ποιους προορίζονται;\nΟι διαλέξεις προορίζονται για όλους όσους θέλουν να μάθουν τα βασικά στην γλώσσα python και τον αντικειμενοστραφή προγραμματισμό, ανεξαρτήτως επιπέδου.\n\nΠώς θα γίνουν οι διαλέξεις;\nΟι διαλέξεις θα οργανωθούν σε συνολικά δέκα εβδομαδιαία δίωρα σε κλειστή ομάδα στο Microsoft Teams.\n\nΠότε θα ξεκινήσουν;\nΤα μαθήματα θα ξεκινήσουν την εβδομάδα 25/03 - 29/03. Το πρώτο μάθημα θα καθοριστεί με βάση τα αποτελέσματα της σχετικής ερώτησης στην φόρμα συμμετοχής. Οι ενδιαφερόμενοι θα ενημερωθούν μέσω email και θα προστεθούν στην ομάδα του Microsoft Teams.\n\nΑπό ποίον θα γίνουν;\nΤα μαθήματα θα πραγματοποιηθούν από τον Στέλιο Γεωργαρά, μέλος του φοιτητικού παραρτήματος IEEE SB UniWA με επαγγελματική εμπειρία στο machine learning, computer vision, data engineering και BigData.",
+                "links": [
+                    {
+                        "id": 0,
+                        "title": "Φόρμα συμμετοχής στα μαθήματα Python OOP",
+                        "url": "https://forms.gle/7SLwdmAxsr2gh22BA"
+                    }
+                ]
+            },
+            "en": {
+                "location": "MS Teams",
+                "title": "Python OOP",
+                "keywords": ["SEMINAR"],
+                "description": "🌟Ready to dive into the world of Python programming, but never had the chance?🐍Join IEEE SB UniWA's online Python courses and unlock the secrets of one of the most popular programming languages!🚀\n\n🔍Python is versatile and widely used, from AI to machine learning and beyond. Whether you're a beginner or seeking to deepen your knowledge, our courses are tailored for all levels of expertise.\n\n💻Led by Stelios Georgaras, a seasoned member of IEEE SB UniWA with professional experience in machine learning, computer vision, and Big Data, our courses will equip you with essential Python skills and object-oriented programming techniques.During the course, small compulsory tasks will be given, where upon their completion the student will receive a certificate of attendance, signed by the CONSERT laboratory of the Department of Electrical and Electronics Engineering of UniWA.\n\n🎓Who can join? All students interested in mastering Python and object-oriented programming, regardless of experience level. Simply fill out the participation form by Sunday, March 17th, to secure your spot.\n\n📌Course details:\n- Duration: Ten weekly sessions\n- Platform: Microsoft Teams\n- Start date: Week of March 25th - March 29th\n- Sessions will be scheduled based on participants' availability, with the first session determined by responses in the participation form.\n\nReady to embark on your Python journey? Don't miss this opportunity to enhance your programming skills and dive into the world of tech!🌐💡",
+                "links": [
+                    {
+                        "id": 0,
+                        "title": "Participation Form",
+                        "url": "https://forms.gle/7SLwdmAxsr2gh22BA"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": 3,
+        "date": "2024-09-29T17:00:00",
+        "end_date": "2024-10-20T19:00:00",
+        "registration_deadline": "",
+        "registration_form": "",
+        "thumbnail": "/events/ieeextreme-countdown.png",
+        "images": ["/events/ieeextreme-countdown-1.jpg", "/events/ieeextreme-countdown-2.jpg"],
+        "info": {
+            "gr": {
+                "location": "Zoom",
+                "title": "IEEEXtreme Countdown",
+                "keywords": ["ΣΕΜΙΝΑΡΙΟ"],
+                "description": "🚀Το IEEEXtreme Countdown ξεκινάει!🔥\nΕτοιμαστείτε για μια μοναδική σειρά από workshops πάνω στο competitive programming!👨‍💻 Μέσα από αυτά, θα κάνουμε αναδρομή σε όλες τις προηγούμενες χρονιές του IEEEXtreme για να προετοιμάσουμε τους φοιτητές για τον επερχόμενο IEEEXtreme 18.0!🎯\n\n💡 Κάθε workshop διοργανώνεται σε συνεργασία μεταξύ δύο IEEE Student Branches και εστιάζει σε δύο χρονιές του διαγωνισμού. Συνολικά, 8 IEEE Student Branches του Greece Section θα συμμετέχουν σε αυτήν την εμπειρία μάθησης!🌍💻\n\n🔗 Όλα τα workshops θα γίνουν μέσω της πλατφόρμας του Zoom! Μην το χάσεις!🔥\n\n📆Πρόγραμμα εκδήλωσης:\n1) Κυριακή 29/09 στις 17:00, Αναδρομή στους IEEEXtreme 10.0 και 11.0 από τα IEEE Student Branch του Πανεπιστημίου Θεσσαλίας στο Βόλο και του Διεθνούς Πανεπιστημίου της Ελλάδος στις Σέρρες.\n2) Κυριακή 06/10 στις 17:00, Αναδρομή στους IEEEXtreme 12.0 και 13.0 από τα IEEE Student Branch του Πανεπιστημίου Δυτικής Αττικής και του Πανεπιστημίου Πατρών.\n3) Κυριακή 13/10 στις 17:00, Αναδρομή στους IEEEXtreme 14.0 και 15.0 από τα IEEE Student Branch του Πανεπιστημίου Μακεδονίας και του Πανεπιστημίου Δυτικής Μακεδονίας στην Καστοριά.\n4) Κυριακή 20/10 στις 17:00, Αναδρομή στους IEEEXtreme 16.0 και 17.0 τα IEEE Student Branch του Δημοκρίτειου Πανεπιστημίου Θράκης και του Πανεπιστημίου Πειραιώς.",
+                "links": [
+                    {
+                        "id": 0,
+                        "title": "Σύνδεσμος για όλα τα workshop",
+                        "url": "https://uowm-gr.zoom.us/my/uowm.p32"
+                    }
+                ]
+            },
+            "en": {
+                "location": "Zoom",
+                "title": "IEEEXtreme Countdown",
+                "keywords": ["SEMINAR"],
+                "description": "🚀The IEEEXtreme Countdown is starting!🔥\nGet ready for a unique series of workshops on competitive programming!\n\n👨‍💻Through these workshops, we'll look back at all the previous IEEEXtreme years to prepare students for the upcoming IEEEXtreme 18.0!🎯\n\n💡Each workshop is organized in collaboration between two IEEE Student Branches and focuses on two different years of the competition. A total of 8 IEEE Student Branches from the Greece Section will participate in this learning experience!🌍💻\n\n🔗All workshops will take place via the Zoom platform! Don't miss out!🔥\n\n📆Event Schedule:\n1) Sunday 29/09 at 17:00, Throwback to IEEEXtreme 10.0 and 11.0 by the IEEE Student Branch of the University of Thessaly in Volos and the International Hellenic University in Serres. IEEE Volos Student Branch & IEEE Student Branch - International Hellenic University (Serres)\n2) Sunday 06/10 at 17:00, Throwback to IEEEXtreme 12.0 and 13.0 by the IEEE Student Branch of the University of Western Attica and the University of Patras. IEEE SB UniWA & IEEE SB UPatras\n3) Sunday 13/10 at 17:00, Throwback to IEEEXtreme 14.0 and 15.0 by the IEEE Student Branch of the University of Macedonia and the University of Western Macedonia in Kastoria. UoM IEEE Student Branch & IEEE Student Branch University of Western Macedonia (Kastoria)\n4) Sunday 20/10 at 17:00, Throwback to IEEEXtreme 16.0 and 17.0 by the IEEE Student Branch of Democritus University of Thrace and the University of Piraeus. IEEE Democritus University of Thrace Student Branch & IEEE University of Piraeus Student Branch",
+                "links": [
+                    {
+                        "id": 0,
+                        "title": "Zoom room",
+                        "url": "https://uowm-gr.zoom.us/my/uowm.p32"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": 4,
+        "date": "2024-10-12T12:00:00",
+        "end_date": "2024-10-12T15:00:00",
+        "registration_deadline": "2024-10-11T00:00:00",
+        "registration_form": "https://forms.gle/8ubz9qhCwxtUmjbU8",
+        "thumbnail": "/events/git-github-workshop.png",
+        "images": ["/events/git-github-workshop.png"],
+        "info": {
+            "gr": {
+                "location": "Κ16.001, Π1, ΠΑΔΑ",
+                "title": "Git-Github Workshop",
+                "keywords": ["WORKSHOP"],
+                "description": "✨Σας προσκαλούμε στο πρώτο on site workshop του IEEE SB UniWA με θέμα version control με Git και GitHub! Το Git και το GitHub είναι δύο συναφή εργαλεία που χρησιμοποιούνται ευρέως για την παρακολούθηση και διαχείριση κώδικα.🖥️\n\n👨‍💻Το Git είναι ένα σύστημα ελέγχου εκδόσεων (version control system), το οποίο επιτρέπει στους προγραμματιστές να παρακολουθούν αλλαγές στον κώδικα τους, να διατηρούν ιστορικό των αλλαγών αυτών και να συνεργάζονται με άλλους σε κοινά έργα.💾 Το GitHub είναι μια πλατφόρμα φιλοξενίας αποθετηρίων Git (repositories) και προσφέρει ένα περιβάλλον που επιτρέπει την κοινή χρήση και συνεργασία στον κώδικα, συνδυάζοντας τα χαρακτηριστικά του Git με μια διαδικτυακή πλατφόρμα.🌐\n\n✅Το συγκεκριμένο Workshop θα διεξαχθεί από τον Σπύρο Σαριδάκη, μέλος του παραρτήματός μας, και θα καλύψει όλες τις απαραίτητες γνώσεις που χρειάζεται κάποιος ώστε να ασχοληθεί αποτελεσματικά σε ομαδικά project που περιλαμβάνουν κώδικα και όχι μόνο!👥\n\n🔷Για να δηλώσετε συμμετοχή είναι απαραίτητο να συμπληρώστε την παρακάτω φόρμα\n\n🚀Μην χάσετε την ευκαιρία να αυξήσετε την παραγωγικότητά σας και να συνεργαστείτε αποτελεσματικά με άλλους!😎",
+                "links": [
+                    {
+                        "id": 0,
+                        "title": "Φόρμα συμμετοχής",
+                        "url": "https://forms.gle/8ubz9qhCwxtUmjbU8"
+                    }
+                ]
+            },
+            "en": {
+                "location": "K16.001, Campus1, UniWA",
+                "title": "Git-Github Workshop",
+                "keywords": ["WORKSHOP"],
+                "description": "✨We invite you to the first on-site workshop of IEEE SB UniWA on version control with Git and GitHub! 🖥️ Git and GitHub are essential tools widely used for tracking and managing code.\n\n👨‍💻Git is a version control system that allows developers to track changes in their code, maintain a history of those changes, and collaborate on shared projects. 💾 GitHub is a platform for hosting Git repositories, offering a collaborative environment that combines the features of Git with an online interface.🌐\n\n✔️ This workshop will be held by Spyros Saridakis, member of our student branch, and will cover all the knowledge you need to effectively manage group projects involving code - and much more! 👥\n\n🔷To participate, please fill out the form below.\n\n🚀Don't miss this opportunity to boost your productivity and collaborate efficiently with others! 😎",
+                "links": [
+                    {
+                        "id": 0,
+                        "title": "Participation Form",
+                        "url": "https://forms.gle/8ubz9qhCwxtUmjbU8"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": 5,
+        "date": "2024-10-26T03:00:00",
+        "end_date": "2024-10-27T03:00:00",
+        "registration_deadline": "2024-10-11T00:00:00",
+        "registration_form": "https://forms.gle/LFt3Q9fLRXZhaJxc8",
+        "thumbnail": "/events/ieeextreme18.png",
+        "images": ["/events/ieeextreme18.png"],
+        "info": {
+            "gr": {
+                "location": "ΖΒ001, Π2, ΠΑΔΑ",
+                "title": "IEEEXtreme 18.0",
+                "keywords": ["ΔΙΑΓΩΝΙΣΜΟΣ"],
+                "description": "👨‍💻Ο ΙΕΕΕΧtreme, ο παγκόσμιος διαγωνισμός προγραμματισμού του ΙΕΕΕ, επιστρέφει για ακόμα μία χρονιά στο Πανεπιστήμιο Δυτικής Αττικής!🎉🌐\n\n🚀Ο IEEEXtreme είναι ένας 24ωρος διαγωνισμός προγραμματισμού όπου ομάδες μελών του IEEE παγκοσμίως ανταγωνίζονται μεταξύ τους. Είναι η μεγαλύτερη εκδήλωση που διοργανώνει το IEEE για τα Student Branches. Ο διαγωνισμός διεξάγεται online και οι ομάδες του ΠΑΔΑ θα μαζευτούν στο hub που θα έχει στήσει ο σύλλογος ΙΕΕΕ SB UniWA στο πανεπιστήμιο.\n\n📅Ημερομηνία: 26 Οκτωβρίου (Σάββατο 03:00 - Κυριακή 03:00)\n📍Τοποθεσία: Κτήριο Ζ, Πανεπιστημιούπολη Αρχαίου Ελαιώνα, ΠΑΔΑ\n\nΧρήσιμες πληροφορίες:\n1) Οι εγγραφές είναι ανοιχτές μέχρι 14 Οκτωβρίου\n2) Διαρκεί 24 ώρες και διεξάγεται ταυτόχρονα σε όλο τον κόσμο.\n3) Οι ομάδες αποτελούνται από 1 έως και 3 άτομα. Ομάδες που ψάχνουν άτομα μπορούν να επικοινωνήσουν μαζί μας στο Discord Server.\n4) Διεξάγεται στην πλατφόρμα του csacademy όπου είναι ανεβασμένα και τα θέματα των παλαιότερων διαγωνισμών.\n5) Επιτρέπεται η χρήση οποιασδήποτε γλώσσας προγραμματισμού από την γκάμα του csacademy.\n6) Το παράρτημα θα παρέχει γεύματα και ενεργειακά ποτά μέσα στην μέρα για όλους τους διαγωνιζόμενους. Οι συμμετέχοντες είναι ελεύθεροι να φέρουν ή να παραγγείλουν ό,τι άλλο τους χρειαστεί μέσα στην ημέρα.\n7) Τα Student Branches της Ελλάδος διοργανώνουν workshops στα οποία επιλύουν θέματα παλαιότερων ετών με σκοπό την κατάλληλη προετοιμασία για τον διαγωνισμό. Θα βρείτε σχετικές πληροφορίες σε προηγούμενο post.\n\n❗Επιπλέον, την Κυριακή 06/10 στις 13:00 θα πραγματοποιηθεί ενημερωτική κλήση στον Discord Server του παραρτήματος ώστε να λυθούν όλες οι απορίες των ενδιαφερόμενων.👥\n\n✨Μην χάσετε την ευκαιρία να συμμετάσχετε σε ένα μοναδικό event και να δοκιμάσετε τα όρια σας στο προγραμματισμό μαζί με τους συμφοιτητές σας!🎉",
+                "links": [
+                    {
+                        "id": 0,
+                        "title": "Φόρμα δήλωσης ενδιαφέροντος",
+                        "url": "https://forms.gle/LFt3Q9fLRXZhaJxc8"
+                    },
+                    {
+                        "id": 1,
+                        "title": "Παλιά προβλήματα του διαγωνισμού",
+                        "url": "https://csacademy.com/ieeextreme-practice/tasks/"
+                    }
+                ]
+            },
+            "en": {
+                "location": "ZB001, Campus2, UniWA",
+                "title": "IEEEXtreme 18.0",
+                "keywords": ["HACKATHON"],
+                "description": "👨‍💻IEEEXtreme, IEEE's global programming competition, is returning for another year at the University of West Attica!🎉🌐\n\n🚀IEEEXtreme is a 24-hour programming competition where IEEE student members worldwide compete against each other. It is the largest event organized by IEEE for Student Branches. The competition is held online, and UniWA teams will gather at the hub set up by the IEEE SB UniWA at the university.\n\n📅Date: October 26 (Saturday 03:00 - Sunday 03:00)\n📍Location: Building Z, Ancient Olive Grove Campus, UniWA\n\nUseful Information:\n1) Registration is open until October 14.\n2) It lasts for 24 hours and takes place simultaneously worldwide.\n3) Teams consist of 1 to 3 members. Teams looking for additional members can reach out to us on our Discord server.\n4) The competition takes place on the CSacademy platform, where past competition problems are also available.\n5) Any programming language supported by CSacademy is allowed.\n6) The chapter will provide meals and energy drinks throughout the day for all participants. Competitors are free to bring or order anything else they may need during the event.\n7) The Student Branches of Greece are organizing workshops where past competition problems are solved to help participants prepare. You can find relevant details in a previous post.\n\n❗Additionally, on Sunday, October 6, at 13:00, an informational call will be held on the chapter's Discord server to address any questions from interested participants.👥\n\n✨Don't miss the opportunity to participate in this unique event and challenge your programming skills alongside your fellow students!🎉",
+                "links": [
+                    {
+                        "id": 0,
+                        "title": "Participation Form",
+                        "url": "https://forms.gle/LFt3Q9fLRXZhaJxc8"
+                    },
+                    {
+                        "id": 1,
+                        "title": "CS academy old tasks",
+                        "url": "https://csacademy.com/ieeextreme-practice/tasks/"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": 6,
+        "date": "2024-11-30T12:00:00",
+        "end_date": "2024-11-30T15:00:00",
+        "registration_deadline": "2024-11-30T00:00:00",
+        "registration_form": "https://forms.gle/jhdutWgsPr9rqXXq8",
+        "thumbnail": "/events/ieee-open-day.png",
+        "images": ["/events/ieee-open-day.png"],
+        "info": {
+            "gr": {
+                "location": "Αμφ.Χατζηνικολάου, Π2, ΠΑΔΑ",
+                "title": "IEEE Open Day",
+                "keywords": ["ΣΕΜΙΝΑΡΙΟ"],
+                "description": "✨Σας προσκαλούμε στο ΙΕΕΕ Open Day, μία εκδήλωση στην οποία το φοιτητικό παράρτημα του IEEE παρουσιάζει τον εαυτό του και τις δράσεις του στην ακαδημαϊκή κοινότητα του πανεπιστημίου! 🎯 Στόχος της συγκεκριμένης ημερίδας είναι η γνωριμία των φοιτητών και των καθηγητών με το φοιτητικό παράρτημα του IEEE.🚀\n\n💪Αν ενδιαφέρεστε να γίνετε μέλη του IEEE SB UniWA τότε αυτή είναι η καλύτερη ευκαιρία!  ✅  Πρόκειται για μία εκδήλωση στην οποία θα έρθετε σε επαφή με το branch, θα μάθετε για τις ομάδες και τα projects μας και θα μπορέσετε να μας γνωρίσετε από κοντά!👥\n\n📅Ημερομηνία: Σάββατο 30 Νοεμβρίου - 12:00 μ.μ.\n\n📍Τοποθεσία: Αμφιθέατρο Χατζηνικολάου, Πανεπιστημιούπολη Αρχαίου Ελαιώνα\n\n🔷 Η εκδήλωση περιλαμβάνει:\n1) Εισαγωγή στο τι είναι το ΙΕΕΕ και το Student Branch από τον υπεύθυνο καθηγητή και Counselor του παραρτήματος, Πατρικάκη Χαράλαμπο.\n2) Αναλυτική παρουσίαση του IEEE SB UniWA από τον Πρόεδρο του παραρτήματος, Αλεξίου Σταύρο.\n3) Παρουσίαση των Department και των Scientific Group από τους υπεύθυνους ομάδων.\n4) Τέλος θα έχετε την ευκαιρία να συζητήσετε μαζί μας στο lunch που θα έχουμε ετοιμάσει, στο οποίο θα έχουμε στήσει live demos από τα project του παραρτήματος!\n\n🚀Μην χάσετε την ευκαιρία να γνωρίσετε και να μάθετε πως μπορείτε να γίνεται μέλη σε μία από τις μεγαλύτερες ομάδες του Πανεπιστημίου Δυτικής Αττικής!",
+                "links": [
+                    {
+                        "id": 0,
+                        "title": "Φόρμα παρευρισκόμενων",
+                        "url": "https://forms.gle/jhdutWgsPr9rqXXq8"
+                    }
+                ]
+            },
+            "en": {
+                "location": "Amph.Hatzinikolaou, Campus2, UniWA",
+                "title": "IEEE Open Day",
+                "keywords": ["SEMINAR"],
+                "description": "✨Join us for IEEE Open Day, an event where the IEEE Student Branch will introduce itself and its activities to the university community!🎯This open day aims to connect students and faculty with IEEE’s student branch of University of West Attica.🚀\n\n💪If you’re interested in becoming a part of IEEE SB UniWA, this is the perfect opportunity! ✅Get to know our branch, discover our teams and projects, and of course, meet us in person.👥\n\n🔷Event Highlights:\n1) Introduction to IEEE and the Student Branch by Professor and Branch Counselor, Charalampos Patrikakis.\n2) Detailed presentation of IEEE SB UniWA by Branch Chair, Stavros Alexiou.\n3) Team and Scientific Group presentations by group leads.\n4) Finally, you'll have the opportunity to network during the lunch prepared, where we will showcase live demos of branch projects!\n\n🚀Don’t miss this chance to discover how you can join one of the largest student organizations at the University of West Attica!",
+                "links": [
+                    {
+                        "id": 0,
+                        "title": "Attendance form",
+                        "url": "https://forms.gle/jhdutWgsPr9rqXXq8"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": 7,
+        "date": "2024-12-07T10:00:00",
+        "end_date": "2024-12-07T17:00:00",
+        "registration_deadline": "2024-12-07T10:00:00",
+        "registration_form": "https://www.tickettailor.com/events/universityofwestattica/1478668",
+        "thumbnail": "/events/trust-social.png",
+        "images": ["/events/trust-social.png"],
+        "info": {
+            "gr": {
+                "location": "Συνεδριακό Κέντρο, Π2, ΠΑΔΑ",
+                "title": "Trust in Online Social Networks",
+                "keywords": ["ΗΜΕΡΙΔΑ"],
+                "description": "Ποιον μπορείς να εμπιστεύεσαι στα social media;\nΠώς μπορείς να διακρίνεις την αξιόπιστη πληροφορία στα social media;\nΠότε η χρήση των social media γίνεται επικίνδυνη και ποιος είναι ο αντίκτυπος στην κοινωνία;\n\nΤο ερευνητικό εργαστήριο CoNSeRT του τμήματος Ηλεκτρολόγων και Ηλεκτρονικών Μηχανικών του Πανεπιστημίου Δυτικής Αττικής διοργανώνει την επιχορηγούμενη από το IEEE Communication Society ημερίδα με θέμα:  “Trust in Online Social Networks”.\n\nΗ ημερίδα θα λάβει χώρα στο Συνεδριακό Κέντρο της Πανεπιστημιούπολης Αρχαίου Ελαιώνα το Σάββατο 7 Δεκεμβρίου 10:00-16:00 και υποστηρίζεται από το IEEE Student Branch UniWA\n\nΑκαδημαϊκοί, δημοσιογράφοι, ερευνητές και εκπρόσωποι των αρχών αλλά και των social media θα αναλύσουν το θέμα της χρήσης των μέσων κοινωνικής δικτύωσης και της εμπιστοσύνης που υπάρχει μέσα σε αυτά από διαφορετική σκοπιά, με σκοπό τη σφαιρική ενημέρωση του κοινού για την ορθή χρήση τους. Η πρόσκληση είναι ανοιχτή στο κοινό και απαιτείται εγγραφή για τους παρευρισκόμενους στο Συνεδριακό Κέντρο μέσω του παρακάτω συνδέσμου.\n\nΟι παρευρισκόμενοι θα λάβουν βεβαίωση συμμετοχής και θα έχουν τη δυνατότητα να ενημερωθούν από τους ερευνητές για τις μεθοδολογίες που υπάρχουν σχετικά με την καταπολέμηση της παραπληροφόρησης, να θέσουν ερωτήματα στις αρχές για τις απειλές μέσα στα social media, να επικοινωνήσουν με εκπρόσωπο των social media για τις προκλήσεις της σωστής πληροφόρησης και να εκφράσουν τις ανησυχίες τους για θέματα ηθικής.",
+                "links": [
+                    {
+                        "id": 0,
+                        "title": "Δήλωση συμμετοχής",
+                        "url": "https://www.tickettailor.com/events/universityofwestattica/1478668"
+                    },
+                    {
+                        "id": 1,
+                        "title": "Ατζέντα ημερίδας",
+                        "url": "/events/trust-social-agenda.pdf"
+                    },
+                    {
+                        "id": 2,
+                        "title": "Ζωντανή μετάδοση στο Youtube",
+                        "url": "https://www.youtube.com/live/-2tCg-tYBCg"
+                    }
+                ]
+            },
+            "en": {
+                "location": "Conference Centre, Campus2, UniWA",
+                "title": "Trust in Online Social Networks",
+                "keywords": ["ONE-DAY SEMINAR"],
+                "description": "Who can you trust on social media?\nHow can you distinguish reliable information on social media?\nWhen does social media usage become dangerous, and what is its impact on society?\n\nThe CoNSeRT research laboratory of the Department of Electrical and Electronics Engineering at the University of West Attica is organizing the IEEE Communication Society-sponsored seminar on: “Trust in Online Social Networks.”\n\nThe seminar will take place at the Conference Center of the Ancient Olive Grove Campus on Saturday, December 7, from 10:00 to 16:00, and is supported by the IEEE Student Branch UniWA.\n\nAcademics, journalists, researchers, and representatives from authorities and social media platforms will analyze the topic of social media usage and the trust within these networks from different perspectives. The goal is to provide a comprehensive understanding of their proper use. The event is open to the public, but registration is required for attendees at the Conference Center via the link below.\n\nAttendees will receive a certificate of participation and will have the opportunity to learn from researchers about methodologies for combating misinformation, ask authorities about threats within social media, communicate with social media representatives about the challenges of accurate information dissemination, and express their ethical concerns regarding these issues.",
+                "links": [
+                    {
+                        "id": 0,
+                        "title": "Participation Form",
+                        "url": "https://www.tickettailor.com/events/universityofwestattica/1478668"
+                    },
+                    {
+                        "id": 1,
+                        "title": "Conference agenda",
+                        "url": "/events/trust-social-agenda.pdf"
+                    },
+                    {
+                        "id": 2,
+                        "title": "Live Steaming on Youtube",
+                        "url": "https://www.youtube.com/live/-2tCg-tYBCg"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": 8,
+        "date": "2025-03-11T13:00:00",
+        "end_date": "2025-03-11T15:00:00",
+        "registration_deadline": "2025-03-11T13:00:00",
+        "registration_form": "https://registerieeexplore.wufoo.com/forms/xkkwpox04pts03/",
+        "thumbnail": "/events/ieeexplore.png",
+        "images": ["/events/ieeexplore.png"],
+        "info": {
+            "gr": {
+                "location": "ΖΑ008-009, Π2, ΠΑΔΑ",
+                "title": "ΙΕΕΕ Xplore Research & Publishing Event",
+                "keywords": ["ΣΕΜΙΝΑΡΙΟ"],
+                "description": "Στις 11 Μαρτίου, στις 13.00 στην Πανεπιστημιούπολη Αρχαίου Ελαιώνα, μαζί με την Eszter Lukacs (IEEE Client Services Manager), συνδιοργανώνουμε το ΙΕΕΕ Xplore Research & Publishing Event. Στα 90 λεπτά του event, θα μπορέσετε να πληροφορηθείτε για το IEEE Xplore Digital Library, πώς να ενισχύσετε την απήχηση των αποτελεσμάτων της έρευνάς σας, πως να επιλέξετε το κατάλληλο συνέδριο ή περιοδικό του ΙΕΕΕ για να δημοσιεύσετε, τι προσέχουν οι αξιολογητές σε μία δημοσίευση (και γιατί μπορεί να απορριφθεί μία υποβολή), διαθέσιμα εργαλεία που μπορείτε να χρησιμοποιήσετε, και να καταλάβετε πως λειτουργεί η διαδικασία αξιολόγησης μίας δημοσίευσης στο ΙΕΕΕ, και τέλος, πως να δημοσιεύσετε εκμεταλλευόμενοι/ες τη συμφωνία HEAL-Link\n\nΣε όσους/ες παρακολουθήσουν το event, θα δοθεί πιστοποιητικό από το ΙΕΕΕ. Η συμμετοχή είναι δωρεάν, αλλά οι θέσεις είναι περιορισμένες, και είναι αναγκαία η εγγραφή σας, η οποία μπορεί να γίνει με χρήση του ακόλουθου συνδέσμου.",
+                "links": [
+                    {
+                        "id": 0,
+                        "title": "Φόρμα συμμετοχής",
+                        "url": "https://registerieeexplore.wufoo.com/forms/xkkwpox04pts03/"
+                    },
+                    {
+                        "id": 1,
+                        "title": "Ατζέντα εκδήλωσης",
+                        "url": "/events/ieeexplore-agenda.pdf"
+                    }
+                ]
+            },
+            "en": {
+                "location": "ZA008-009, Campus2, UniWA",
+                "title": "ΙΕΕΕ Xplore Research & Publishing Event",
+                "keywords": ["SEMINAR"],
+                "description": "On March 11, at 13:00 at the Ancient Olive Grove Campus, we are co-organizing the IEEE Xplore Research & Publishing Event with Eszter Lukacs (IEEE Client Services Manager).\n\nDuring the 90-minute event, you will learn about the IEEE Xplore Digital Library, how to increase the impact of your research findings, how to select the right IEEE conference or journal for publication, what reviewers look for in a submission (and why a paper might be rejected), available tools you can use, how the IEEE peer review process works, and finally, how to publish under the HEAL-Link agreement.\n\nAttendees will receive a certificate from IEEE. Participation is free, but seats are limited, and registration is required. You can register using the following link.",
+                "links": [
+                    {
+                        "id": 0,
+                        "title": "Participation Form",
+                        "url": "https://registerieeexplore.wufoo.com/forms/xkkwpox04pts03/"
+                    },
+                    {
+                        "id": 1,
+                        "title": "Seminar agenda",
+                        "url": "/events/ieeexplore-agenda.pdf"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": 9,
+        "date": "2025-03-28T17:30:00",
+        "end_date": "2025-03-29T14:30:00",
+        "registration_deadline": "2025-03-28T17:30:00",
+        "registration_form": "https://docs.google.com/forms/d/1R34Jctk42vr1qmRWPi8FjxbD9d4Gy-wBupLlI3z1TVI/edit",
+        "thumbnail": "/events/biomedical-workshop.jpg",
+        "images": ["/events/biomedical-workshop.jpg"],
+        "info": {
+            "gr": {
+                "location": "Κ10.120 (ΕΙΣΕ), Π1, ΠΑΔΑ",
+                "title": "Biomedical Workshop",
+                "keywords": ["WORKSHOP"],
+                "description": "Με μεγάλη χαρά σας προσκαλούμε στο Workshop που διοργανώνεται από το Biomed SG του IEEE Student Branch του ΠΑΔΑ, σε συνεργασία με το Τμήμα Μηχανικών Βιοϊατρικής του Πανεπιστημίου Δυτικής Αττικής· περιλαμβάνει: 📌 MATLAB (Παρασκευή 28 Μαρτίου, 17:30–19:30): βασικές λειτουργίες του Simulink, Συστήματα Αυτομάτου Ελέγχου, εισαγωγή στην Ασαφή Λογική & το Fuzzy Toolbox· 📌 Python (Σάββατο 29 Μαρτίου, 12:00–14:30): Web Scraping, Μηχανική Μάθηση, εισαγωγή στα Large Language Models (LLMs)· 📌 Επιπλέον: παρουσίαση του IEEE SB, των πρότζεκτ της ομάδας BIOMED και ευκαιρίες συμμετοχής· το workshop είναι δωρεάν, διοργανώνεται από φοιτητές και απευθύνεται σε φοιτητές του Τμήματος και μέλη του παραρτήματος· ✅ Απαιτείται εξοικείωση με προγραμματιστικά περιβάλλοντα λόγω διαδραστικού χαρακτήρα· 📢 Περιορισμένες θέσεις για φυσική παρουσία – κάποιοι συμμετέχοντες ενδέχεται να παρακολουθήσουν εξ αποστάσεως· όσοι συμμετέχουν με laptop θα πρέπει να έχουν εγκατεστημένα το Simulink στο MATLAB και το Anaconda για Python· σύνδεσμος εγγραφής στο τέλος του μηνύματος.",
+                "links": []
+            },
+            "en": {
+                "location": "Κ10.120, Campus1, UniWa",
+                "title": "Biomedical Workshop",
+                "keywords": ["WORKSHOP"],
+                "description": "We are excited to invite you to the Workshop organized by the Biomed SG of the IEEE Student Branch of UniWA, in collaboration with the Department of Biomedical Engineering of the University of West Attica; it includes: 📌 MATLAB (Fri, Mar 28, 17:30–19:30): Simulink basics, Control Systems, Intro to Fuzzy Logic & Toolbox; 📌 Python (Sat, Mar 29, 12:00–14:30): Web Scraping, Machine Learning, Intro to LLMs; 📌 Plus: Overview of IEEE SB, BIOMED projects & participation opportunities; the workshop is free, student-led, and aimed at Biomedical Engineering students & IEEE members; ✅ Familiarity with programming is REQUIRED as the workshop is interactive; 📢 Limited in-person seats – some may attend remotely; participants with laptops must have Simulink (MATLAB) and Anaconda (Python) installed; registration form link at the end of the message.",
+                "links": []
+            }
+        }
+    },
+       {
+        "id": 10,
+        "date": "2025-05-31T12:00:00",
+        "end_date": "2025-05-31T14:30:00",
+        "registration_deadline": "2025-05-30T12:00:00",
+        "registration_form": "https://docs.google.com/forms/d/1Gyvcye9u7SQsnPRuXOfxCHUTgVmIxQxm6LGAPnPwgEg/",
+        "thumbnail": "/events/GameDev-Workshop.png",
+        "images": ["/events/GameDev-Workshop.png"],
+        "info": {
+            "gr": {
+                "location": "ΚΖΒ.109, Π2, ΠΑΔΑ",
+                "title": "GameDev Workshop",
+                "keywords": ["WORKSHOP"],
+                "description": "Η ομάδα **GameDev** του παραρτήματος **IEEE** σας προσκαλεί στο εισαγωγικό workshop **\"Εισαγωγή στο Godot και τη GDScript\"** την **Παρασκευή 31 Μαΐου, 12:00 μ.μ.**, με εξοικείωση στο Godot, GDScript και κατασκευή platformer· στο τέλος θα δοθεί **πιστοποίηση συμμετοχής**.",
+                "links":  [{
+                        "id": 0,
+                        "title": "Φόρμα συμμετοχής",
+                        "url": "https://docs.google.com/forms/d/1Gyvcye9u7SQsnPRuXOfxCHUTgVmIxQxm6LGAPnPwgEg/"
+                }]
+            },
+            "en": {
+                "location": "ΚΖΒ.109, Campus2, UniWa",
+                "title": "GameDev Workshop",
+                "keywords": ["WORKSHOP"],
+                "description": "The **IEEE** branch's **GameDev** team invites you to the introductory workshop **\"Introduction to Godot and GDScript\"** on **Friday, May 31st at 12:00 PM**, featuring familiarization with the Godot environment, first steps in GDScript, and building a simple platformer game; a certificate of participation will be provided at the end.",
+                "links":  [{
+                        "id": 0,
+                        "title": "Participation Form",
+                        "url": "https://docs.google.com/forms/d/1Gyvcye9u7SQsnPRuXOfxCHUTgVmIxQxm6LGAPnPwgEg/"
+                }]
+            }
+        }
+    },
+    {
+        "id": 11,
+        "date": "2025-06-15T10:30:00",
+        "end_date": "2025-06-15T19:00:00",
+        "registration_deadline": "2025-06-14T10:30:00",
+        "registration_form": "https://www.tickettailor.com/events/ieeesbuniwa/1705983",
+        "thumbnail": "/events/Engineering-Careers.png",
+        "images": ["/events/Engineering-Careers.png"],
+        "info": {
+            "gr": {
+                "location": "Συνεδριακό Κέντρο, Π1, ΠΑΔΑ",
+                "title": "Engineering Careers",
+                "keywords": ["ΗΜΕΡΙΔΑ"],
+                "description": "Το *Engineering Careers*, το πρώτο career day αποκλειστικά για μηχανικούς, έρχεται στο Πανεπιστήμιο Δυτικής Αττικής, την Κυριακή 15/6, και σας προσκαλεί να ζήσετε μια μοναδική εμπειρία γεμάτη ευκαιρίες!\n\nΗ εκδήλωση, η οποία διοργανώνεται εκ μέρους του **IEEE SB UniWA**, θα λάβει χώρα στο **Συνεδριακό Κέντρο** της **Πανεπιστημιούπολης Αρχαίου Ελαιώνα** από τις **10:30 έως και τις 19:00**. Θεματικά πάνελ συζητήσεων με καταξιωμένους επαγγελματίες, παρουσιάσεις εταιρειών από κορυφαίους στον χώρο της μηχανικής, πολλές ευκαιρίες networking καθώς και ατελείωτη περιήγηση στα περίπτερα των εταιρειών για παραπάνω συζήτηση.\n\nΣτο συγκεκριμένο career day, θα δώσουν το παρόν κορυφαίες εταιρείες και όμιλοι του κλάδου της μηχανικής και της τεχνολογίας όπως η **Aktor**, **HP**, **Oracle**, **Kalamarakis**, **CMA**, **Gizelis**, **Gizelis Robotics** καθώς και πολλές ακόμη που θα ανακοινωθούν μέσα στις επόμενες ημέρες στους λογαριασμούς μας στα social media.\n\nΤο συγκεκριμένο event μπορεί να αποτελέσει το πρώτο σου βήμα προς την αγορά εργασίας!\n\n",
+                "links":  [{
+                        "id": 0,
+                        "title": "Φόρμα Συμμετοχής",
+                        "url": " https://www.tickettailor.com/events/ieeesbuniwa/1705983"
+                },
+                {
+                        "id": 1,
+                        "title": "Πρόγραμμα του Engineering Careers",
+                        "url": "/events/Engineering Careers Agenda.pdf"
+                }]
+            },
+            "en": {
+                "location": "Conference Centre, Campus1, UniWA",
+                "title": "Engineering Careers",
+                "keywords": ["ONE-DAY SEMINAR"],
+                "description": "*Engineering Careers*, the first career day exclusively for engineers, is coming to the **University of West Attica** on **Sunday, June 15**, inviting you to experience a unique event full of opportunities!\n\nOrganized by **IEEE SB UniWA**, the event will take place at the **Conference Center** of the **Ancient Olive Grove Campus** from **10:30 to 19:00**. Themed discussion panels with distinguished professionals, company presentations by top names in engineering, abundant networking opportunities, and endless exploration of company booths for further conversation.\n\nAt this specific career day, leading companies and groups from the engineering and technology sector will be present, such as **Aktor**, **HP**, **Oracle**, **Kalamarakis**, **CMA**, **Gizelis**, **Gizelis Robotics**, as well as many more that will be announced in the coming days on our social media accounts.\n\nThis event could be your first step into the job market!\n\n",
+                "links":  [{
+                        "id": 0,
+                        "title": "Participation Form",
+                        "url": " https://www.tickettailor.com/events/ieeesbuniwa/1705983"
+                },
+                {
+                        "id": 1,
+                        "title": "Engineering Careers Agenda",
+                        "url": "/events/Engineering Careers Agenda.pdf"
+                }]
+            }
+        }
+    },
+    {
+        "id": 12,
+        "date": "2025-10-17T10:30:00",
+        "end_date": "2025-10-17T19:00:00",
+        "registration_deadline": "2025-10-17T10:30:00",
+        "registration_form": "https://forms.gle/7JaUKwrSBeSw6FZa6",
+        "thumbnail": "/events/IEEE_DAY_2025.png",
+        "images": ["/events/IEEE_DAY_2025.png"],
+        "info": {
+            "gr": {
+                "location": "Συνεδριακό Κέντρο, Π1, ΠΑΔΑ",
+                "title": "IEEE Day 2025",
+                "keywords": ["ΗΜΕΡΙΔΑ"],
+                "description": "Η Καθιερωμένη εκδήλωση **παρουσίασης των δράσεων του παραρτήματος και των project του.** Φέτος, τα **8 Student Scientific Group** μας θα παρουσιάσουν **πάνω από 20 project** σε ένα ευρύ φάσμα τομέων — από την **Τεχνητή Νοημοσύνη** και τη **Ρομποτική**, μέχρι τη **Βιοϊατρική**, την **Ενέργεια**, τη **Ναυτιλία**, τα **VR** περιβάλλοντα και το **Software Development**!\n\nH εκδήλωση περιλαμβάνει επίσης **περιήγηση στα booth** που θα έχουν στήσει όλα τα SG ώστε να μπορέσουμε να συζητήσουμε από κοντά πως μπορείτε και εσείς να γίνεται ενεργά μέλη του **IEEE SB UniWA!**",
+                "links":  [{
+                        "id": 0,
+                        "title": "Φόρμα Συμμετοχής",
+                        "url": "https://forms.gle/7JaUKwrSBeSw6FZa6"
+                }]
+            },
+            "en": {
+                "location": "Conference Centre, Campus1, UniWA",
+                "title": "IEEE Day 2025",
+                "keywords": ["ONE-DAY SEMINAR"],
+                "description": "Event for **presenting the branch’s activities and its projects.** This year, our **8 Student Scientific Groups** will present **more than 20 projects** across a wide range of fields — from **Artificial Intelligence** and **Robotics**, to **Biomedical Engineering**, **Energy**, **Maritime**, **VR** environments, and **Software Development**!\n\n The event also includes a **tour of the booths** that will be set up by all SGs, giving us the opportunity to discuss in person how you too can become active members of **IEEE SB UniWA!**",
+                "links":  [{
+                        "id": 0,
+                        "title": "Participation Form",
+                        "url": "https://forms.gle/7JaUKwrSBeSw6FZa6"
+                }]
+            }
+        }
+    },
+    {
+        "id": 13,
+        "date": "2025-10-25T03:00:00",
+        "end_date": "2025-10-26T03:00:00",
+        "registration_deadline": "2025-10-14T23:59:59",
+        "registration_form": "https://forms.gle/sFGc9BqZut2cJX7Q9",
+        "thumbnail": "/events/ieeextreme-19-uwa-hub.png",
+        "images": ["/events/ieeextreme-19-uwa-hub.png"],
+        "info": {
+            "gr": {
+                "location": "Κτήριο Ζ, Αίθουσα ΖΒ001, Πανεπιστημιούπολη Αρχαίου Ελαιώνα (Π2), ΠαΔΑ",
+                "title": "IEEEXtreme 19.0 @ UniWA Hub",
+                "keywords": ["ΔΙΑΓΩΝΙΣΜΟΣ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΥ", "IEEE", "IEEEXtreme"],
+                "description": "Ο IEEEXtreme, ο παγκόσμιος διαγωνισμός προγραμματισμού του IEEE, επιστρέφει στο ΠΑΔΑ! Για ακόμη μια χρονιά οι ομάδες του ΠΑΔΑ θα ενωθούν στο hub του IEEE SB UniWA και θα ανταγωνιστούν με παραρτήματα από όλο τον κόσμο!\n\nΟι εγγραφές είναι ανοιχτές μέχρι 14 Οκτωβρίου. Ο διαγωνισμός διαρκεί 24 ώρες και διεξάγεται ταυτόχρονα σε όλο τον κόσμο. Οι ομάδες αποτελούνται από 1 έως και 3 άτομα. Όλα τα μέλη της ομάδας πρέπει να έχουν ενεργή συνδρομή στο IEEE. Διεξάγεται στην πλατφόρμα του csacademy όπου είναι ανεβασμένα και τα θέματα παλαιότερων διαγωνισμών. Το παράρτημα θα παρέχει γεύματα και ενεργειακά ποτά για όλους τους διαγωνιζόμενους. Θα υπάρξει workshop επίλυσης θεμάτων παλαιότερων ετών για προετοιμασία.",
+                "links":  [{
+                        "id": 0,
+                        "title": "IEEE Membership",
+                        "url": "https://www.ieee.org/"
+                }]
+            },
+            "en": {
+                "location": "Building Z, Room ZB001, Ancient Olive Grove Campus (P2), UniWA",
+                "title": "IEEEXtreme 19.0 @ UniWA Hub",
+                "keywords": ["PROGRAMMING COMPETITION", "IEEE", "IEEEXtreme"],
+                "description": "IEEEXtreme, IEEE’s global programming competition, is returning to UniWA! Once again, UniWA teams will gather at the IEEE SB UniWA hub and compete with student branches from all over the world.\n\nRegistrations are open until October 14. The competition lasts 24 hours and is held simultaneously worldwide. Teams can have 1 to 3 members. All team members must have an active IEEE membership. The contest is hosted on the csacademy platform, where past competition problems are also available. The branch will provide meals and energy drinks throughout the day for all participants. A workshop with solutions to previous years’ problems will also be held for proper preparation.",
+                "links":  [{
+                        "id": 0,
+                        "title": "IEEE Membership",
+                        "url": "https://www.ieee.org/"
+                }]
+            }
+        }
+    },
+    {
+        "id": 14,
+        "date": "2025-10-19T12:00:00",
+        "end_date": "2025-10-19T15:00:00",
+        "registration_deadline": "2025-10-16T15:00:00",
+        "registration_form": "https://www.tickettailor.com/events/ieeesbuniwa1/1882460",
+        "thumbnail": "/events/ieeextreme-19-workshop.png",
+        "images": ["/events/ieeextreme-19-workshop.png"],
+        "info": {
+            "gr": {
+                "location": "",
+                "title": "IEEEXtreme 19.0 Workshop",
+                "keywords": ["WORKSHOP", "IEEE", "IEEEXtreme"],
+                "description": "Θες να προετοιμαστείς κατάλληλα για τον IEEEXtreme 19.0; Τότε μην χάσεις το IEEEXtreme Workshop, που πραγματοποιείται σε συνεργασία με τα IEEE SB NTUA & IEEE SB Piraeus!\n\nΣε αυτό το workshop θα λύσουμε παλαιά tasks του διαγωνισμού, θα απαντήσουμε σε απορίες και θα μοιραστούμε tips & tricks για να είσαι πανέτοιμος για τη μεγάλη 24ωρη μάχη του κώδικα!\n\nΑν και δικαίωμα συμμετοχής στον διαγωνισμό έχουν μόνο τα επίσημα μέλη του IEEE, το workshop μας είναι ανοιχτό σε όλους — ελάτε να μάθουμε, να προγραμματίσουμε και να γνωριστούμε!",
+                "links": []
+            },
+            "en": {
+                "location": "",
+                "title": "IEEEXtreme 19.0 Workshop",
+                "keywords": ["WORKSHOP", "IEEE", "IEEEXtreme"],
+                "description": "Want to prepare properly for IEEEXtreme 19.0? Then don’t miss the IEEEXtreme Workshop, organized in collaboration with IEEE SB NTUA & IEEE SB Piraeus!\n\nIn this workshop, we will solve past competition tasks, answer questions, and share tips & tricks so you can be fully ready for the big 24-hour coding battle!\n\nAlthough only official IEEE members are eligible to participate in the competition, our workshop is open to everyone — come learn, code, and connect with us!",
+                "links": []
+            }
+        }
+    },
+    {
+        "id": 16,
+        "date": "2025-11-29T12:00:00",
+        "end_date": "2025-11-29T12:00:00",
+        "registration_deadline": "",
+        "registration_form": "https://buytickets.at/softwaresg/1940579",
+        "thumbnail": "/events/3d-printing-fundamentals.png",
+        "images": ["/events/3d-printing-fundamentals.png"],
+        "info": {
+            "gr": {
+                "location": "",
+                "title": "3D Printing Fundamentals Seminar",
+                "keywords": ["SEMINAR", "3D Printing"],
+                "description": "Θέλεις να ξεκινήσεις το ταξίδι σου στον κόσμο του 3D printing, αλλά δεν ξέρεις από πού να αρχίσεις;\nΤο 3D Printing Fundamentals Seminar είναι το ιδανικό πρώτο βήμα!\n\nΘα γνωρίσεις:\n• Τις βασικές τεχνολογίες εκτύπωσης (FDM, SLA, SLS)\n• Τα υλικά που χρησιμοποιούνται και πώς να επιλέγεις το κατάλληλο\n• πώς δουλεύει ένας 3D printer\n• Τις ρυθμίσεις που καθορίζουν την ποιότητα και την ακρίβεια της εκτύπωσης\n…και πολλά ακόμα\n\nΤο σεμινάριο είναι ανοιχτό για όλους. Ωστόσο, αν είσαι μέλος του IEEE SB UniWA Hub, θα λάβεις και βεβαίωση συμμετοχής!\nΑν όχι, προλαβαίνεις ακόμα — κάνε τη συνδρομή σου στον ΙΕΕΕ και γίνε ένας από εμάς!\n\nΔήλωσε δωρεάν συμμετοχή στην ακόλουθη φόρμα: https://buytickets.at/softwaresg/1940579",
+                "links": [
+                ]
+            },
+            "en": {
+                "location": "",
+                "title": "3D Printing Fundamentals Seminar",
+                "keywords": ["SEMINAR", "3D Printing"],
+                "description": "Do you want to start your journey into the world of 3D printing but don’t know where to begin?\nThe 3D Printing Fundamentals Seminar is the ideal first step!\n\nYou will learn:\n• The basic printing technologies (FDM, SLA, SLS)\n• The materials used and how to choose the right one\n• How a 3D printer works\n• The settings that determine print quality and accuracy\n…and much more\n\nThe seminar is open to everyone. However, if you are a member of the IEEE SB UniWA Hub, you will also receive a certificate of participation!\nIf not, there’s still time — get your IEEE membership and become one of us!\n\nRegister for free through the following form: https://buytickets.at/softwaresg/1940579",
+                "links": [
+                ]
+            }
+        }
+    },
+    {
+        "id": 17,
+        "date": "2025-12-05T18:00:00",
+        "end_date": "2025-12-05T20:00:00",
+        "registration_deadline": "",
+        "registration_form": "https://buytickets.at/softwaresg/1956010",
+        "thumbnail": "/events/cpp-oop-course.png",
+        "images": ["/events/cpp-oop-course.png"],
+        "info": {
+            "gr": {
+                "location": "Online (MS Teams)",
+                "title": "Μαθήματα C++: Εισαγωγή στον Αντικειμενοστραφή Προγραμματισμό",
+                "keywords": ["COURSE", "C++", "Object-Oriented Programming"],
+                "description": "Δήλωσε συμμετοχή στα μαθήματα C++ και κάνε τα πρώτα σου βήματα στον αντικειμενοστραφή προγραμματισμό!\nΜάθε τα μυστικά της C++ και του αντικειμενοστραφούς προγραμματισμού μέσα από πρακτικά παραδείγματα και διαδραστικά sessions που θα σε βοηθήσουν να κατανοήσεις τη λογική πίσω από τον κώδικα!\n\nΤα μαθήματα διεξάγονται online μέσω MS Teams και ξεκινούν από την Παρασκευή 5/12!\n\nΤα μαθήματα είναι ανοιχτά σε όλους, όμως αν είσαι μέλος του IEEE SB UniWA Hub και παραδώσεις την τελική εργασία, θα λάβεις και βεβαίωση συμμετοχής!\nΑν όχι, προλαβαίνεις ακόμα — κάνε τη συνδρομή σου στο ΙΕΕΕ και γίνε ένας από εμάς!",
+                "links": [
+                ]
+            },
+            "en": {
+                "location": "Online (MS Teams)",
+                "title": "C++ Classes: Introduction to Object-Oriented Programming",
+                "keywords": ["COURSE", "C++", "Object-Oriented Programming"],
+                "description": "Sign up for the C++ classes and take your first steps into object-oriented programming!\nLearn the essentials of C++ and OOP through practical examples and interactive sessions that will help you understand the logic behind the code.\n\nThe classes are held online via MS Teams and start on Friday 5/12!\n\nThe classes are open to everyone, but if you are a member of the IEEE SB UniWA Hub and submit the final project, you will receive a certificate of participation.\nIf not, there’s still time — get your IEEE membership and become one of us!",
+                "links": [
+                ]
+            }
+        }
+    },
+    {
+        "id": 18,
+        "date": "2026-01-10T18:00:00",
+        "end_date": "2026-01-10T21:00:00",
+        "registration_deadline": "",
+        "registration_form": "https://www.tickettailor.com/events/softwaresg/1991159",
+        "thumbnail": "/events/git-github-fundamentals.png",
+        "images": ["/events/git-github-fundamentals.png"],
+        "info": {
+            "gr": {
+                "location": "",
+                "title": "Git/GitHub Fundamentals Workshop",
+                "keywords": ["WORKSHOP", "Git", "GitHub", "Version Control"],
+                "description": "Το Git/GitHub Fundamentals Workshop έρχεται στις 10 Ιανουαρίου και κάνει deep dive σε δύο εργαλεία που χρησιμοποιούνται ευρέως για την παρακολούθηση και τη διαχείριση κώδικα! Αν σπουδάζεις μηχανικός ή ασχολείσαι γενικά με προγραμματισμό, τότε η κατανόηση του GitHub είναι must!\n\nΤο workshop έχει πρακτικό χαρακτήρα, οπότε προτείνουμε να φέρεις laptop για να δοκιμάσεις τα παραδείγματα που θα παρουσιάζονται live.\n\nΚαι φυσικά, αν είσαι μέλος του IEEE SB UniWA HUB, θα λάβεις βεβαίωση παρακολούθησης! Αν δεν έχεις ακόμα συνδρομή, μπορείς να κάνεις την συνδρομή σου τώρα και να γίνεις ένας από εμάς!",
+                "links": []
+            },
+            "en": {
+                "location": "",
+                "title": "Git/GitHub Fundamentals Workshop",
+                "keywords": ["WORKSHOP", "Git", "GitHub", "Version Control"],
+                "description": "The Git/GitHub Fundamentals Workshop is coming on January 10 and goes into a deep dive on two widely used tools for tracking and managing code! If you are an engineering student or work with programming in general, understanding GitHub is a must!\n\nThe workshop is hands-on, so we recommend bringing your laptop to follow along and try the examples live.\n\nAnd of course, if you are a member of the IEEE SB UniWA HUB, you will receive a certificate of attendance! If you are not yet a member, you can still get your IEEE membership now and become one of us!",
+                "links": []
+            }
+        }
+    },
+    {
+        "id": 19,
+        "date": "2026-03-14T12:00:00",
+        "end_date": "2026-03-14T15:00:00",
+        "registration_deadline": "",
+        "registration_form": "https://buytickets.at/ieeesbuniwa2/2051574",
+        "thumbnail": "/events/game-graphics-seminar.png",
+        "images": ["/events/game-graphics-seminar.png"],
+        "info": {
+            "gr": {
+                "location": "",
+                "title": "Game Graphics Seminar",
+                "keywords": ["SEMINAR", "Game Development", "Graphics"],
+                "description": "Θέλεις να ξεκινήσεις δυναμικά το νέο εξάμηνο;\nΤο Game Graphics Seminar είναι για εσένα!\n\nΕκεί θα γνωρίσεις τη διαδικασία δημιουργίας ενός παιχνιδιού και τα απαραίτητα στοιχεία για την υλοποίησή του, ενώ θα μάθεις πώς να σχεδιάζεις τα δικά σου 2D και 3D assets χρησιμοποιώντας τα Photoshop και Blender.\n\nΤο σεμινάριο είναι ανοιχτό για όλους. Ωστόσο, αν είσαι μέλος του IEEE SB UniWA Hub, θα λάβεις και βεβαίωση συμμετοχής.\nΑν όχι, προλαβαίνεις ακόμα — κάνε τη συνδρομή σου στο κανάλι ieee-registration και γίνε ένας από εμάς!",
+                "links": [
+                ]
+            },
+            "en": {
+                "location": "",
+                "title": "Game Graphics Seminar",
+                "keywords": ["SEMINAR", "Game Development", "Graphics"],
+                "description": "Do you want to kick-start the new semester in a dynamic way?\nThe Game Graphics Seminar is for you!\n\nYou will get to know the process of creating a game and the essential components needed to implement it, while also learning how to design your own 2D and 3D assets using Photoshop and Blender.\n\nThe seminar is open to everyone. However, if you are a member of the IEEE SB UniWA Hub, you will receive a certificate of participation.\nIf not, there’s still time — get your IEEE membership and become one of us!",
+                "links": [
+                ]
+            }
+        }
+    },
+    {
+        "id": 20,
+        "date": "2026-03-21T12:00:00",
+        "end_date": "2026-03-21T16:00:00",
+        "registration_deadline": "",
+        "registration_form": "https://docs.google.com/forms/d/e/1FAIpQLScGtDVnBR4utxzBH3ZZPSHELJHYNMWF87tWIA8HFgn6ah3lEQ/viewform?usp=dialog",
+        "thumbnail": "/events/animation-workshop.png",
+        "images": ["/events/animation-workshop.png"],
+        "info": {
+            "gr": {
+                "location": "",
+                "title": "Animation Workshop",
+                "keywords": ["WORKSHOP", "Animation", "Game Development"],
+                "description": "Έρχεται το Animation Workshop!\n\nΣτην πρώτη ενότητα θα παρουσιαστούν οι τεχνικές και οι βασικές αρχές του animation, ενώ στη δεύτερη ενότητα θα εστιάσουμε στους τρόπους χρήσης τεχνικών animation στα video games. Δεδομένου ότι το workshop είναι διαδραστικό, συστήνουμε οι συμμετέχοντες να έχουν μαζί τους τάμπλετ ή λάπτοπ.\n\nΟι θέσεις είναι περιορισμένες κι έτσι θα τηρηθεί σειρά προτεραιότητας. Αν είσαι μέλος του IEEE SB UniWA Hub, έχεις περισσότερες πιθανότητες να επιλεχθείς και θα λάβεις βεβαίωση συμμετοχής!\nΑν όχι, προλαβαίνεις ακόμα — κάνε τη συνδρομή σου στο ieee-registration και γίνε ένας από εμάς!",
+                "links": [
+                ]
+            },
+            "en": {
+                "location": "Panepistimioupoli 2, Arxaiou Eleona, Building Z, Class ZB109",
+                "title": "Animation Workshop",
+                "keywords": ["WORKSHOP", "Animation", "Game Development"],
+                "description": "The Animation Workshop is coming!\n\nIn the first part, we will present the techniques and fundamental principles of animation, while in the second part we will focus on how to apply animation techniques in video games. Since this workshop is interactive, we recommend that participants bring a tablet or laptop.\n\nSeats are limited and will be allocated on a first-come, first-served basis. If you are a member of the IEEE SB UniWA Hub, you have a higher chance of being selected and you will receive a certificate of participation!\nIf not, there’s still time — get your IEEE membership and become one of us!",
+                "links": [
+                ]
+            }
+        }
+    },
+    {
+        "id": 21,
+        "date": "2026-03-29T09:00:00",
+        "end_date": "2026-03-29T21:00:00",
+        "registration_deadline": "",
+        "registration_form": "https://buytickets.at/ieeesbuniwa2/2082623",
+        "thumbnail": "/events/game-jam.png",
+        "images": ["/events/game-jam.png"],
+        "info": {
+            "gr": {
+                "location": "",
+                "title": "Game Jam Competition",
+                "keywords": ["COMPETITION", "Game Jam", "Game Development"],
+                "description": "Ψάχνεις το απόλυτο game development challenge;\nΤότε δεν πρέπει να χάσεις τον διαγωνισμό Game Jam!\n\nΘα εργαστείς σε ομάδες 1-5 ατόμων με στόχο τη δημιουργία ενός πρωτότυπου παιχνιδιού μέσα σε 24 ώρες. Η οργανωτική επιτροπή θα επιλέξει τα 5 καλύτερα παιχνίδια, τα οποία θα τεθούν σε ψηφοφορία από τους ίδιους τους συμμετέχοντες για την τελική ανάδειξη των νικητών.",
+                "links": [
+                    {
+                        "id": 0,
+                        "title": "Discord Server Game Jam",
+                        "url": "https://discord.gg/FXyqMvGcJv"
+                    }
+                ]
+            },
+            "en": {
+                "location": "",
+                "title": "Game Jam Competition",
+                "keywords": ["COMPETITION", "Game Jam", "Game Development"],
+                "description": "Looking for the ultimate game development challenge?\nThen you can’t miss the Game Jam competition!\n\nYou will work in teams of 1–5 people to create an original game within 24 hours. The organizing committee will select the 5 best games, which will then be voted on by the participants themselves to determine the final winners.",
+                "links": [
+                    {
+                        "id": 0,
+                        "title": "Game Jam Discord Server",
+                        "url": "https://discord.gg/FXyqMvGcJv"
+                    }
+                ]
+            }
+        }
     }
-  },
-  {
-    "id": 1,
-    "date": "2023-10-28T03:00:00",
-    "end_date": "2023-10-29T03:00:00",
-    "registration_deadline": "2023-10-14T00:00:00",
-    "registration_form": "https://forms.gle/PA6Vag1a3GDWACy27",
-    "thumbnail": "/events/ieeextreme17.jpg",
-    "images": ["/events/ieeextreme17.jpg"],
-    "info": {
-      "gr": {
-        "location": "ΖΒ001, Π2, ΠΑΔΑ",
-        "title": "IEEEXtreme 17.0",
-        "keywords": ["ΔΙΑΓΩΝΙΣΜΟΣ"],
-        "description": "Για πρώτη φορά από την ίδρυση του Πανεπιστημίου Δυτικής Αττικής, το IEEE Student Branch UniWA συμμετέχει δυναμικά στον διεθνή διαγωνισμό προγραμματισμού IEEEXtreme, όχι μόνο με ομάδες φοιτητών/τριών του παραρτήματός μας, αλλά και ως οικοδεσπότης των ομάδων του IEEE Student Branch UniPi του Πανεπιστημίου Πειραιά!\n\n🔹 Τι είναι το IEEEXtreme;\nΠρόκειται για έναν παγκόσμιο 24ωρο διαγωνισμό προγραμματισμού, που διοργανώνεται ετησίως από το IEEE και συγκεντρώνει φοιτητές και φοιτήτριες από όλο τον κόσμο. Ο φετινός διαγωνισμός θα διεξαχθεί από το Σάββατο 28 Οκτωβρίου στις 03:00 π.μ. έως την Κυριακή 29 Οκτωβρίου στις 03:00 π.μ.\n\n🔹 Ποιος μπορεί να συμμετάσχει;\nΟμάδες 1 έως 3 ατόμων από οποιοδήποτε πανεπιστήμιο μπορούν να διαγωνιστούν, επιλύοντας προγραμματιστικά προβλήματα σε 20+ διαθέσιμες γλώσσες προγραμματισμού. Ο διαγωνισμός διεξάγεται μέσω της πλατφόρμας CSacademy, όπου μπορείτε να δοκιμάσετε προβλήματα προηγούμενων ετών και να προετοιμαστείτε κατάλληλα.\n\n📌 Ενδιαφέρεσαι να μάθεις περισσότερα ή να συμμετάσχεις;\nΤο παράρτημα προσκαλεί όλους και όλες που ενδιαφέρονται να συμμετάσχουν ή να μάθουν περισσότερες πληροφορίες, να επικοινωνήσουν μαζί μας:\n📧 Email: ieeesb@uniwa.gr\n💬 Discord: Στείλε μήνυμα στον Discord server μας\nΜην χάσεις την ευκαιρία να ζήσεις την εμπειρία του IEEEXtreme και να διαγωνιστείς μαζί με προγραμματιστές από όλο τον κόσμο! 🚀",
-        "links": [
-          {
-            "id": 0,
-            "title": "Παλιά προβλήματα στο CS academy",
-            "url": "https://csacademy.com/ieeextreme-practice/tasks/"
-          },
-          {
-            "id": 1,
-            "title": "Δήλωση ομάδας",
-            "url": "https://xtreme.vtools.ieee.org/"
-          }
-        ]
-      },
-      "en": {
-        "location": "ZB001, Campus2, UniWA",
-        "title": "IEEEXtreme 17.0",
-        "keywords": ["HACKATHON"],
-        "description": "For the first time since the establishment of the University of West Attica, the IEEE Student Branch UniWA is actively participating in the international programming competition IEEEXtreme, not only with teams of our student branch's students but also as the host for the IEEE Student Branch UniPi teams from the University of Piraeus!\n\n🔹 What is IEEEXtreme?\nIt is a global 24-hour programming competition, organized annually by IEEE, bringing together students from all over the world. This year's competition will take place from Saturday, October 28, at 03:00 AM until Sunday, October 29, at 03:00 AM.\n\n🔹 Who can participate?\nTeams of 1 to 3 members from any university can compete by solving programming challenges in 20+ available programming languages. The competition is held on the CSacademy platform, where you can practice with problems from previous years to prepare effectively.\n\n📌 Interested in learning more or joining?\nThe student branch invites everyone interested in participating or learning more information to contact us:\n📧 Email: ieeesb@uniwa.gr\n💬 Discord: Send a message on our Discord server\nDon't miss the chance to experience IEEEXtreme and compete alongside programmers from around the world! 🚀",
-        "links": [
-          {
-            "id": 0,
-            "title": "CS academy old tasks",
-            "url": "https://csacademy.com/ieeextreme-practice/tasks/"
-          },
-          {
-            "id": 1,
-            "title": "Team registration",
-            "url": "https://xtreme.vtools.ieee.org/"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": 2,
-    "date": "2024-03-25T19:00:00",
-    "end_date": "2024-06-14T21:00:00",
-    "registration_deadline": "2024-03-17T00:00:00",
-    "registration_form": "https://forms.gle/7SLwdmAxsr2gh22BA",
-    "thumbnail": "/events/python-oop.png",
-    "images": ["/events/python-oop.png"],
-    "info": {
-      "gr": {
-        "location": "MS Teams",
-        "title": "Python OOP",
-        "keywords": ["ΣΕΜΙΝΑΡΙΟ"],
-        "description": "Θέλετε να μάθετε τις βασικές αρχές προγραμματισμού στην Python, μία από τις πιο δημοφιλείς γλώσσες προγραμματισμού, αλλά δεν σας δόθηκε ποτέ η ευκαιρία;\n\nΗ Python είναι μια από τις πιο διαδεδομένες και χρήσιμες γλώσσες προγραμματισμού παγκοσμίως. Χρησιμοποιείται ευρέως σε εφαρμογές όπως το AI, Machine Learning κ.ο.κ.\n\nΟ IEEE SB UniWA, το φοιτητικό παράρτημα του IEEE στο ΠΑΔΑ, διοργανώνει μια σειρά διαδικτυακών μαθημάτων για την εξοικείωση και την εμβάθυνση στη Python! Το εγχείρημα αυτό έχει ως στόχο οι φοιτητές να μπορούν να αναπτύσσουν λογισμικό χρησιμοποιώντας τεχνικές αντικειμενοστραφή προγραμματισμού.\n\nΚατά την διάρκεια των μαθημάτων θα δοθούν μικρές υποχρεωτικές εργασίες, όπου με την ολοκλήρωση τους ο φοιτητής θα λάβει βεβαίωση παρακολούθησης, υπογεγραμμένη από το εργαστήριο CONSERT του τμήματος Ηλεκτρολόγων και Ηλεκτρονικών Μηχανικών του ΠΑΔΑ.\n\nΠοιοι μπορούν να παρακολουθήσουν τα μαθήματα;\nΔικαίωμα παρακολούθησης έχουν όλοι οι φοιτητές του ΠΑΔΑ, εφόσον συμπληρώσουν την φόρμα συμμετοχής. Οι εγγραφές θα παραμείνουν ανοιχτές μέχρι και την Παρασκευή 22/03.\n\nΓια ποιους προορίζονται;\nΟι διαλέξεις προορίζονται για όλους όσους θέλουν να μάθουν τα βασικά στην γλώσσα python και τον αντικειμενοστραφή προγραμματισμό, ανεξαρτήτως επιπέδου.\n\nΠώς θα γίνουν οι διαλέξεις;\nΟι διαλέξεις θα οργανωθούν σε συνολικά δέκα εβδομαδιαία δίωρα σε κλειστή ομάδα στο Microsoft Teams.\n\nΠότε θα ξεκινήσουν;\nΤα μαθήματα θα ξεκινήσουν την εβδομάδα 25/03 - 29/03. Το πρώτο μάθημα θα καθοριστεί με βάση τα αποτελέσματα της σχετικής ερώτησης στην φόρμα συμμετοχής. Οι ενδιαφερόμενοι θα ενημερωθούν μέσω email και θα προστεθούν στην ομάδα του Microsoft Teams.\n\nΑπό ποίον θα γίνουν;\nΤα μαθήματα θα πραγματοποιηθούν από τον Στέλιο Γεωργαρά, μέλος του φοιτητικού παραρτήματος IEEE SB UniWA με επαγγελματική εμπειρία στο machine learning, computer vision, data engineering και BigData.",
-        "links": [
-          {
-            "id": 0,
-            "title": "Φόρμα συμμετοχής στα μαθήματα Python OOP",
-            "url": "https://forms.gle/7SLwdmAxsr2gh22BA"
-          }
-        ]
-      },
-      "en": {
-        "location": "MS Teams",
-        "title": "Python OOP",
-        "keywords": ["SEMINAR"],
-        "description": "🌟Ready to dive into the world of Python programming, but never had the chance?🐍Join IEEE SB UniWA's online Python courses and unlock the secrets of one of the most popular programming languages!🚀\n\n🔍Python is versatile and widely used, from AI to machine learning and beyond. Whether you're a beginner or seeking to deepen your knowledge, our courses are tailored for all levels of expertise.\n\n💻Led by Stelios Georgaras, a seasoned member of IEEE SB UniWA with professional experience in machine learning, computer vision, and Big Data, our courses will equip you with essential Python skills and object-oriented programming techniques.During the course, small compulsory tasks will be given, where upon their completion the student will receive a certificate of attendance, signed by the CONSERT laboratory of the Department of Electrical and Electronics Engineering of UniWA.\n\n🎓Who can join? All students interested in mastering Python and object-oriented programming, regardless of experience level. Simply fill out the participation form by Sunday, March 17th, to secure your spot.\n\n📌Course details:\n- Duration: Ten weekly sessions\n- Platform: Microsoft Teams\n- Start date: Week of March 25th - March 29th\n- Sessions will be scheduled based on participants' availability, with the first session determined by responses in the participation form.\n\nReady to embark on your Python journey? Don't miss this opportunity to enhance your programming skills and dive into the world of tech!🌐💡",
-        "links": [
-          {
-            "id": 0,
-            "title": "Participation Form",
-            "url": "https://forms.gle/7SLwdmAxsr2gh22BA"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": 3,
-    "date": "2024-09-29T17:00:00",
-    "end_date": "2024-10-20T19:00:00",
-    "registration_deadline": "",
-    "registration_form": "",
-    "thumbnail": "/events/ieeextreme-countdown.png",
-    "images": [
-      "/events/ieeextreme-countdown-1.jpg",
-      "/events/ieeextreme-countdown-2.jpg"
-    ],
-    "info": {
-      "gr": {
-        "location": "Zoom",
-        "title": "IEEEXtreme Countdown",
-        "keywords": ["ΣΕΜΙΝΑΡΙΟ"],
-        "description": "🚀Το IEEEXtreme Countdown ξεκινάει!🔥\nΕτοιμαστείτε για μια μοναδική σειρά από workshops πάνω στο competitive programming!👨‍💻 Μέσα από αυτά, θα κάνουμε αναδρομή σε όλες τις προηγούμενες χρονιές του IEEEXtreme για να προετοιμάσουμε τους φοιτητές για τον επερχόμενο IEEEXtreme 18.0!🎯\n\n💡 Κάθε workshop διοργανώνεται σε συνεργασία μεταξύ δύο IEEE Student Branches και εστιάζει σε δύο χρονιές του διαγωνισμού. Συνολικά, 8 IEEE Student Branches του Greece Section θα συμμετέχουν σε αυτήν την εμπειρία μάθησης!🌍💻\n\n🔗 Όλα τα workshops θα γίνουν μέσω της πλατφόρμας του Zoom! Μην το χάσεις!🔥\n\n📆Πρόγραμμα εκδήλωσης:\n1) Κυριακή 29/09 στις 17:00, Αναδρομή στους IEEEXtreme 10.0 και 11.0 από τα IEEE Student Branch του Πανεπιστημίου Θεσσαλίας στο Βόλο και του Διεθνούς Πανεπιστημίου της Ελλάδος στις Σέρρες.\n2) Κυριακή 06/10 στις 17:00, Αναδρομή στους IEEEXtreme 12.0 και 13.0 από τα IEEE Student Branch του Πανεπιστημίου Δυτικής Αττικής και του Πανεπιστημίου Πατρών.\n3) Κυριακή 13/10 στις 17:00, Αναδρομή στους IEEEXtreme 14.0 και 15.0 από τα IEEE Student Branch του Πανεπιστημίου Μακεδονίας και του Πανεπιστημίου Δυτικής Μακεδονίας στην Καστοριά.\n4) Κυριακή 20/10 στις 17:00, Αναδρομή στους IEEEXtreme 16.0 και 17.0 τα IEEE Student Branch του Δημοκρίτειου Πανεπιστημίου Θράκης και του Πανεπιστημίου Πειραιώς.",
-        "links": [
-          {
-            "id": 0,
-            "title": "Σύνδεσμος για όλα τα workshop",
-            "url": "https://uowm-gr.zoom.us/my/uowm.p32"
-          }
-        ]
-      },
-      "en": {
-        "location": "Zoom",
-        "title": "IEEEXtreme Countdown",
-        "keywords": ["SEMINAR"],
-        "description": "🚀The IEEEXtreme Countdown is starting!🔥\nGet ready for a unique series of workshops on competitive programming!\n\n👨‍💻Through these workshops, we'll look back at all the previous IEEEXtreme years to prepare students for the upcoming IEEEXtreme 18.0!🎯\n\n💡Each workshop is organized in collaboration between two IEEE Student Branches and focuses on two different years of the competition. A total of 8 IEEE Student Branches from the Greece Section will participate in this learning experience!🌍💻\n\n🔗All workshops will take place via the Zoom platform! Don't miss out!🔥\n\n📆Event Schedule:\n1) Sunday 29/09 at 17:00, Throwback to IEEEXtreme 10.0 and 11.0 by the IEEE Student Branch of the University of Thessaly in Volos and the International Hellenic University in Serres. IEEE Volos Student Branch & IEEE Student Branch - International Hellenic University (Serres)\n2) Sunday 06/10 at 17:00, Throwback to IEEEXtreme 12.0 and 13.0 by the IEEE Student Branch of the University of Western Attica and the University of Patras. IEEE SB UniWA & IEEE SB UPatras\n3) Sunday 13/10 at 17:00, Throwback to IEEEXtreme 14.0 and 15.0 by the IEEE Student Branch of the University of Macedonia and the University of Western Macedonia in Kastoria. UoM IEEE Student Branch & IEEE Student Branch University of Western Macedonia (Kastoria)\n4) Sunday 20/10 at 17:00, Throwback to IEEEXtreme 16.0 and 17.0 by the IEEE Student Branch of Democritus University of Thrace and the University of Piraeus. IEEE Democritus University of Thrace Student Branch & IEEE University of Piraeus Student Branch",
-        "links": [
-          {
-            "id": 0,
-            "title": "Zoom room",
-            "url": "https://uowm-gr.zoom.us/my/uowm.p32"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": 4,
-    "date": "2024-10-12T12:00:00",
-    "end_date": "2024-10-12T15:00:00",
-    "registration_deadline": "2024-10-11T00:00:00",
-    "registration_form": "https://forms.gle/8ubz9qhCwxtUmjbU8",
-    "thumbnail": "/events/git-github-workshop.png",
-    "images": ["/events/git-github-workshop.png"],
-    "info": {
-      "gr": {
-        "location": "Κ16.001, Π1, ΠΑΔΑ",
-        "title": "Git-Github Workshop",
-        "keywords": ["WORKSHOP"],
-        "description": "✨Σας προσκαλούμε στο πρώτο on site workshop του IEEE SB UniWA με θέμα version control με Git και GitHub! Το Git και το GitHub είναι δύο συναφή εργαλεία που χρησιμοποιούνται ευρέως για την παρακολούθηση και διαχείριση κώδικα.🖥️\n\n👨‍💻Το Git είναι ένα σύστημα ελέγχου εκδόσεων (version control system), το οποίο επιτρέπει στους προγραμματιστές να παρακολουθούν αλλαγές στον κώδικα τους, να διατηρούν ιστορικό των αλλαγών αυτών και να συνεργάζονται με άλλους σε κοινά έργα.💾 Το GitHub είναι μια πλατφόρμα φιλοξενίας αποθετηρίων Git (repositories) και προσφέρει ένα περιβάλλον που επιτρέπει την κοινή χρήση και συνεργασία στον κώδικα, συνδυάζοντας τα χαρακτηριστικά του Git με μια διαδικτυακή πλατφόρμα.🌐\n\n✅Το συγκεκριμένο Workshop θα διεξαχθεί από τον Σπύρο Σαριδάκη, μέλος του παραρτήματός μας, και θα καλύψει όλες τις απαραίτητες γνώσεις που χρειάζεται κάποιος ώστε να ασχοληθεί αποτελεσματικά σε ομαδικά project που περιλαμβάνουν κώδικα και όχι μόνο!👥\n\n🔷Για να δηλώσετε συμμετοχή είναι απαραίτητο να συμπληρώστε την παρακάτω φόρμα\n\n🚀Μην χάσετε την ευκαιρία να αυξήσετε την παραγωγικότητά σας και να συνεργαστείτε αποτελεσματικά με άλλους!😎",
-        "links": [
-          {
-            "id": 0,
-            "title": "Φόρμα συμμετοχής",
-            "url": "https://forms.gle/8ubz9qhCwxtUmjbU8"
-          }
-        ]
-      },
-      "en": {
-        "location": "K16.001, Campus1, UniWA",
-        "title": "Git-Github Workshop",
-        "keywords": ["WORKSHOP"],
-        "description": "✨We invite you to the first on-site workshop of IEEE SB UniWA on version control with Git and GitHub! 🖥️ Git and GitHub are essential tools widely used for tracking and managing code.\n\n👨‍💻Git is a version control system that allows developers to track changes in their code, maintain a history of those changes, and collaborate on shared projects. 💾 GitHub is a platform for hosting Git repositories, offering a collaborative environment that combines the features of Git with an online interface.🌐\n\n✔️ This workshop will be held by Spyros Saridakis, member of our student branch, and will cover all the knowledge you need to effectively manage group projects involving code - and much more! 👥\n\n🔷To participate, please fill out the form below.\n\n🚀Don't miss this opportunity to boost your productivity and collaborate efficiently with others! 😎",
-        "links": [
-          {
-            "id": 0,
-            "title": "Participation Form",
-            "url": "https://forms.gle/8ubz9qhCwxtUmjbU8"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": 5,
-    "date": "2024-10-26T03:00:00",
-    "end_date": "2024-10-27T03:00:00",
-    "registration_deadline": "2024-10-11T00:00:00",
-    "registration_form": "https://forms.gle/LFt3Q9fLRXZhaJxc8",
-    "thumbnail": "/events/ieeextreme18.png",
-    "images": ["/events/ieeextreme18.png"],
-    "info": {
-      "gr": {
-        "location": "ΖΒ001, Π2, ΠΑΔΑ",
-        "title": "IEEEXtreme 18.0",
-        "keywords": ["ΔΙΑΓΩΝΙΣΜΟΣ"],
-        "description": "👨‍💻Ο ΙΕΕΕΧtreme, ο παγκόσμιος διαγωνισμός προγραμματισμού του ΙΕΕΕ, επιστρέφει για ακόμα μία χρονιά στο Πανεπιστήμιο Δυτικής Αττικής!🎉🌐\n\n🚀Ο IEEEXtreme είναι ένας 24ωρος διαγωνισμός προγραμματισμού όπου ομάδες μελών του IEEE παγκοσμίως ανταγωνίζονται μεταξύ τους. Είναι η μεγαλύτερη εκδήλωση που διοργανώνει το IEEE για τα Student Branches. Ο διαγωνισμός διεξάγεται online και οι ομάδες του ΠΑΔΑ θα μαζευτούν στο hub που θα έχει στήσει ο σύλλογος ΙΕΕΕ SB UniWA στο πανεπιστήμιο.\n\n📅Ημερομηνία: 26 Οκτωβρίου (Σάββατο 03:00 - Κυριακή 03:00)\n📍Τοποθεσία: Κτήριο Ζ, Πανεπιστημιούπολη Αρχαίου Ελαιώνα, ΠΑΔΑ\n\nΧρήσιμες πληροφορίες:\n1) Οι εγγραφές είναι ανοιχτές μέχρι 14 Οκτωβρίου\n2) Διαρκεί 24 ώρες και διεξάγεται ταυτόχρονα σε όλο τον κόσμο.\n3) Οι ομάδες αποτελούνται από 1 έως και 3 άτομα. Ομάδες που ψάχνουν άτομα μπορούν να επικοινωνήσουν μαζί μας στο Discord Server.\n4) Διεξάγεται στην πλατφόρμα του csacademy όπου είναι ανεβασμένα και τα θέματα των παλαιότερων διαγωνισμών.\n5) Επιτρέπεται η χρήση οποιασδήποτε γλώσσας προγραμματισμού από την γκάμα του csacademy.\n6) Το παράρτημα θα παρέχει γεύματα και ενεργειακά ποτά μέσα στην μέρα για όλους τους διαγωνιζόμενους. Οι συμμετέχοντες είναι ελεύθεροι να φέρουν ή να παραγγείλουν ό,τι άλλο τους χρειαστεί μέσα στην ημέρα.\n7) Τα Student Branches της Ελλάδος διοργανώνουν workshops στα οποία επιλύουν θέματα παλαιότερων ετών με σκοπό την κατάλληλη προετοιμασία για τον διαγωνισμό. Θα βρείτε σχετικές πληροφορίες σε προηγούμενο post.\n\n❗Επιπλέον, την Κυριακή 06/10 στις 13:00 θα πραγματοποιηθεί ενημερωτική κλήση στον Discord Server του παραρτήματος ώστε να λυθούν όλες οι απορίες των ενδιαφερόμενων.👥\n\n✨Μην χάσετε την ευκαιρία να συμμετάσχετε σε ένα μοναδικό event και να δοκιμάσετε τα όρια σας στο προγραμματισμό μαζί με τους συμφοιτητές σας!🎉",
-        "links": [
-          {
-            "id": 0,
-            "title": "Φόρμα δήλωσης ενδιαφέροντος",
-            "url": "https://forms.gle/LFt3Q9fLRXZhaJxc8"
-          },
-          {
-            "id": 1,
-            "title": "Παλιά προβλήματα του διαγωνισμού",
-            "url": "https://csacademy.com/ieeextreme-practice/tasks/"
-          }
-        ]
-      },
-      "en": {
-        "location": "ZB001, Campus2, UniWA",
-        "title": "IEEEXtreme 18.0",
-        "keywords": ["HACKATHON"],
-        "description": "👨‍💻IEEEXtreme, IEEE's global programming competition, is returning for another year at the University of West Attica!🎉🌐\n\n🚀IEEEXtreme is a 24-hour programming competition where IEEE student members worldwide compete against each other. It is the largest event organized by IEEE for Student Branches. The competition is held online, and UniWA teams will gather at the hub set up by the IEEE SB UniWA at the university.\n\n📅Date: October 26 (Saturday 03:00 - Sunday 03:00)\n📍Location: Building Z, Ancient Olive Grove Campus, UniWA\n\nUseful Information:\n1) Registration is open until October 14.\n2) It lasts for 24 hours and takes place simultaneously worldwide.\n3) Teams consist of 1 to 3 members. Teams looking for additional members can reach out to us on our Discord server.\n4) The competition takes place on the CSacademy platform, where past competition problems are also available.\n5) Any programming language supported by CSacademy is allowed.\n6) The chapter will provide meals and energy drinks throughout the day for all participants. Competitors are free to bring or order anything else they may need during the event.\n7) The Student Branches of Greece are organizing workshops where past competition problems are solved to help participants prepare. You can find relevant details in a previous post.\n\n❗Additionally, on Sunday, October 6, at 13:00, an informational call will be held on the chapter's Discord server to address any questions from interested participants.👥\n\n✨Don't miss the opportunity to participate in this unique event and challenge your programming skills alongside your fellow students!🎉",
-        "links": [
-          {
-            "id": 0,
-            "title": "Participation Form",
-            "url": "https://forms.gle/LFt3Q9fLRXZhaJxc8"
-          },
-          {
-            "id": 1,
-            "title": "CS academy old tasks",
-            "url": "https://csacademy.com/ieeextreme-practice/tasks/"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": 6,
-    "date": "2024-11-30T12:00:00",
-    "end_date": "2024-11-30T15:00:00",
-    "registration_deadline": "2024-11-30T00:00:00",
-    "registration_form": "https://forms.gle/jhdutWgsPr9rqXXq8",
-    "thumbnail": "/events/ieee-open-day.png",
-    "images": ["/events/ieee-open-day.png"],
-    "info": {
-      "gr": {
-        "location": "Αμφ.Χατζηνικολάου, Π2, ΠΑΔΑ",
-        "title": "IEEE Open Day",
-        "keywords": ["ΣΕΜΙΝΑΡΙΟ"],
-        "description": "✨Σας προσκαλούμε στο ΙΕΕΕ Open Day, μία εκδήλωση στην οποία το φοιτητικό παράρτημα του IEEE παρουσιάζει τον εαυτό του και τις δράσεις του στην ακαδημαϊκή κοινότητα του πανεπιστημίου! 🎯 Στόχος της συγκεκριμένης ημερίδας είναι η γνωριμία των φοιτητών και των καθηγητών με το φοιτητικό παράρτημα του IEEE.🚀\n\n💪Αν ενδιαφέρεστε να γίνετε μέλη του IEEE SB UniWA τότε αυτή είναι η καλύτερη ευκαιρία!  ✅  Πρόκειται για μία εκδήλωση στην οποία θα έρθετε σε επαφή με το branch, θα μάθετε για τις ομάδες και τα projects μας και θα μπορέσετε να μας γνωρίσετε από κοντά!👥\n\n📅Ημερομηνία: Σάββατο 30 Νοεμβρίου - 12:00 μ.μ.\n\n📍Τοποθεσία: Αμφιθέατρο Χατζηνικολάου, Πανεπιστημιούπολη Αρχαίου Ελαιώνα\n\n🔷 Η εκδήλωση περιλαμβάνει:\n1) Εισαγωγή στο τι είναι το ΙΕΕΕ και το Student Branch από τον υπεύθυνο καθηγητή και Counselor του παραρτήματος, Πατρικάκη Χαράλαμπο.\n2) Αναλυτική παρουσίαση του IEEE SB UniWA από τον Πρόεδρο του παραρτήματος, Αλεξίου Σταύρο.\n3) Παρουσίαση των Department και των Scientific Group από τους υπεύθυνους ομάδων.\n4) Τέλος θα έχετε την ευκαιρία να συζητήσετε μαζί μας στο lunch που θα έχουμε ετοιμάσει, στο οποίο θα έχουμε στήσει live demos από τα project του παραρτήματος!\n\n🚀Μην χάσετε την ευκαιρία να γνωρίσετε και να μάθετε πως μπορείτε να γίνεται μέλη σε μία από τις μεγαλύτερες ομάδες του Πανεπιστημίου Δυτικής Αττικής!",
-        "links": [
-          {
-            "id": 0,
-            "title": "Φόρμα παρευρισκόμενων",
-            "url": "https://forms.gle/jhdutWgsPr9rqXXq8"
-          }
-        ]
-      },
-      "en": {
-        "location": "Amph.Hatzinikolaou, Campus2, UniWA",
-        "title": "IEEE Open Day",
-        "keywords": ["SEMINAR"],
-        "description": "✨Join us for IEEE Open Day, an event where the IEEE Student Branch will introduce itself and its activities to the university community!🎯This open day aims to connect students and faculty with IEEE’s student branch of University of West Attica.🚀\n\n💪If you’re interested in becoming a part of IEEE SB UniWA, this is the perfect opportunity! ✅Get to know our branch, discover our teams and projects, and of course, meet us in person.👥\n\n🔷Event Highlights:\n1) Introduction to IEEE and the Student Branch by Professor and Branch Counselor, Charalampos Patrikakis.\n2) Detailed presentation of IEEE SB UniWA by Branch Chair, Stavros Alexiou.\n3) Team and Scientific Group presentations by group leads.\n4) Finally, you'll have the opportunity to network during the lunch prepared, where we will showcase live demos of branch projects!\n\n🚀Don’t miss this chance to discover how you can join one of the largest student organizations at the University of West Attica!",
-        "links": [
-          {
-            "id": 0,
-            "title": "Attendance form",
-            "url": "https://forms.gle/jhdutWgsPr9rqXXq8"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": 7,
-    "date": "2024-12-07T10:00:00",
-    "end_date": "2024-12-07T17:00:00",
-    "registration_deadline": "2024-12-07T10:00:00",
-    "registration_form": "https://www.tickettailor.com/events/universityofwestattica/1478668",
-    "thumbnail": "/events/trust-social.png",
-    "images": ["/events/trust-social.png"],
-    "info": {
-      "gr": {
-        "location": "Συνεδριακό Κέντρο, Π2, ΠΑΔΑ",
-        "title": "Trust in Online Social Networks",
-        "keywords": ["ΗΜΕΡΙΔΑ"],
-        "description": "Ποιον μπορείς να εμπιστεύεσαι στα social media;\nΠώς μπορείς να διακρίνεις την αξιόπιστη πληροφορία στα social media;\nΠότε η χρήση των social media γίνεται επικίνδυνη και ποιος είναι ο αντίκτυπος στην κοινωνία;\n\nΤο ερευνητικό εργαστήριο CoNSeRT του τμήματος Ηλεκτρολόγων και Ηλεκτρονικών Μηχανικών του Πανεπιστημίου Δυτικής Αττικής διοργανώνει την επιχορηγούμενη από το IEEE Communication Society ημερίδα με θέμα:  “Trust in Online Social Networks”.\n\nΗ ημερίδα θα λάβει χώρα στο Συνεδριακό Κέντρο της Πανεπιστημιούπολης Αρχαίου Ελαιώνα το Σάββατο 7 Δεκεμβρίου 10:00-16:00 και υποστηρίζεται από το IEEE Student Branch UniWA\n\nΑκαδημαϊκοί, δημοσιογράφοι, ερευνητές και εκπρόσωποι των αρχών αλλά και των social media θα αναλύσουν το θέμα της χρήσης των μέσων κοινωνικής δικτύωσης και της εμπιστοσύνης που υπάρχει μέσα σε αυτά από διαφορετική σκοπιά, με σκοπό τη σφαιρική ενημέρωση του κοινού για την ορθή χρήση τους. Η πρόσκληση είναι ανοιχτή στο κοινό και απαιτείται εγγραφή για τους παρευρισκόμενους στο Συνεδριακό Κέντρο μέσω του παρακάτω συνδέσμου.\n\nΟι παρευρισκόμενοι θα λάβουν βεβαίωση συμμετοχής και θα έχουν τη δυνατότητα να ενημερωθούν από τους ερευνητές για τις μεθοδολογίες που υπάρχουν σχετικά με την καταπολέμηση της παραπληροφόρησης, να θέσουν ερωτήματα στις αρχές για τις απειλές μέσα στα social media, να επικοινωνήσουν με εκπρόσωπο των social media για τις προκλήσεις της σωστής πληροφόρησης και να εκφράσουν τις ανησυχίες τους για θέματα ηθικής.",
-        "links": [
-          {
-            "id": 0,
-            "title": "Δήλωση συμμετοχής",
-            "url": "https://www.tickettailor.com/events/universityofwestattica/1478668"
-          },
-          {
-            "id": 1,
-            "title": "Ατζέντα ημερίδας",
-            "url": "/events/trust-social-agenda.pdf"
-          },
-          {
-            "id": 2,
-            "title": "Ζωντανή μετάδοση στο Youtube",
-            "url": "https://www.youtube.com/live/-2tCg-tYBCg"
-          }
-        ]
-      },
-      "en": {
-        "location": "Conference Centre, Campus2, UniWA",
-        "title": "Trust in Online Social Networks",
-        "keywords": ["ONE-DAY SEMINAR"],
-        "description": "Who can you trust on social media?\nHow can you distinguish reliable information on social media?\nWhen does social media usage become dangerous, and what is its impact on society?\n\nThe CoNSeRT research laboratory of the Department of Electrical and Electronics Engineering at the University of West Attica is organizing the IEEE Communication Society-sponsored seminar on: “Trust in Online Social Networks.”\n\nThe seminar will take place at the Conference Center of the Ancient Olive Grove Campus on Saturday, December 7, from 10:00 to 16:00, and is supported by the IEEE Student Branch UniWA.\n\nAcademics, journalists, researchers, and representatives from authorities and social media platforms will analyze the topic of social media usage and the trust within these networks from different perspectives. The goal is to provide a comprehensive understanding of their proper use. The event is open to the public, but registration is required for attendees at the Conference Center via the link below.\n\nAttendees will receive a certificate of participation and will have the opportunity to learn from researchers about methodologies for combating misinformation, ask authorities about threats within social media, communicate with social media representatives about the challenges of accurate information dissemination, and express their ethical concerns regarding these issues.",
-        "links": [
-          {
-            "id": 0,
-            "title": "Participation Form",
-            "url": "https://www.tickettailor.com/events/universityofwestattica/1478668"
-          },
-          {
-            "id": 1,
-            "title": "Conference agenda",
-            "url": "/events/trust-social-agenda.pdf"
-          },
-          {
-            "id": 2,
-            "title": "Live Steaming on Youtube",
-            "url": "https://www.youtube.com/live/-2tCg-tYBCg"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": 8,
-    "date": "2025-03-11T13:00:00",
-    "end_date": "2025-03-11T15:00:00",
-    "registration_deadline": "2025-03-11T13:00:00",
-    "registration_form": "https://registerieeexplore.wufoo.com/forms/xkkwpox04pts03/",
-    "thumbnail": "/events/ieeexplore.png",
-    "images": ["/events/ieeexplore.png"],
-    "info": {
-      "gr": {
-        "location": "ΖΑ008-009, Π2, ΠΑΔΑ",
-        "title": "ΙΕΕΕ Xplore Research & Publishing Event",
-        "keywords": ["ΣΕΜΙΝΑΡΙΟ"],
-        "description": "Στις 11 Μαρτίου, στις 13.00 στην Πανεπιστημιούπολη Αρχαίου Ελαιώνα, μαζί με την Eszter Lukacs (IEEE Client Services Manager), συνδιοργανώνουμε το ΙΕΕΕ Xplore Research & Publishing Event. Στα 90 λεπτά του event, θα μπορέσετε να πληροφορηθείτε για το IEEE Xplore Digital Library, πώς να ενισχύσετε την απήχηση των αποτελεσμάτων της έρευνάς σας, πως να επιλέξετε το κατάλληλο συνέδριο ή περιοδικό του ΙΕΕΕ για να δημοσιεύσετε, τι προσέχουν οι αξιολογητές σε μία δημοσίευση (και γιατί μπορεί να απορριφθεί μία υποβολή), διαθέσιμα εργαλεία που μπορείτε να χρησιμοποιήσετε, και να καταλάβετε πως λειτουργεί η διαδικασία αξιολόγησης μίας δημοσίευσης στο ΙΕΕΕ, και τέλος, πως να δημοσιεύσετε εκμεταλλευόμενοι/ες τη συμφωνία HEAL-Link\n\nΣε όσους/ες παρακολουθήσουν το event, θα δοθεί πιστοποιητικό από το ΙΕΕΕ. Η συμμετοχή είναι δωρεάν, αλλά οι θέσεις είναι περιορισμένες, και είναι αναγκαία η εγγραφή σας, η οποία μπορεί να γίνει με χρήση του ακόλουθου συνδέσμου.",
-        "links": [
-          {
-            "id": 0,
-            "title": "Φόρμα συμμετοχής",
-            "url": "https://registerieeexplore.wufoo.com/forms/xkkwpox04pts03/"
-          },
-          {
-            "id": 1,
-            "title": "Ατζέντα εκδήλωσης",
-            "url": "/events/ieeexplore-agenda.pdf"
-          }
-        ]
-      },
-      "en": {
-        "location": "ZA008-009, Campus2, UniWA",
-        "title": "ΙΕΕΕ Xplore Research & Publishing Event",
-        "keywords": ["SEMINAR"],
-        "description": "On March 11, at 13:00 at the Ancient Olive Grove Campus, we are co-organizing the IEEE Xplore Research & Publishing Event with Eszter Lukacs (IEEE Client Services Manager).\n\nDuring the 90-minute event, you will learn about the IEEE Xplore Digital Library, how to increase the impact of your research findings, how to select the right IEEE conference or journal for publication, what reviewers look for in a submission (and why a paper might be rejected), available tools you can use, how the IEEE peer review process works, and finally, how to publish under the HEAL-Link agreement.\n\nAttendees will receive a certificate from IEEE. Participation is free, but seats are limited, and registration is required. You can register using the following link.",
-        "links": [
-          {
-            "id": 0,
-            "title": "Participation Form",
-            "url": "https://registerieeexplore.wufoo.com/forms/xkkwpox04pts03/"
-          },
-          {
-            "id": 1,
-            "title": "Seminar agenda",
-            "url": "/events/ieeexplore-agenda.pdf"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": 9,
-    "date": "2025-03-28T17:30:00",
-    "end_date": "2025-03-29T14:30:00",
-    "registration_deadline": "2025-03-28T17:30:00",
-    "registration_form": "https://docs.google.com/forms/d/1R34Jctk42vr1qmRWPi8FjxbD9d4Gy-wBupLlI3z1TVI/edit",
-    "thumbnail": "/events/biomedical-workshop.jpg",
-    "images": ["/events/biomedical-workshop.jpg"],
-    "info": {
-      "gr": {
-        "location": "Κ10.120 (ΕΙΣΕ), Π1, ΠΑΔΑ",
-        "title": "Biomedical Workshop",
-        "keywords": ["WORKSHOP"],
-        "description": "Με μεγάλη χαρά σας προσκαλούμε στο Workshop που διοργανώνεται από το Biomed SG του IEEE Student Branch του ΠΑΔΑ, σε συνεργασία με το Τμήμα Μηχανικών Βιοϊατρικής του Πανεπιστημίου Δυτικής Αττικής· περιλαμβάνει: 📌 MATLAB (Παρασκευή 28 Μαρτίου, 17:30–19:30): βασικές λειτουργίες του Simulink, Συστήματα Αυτομάτου Ελέγχου, εισαγωγή στην Ασαφή Λογική & το Fuzzy Toolbox· 📌 Python (Σάββατο 29 Μαρτίου, 12:00–14:30): Web Scraping, Μηχανική Μάθηση, εισαγωγή στα Large Language Models (LLMs)· 📌 Επιπλέον: παρουσίαση του IEEE SB, των πρότζεκτ της ομάδας BIOMED και ευκαιρίες συμμετοχής· το workshop είναι δωρεάν, διοργανώνεται από φοιτητές και απευθύνεται σε φοιτητές του Τμήματος και μέλη του παραρτήματος· ✅ Απαιτείται εξοικείωση με προγραμματιστικά περιβάλλοντα λόγω διαδραστικού χαρακτήρα· 📢 Περιορισμένες θέσεις για φυσική παρουσία – κάποιοι συμμετέχοντες ενδέχεται να παρακολουθήσουν εξ αποστάσεως· όσοι συμμετέχουν με laptop θα πρέπει να έχουν εγκατεστημένα το Simulink στο MATLAB και το Anaconda για Python· σύνδεσμος εγγραφής στο τέλος του μηνύματος.",
-        "links": []
-      },
-      "en": {
-        "location": "Κ10.120, Campus1, UniWa",
-        "title": "Biomedical Workshop",
-        "keywords": ["WORKSHOP"],
-        "description": "We are excited to invite you to the Workshop organized by the Biomed SG of the IEEE Student Branch of UniWA, in collaboration with the Department of Biomedical Engineering of the University of West Attica; it includes: 📌 MATLAB (Fri, Mar 28, 17:30–19:30): Simulink basics, Control Systems, Intro to Fuzzy Logic & Toolbox; 📌 Python (Sat, Mar 29, 12:00–14:30): Web Scraping, Machine Learning, Intro to LLMs; 📌 Plus: Overview of IEEE SB, BIOMED projects & participation opportunities; the workshop is free, student-led, and aimed at Biomedical Engineering students & IEEE members; ✅ Familiarity with programming is REQUIRED as the workshop is interactive; 📢 Limited in-person seats – some may attend remotely; participants with laptops must have Simulink (MATLAB) and Anaconda (Python) installed; registration form link at the end of the message.",
-        "links": []
-      }
-    }
-  },
-  {
-    "id": 10,
-    "date": "2025-05-31T12:00:00",
-    "end_date": "2025-05-31T14:30:00",
-    "registration_deadline": "2025-05-30T12:00:00",
-    "registration_form": "https://docs.google.com/forms/d/1Gyvcye9u7SQsnPRuXOfxCHUTgVmIxQxm6LGAPnPwgEg/",
-    "thumbnail": "/events/GameDev-Workshop.png",
-    "images": ["/events/GameDev-Workshop.png"],
-    "info": {
-      "gr": {
-        "location": "ΚΖΒ.109, Π2, ΠΑΔΑ",
-        "title": "GameDev Workshop",
-        "keywords": ["WORKSHOP"],
-        "description": "Η ομάδα **GameDev** του παραρτήματος **IEEE** σας προσκαλεί στο εισαγωγικό workshop **\"Εισαγωγή στο Godot και τη GDScript\"** την **Παρασκευή 31 Μαΐου, 12:00 μ.μ.**, με εξοικείωση στο Godot, GDScript και κατασκευή platformer· στο τέλος θα δοθεί **πιστοποίηση συμμετοχής**.",
-        "links": [
-          {
-            "id": 0,
-            "title": "Φόρμα συμμετοχής",
-            "url": "https://docs.google.com/forms/d/1Gyvcye9u7SQsnPRuXOfxCHUTgVmIxQxm6LGAPnPwgEg/"
-          }
-        ]
-      },
-      "en": {
-        "location": "ΚΖΒ.109, Campus2, UniWa",
-        "title": "GameDev Workshop",
-        "keywords": ["WORKSHOP"],
-        "description": "The **IEEE** branch's **GameDev** team invites you to the introductory workshop **\"Introduction to Godot and GDScript\"** on **Friday, May 31st at 12:00 PM**, featuring familiarization with the Godot environment, first steps in GDScript, and building a simple platformer game; a certificate of participation will be provided at the end.",
-        "links": [
-          {
-            "id": 0,
-            "title": "Participation Form",
-            "url": "https://docs.google.com/forms/d/1Gyvcye9u7SQsnPRuXOfxCHUTgVmIxQxm6LGAPnPwgEg/"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": 11,
-    "date": "2025-06-15T10:30:00",
-    "end_date": "2025-06-15T19:00:00",
-    "registration_deadline": "2025-06-14T10:30:00",
-    "registration_form": "https://www.tickettailor.com/events/ieeesbuniwa/1705983",
-    "thumbnail": "/events/Engineering-Careers.png",
-    "images": ["/events/Engineering-Careers.png"],
-    "info": {
-      "gr": {
-        "location": "Συνεδριακό Κέντρο, Π1, ΠΑΔΑ",
-        "title": "Engineering Careers",
-        "keywords": ["ΗΜΕΡΙΔΑ"],
-        "description": "Το *Engineering Careers*, το πρώτο career day αποκλειστικά για μηχανικούς, έρχεται στο Πανεπιστήμιο Δυτικής Αττικής, την Κυριακή 15/6, και σας προσκαλεί να ζήσετε μια μοναδική εμπειρία γεμάτη ευκαιρίες!\n\nΗ εκδήλωση, η οποία διοργανώνεται εκ μέρους του **IEEE SB UniWA**, θα λάβει χώρα στο **Συνεδριακό Κέντρο** της **Πανεπιστημιούπολης Αρχαίου Ελαιώνα** από τις **10:30 έως και τις 19:00**. Θεματικά πάνελ συζητήσεων με καταξιωμένους επαγγελματίες, παρουσιάσεις εταιρειών από κορυφαίους στον χώρο της μηχανικής, πολλές ευκαιρίες networking καθώς και ατελείωτη περιήγηση στα περίπτερα των εταιρειών για παραπάνω συζήτηση.\n\nΣτο συγκεκριμένο career day, θα δώσουν το παρόν κορυφαίες εταιρείες και όμιλοι του κλάδου της μηχανικής και της τεχνολογίας όπως η **Aktor**, **HP**, **Oracle**, **Kalamarakis**, **CMA**, **Gizelis**, **Gizelis Robotics** καθώς και πολλές ακόμη που θα ανακοινωθούν μέσα στις επόμενες ημέρες στους λογαριασμούς μας στα social media.\n\nΤο συγκεκριμένο event μπορεί να αποτελέσει το πρώτο σου βήμα προς την αγορά εργασίας!\n\n",
-        "links": [
-          {
-            "id": 0,
-            "title": "Φόρμα Συμμετοχής",
-            "url": " https://www.tickettailor.com/events/ieeesbuniwa/1705983"
-          },
-          {
-            "id": 1,
-            "title": "Πρόγραμμα του Engineering Careers",
-            "url": "/events/Engineering Careers Agenda.pdf"
-          }
-        ]
-      },
-      "en": {
-        "location": "Conference Centre, Campus1, UniWA",
-        "title": "Engineering Careers",
-        "keywords": ["ONE-DAY SEMINAR"],
-        "description": "*Engineering Careers*, the first career day exclusively for engineers, is coming to the **University of West Attica** on **Sunday, June 15**, inviting you to experience a unique event full of opportunities!\n\nOrganized by **IEEE SB UniWA**, the event will take place at the **Conference Center** of the **Ancient Olive Grove Campus** from **10:30 to 19:00**. Themed discussion panels with distinguished professionals, company presentations by top names in engineering, abundant networking opportunities, and endless exploration of company booths for further conversation.\n\nAt this specific career day, leading companies and groups from the engineering and technology sector will be present, such as **Aktor**, **HP**, **Oracle**, **Kalamarakis**, **CMA**, **Gizelis**, **Gizelis Robotics**, as well as many more that will be announced in the coming days on our social media accounts.\n\nThis event could be your first step into the job market!\n\n",
-        "links": [
-          {
-            "id": 0,
-            "title": "Participation Form",
-            "url": " https://www.tickettailor.com/events/ieeesbuniwa/1705983"
-          },
-          {
-            "id": 1,
-            "title": "Engineering Careers Agenda",
-            "url": "/events/Engineering Careers Agenda.pdf"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": 12,
-    "date": "2025-10-17T10:30:00",
-    "end_date": "2025-10-17T19:00:00",
-    "registration_deadline": "2025-10-17T10:30:00",
-    "registration_form": "https://forms.gle/7JaUKwrSBeSw6FZa6",
-    "thumbnail": "/events/IEEE_DAY_2025.png",
-    "images": ["/events/IEEE_DAY_2025.png"],
-    "info": {
-      "gr": {
-        "location": "Συνεδριακό Κέντρο, Π1, ΠΑΔΑ",
-        "title": "IEEE Day 2025",
-        "keywords": ["ΗΜΕΡΙΔΑ"],
-        "description": "Η Καθιερωμένη εκδήλωση **παρουσίασης των δράσεων του παραρτήματος και των project του.** Φέτος, τα **8 Student Scientific Group** μας θα παρουσιάσουν **πάνω από 20 project** σε ένα ευρύ φάσμα τομέων — από την **Τεχνητή Νοημοσύνη** και τη **Ρομποτική**, μέχρι τη **Βιοϊατρική**, την **Ενέργεια**, τη **Ναυτιλία**, τα **VR** περιβάλλοντα και το **Software Development**!\n\nH εκδήλωση περιλαμβάνει επίσης **περιήγηση στα booth** που θα έχουν στήσει όλα τα SG ώστε να μπορέσουμε να συζητήσουμε από κοντά πως μπορείτε και εσείς να γίνεται ενεργά μέλη του **IEEE SB UniWA!**",
-        "links": [
-          {
-            "id": 0,
-            "title": "Φόρμα Συμμετοχής",
-            "url": "https://forms.gle/7JaUKwrSBeSw6FZa6"
-          }
-        ]
-      },
-      "en": {
-        "location": "Conference Centre, Campus1, UniWA",
-        "title": "IEEE Day 2025",
-        "keywords": ["ONE-DAY SEMINAR"],
-        "description": "Event for **presenting the branch’s activities and its projects.** This year, our **8 Student Scientific Groups** will present **more than 20 projects** across a wide range of fields — from **Artificial Intelligence** and **Robotics**, to **Biomedical Engineering**, **Energy**, **Maritime**, **VR** environments, and **Software Development**!\n\n The event also includes a **tour of the booths** that will be set up by all SGs, giving us the opportunity to discuss in person how you too can become active members of **IEEE SB UniWA!**",
-        "links": [
-          {
-            "id": 0,
-            "title": "Participation Form",
-            "url": "https://forms.gle/7JaUKwrSBeSw6FZa6"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": 13,
-    "date": "2025-10-25T03:00:00+03:00",
-    "end_date": "2025-10-26T03:00:00+03:00",
-    "registration_deadline": "2025-10-14T23:59:59+03:00",
-    "registration_form": "https://forms.gle/sFGc9BqZut2cJX7Q9",
-    "thumbnail": "/events/ieeextreme-19-uwa-hub.png",
-    "images": ["/events/ieeextreme-19-uwa-hub.png"],
-    "info": {
-      "gr": {
-        "location": "Κτήριο Ζ, Αίθουσα ΖΒ001, Πανεπιστημιούπολη Αρχαίου Ελαιώνα (Π2), ΠαΔΑ",
-        "title": "IEEEXtreme 19.0 @ UniWA Hub",
-        "keywords": ["ΔΙΑΓΩΝΙΣΜΟΣ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΥ", "IEEE", "IEEEXtreme"],
-        "description": "Ο IEEEXtreme, ο παγκόσμιος διαγωνισμός προγραμματισμού του IEEE, επιστρέφει στο ΠΑΔΑ! Για ακόμη μια χρονιά οι ομάδες του ΠΑΔΑ θα ενωθούν στο hub του IEEE SB UniWA και θα ανταγωνιστούν με παραρτήματα από όλο τον κόσμο!\n\nΟι εγγραφές είναι ανοιχτές μέχρι 14 Οκτωβρίου. Ο διαγωνισμός διαρκεί 24 ώρες και διεξάγεται ταυτόχρονα σε όλο τον κόσμο. Οι ομάδες αποτελούνται από 1 έως και 3 άτομα. Όλα τα μέλη της ομάδας πρέπει να έχουν ενεργή συνδρομή στο IEEE. Διεξάγεται στην πλατφόρμα του csacademy όπου είναι ανεβασμένα και τα θέματα παλαιότερων διαγωνισμών. Το παράρτημα θα παρέχει γεύματα και ενεργειακά ποτά για όλους τους διαγωνιζόμενους. Θα υπάρξει workshop επίλυσης θεμάτων παλαιότερων ετών για προετοιμασία.",
-        "links": [
-          {
-            "id": 0,
-            "title": "IEEE Membership",
-            "url": "https://www.ieee.org/"
-          }
-        ]
-      },
-      "en": {
-        "location": "Building Z, Room ZB001, Ancient Olive Grove Campus (P2), UniWA",
-        "title": "IEEEXtreme 19.0 @ UniWA Hub",
-        "keywords": ["PROGRAMMING COMPETITION", "IEEE", "IEEEXtreme"],
-        "description": "IEEEXtreme, IEEE’s global programming competition, is returning to UniWA! Once again, UniWA teams will gather at the IEEE SB UniWA hub and compete with student branches from all over the world.\n\nRegistrations are open until October 14. The competition lasts 24 hours and is held simultaneously worldwide. Teams can have 1 to 3 members. All team members must have an active IEEE membership. The contest is hosted on the csacademy platform, where past competition problems are also available. The branch will provide meals and energy drinks throughout the day for all participants. A workshop with solutions to previous years’ problems will also be held for proper preparation.",
-        "links": [
-          {
-            "id": 0,
-            "title": "IEEE Membership",
-            "url": "https://www.ieee.org/"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": 14,
-    "date": "2025-10-19T12:00:00+03:00",
-    "end_date": "2025-10-19T15:00:00+03:00",
-    "registration_deadline": "2025-10-16T15:00:00+03:00",
-    "registration_form": "https://www.tickettailor.com/events/ieeesbuniwa1/1882460",
-    "thumbnail": "/events/ieeextreme-19-workshop.png",
-    "images": ["/events/ieeextreme-19-workshop.png"],
-    "info": {
-      "gr": {
-        "location": "",
-        "title": "IEEEXtreme 19.0 Workshop",
-        "keywords": ["WORKSHOP", "IEEE", "IEEEXtreme"],
-        "description": "Θες να προετοιμαστείς κατάλληλα για τον IEEEXtreme 19.0; Τότε μην χάσεις το IEEEXtreme Workshop, που πραγματοποιείται σε συνεργασία με τα IEEE SB NTUA & IEEE SB Piraeus!\n\nΣε αυτό το workshop θα λύσουμε παλαιά tasks του διαγωνισμού, θα απαντήσουμε σε απορίες και θα μοιραστούμε tips & tricks για να είσαι πανέτοιμος για τη μεγάλη 24ωρη μάχη του κώδικα!\n\nΑν και δικαίωμα συμμετοχής στον διαγωνισμό έχουν μόνο τα επίσημα μέλη του IEEE, το workshop μας είναι ανοιχτό σε όλους — ελάτε να μάθουμε, να προγραμματίσουμε και να γνωριστούμε!",
-        "links": []
-      },
-      "en": {
-        "location": "",
-        "title": "IEEEXtreme 19.0 Workshop",
-        "keywords": ["WORKSHOP", "IEEE", "IEEEXtreme"],
-        "description": "Want to prepare properly for IEEEXtreme 19.0? Then don’t miss the IEEEXtreme Workshop, organized in collaboration with IEEE SB NTUA & IEEE SB Piraeus!\n\nIn this workshop, we will solve past competition tasks, answer questions, and share tips & tricks so you can be fully ready for the big 24-hour coding battle!\n\nAlthough only official IEEE members are eligible to participate in the competition, our workshop is open to everyone — come learn, code, and connect with us!",
-        "links": []
-      }
-    }
-  },
-  {
-    "id": 16,
-    "date": "2025-11-29T12:00:00+03:00",
-    "end_date": "2025-11-29T12:00:00+03:00",
-    "registration_deadline": "",
-    "registration_form": "https://buytickets.at/softwaresg/1940579",
-    "thumbnail": "/events/3d-printing-fundamentals.png",
-    "images": ["/events/3d-printing-fundamentals.png"],
-    "info": {
-      "gr": {
-        "location": "",
-        "title": "3D Printing Fundamentals Seminar",
-        "keywords": ["SEMINAR", "3D Printing"],
-        "description": "Θέλεις να ξεκινήσεις το ταξίδι σου στον κόσμο του 3D printing, αλλά δεν ξέρεις από πού να αρχίσεις;\nΤο 3D Printing Fundamentals Seminar είναι το ιδανικό πρώτο βήμα!\n\nΘα γνωρίσεις:\n• Τις βασικές τεχνολογίες εκτύπωσης (FDM, SLA, SLS)\n• Τα υλικά που χρησιμοποιούνται και πώς να επιλέγεις το κατάλληλο\n• πώς δουλεύει ένας 3D printer\n• Τις ρυθμίσεις που καθορίζουν την ποιότητα και την ακρίβεια της εκτύπωσης\n…και πολλά ακόμα\n\nΤο σεμινάριο είναι ανοιχτό για όλους. Ωστόσο, αν είσαι μέλος του IEEE SB UniWA Hub, θα λάβεις και βεβαίωση συμμετοχής!\nΑν όχι, προλαβαίνεις ακόμα — κάνε τη συνδρομή σου στον ΙΕΕΕ και γίνε ένας από εμάς!\n\nΔήλωσε δωρεάν συμμετοχή στην ακόλουθη φόρμα: https://buytickets.at/softwaresg/1940579",
-        "links": []
-      },
-      "en": {
-        "location": "",
-        "title": "3D Printing Fundamentals Seminar",
-        "keywords": ["SEMINAR", "3D Printing"],
-        "description": "Do you want to start your journey into the world of 3D printing but don’t know where to begin?\nThe 3D Printing Fundamentals Seminar is the ideal first step!\n\nYou will learn:\n• The basic printing technologies (FDM, SLA, SLS)\n• The materials used and how to choose the right one\n• How a 3D printer works\n• The settings that determine print quality and accuracy\n…and much more\n\nThe seminar is open to everyone. However, if you are a member of the IEEE SB UniWA Hub, you will also receive a certificate of participation!\nIf not, there’s still time — get your IEEE membership and become one of us!\n\nRegister for free through the following form: https://buytickets.at/softwaresg/1940579",
-        "links": []
-      }
-    }
-  },
-  {
-    "id": 17,
-    "date": "2025-12-05T18:00:00+02:00",
-    "end_date": "2025-12-05T20:00:00+02:00",
-    "registration_deadline": "",
-    "registration_form": "https://buytickets.at/softwaresg/1956010",
-    "thumbnail": "/events/cpp-oop-course.png",
-    "images": ["/events/cpp-oop-course.png"],
-    "info": {
-      "gr": {
-        "location": "Online (MS Teams)",
-        "title": "Μαθήματα C++: Εισαγωγή στον Αντικειμενοστραφή Προγραμματισμό",
-        "keywords": ["COURSE", "C++", "Object-Oriented Programming"],
-        "description": "Δήλωσε συμμετοχή στα μαθήματα C++ και κάνε τα πρώτα σου βήματα στον αντικειμενοστραφή προγραμματισμό!\nΜάθε τα μυστικά της C++ και του αντικειμενοστραφούς προγραμματισμού μέσα από πρακτικά παραδείγματα και διαδραστικά sessions που θα σε βοηθήσουν να κατανοήσεις τη λογική πίσω από τον κώδικα!\n\nΤα μαθήματα διεξάγονται online μέσω MS Teams και ξεκινούν από την Παρασκευή 5/12!\n\nΤα μαθήματα είναι ανοιχτά σε όλους, όμως αν είσαι μέλος του IEEE SB UniWA Hub και παραδώσεις την τελική εργασία, θα λάβεις και βεβαίωση συμμετοχής!\nΑν όχι, προλαβαίνεις ακόμα — κάνε τη συνδρομή σου στο ΙΕΕΕ και γίνε ένας από εμάς!",
-        "links": []
-      },
-      "en": {
-        "location": "Online (MS Teams)",
-        "title": "C++ Classes: Introduction to Object-Oriented Programming",
-        "keywords": ["COURSE", "C++", "Object-Oriented Programming"],
-        "description": "Sign up for the C++ classes and take your first steps into object-oriented programming!\nLearn the essentials of C++ and OOP through practical examples and interactive sessions that will help you understand the logic behind the code.\n\nThe classes are held online via MS Teams and start on Friday 5/12!\n\nThe classes are open to everyone, but if you are a member of the IEEE SB UniWA Hub and submit the final project, you will receive a certificate of participation.\nIf not, there’s still time — get your IEEE membership and become one of us!",
-        "links": []
-      }
-    }
-  },
-  {
-    "id": 18,
-    "date": "2026-01-10T18:00:00+02:00",
-    "end_date": "2026-01-10T21:00:00+02:00",
-    "registration_deadline": "",
-    "registration_form": "https://www.tickettailor.com/events/softwaresg/1991159",
-    "thumbnail": "/events/git-github-fundamentals.png",
-    "images": ["/events/git-github-fundamentals.png"],
-    "info": {
-      "gr": {
-        "location": "",
-        "title": "Git/GitHub Fundamentals Workshop",
-        "keywords": ["WORKSHOP", "Git", "GitHub", "Version Control"],
-        "description": "Το Git/GitHub Fundamentals Workshop έρχεται στις 10 Ιανουαρίου και κάνει deep dive σε δύο εργαλεία που χρησιμοποιούνται ευρέως για την παρακολούθηση και τη διαχείριση κώδικα! Αν σπουδάζεις μηχανικός ή ασχολείσαι γενικά με προγραμματισμό, τότε η κατανόηση του GitHub είναι must!\n\nΤο workshop έχει πρακτικό χαρακτήρα, οπότε προτείνουμε να φέρεις laptop για να δοκιμάσεις τα παραδείγματα που θα παρουσιάζονται live.\n\nΚαι φυσικά, αν είσαι μέλος του IEEE SB UniWA HUB, θα λάβεις βεβαίωση παρακολούθησης! Αν δεν έχεις ακόμα συνδρομή, μπορείς να κάνεις την συνδρομή σου τώρα και να γίνεις ένας από εμάς!",
-        "links": []
-      },
-      "en": {
-        "location": "",
-        "title": "Git/GitHub Fundamentals Workshop",
-        "keywords": ["WORKSHOP", "Git", "GitHub", "Version Control"],
-        "description": "The Git/GitHub Fundamentals Workshop is coming on January 10 and goes into a deep dive on two widely used tools for tracking and managing code! If you are an engineering student or work with programming in general, understanding GitHub is a must!\n\nThe workshop is hands-on, so we recommend bringing your laptop to follow along and try the examples live.\n\nAnd of course, if you are a member of the IEEE SB UniWA HUB, you will receive a certificate of attendance! If you are not yet a member, you can still get your IEEE membership now and become one of us!",
-        "links": []
-      }
-    }
-  },
-  {
-    "id": 19,
-    "date": "2026-03-14T12:00:00+02:00",
-    "end_date": "2026-03-14T15:00:00+02:00",
-    "registration_deadline": "",
-    "registration_form": "https://buytickets.at/ieeesbuniwa2/2051574",
-    "thumbnail": "/events/game-graphics-seminar.png",
-    "images": ["/events/game-graphics-seminar.png"],
-    "info": {
-      "gr": {
-        "location": "",
-        "title": "Game Graphics Seminar",
-        "keywords": ["SEMINAR", "Game Development", "Graphics"],
-        "description": "Θέλεις να ξεκινήσεις δυναμικά το νέο εξάμηνο;\nΤο Game Graphics Seminar είναι για εσένα!\n\nΕκεί θα γνωρίσεις τη διαδικασία δημιουργίας ενός παιχνιδιού και τα απαραίτητα στοιχεία για την υλοποίησή του, ενώ θα μάθεις πώς να σχεδιάζεις τα δικά σου 2D και 3D assets χρησιμοποιώντας τα Photoshop και Blender.\n\nΤο σεμινάριο είναι ανοιχτό για όλους. Ωστόσο, αν είσαι μέλος του IEEE SB UniWA Hub, θα λάβεις και βεβαίωση συμμετοχής.\nΑν όχι, προλαβαίνεις ακόμα — κάνε τη συνδρομή σου στο κανάλι ieee-registration και γίνε ένας από εμάς!",
-        "links": []
-      },
-      "en": {
-        "location": "",
-        "title": "Game Graphics Seminar",
-        "keywords": ["SEMINAR", "Game Development", "Graphics"],
-        "description": "Do you want to kick-start the new semester in a dynamic way?\nThe Game Graphics Seminar is for you!\n\nYou will get to know the process of creating a game and the essential components needed to implement it, while also learning how to design your own 2D and 3D assets using Photoshop and Blender.\n\nThe seminar is open to everyone. However, if you are a member of the IEEE SB UniWA Hub, you will receive a certificate of participation.\nIf not, there’s still time — get your IEEE membership and become one of us!",
-        "links": []
-      }
-    }
-  },
-  {
-    "id": 20,
-    "date": "2026-03-21T12:00:00+02:00",
-    "end_date": "2026-03-21T16:00:00+02:00",
-    "registration_deadline": "",
-    "registration_form": "https://docs.google.com/forms/d/e/1FAIpQLScGtDVnBR4utxzBH3ZZPSHELJHYNMWF87tWIA8HFgn6ah3lEQ/viewform?usp=dialog",
-    "thumbnail": "/events/animation-workshop.png",
-    "images": ["/events/animation-workshop.png"],
-    "info": {
-      "gr": {
-        "location": "",
-        "title": "Animation Workshop",
-        "keywords": ["WORKSHOP", "Animation", "Game Development"],
-        "description": "Έρχεται το Animation Workshop!\n\nΣτην πρώτη ενότητα θα παρουσιαστούν οι τεχνικές και οι βασικές αρχές του animation, ενώ στη δεύτερη ενότητα θα εστιάσουμε στους τρόπους χρήσης τεχνικών animation στα video games. Δεδομένου ότι το workshop είναι διαδραστικό, συστήνουμε οι συμμετέχοντες να έχουν μαζί τους τάμπλετ ή λάπτοπ.\n\nΟι θέσεις είναι περιορισμένες κι έτσι θα τηρηθεί σειρά προτεραιότητας. Αν είσαι μέλος του IEEE SB UniWA Hub, έχεις περισσότερες πιθανότητες να επιλεχθείς και θα λάβεις βεβαίωση συμμετοχής!\nΑν όχι, προλαβαίνεις ακόμα — κάνε τη συνδρομή σου στο ieee-registration και γίνε ένας από εμάς!",
-        "links": []
-      },
-      "en": {
-        "location": "Panepistimioupoli 2, Arxaiou Eleona, Building Z, Class ZB109",
-        "title": "Animation Workshop",
-        "keywords": ["WORKSHOP", "Animation", "Game Development"],
-        "description": "The Animation Workshop is coming!\n\nIn the first part, we will present the techniques and fundamental principles of animation, while in the second part we will focus on how to apply animation techniques in video games. Since this workshop is interactive, we recommend that participants bring a tablet or laptop.\n\nSeats are limited and will be allocated on a first-come, first-served basis. If you are a member of the IEEE SB UniWA Hub, you have a higher chance of being selected and you will receive a certificate of participation!\nIf not, there’s still time — get your IEEE membership and become one of us!",
-        "links": []
-      }
-    }
-  },
-  {
-    "id": 21,
-    "date": "2026-03-29T09:00:00+02:00",
-    "end_date": "2026-03-29T21:00:00+02:00",
-    "registration_deadline": "",
-    "registration_form": "https://buytickets.at/ieeesbuniwa2/2082623",
-    "thumbnail": "/events/game-jam.png",
-    "images": ["/events/game-jam.png"],
-    "info": {
-      "gr": {
-        "location": "",
-        "title": "Game Jam Competition",
-        "keywords": ["COMPETITION", "Game Jam", "Game Development"],
-        "description": "Ψάχνεις το απόλυτο game development challenge;\nΤότε δεν πρέπει να χάσεις τον διαγωνισμό Game Jam!\n\nΘα εργαστείς σε ομάδες 1-5 ατόμων με στόχο τη δημιουργία ενός πρωτότυπου παιχνιδιού μέσα σε 24 ώρες. Η οργανωτική επιτροπή θα επιλέξει τα 5 καλύτερα παιχνίδια, τα οποία θα τεθούν σε ψηφοφορία από τους ίδιους τους συμμετέχοντες για την τελική ανάδειξη των νικητών.",
-        "links": [
-          {
-            "id": 0,
-            "title": "Discord Server Game Jam",
-            "url": "https://discord.gg/FXyqMvGcJv"
-          }
-        ]
-      },
-      "en": {
-        "location": "",
-        "title": "Game Jam Competition",
-        "keywords": ["COMPETITION", "Game Jam", "Game Development"],
-        "description": "Looking for the ultimate game development challenge?\nThen you can’t miss the Game Jam competition!\n\nYou will work in teams of 1–5 people to create an original game within 24 hours. The organizing committee will select the 5 best games, which will then be voted on by the participants themselves to determine the final winners.",
-        "links": [
-          {
-            "id": 0,
-            "title": "Game Jam Discord Server",
-            "url": "https://discord.gg/FXyqMvGcJv"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": 22,
-    "date": "2026-04-24T15:30:00",
-    "end_date": "2026-04-25T18:00:00",
-    "registration_deadline": "2026-04-25T18:00:00",
-    "thumbnail": "/events/shaping-ai-and-metaverse.jpg",
-    "images": ["/events/shaping-ai-and-metaverse.jpg"],
-    "info": {
-      "gr": {
-        "location": "ΣΥΝΕΔΡΙΑΚΟ ΚΕΝΤΡΟ ΑΡΧΑΙΟΥ ΕΛΑΙΩΝΑ",
-        "title": "Shaping AI & Metaverse",
-        "keywords": ["WORKSHOP"],
-        "description": "Είσαι έτοιμος/-η για το απόλυτο φοιτητικό διήμερο γύρω από την Τεχνητή Νοημοσύνη και το Metaverse; 🚀\n\nΤότε δεν πρέπει να χάσεις το IEEE SBs National Summit: Shaping AI & Metaverse!\n\nΦοιτητικά παραρτήματα του IEEE, ακαδημαϊκοί, ερευνητές και κορυφαίες εταιρείες του χώρου συναντιούνται σε ένα μοναδικό event γνώσης, καινοτομίας και networking 🤝\n\n🔹 Ανακάλυψε πώς η AI & το Metaverse επηρεάζουν τη βιομηχανία, την υγεία και την έρευνα\n\n🔹 Παρακολούθησε θεματικά panels & παρουσιάσεις από experts\n\n🔹 Γνώρισε από κοντά φοιτητικά projects και καινοτόμες ιδέες στα booths\n\n🔹 Δικτυώσου με ανθρώπους που διαμορφώνουν το μέλλον της τεχνολογίας",
-        "links": [
-          {
-            "id": 0,
-            "url": "https://www.tickettailor.com/events/ieeesbuniwa/2175274",
-            "title": "Φόρμα συμμετοχής 24/4"
-          },
-          {
-            "id": 1,
-            "url": "https://www.tickettailor.com/events/ieeesbuniwa/2175318",
-            "title": "Φόρμα συμμετοχής 25/4"
-          }
-        ]
-      },
-      "en": {
-        "location": "Conference Centre, Campus2, UniWA",
-        "title": "Shaping AI & Metaverse",
-        "keywords": ["WORKSHOP"],
-        "description": "Are you ready for the ultimate two-day student event around Artificial Intelligence and the Metaverse? 🚀\n\nThen you shouldn’t miss the IEEE SBs National Summit: Shaping AI & Metaverse!\n\nIEEE student branches, academics, researchers, and leading companies in the field come together in a unique event of knowledge, innovation, and networking 🤝\n\n🔹 Discover how AI & the Metaverse are transforming industry, healthcare, and research\n\n🔹 Attend thematic panels & presentations from experts\n\n🔹 Explore student projects and innovative ideas up close at the booths\n\n🔹 Network with people who are shaping the future of technology",
-        "links": [
-          {
-            "id": 0,
-            "url": "https://www.tickettailor.com/events/ieeesbuniwa/2175274",
-            "title": "Registration form 24/4"
-          },
-          {
-            "id": 1,
-            "url": "https://www.tickettailor.com/events/ieeesbuniwa/2175318",
-            "title": "Registration form 25/4"
-          }
-        ]
-      }
-    }
-  }
 ]

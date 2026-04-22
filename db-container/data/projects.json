@@ -4,8 +4,8 @@
     "sg": "GameDev",
     "name": "Cyber-Quest",
     "status": "Active",
-    "thumbnail": "/projects/gamedev/Thumbnail_CyberQuest.png",
-    "images": ["/projects/gamedev/CyberQuestPhoto.png","/projects/gamedev/CyberQuestScreen1.png","/projects/gamedev/CyberQuestScreen2.png","/projects/gamedev/CyberQuestScreen3.png"],
+    "thumbnail": "/projects/gamedev/CyberQuestScreen1.png",
+    "images": ["/projects/gamedev/Thumbnail_CyberQuest.png","/projects/gamedev/CyberQuestPhoto.png","/projects/gamedev/CyberQuestScreen1.png","/projects/gamedev/CyberQuestScreen2.png","/projects/gamedev/CyberQuestScreen3.png"],
     "technologies": ["Godot", "Photoshop", "GDScript", "Aseprite", "Pixelorama"],
     "info": {
       "gr": {
@@ -14,6 +14,405 @@
       },
       "en": {
         "description": "Development of an educational 2D game for elementary school children focused on internet safety. Through interactive missions, students learn how to stay safe online, recognize potential risks, and adopt best practices for secure internet use. In addition, teachers can utilize it as a tool for a more engaging and enjoyable computer science lesson.\n\n🕹️  The project is developed using modern technologies and is designed to provide educational value through fun and engaging gameplay.",
+        "links": []
+      }
+    }
+  },
+  {
+    "id": 1,
+    "sg": "AI",
+    "name": "Estia",
+    "status": "Active",
+    "thumbnail": "/projects/ai/Estia1.png",
+    "images": ["/projects/ai/Estia1.png","/projects/ai/Estia2.png"],
+    "technologies": ["CV", "Python", "Deep Learning", "Timeseries Forecasting", "Sensors"],
+    "info": {
+      "gr": {
+        "description": "Ανάπτυξη εκπαιδευτικού 2D παιχνιδιού για παιδιά δημοτικού με θέμα την ασφάλεια στο διαδίκτυο. Μέσα από διαδραστικές αποστολές, οι μαθητές μαθαίνουν πώς να προστατεύονται online, να αναγνωρίζουν κινδύνους και να υιοθετούν καλές πρακτικές για ασφαλή χρήση του διαδικτύου. Ακόμα οι εκπαιδευτικοί μπορούν να το αξιοποιήσουν ως εργαλείο για πιο ενεργό και ευχάριστο μάθημα πληροφορικής.\n\n🕹️  Το project αναπτύσσεται με μοντέρνες τεχνολογίες και έχει σχεδιαστεί ώστε να προσφέρει εκπαιδευτική αξία μέσα από διασκεδαστικό gameplay.",
+        "links": ["https://ai-sg-uniwa.streamlit.app/estia"]
+      },
+      "en": {
+        "description": "Development of an educational 2D game for elementary school children focused on internet safety. Through interactive missions, students learn how to stay safe online, recognize potential risks, and adopt best practices for secure internet use. In addition, teachers can utilize it as a tool for a more engaging and enjoyable computer science lesson.\n\n🕹️  The project is developed using modern technologies and is designed to provide educational value through fun and engaging gameplay.",
+        "links": ["https://ai-sg-uniwa.streamlit.app/estia"]
+      }
+    }
+  },
+  {
+    "id": 2,
+    "sg": "AI",
+    "name": "Milon",
+    "status": "Active",
+    "thumbnail": "/projects/ai/Milon1.png",
+    "images": ["/projects/ai/Milon1.png","/projects/ai/Milon2.png", "/projects/ai/football_ai.jpg", "/projects/ai/food_recognition.jpg"],
+    "technologies": ["CV", "Python", "Deep Learning"],
+    "info": {
+      "gr": {
+        "description": "",
+        "links": ["https://ai-sg-uniwa.streamlit.app/milon"]
+      },
+      "en": {
+        "description": "Milon is a comprehensive AI-powered system that holistically monitors and optimizes an athlete's complete lifestyle ecosystem, tracking nutrition intake, exercise form, and in-game performance through integrated computer vision technologies. The platform provides real-time analysis and personalized recommendations to enhance athletic performance across all aspects of training and competition.",
+        "links": ["https://ai-sg-uniwa.streamlit.app/milon"]
+      }
+    }
+  },
+  {
+    "id": 3,
+    "sg": "Metaverse",
+    "name": "DriveSafe JR",
+    "status": "Active",
+    "thumbnail": "/projects/metaverse/Drive-Safe-JR.png",
+    "images": ["/projects/metaverse/Drive-Safe-JR.png"],
+    "technologies": ["CV", "Python", "Deep Learning"],
+    "info": {
+      "gr": {
+        "description": "Το DriveSafe JR είναι μια AR εφαρμογή για κινητές συσκευές, η οποία εντοπίζει πινακίδες κυκλοφορίας μέσω της κάμερας και μετατρέπει την κυκλοφοριακή αγωγή σε διαδραστική εμπειρία για παιδιά που βρίσκονται μέσα στο αυτοκίνητο. Μέσω κουίζ και σύντομων παιχνιδιών, ενισχύεται η μάθηση και η οδική συνείδηση από μικρή ηλικία.",
+        "links": []
+      },
+      "en": {
+        "description": "DriveSafe JR is an Augmented Reality mobile application developed under the CoNSeRT Lab’s DriveSafe JR project. Using the device camera, the app detects road signs and converts traffic education into an interactive quiz-like experience for children inside a car. By identifying signs and prompting correct actions, the app gamifies learning and strengthens early traffic-awareness habits.",
+        "links": []
+      }
+    }
+  },
+  {
+    "id": 5,
+    "sg": "Metaverse",
+    "name": "Mixed Reality AI Guide for Engineering Tasks",
+    "status": "Active",
+    "thumbnail": "/projects/metaverse/UAV-Fixed-Wing.png",
+    "images": ["/projects/metaverse/UAV-Fixed-Wing.png"],
+    "technologies": ["MR", "XR Training", "Medical Simulation", "Healthcare XR","Endoscopy", "Haptics", "Surgical Training"],
+    "info": {
+      "gr": {
+        "description": "Το AI Guide είναι ένας MR-βασισμένος βοηθός που υποστηρίζει μηχανικούς κατά την επιθεώρηση, συντήρηση, αντιμετώπιση βλαβών και εκπαίδευση. Ο χρήστης, φορώντας Quest 3, βλέπει χωρικά αγκυρωμένα overlays σε πραγματικό εξοπλισμό (βαλβίδες, αντλίες, πίνακες ισχύος) και λαμβάνει βήμα-βήμα οδηγίες. Το σύστημα διαθέτει AI backend με εγχειρίδια, SOPs, vector search και reasoning. Υποστηρίζει φωνητική αλληλεπίδραση, διάγνωση βλαβών, digital-twin εκπαίδευση, πρόσβαση σε τεχνική τεκμηρίωση και καταγραφή ενεργειών. Βασισμένο στο επίσημο roadmap, η πλατφόρμα εξελίσσεται από βασική MR διεπαφή σε πλήρη AI-καθοδηγούμενη λύση για πλοία και εκπαιδευτικά κέντρα.",
+        "links": []
+      },
+      "en": {
+        "description": "The AI Guide is an MR-based assistant designed to support mechanics during inspection, maintenance, troubleshooting, and training. Wearing a Quest 3, the user sees spatially anchored overlays on real machinery (valves, pumps, switchboards) and receives step-by-step guidance. The system integrates an AI backend with manuals, SOPs, vector search, and reasoning. It supports voice interaction, fault diagnosis, digital-twin training, documentation access, and procedure logging. Based on the official roadmap, the platform evolves from core MR interaction to full AI-driven assistance deployed on vessels and training centers.",
+        "links": []
+      }
+    }
+  },
+  {
+    "id": 6,
+    "sg": "Metaverse",
+    "name": "Mixed Reality Medical Training (XR Endoscopic Procedures)",
+    "status": "Active",
+    "thumbnail": "",
+    "images": [],
+    "technologies": ["MR", "XR Training", "Medical Simulation", "Healthcare XR","Endoscopy", "Haptics", "Surgical Training"],
+    "info": {
+      "gr": {
+        "description": "Το έργο αναπτύσσει ένα XR σύστημα εκπαίδευσης για ενδοσκοπικές και ελάχιστα επεμβατικές τεχνικές. Οι εκπαιδευόμενοι χρησιμοποιούν πραγματικά εργαλεία μαζί με MR ολογραφικά overlays, βλέπουν ανατομικές δομές σε πραγματικό χρόνο και λαμβάνουν feedback για το χειρισμό. Η πλατφόρμα γεφυρώνει τη θεωρητική εκπαίδευση με ρεαλιστική προσομοίωση, προσφέροντας φορητή και οικονομική εναλλακτική σε κλασικούς ιατρικούς προσομοιωτές.",
+        "links": []
+      },
+      "en": {
+        "description": "This project develops an XR training system for endoscopic and minimally invasive procedures. Trainees use real tools combined with holographic overlays in MR. They view internal anatomical structures, receive feedback on tool positioning, and collaborate with other users in shared XR sessions. The approach bridges theoretical medical education with realistic simulation, offering a portable and cost-efficient alternative to traditional medical simulators.",
+        "links": []
+      }
+    }
+  },
+  {
+    "id": 7,
+    "sg": "Software",
+    "name": "My UniWA Schedule",
+    "status": "Inactive",
+    "thumbnail": "/projects/software/my-uniwa-schedule.png",
+    "images": ["/projects/software/my-uniwa-schedule.png"],
+    "technologies": ["ASP.NET", "Android", "Kotlin", "C#", "React.js"],
+    "info": {
+      "gr": {
+        "description": "Ανάπτυξη εφαρμογής και web πλατφόρμας που επιτρέπει στους φοιτητές να οργανώνουν και να παρακολουθούν το προσωπικό τους πρόγραμμα μαθημάτων.",
+        "links": []
+      },
+      "en": {
+        "description": "Development of an application and web platform that allows students to organize and track their personal class schedule.",
+        "links": []
+      }
+    }
+  },
+  {
+    "id": 8,
+    "sg": "Software",
+    "name": "Competitive Programming",
+    "status": "Active",
+    "thumbnail": "/projects/software/competitive-programming.jpg",
+    "images": ["/projects/software/competitive-programming.jpg","/projects/software/competitive-programming2.jpg"],
+    "technologies": ["C++", "Algorithms", "Data Structures", "IEEEXtreme", "ICPC"],
+    "info": {
+      "gr": {
+        "description": "Ομάδα προετοιμασίας για διαγωνισμούς προγραμματισμού όπως οι IEEEXtreme και GRCPC, με έμφαση σε αλγορίθμους, δομές δεδομένων και τεχνικές επίλυσης προβλημάτων.",
+        "links": []
+      },
+      "en": {
+        "description": "A team focused on preparing for programming competitions such as IEEEXtreme and GRCPC, with emphasis on algorithms, data structures, and problem-solving techniques.",
+        "links": []
+      }
+    }
+  },
+  {
+    "id": 9,
+    "sg": "Software",
+    "name": "UniWA Parking",
+    "status": "Inactive",
+    "thumbnail": "/projects/software/uniwa-parking.png",
+    "images": ["/projects/software/uniwa-parking.png"],
+    "technologies": ["Python", "OpenCV","YOLO v5", "Docker", "Express.js", "FastAPI"],
+    "info": {
+      "gr": {
+        "description": "Web εφαρμογή που προβάλλει σε πραγματικό χρόνο τη διαθεσιμότητα θέσεων στάθμευσης στα campus του Πανεπιστημίου, αξιοποιώντας τεχνητή νοημοσύνη και Raspberry Pi συσκευές.",
+        "links": []
+      },
+      "en": {
+        "description": "A web application that displays real-time parking availability across the university campuses, leveraging artificial intelligence and Raspberry Pi devices.",
+        "links": []
+      }
+    }
+  },
+  {
+    "id": 10,
+    "sg": "Software",
+    "name": "IEEE SB UniWA Website",
+    "status": "Active",
+    "thumbnail": "/projects/software/ieee-sb-website.jpg",
+    "images": ["/projects/software/ieee-sb-website.jpg"],
+    "technologies": ["JS/TS", "Elysia.js", "Docker", "MongoDB", "Next.js"],
+    "info": {
+      "gr": {
+        "description": "Δημιουργία της επίσημης ιστοσελίδας του IEEE SB UniWA με σύγχρονη αρχιτεκτονική, responsive σχεδιασμό και διαδραστικά στοιχεία.",
+        "links": []
+      },
+      "en": {
+        "description": "Creation of the official IEEE SB UniWA website with modern architecture, responsive design, and interactive elements.",
+        "links": []
+      }
+    }
+  },
+  {
+    "id": 11,
+    "sg": "Electronics",
+    "name": "IEEEDuino",
+    "status": "Active",
+    "thumbnail": "/projects/electronics/IEEEDuino.jpg",
+    "images": ["/projects/electronics/IEEEDuino.jpg"],
+    "technologies": ["Arduino", "C/C++", "Docker", "MongoDB", "Next.js"],
+    "info": {
+      "gr": {
+        "description": "Το project ασχολείται με την ανάπτυξη και κατασκευή συστημάτων και εφαρμογών που που χρησιμοποιούν διάφορες πλακέτες  Αrduino και θα συμμετάσχουν στο διαγωνισμό IEEEDUINO. Συνδυάζει άμεσα το hardware με το software και δίνει στα μέλη της ομάδας την ευκαιρία να αποκτήσουν ουσιαστική εμπειρία στην πρακτική εφαρμογή των γνώσεών τους, μέσα από τον σχεδιασμό, την υλοποίηση και τη δοκιμή πραγματικών έργων.",
+        "links": []
+      },
+      "en": {
+        "description": "This project focuses on the development and construction of systems and applications based on Arduino that will participate in the IEEEDUINO competition. It directly combines hardware and software, offering team members the opportunity to gain hands-on experience by designing, implementing, and testing real-world projects.",
+        "links": []
+      }
+    }
+  },
+  {
+    "id": 12,
+    "sg": "Electronics",
+    "name": "Autonomous Fixed-Wing UAV",
+    "status": "Active",
+    "thumbnail": "/projects/electronics/Autonomous-Fixed-Wing-UAV.png",
+    "images": ["/projects/electronics/Autonomous-Fixed-Wing-UAV.png"],
+    "technologies": ["3D Printing", "PCB", "Embedded", "Sensors", "CAD/CFD", "Python/C++"],
+    "info": {
+      "gr": {
+        "description": "Το UAV Project στοχεύει στη σχεδίαση και κατασκευή ενός αυτόνομου fixed-wing drone, ικανού να εκτελεί ακριβείς αποστολές μεταφοράς μικρών φορτίων. Στόχος μας είναι η δημιουργία ενός αυτόνομου και πλήρως λειτουργικού UAV, ειδικά σχεδιασμένου ώστε να καλύπτει τις ανάγκες της αποστολής — από την απογείωση μέχρι την προσγείωση.",
+        "links": []
+      },
+      "en": {
+        "description": "The UAV Project aims at the design and construction of an autonomous fixed-wing drone, capable of carrying out precise small-payload missions. Our goal is to develop an autonomous and fully functional UAV, specifically designed to meet the mission requirements — from take-off to landing.",
+        "links": []
+      }
+    }
+  },
+  {
+    "id": 13,
+    "sg": "Naval",
+    "name": "AquaMind",
+    "status": "Active",
+    "thumbnail": "/projects/naval/AquaMind.jpg",
+    "images": ["/projects/naval/AquaMind.jpg"],
+    "technologies": ["Marine robotics", "ODS", "ASV", "Environmental monitoring"],
+    "info": {
+      "gr": {
+        "description": "Έξυπνος AI βοηθός για μηχανικούς πλοίων, που υποστηρίζει τη διάγνωση και την ιχνηλάτηση βλαβών με βάση δεδομένα λειτουργίας και τεχνικά manuals. Αναλύει δεδομένα σε πραγματικό χρόνο και βελτιστοποιεί τη συντήρηση μέσω predictive analytics, μειώνοντας downtime και βελτιώνοντας την αξιοπιστία του εξοπλισμού.",
+        "links": []
+      },
+      "en": {
+        "description": "Smart AI assistant for marine engineers, supporting fault diagnosis and troubleshooting based on operational data and technical manuals. It analyzes real-time data and optimizes maintenance through predictive analytics, reducing downtime and improving equipment reliability.",
+        "links": []
+      }
+    }
+  },
+  {
+    "id": 14,
+    "sg": "Naval",
+    "name": "CleanSea",
+    "status": "Active",
+    "thumbnail": "/projects/naval/CleanSea.jpg",
+    "images": ["/projects/naval/CleanSea.jpg"],
+    "technologies": ["Preventive maintenance", "Maritime AI"],
+    "info": {
+      "gr": {
+        "description": "Έξυπνος AI βοηθός για μηχανικούς πλοίων, που υποστηρίζει τη διάγνωση και την ιχνηλάτηση βλαβών με βάση δεδομένα λειτουργίας και τεχνικά manuals. Αναλύει δεδομένα σε πραγματικό χρόνο και βελτιστοποιεί τη συντήρηση μέσω predictive analytics, μειώνοντας downtime και βελτιώνοντας την αξιοπιστία του εξοπλισμού.",
+        "links": []
+      },
+      "en": {
+        "description": "Smart AI assistant for marine engineers, supporting fault diagnosis and troubleshooting based on operational data and technical manuals. It analyzes real-time data and optimizes maintenance through predictive analytics, reducing downtime and improving equipment reliability.",
+        "links": []
+      }
+    }
+  },
+  {
+    "id": 15,
+    "sg": "Energy",
+    "name": "Cool & Re-Use",
+    "status": "Active",
+    "thumbnail": "/projects/energy/Cool-&-Re-Use-Thumbnail.jpg",
+    "images": ["/projects/energy/Cool-&-Re-Use-Thumbnail.jpg", "/projects/energy/Cool-&-Re-Use.jpg"],
+    "technologies": [],
+    "info": {
+      "gr": {
+        "description": "Έξυπνος AI βοηθός για μηχανικούς πλοίων, που υποστηρίζει τη διάγνωση και την ιχνηλάτηση βλαβών με βάση δεδομένα λειτουργίας και τεχνικά manuals. Αναλύει δεδομένα σε πραγματικό χρόνο και βελτιστοποιεί τη συντήρηση μέσω predictive analytics, μειώνοντας downtime και βελτιώνοντας την αξιοπιστία του εξοπλισμού.",
+        "links": []
+      },
+      "en": {
+        "description": "Smart AI assistant for marine engineers, supporting fault diagnosis and troubleshooting based on operational data and technical manuals. It analyzes real-time data and optimizes maintenance through predictive analytics, reducing downtime and improving equipment reliability.",
+        "links": []
+      }
+    }
+  },
+  {
+    "id": 16,
+    "sg": "Energy",
+    "name": "Reverse Engineering",
+    "status": "Active",
+    "thumbnail": "/projects/energy/reverse-engineering-thumbnail.jpg",
+    "images": ["/projects/energy/reverse-engineering-thumbnail.jpg", "/projects/energy/reverse-engineering-1.jpg", "/projects/energy/reverse-engineering-2.jpg", "/projects/energy/reverse-engineering-3.jpg", "/projects/energy/reverse-engineering-4.jpg"],
+    "technologies": [],
+    "info": {
+      "gr": {
+        "description": "Στόχος του πρότζεκτ είναι η επαναχρησιμοποίηση υλικών από end of life ηλεκτρονικές συσκευές, η κατανόηση της λειτουργίας τους μέσω της αντίστροφης μηχανικής (reverse engineering), καθώς και η δημιουργία νέων, χρήσιμων εφαρμογών. Το παραπάνω θα επιτευχθεί με την αποσυναρμολόγηση και μελέτη ηλεκτρονικών συσκευών που έχουν ολοκληρώσει τον κύκλο ζωής τους, την ανάκτηση και αξιοποίηση επιμέρους εξαρτημάτων, καθώς και τη σχεδίαση και ανάπτυξη νέων εφαρμογών βασισμένων σε αυτά.",
+        "links": []
+      },
+      "en": {
+        "description": "This project aims to reuse components from end-of-life electrical devices, understanding their function through reverse engineering, as well as the usage of salvaged and working components in the repair or construction of other devices.",
+        "links": []
+      }
+    }
+  },
+  {
+    "id": 17,
+    "sg": "Energy",
+    "name": "Semiconductor Measurement Chart",
+    "status": "Active",
+    "thumbnail": "/projects/energy/Semiconductor-map-thumbnail.png",
+    "images": ["/projects/energy/Semiconductor-map-thumbnail.png"],
+    "technologies": [],
+    "info": {
+      "gr": {
+        "description": "Στόχος του πρότζεκτ είναι η κατανόηση και αξιολόγηση των ιδιοτήτων ημιαγωγικών στοιχείων μέσα από τη μελέτη, τη μέτρηση και την ανάλυση δεδομένων που προκύπτουν από ανακυκλωμένα εξαρτήματα, με τελικό αποτέλεσμα τη δημιουργία ενός Χάρτη - Οδηγού Μέτρησης Ημιαγωγών. Ο Χάρτης αυτός θα αποτελέσει ένα χρήσιμο εργαλείο αναφοράς για φοιτητές και τεχνικούς, με στόχο την υποστήριξη της εκπαιδευτικής διαδικασίας αλλά και την κατανόηση της συμπεριφοράς των ημιαγωγών μέσα από πειραματικά δεδομένα και πρακτικές εφαρμογές.",
+        "links": []
+      },
+      "en": {
+        "description": "The aim of the project is to understand and evaluate the properties of electronic semiconductor components through the study, measurement and analysis of data derived from recycled components, with the final result being the creation of a Semiconductor Measurement Guide Map. This Map will be a useful reference tool for students and technicians, aiming to support the educational process and the understanding of semiconductor behaviour through experimental data and practical applications.",
+        "links": []
+      }
+    }
+  },
+  {
+    "id": 18,
+    "sg": "Energy",
+    "name": "Smart Lighting",
+    "status": "Active",
+    "thumbnail": "/projects/energy/smart-lighting-1.png",
+    "images": ["/projects/energy/smart-lighting-1.png", "/projects/energy/smart-lighting-2.png"],
+    "technologies": [],
+    "info": {
+      "gr": {
+        "description": "Στόχος του πρότζεκτ είναι η βελτίωση απόδοσης, ποιότητας και χρόνου ζωής εγκαταστάσεων φωτισμού (εσωτερικών και εξωτερικών χώρων). Το παραπάνω θα επιτευχθεί με την χρήση μετρητών φωτεινής έντασης για την ρύθμιση της φωτεινής ροής των φωτιστικών σωμάτων προκειμένου να επιτευχθεί μια ελάχιστη ικανοποιητική τιμής φωτεινής έντασης επί της επιφάνειας εργασίας όλο το 24ωρο, σε συνδυασμό με ενα φωτοκύτταρο για αύξηση της έντασης από φωτισμό τύπου 'παρασκηνίου' (χαμηλή στάθμη για επίτευξη ορατότητας ασφάλειας) σε 'προσκηνίου' (υψηλή στάθμη για κανονική χρήση του χώρου) τις στιγμές που υπάρχει διέλευση πεζών/χρηστών του χώρου.",
+        "links": []
+      },
+      "en": {
+        "description": "The project aims to improve the efficiency, quality, and lifespan of lighting installations (indoor and outdoor). The above will be achieved by using luminous intensity meters to regulate the luminous flux of the lighting fixtures to achieve a minimum satisfactory value of illumination on the work surface 24 hours a day, in combination with a motion sensor to change the intensity from 'background' type lighting (low level lighting to achieve safety visibility) to 'foreground' type lighting (high level lighting for normal use of the space) at times when there is pedestrian/user traffic.",
+        "links": []
+      }
+    }
+  },
+  {
+    "id": 19,
+    "sg": "Energy",
+    "name": "DC-DC Converter",
+    "status": "Active",
+    "thumbnail": "/projects/energy/DC-DC-Converter-Thumbnail.jpg",
+    "images": ["/projects/energy/DC-DC-Converter-Thumbnail.jpg"],
+    "technologies": [],
+    "info": {
+      "gr": {
+        "description": "Στόχος του πρότζεκτ είναι η μελέτη - σχεδίαση και κατασκευή ενός μετατροπέα συνεχούς ρεύματος για ένα ηλεκτρικό όχημα κυψελών υδρογόνου που συνδυάζεται με μια συστοιχία πυκνωτών για την παροχή σταθερής ισχύος με μεγάλη απόδοση . Ο μετατροπέας πρόκειται να διορθώσει την μεταβαλλόμενη (λόγω Φόρτισης/Εκφόρτισης) τάση που παρέχουν οι πυκνωτές σε μια σταθερή τάση την οποία μπορεί να χρησιμοποιήσουν τα ηλεκτρονικά και οι κινητήρες του οχήματος.",
+        "links": []
+      },
+      "en": {
+        "description": "This project aims to design and construct a DC-DC voltage converter for use in the power supply of an electric vehicle, powered by a combination of hydrogen cells and supercapacitors. The converter is used to correct the fluctuating supply voltage from the capacitor bank terminals into a steady and reliable voltage for the vehicle's main power bus, which feeds both its electronics and drivetrain.",
+        "links": []
+      }
+    }
+  },
+  {
+    "id": 20,
+    "sg": "BioMed",
+    "name": "Smart Predictive Wearable",
+    "status": "Active",
+    "thumbnail": "/projects/biomed/smart-predictive-wearable1.png",
+    "images": ["/projects/biomed/smart-predictive-wearable1.png"],
+    "technologies": [],
+    "info": {
+      "gr": {
+        "description": "Το project επικεντρώνεται στην ανάπτυξη μιας φορητής συσκευής που παρακολουθεί συνεχώς πολλαπλούς παραμέτρους υγείας, όπως τον καρδιακό ρυθμό, τον κορεσμό οξυγόνου στο αίμα, την αρτηριακή πίεση, τον χρόνο διέλευσης του σφυγμού (PTT) και τον αναπνευστικό ρυθμό. Η συσκευή θα αξιολογεί αυτές τις τιμές σε σχέση με τα φυσιολογικά όρια και στέλνει ειδοποιήσεις στο τηλέφωνο όταν εντοπίζονται αποκλίσεις. Σε περιπτώσεις πολλαπλών ανωμαλιών, θα μπορεί να προτείνει πιθανές διαγνώσεις, παρέχοντας μια ολοκληρωμένη, σε πραγματικό χρόνο, επισκόπηση της υγείας του χρήστη.",
+        "links": []
+      },
+      "en": {
+        "description": "The project focuses on developing a portable device that continuously monitors multiple health parameters, including heart rate, blood oxygen saturation, blood pressure, pulse transit time (PTT), and respiratory rate. The device evaluates these values against normal ranges and sends alerts to a connected mobile phone when deviations are detected. In cases of multiple abnormalities, it can suggest possible diagnoses, providing a comprehensive, real-time overview of the user’s health.",
+        "links": []
+      }
+    }
+  },
+  {
+    "id": 21,
+    "sg": "BioMed",
+    "name": "IGF-1R Drug Docking",
+    "status": "Active",
+    "thumbnail": "/projects/biomed/IGF-1R-docking.png",
+    "images": ["/projects/biomed/IGF-1R-docking.png", "/projects/biomed/IGF-1R-docking2.png", "/projects/biomed/IGF-1R-docking3.png", "/projects/biomed/IGF-1R-docking4.png"],
+    "technologies": ["IGF-1R", "Molecular Docking", "Protein Modeling"],
+    "info": {
+      "gr": {
+        "description": "To project μελετά τον IGF-1R (Insulin-like Growth Factor 1 Receptor), ένα κρίσιμο  μόριο που συμβάλλει στην ανάπτυξη του εμβρυϊκού ραβδομυοσαρκώματος (ERMS). Μέσα από την ανάλυση της δομής του και των σηματοδοτικών μονοπατιών που ενεργοποιεί, διερευνούμε τρόπους αναστολής του με τη βοήθεια υπολογιστικών εργαλείων (AutoDock, Vina, PyMOL). Σκοπός είναι να εντοπιστούν νέα μόρια με πιθανή θεραπευτική δράση και να συνδεθούν τα ευρήματα με τη βιολογική και κλινική σημασία του στόχου.",
+        "links": []
+      },
+      "en": {
+        "description": "The project studies IGF-1R (Insulin-like Growth Factor 1 Receptor), a critical molecule that contributes to the development of embryonal rhabdomyosarcoma (ERMS). By analyzing its structure and the signaling pathways it activates, we are investigating ways to inhibit it using computational tools (AutoDock, Vina, PyMOL). The aim is to identify new molecules with potential therapeutic activity and to link the findings to the biological and clinical significance of the target.",
+        "links": []
+      }
+    }
+  },
+  {
+    "id": 22,
+    "sg": "BioMed",
+    "name": "LIDAR-guided Cane",
+    "status": "Active",
+    "thumbnail": "/projects/biomed/LIDAR-guided-cane2.png",
+    "images": ["/projects/biomed/LIDAR-guided-cane1.png", "/projects/biomed/LIDAR-guided-cane2.png", "/projects/biomed/LIDAR-guided-cane3.png", "/projects/biomed/LIDAR-guided-cane4.png"],
+    "technologies": ["LIDAR", "Assistive Navigation", "CV"],
+    "info": {
+      "gr": {
+        "description": "Το project αφορά την ανάπτυξη ενός “έξυπνου μπαστουνιού” για άτομα με προβλήματα όρασης, το οποίο αξιοποιεί την τεχνολογία LIDAR για να χαρτογραφεί τον περιβάλλοντα χώρο σε πραγματικό χρόνο. Συνδυάζοντας τις πληροφορίες αυτές με GPS και κάμερα, το σύστημα θα μπορεί να καθοδηγεί τον χρήστη με μεγαλύτερη ασφάλεια και αυτονομία, τόσο σε εσωτερικούς όσο και σε εξωτερικούς χώρους.",
+        "links": []
+      },
+      "en": {
+        "description": "The project involves the development of a 'smart cane' for visually impaired people, which uses LIDAR technology to map the surrounding area in real time. By combining this information with GPS and a camera, the system will be able to guide the user with greater safety and autonomy, both indoors and outdoors.",
         "links": []
       }
     }

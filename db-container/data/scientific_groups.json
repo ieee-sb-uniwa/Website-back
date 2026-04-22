@@ -19,15 +19,15 @@
         "id": 1,
         "name": "Artificial Intelligence",
         "name_short": "AI",
-        "wallpaper": "/SG/photos/GameDev-SG-thumbnail.png",
+        "wallpaper": "/SG/Thumbnails/AI-SG.png",
         "images": ["/SG/logos/AI.png"],
         "logo": "/SG/logos/AI-SG.png",
         "info": {
             "gr": {
-                "description": "Η ομάδα επικεντρώνεται στην ανάπτυξη καινοτόμων λύσεων Τεχνητής Νοημοσύνης που απαντούν σε πραγματικές ανάγκες. Τα μέλη αποκτούν πρακτική εμπειρία σε σύγχρονα εργαλεία και τεχνολογίες του industry, υλοποιώντας end-to-end projects."
+                "description": "Το A.I. Scientific Group είναι μια ομάδα που διεξάγει έρευνα μέσω των ομαδικών εργασιών (Projects) με στόχο την δημιουργία μοντέλων και συστημάτων που λύνουν πρακτικά προβλήματα. Πιο συγκεκριμένα, η ομάδα ασχολείται με τους εξής τομείς: Deep Learning, Computer Vision, Forecasting, TinyML, App Development, κα."
             },
             "en": {
-                "description": "The team focuses on developing innovative Artificial Intelligence solutions that respond to real needs. Members gain practical experience in modern industry tools and technologies by implementing end-to-end projects."
+                "description": "The A.I. Scientific Group is a team that conducts research through group projects (Projects) with the goal of creating models and systems that solve practical problems. More specifically, the group focuses on the following areas: Deep Learning, Computer Vision, Forecasting, TinyML, App Development, etc."
             }
         }
     },
@@ -51,7 +51,7 @@
         "id": 3,
         "name": "Electronics",
         "name_short": "Electronics",
-        "wallpaper": "/SG/Thumbnails/GameDev-SG-thumbnail.png",
+        "wallpaper": "/SG/Thumbnails/Electronics-SG.jpg",
         "images": ["/SG/logos/Electronics.png"],
         "logo": "/SG/logos/Electronics-SG.png",
         "info": {
@@ -83,7 +83,7 @@
         "id": 5,
         "name": "Naval",
         "name_short": "Naval",
-        "wallpaper": "/SG/Thumbnails/AquaMind.jpg",
+        "wallpaper": "/SG/Thumbnails/Naval-SG.png",
         "images": ["/SG/logos/Naval.png"],
         "logo": "/SG/logos/Naval-SG.png",
         "info": {
