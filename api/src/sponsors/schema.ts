@@ -1,15 +1,5 @@
 import { Schema, model } from "mongoose";
 
-const imageSchema = new Schema(
-  {
-    url: {
-      type: String,
-      required: true,
-    },
-  },
-  { _id: false }
-);
-
 const sponsorsSchema = new Schema(
   {
     id: {
@@ -17,8 +7,12 @@ const sponsorsSchema = new Schema(
       required: true,
       unique: true,
     },
-    name: {
+    title: {
       type: String,
+      required: true,
+    },
+    scale: {
+      type: Number,
       required: true,
     },
     tier: {
@@ -26,12 +20,16 @@ const sponsorsSchema = new Schema(
       enum: ["bronze", "silver", "gold", "platinum", "diamond", "elite"],
       required: true,
     },
-    image: {
-      type: imageSchema,
+    url: {
+      type: String,
+      required: true,
+    },
+    img: {
+      type: String,
       required: true,
     },
   },
-  { timestamps: true }
+  { timestamps: true },
 );
 
 const Sponsors = model("Sponsors", sponsorsSchema, "sponsors");
