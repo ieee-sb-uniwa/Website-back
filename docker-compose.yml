@@ -1,25 +1,28 @@
 services:
   traefik:
-    image: traefik:v3.6.8
+    image: traefik:latest
     container_name: traefik
     restart: always
-    environment:
-      - DOCKER_API_VERSION=1.44
     command:
-      - "--api=true"
-      - "--log.level=DEBUG"
-      - "--api.dashboard=true"
-      - "--api.insecure=true"
+      - "--log.level=INFO"
+      - "--api.dashboard=false"
+      # Set to false so we can secure it with a router/auth
+      - "--api.insecure=false"
+      - "--ping=true"
+      - "--ping.entrypoint=web"
       - "--providers.docker=true"
       - "--providers.docker.exposedByDefault=false"
+      # Entrypoints
       - "--entrypoints.web.address=:80"
     ports:
-      - "8081:80"
+      - "127.0.0.1:8081:80"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
+    labels:
+      - "traefik.enable=true"
+      # Create a router for the internal API/Dashboard on the web entrypoint
     healthcheck:
-      test:
-        ["CMD", "wget", "--spider", "-q", "http://localhost:8080/api/rawdata"]
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost/ping"]
       interval: 5s
       retries: 10
       start_period: 5s
@@ -81,13 +84,14 @@ services:
     # - "27017:27017"
 
   minio:
-    image: minio/minio:RELEASE.2025-03-12T18-04-18Z
+    image: minio/minio:latest
     container_name: minio
     command: server /data --console-address ":9001"
     env_file:
       - ./.env
     environment:
-      - MINIO_BROWSER_REDIRECT_URL=http://${SERVER_NAME}/minio-console
+      #- MINIO_BROWSER_REDIRECT_URL=http://${SERVER_NAME}/minio-console
+      - MINIO_BROWSER=off
     labels:
       - "traefik.enable=true"
 
