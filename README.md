@@ -10,11 +10,16 @@ All services are built using Docker containers and are accessed through Traefik,
 ## How to Run
 To run this repository, ensure that Docker is installed and running.
 
-1. Create a `.env` file by copying and filling in your values based on the keys provided in [`env.sample`](./env.sample).
+1. Create a `.env` file by copying and filling in your values based on the keys provided in [`.env.example`](./.env.example).
 2. Execute the `run-docker.sh` script using a Linux or Bash terminal:
    ```bash
    source run-docker.sh
    ```
+
+You can also run development mode directly with:
+```bash
+docker compose watch
+```
 
 To stop the containers, run the `stop-docker.sh` script:
 ```bash
@@ -25,14 +30,25 @@ source stop-docker.sh
 | Variable Name | Values | Description |
 | --- | --- | --- |
 | SERVER_NAME | DNS name or IP address of the server | Sets the hostname for website services. |
-| MONGO_DB_NAME | Any string | Name of the database. |
+| MONGO_INITDB_DATABASE | Any string | Name of the database. |
 | NODE_ENV | `development` or `production` | `development` enables live sync and auto-restart; `production` serves the final builds. |
-| MINIO_ROOT_USER | Any string over 8 characters | Username for logging into the MinIO web console. |
-| MINIO_ROOT_PASSWORD | Any string over 8 characters | Password for logging into the MinIO web console. |
+| MINIO_ROOT_USER | Any string over 8 characters | Username for logging into the MinIO web console (dev only). |
+| MINIO_ROOT_PASSWORD | Any string over 8 characters | Password for logging into the MinIO web console (dev only). |
+| PUBLIC_FILES_BASE_URL | URL | Public base URL or path for files (used by API + web image optimization). Use `/files` for same-host routing. |
+| TRAEFIK_PORT | Port number | External port to access Traefik (default 80). |
+| API_URL | URL | API base URL for server actions (absolute URL required). |
+| NEXT_PUBLIC_IMAGES_STORAGE_URL | URL | Derived from `PUBLIC_FILES_BASE_URL` in compose. |
 
 ### Development Features
 When set to `development`, the API service automatically syncs and restarts upon any file change inside `./api`.  
 Similarly, `minio-init` remains active and listens for changes in `./minio`, rebuilding and uploading updated files automatically.
+
+MinIO console access is enabled only in development via `docker-compose.override.yml`.
+
+Production notes:
+- Set `NODE_ENV=production` and run `docker compose -f docker-compose.yml up -d`.
+- Ensure `PUBLIC_FILES_BASE_URL` matches your public domain (for example `https://example.com/files`).
+- Ensure `API_URL` points to the same domain (for example `https://example.com/api`).
 
 > **Note:** This setup allows only file uploads. To delete images, either use the MinIO web console or run the `stop-docker.sh` script.
 
@@ -50,12 +66,13 @@ The web service is the default entry point — any route not listed below is for
 | `/` | Forwards to the web service (Next.js website). |
 | `/api` | API service routes. |
 | `/files` | Files served from the MinIO `files` bucket. |
-| `/minio-console/login` | Access to the MinIO web console. |
+| `/minio-console/login` | Access to the MinIO web console (development only). |
 | `None` | Direct access to the MongoDB database (internal only). |
 
 ### WEB
-Serves the Next.js website from a separate Git repository.  
-It tracks the `main` branch.
+Serves the Next.js website from the `web` submodule (branch `main`).
+The root compose file builds and runs it behind Traefik at `/`.
+In development, `docker compose watch` uses the dev container target for hot reload.
 
 ### API
 Provides dynamic data access using an Elysia.js (Bun) application.  
@@ -90,7 +107,9 @@ The API selects the appropriate language and removes the `info` object from the 
 
 ### MINIO
 MinIO acts as the file server for images and other assets.  
-Only the `files` bucket is publicly accessible (read-only) via the API (through Traefik).
+Only the `files` bucket is publicly accessible (read-only) through Traefik.
+
+All public image URLs should be relative and start with `/files/...`.
 
 To upload files, log in to the MinIO web console using the credentials specified in the `.env` file.
 
@@ -155,11 +174,10 @@ This service initializes MinIO by uploading all files located in [`./minio/files
 
 If you simply made some changes to some **existing JSON file(s)**, you can _skip step 3_.
 
-## How to access the API and Traefik Dashboard
+## How to access the API
 
-- API (Root): [http://local.api.test](http://local.api.test)
-- API (ex. Council info in English): [http://local.api.test/api/council_en](http://local.api.test/api/council_en)
-- Traefik Dashboard: [http://localhost:8080](http://localhost:8080)
+- API (Root): `http://localhost/api`
+- API (example in English): `http://localhost/api/council?lang=en`
 
 ## Using Bruno Client API Tool to test the API
 

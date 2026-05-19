@@ -17,4 +17,7 @@ export const getConfig = (configPath: string) => {
   }
 }
 
-
+export const getPublicFilesBaseUrl = () => {
+  const rawBaseUrl = process.env.PUBLIC_FILES_URL || "/files";
+  return rawBaseUrl.replace(/\/$/, "");
+};
