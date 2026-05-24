@@ -11,6 +11,7 @@ import { events } from "./src/events";
 import { scientificGroups } from "./src/scientific-groups";
 import { projects } from "./src/projects";
 import { thirdParty } from "./src/thirdparty";
+import { sponsors } from "./src/sponsors";
 
 const { corsAllowList } = getConfig("./config.yml");
 
@@ -60,7 +61,8 @@ app
   .use(events)
   .use(thirdParty)
   .use(projects)
-  .use(scientificGroups);
+  .use(scientificGroups)
+  .use(sponsors);
 
 if (process.env.NODE_ENV === "development") {
   app.use(
