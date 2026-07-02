@@ -234,14 +234,14 @@
     "status": "Active",
     "thumbnail": "/projects/naval/AquaMind.jpg",
     "images": ["/projects/naval/AquaMind.jpg"],
-    "technologies": ["Marine robotics", "ODS", "ASV", "Environmental monitoring"],
+    "technologies": ["Preventive maintenance", "Smart maritime systems", "Reliability optimization", "Maritime AI"],
     "info": {
       "gr": {
-        "description": "Έξυπνος AI βοηθός για μηχανικούς πλοίων, που υποστηρίζει τη διάγνωση και την ιχνηλάτηση βλαβών με βάση δεδομένα λειτουργίας και τεχνικά manuals. Αναλύει δεδομένα σε πραγματικό χρόνο και βελτιστοποιεί τη συντήρηση μέσω predictive analytics, μειώνοντας downtime και βελτιώνοντας την αξιοπιστία του εξοπλισμού.",
+        "description": "Έξυπνος AI βοηθός για μηχανικούς πλοίων, που υποστηρίζει τη διάγνωση και την ιχνηλάτηση βλαβών με βάση δεδομένα λειτουργίας και τεχνικά manuals.\n\n Αναλύει δεδομένα σε πραγματικό χρόνο και βελτιστοποιεί τη συντήρηση μέσω predictive analytics, μειώνοντας downtime και βελτιώνοντας την αξιοπιστία του εξοπλισμού.",
         "links": []
       },
       "en": {
-        "description": "Smart AI assistant for marine engineers, supporting fault diagnosis and troubleshooting based on operational data and technical manuals. It analyzes real-time data and optimizes maintenance through predictive analytics, reducing downtime and improving equipment reliability.",
+        "description": "Smart AI assistant for marine engineers, supporting fault diagnosis and troubleshooting based on operational data and technical manuals.\n\n It analyzes real-time data and optimizes maintenance through predictive analytics, reducing downtime and improving equipment reliability.",
         "links": []
       }
     }
@@ -253,7 +253,7 @@
     "status": "Active",
     "thumbnail": "/projects/naval/CleanSea.jpg",
     "images": ["/projects/naval/CleanSea.jpg"],
-    "technologies": ["Preventive maintenance", "Maritime AI"],
+    "technologies": [ "ODS", "Marine robotics", "Environmental monitoring", "ASV", "Port cleaning technology"],
     "info": {
       "gr": {
         "description": "Έξυπνος AI βοηθός για μηχανικούς πλοίων, που υποστηρίζει τη διάγνωση και την ιχνηλάτηση βλαβών με βάση δεδομένα λειτουργίας και τεχνικά manuals. Αναλύει δεδομένα σε πραγματικό χρόνο και βελτιστοποιεί τη συντήρηση μέσω predictive analytics, μειώνοντας downtime και βελτιώνοντας την αξιοπιστία του εξοπλισμού.",
