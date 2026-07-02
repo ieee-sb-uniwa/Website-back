@@ -5,7 +5,7 @@
     "name": "Cyber-Quest",
     "status": "Active",
     "thumbnail": "/projects/gamedev/CyberQuestScreen1.png",
-    "images": ["/projects/gamedev/Thumbnail_CyberQuest.png","/projects/gamedev/CyberQuestPhoto.png","/projects/gamedev/CyberQuestScreen1.png","/projects/gamedev/CyberQuestScreen2.png","/projects/gamedev/CyberQuestScreen3.png"],
+    "images": ["/projects/gamedev/CyberQuestPhoto.png","/projects/gamedev/CyberQuestScreen1.png","/projects/gamedev/CyberQuestScreen2.png","/projects/gamedev/CyberQuestScreen3.png"],
     "technologies": ["Godot", "Photoshop", "GDScript", "Aseprite", "Pixelorama", "2D"],
     "info": {
       "gr": {
