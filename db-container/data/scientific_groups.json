@@ -1,18 +1,130 @@
 [
-  {
-    "id": 0,
-    "name": "Game Development",
-    "name_short": "GameDev",
-    "wallpaper": "/assets/photos/Gamedev.JPG",
-    "images": ["/projects/notifier.jpg"],
-    "logo": "/assets/logos/scientific_groups/gamedev.svg",
-    "info": {
-      "gr": {
-        "description": "Entry level game development team. Το Game Development είναι ένας κλάδος που έχει ανάγκη από ανθρώπους με διαφορετικά προσόντα και δεξιότητες. Ελάτε στην ομάδας μας για να δημιουργήσετε τους κόσμους και τους χαρακτήρες των παιχνιδιών ή τα γραφικά και τα εφέ. Επίσης μπορείτε να δημιουργήσετε τον κώδικα που καθοδηγεί τα παιχνίδια ή να συνεισφέρετε στην ιστορία και τα σενάρια."
-      },
-      "en": {
-        "description": "Entry level game development team. Game Development is an industry that needs people with different qualifications and skills. Join our team to create game worlds and characters or graphics and effects. You can also create the code that drives the games or contribute to the story and scenarios."
-      }
+    {
+        "id": 0,
+        "name": "Game Development",
+        "name_short": "GameDev",
+        "wallpaper": "/SG/Thumbnails/GameDev-SG-thumbnail.png",
+        "images": ["/SG/logos/GameDev.png"],
+        "logo": "/SG/logos/GameDev-SG.png",
+        "info": {
+            "gr": {
+                "description": "Entry level game development team. Το Game Development είναι ένας κλάδος που έχει ανάγκη από ανθρώπους με διαφορετικά προσόντα και δεξιότητες. Ελάτε στην ομάδας μας για να δημιουργήσετε τους κόσμους και τους χαρακτήρες των παιχνιδιών ή τα γραφικά και τα εφέ. Επίσης μπορείτε να δημιουργήσετε τον κώδικα που καθοδηγεί τα παιχνίδια ή να συνεισφέρετε στην ιστορία και τα σενάρια."
+            },
+            "en": {
+                "description": "Entry level game development team. Game Development is an industry that needs people with different qualifications and skills. Join our team to create game worlds and characters or graphics and effects. You can also create the code that drives the games or contribute to the story and scenarios."
+            }
+        }
+    },
+    {
+        "id": 1,
+        "name": "Artificial Intelligence",
+        "name_short": "AI",
+        "wallpaper": "/SG/Thumbnails/AI-SG.png",
+        "images": ["/SG/logos/AI.png"],
+        "logo": "/SG/logos/AI-SG.png",
+        "info": {
+            "gr": {
+                "description": "Το A.I. Scientific Group είναι μια ομάδα που διεξάγει έρευνα μέσω των ομαδικών εργασιών (Projects) με στόχο την δημιουργία μοντέλων και συστημάτων που λύνουν πρακτικά προβλήματα. Πιο συγκεκριμένα, η ομάδα ασχολείται με τους εξής τομείς: Deep Learning, Computer Vision, Forecasting, TinyML, App Development, κα."
+            },
+            "en": {
+                "description": "The A.I. Scientific Group is a team that conducts research through group projects (Projects) with the goal of creating models and systems that solve practical problems. More specifically, the group focuses on the following areas: Deep Learning, Computer Vision, Forecasting, TinyML, App Development, etc."
+            }
+        }
+    },
+    {
+        "id": 2,
+        "name": "Biomedical Engineering",
+        "name_short": "BioMed",
+        "wallpaper": "/SG/Thumbnails/Biomed-SG-thumbnail.png",
+        "images": ["/SG/logos/Biomed.png"],
+        "logo": "/SG/logos/Biomed-SG.png",
+        "info": {
+            "gr": {
+                "description": "Το BIOMED SG είναι μια διεπιστημονική ομάδα που φέρνει κοντά φοιτητές με ενδιαφέρον για τη βιοϊατρική έρευνα και τεχνολογία. Στόχος της ομάδας είναι η ανάπτυξη καινοτόμων λύσεων για την υγεία, η ενίσχυση δεξιοτήτων σε τεχνολογίες αιχμής και η πρακτική εφαρμογή της γνώσης μέσα από συνεργασία και πειραματισμό."
+            },
+            "en": {
+                "description": "BIOMED SG is an interdisciplinary team that brings together students interested in biomedical research and technology. The team's goal is to develop innovative, health-centered solutions enhance skills in cutting-edge technologies, and apply knowledge in practice through collaboration and experimentation."
+            }
+        }
+    },
+    {
+        "id": 3,
+        "name": "Electronics",
+        "name_short": "Electronics",
+        "wallpaper": "/SG/Thumbnails/Electronics-SG.jpg",
+        "images": ["/SG/logos/Electronics.png"],
+        "logo": "/SG/logos/Electronics-SG.png",
+        "info": {
+            "gr": {
+                "description": "Το Electronics είναι μία ομάδα που ασχολείται με την μελέτη, ανάπτυξη και κατασκευή συστημάτων που αξιοποιούν μικροελεγκτές, ενσωματωμένα συστήματα και άλλες ηλεκτρονικές διατάξεις. Βασικό στόχο αποτελεί η καινοτόμα εξέλιξη της τεχνολογίας σε κλάδους όπως η ρομποτική, η αυτοκίνηση, βιομηχανικά συστήματα και το διαδίκτυο των πραγμάτων (IoT) καθώς και η πρακτική εφαρμογή αυτών."
+            },
+            "en": {
+                "description": "Electronics SG is a team involved in the study, development, and construction of systems that make use of microcontrollers, embedded systems, and other electronic devices. Its main goal is the innovative advancement of technology in fields such as robotics, automotive applications, industrial systems, and the Internet of Things (IoT)"
+            }
+        }
+    },
+    {
+        "id": 4,
+        "name": "Energy",
+        "name_short": "Energy",
+        "wallpaper": "/SG/Thumbnails/Energy-SG-thumbnail.jpg",
+        "images": ["/SG/logos/Energy.png"],
+        "logo": "/SG/logos/Energy-SG.png",
+        "info": {
+            "gr": {
+                "description": "Το Energy Scientific Group είναι μια ομάδα η οποία έχει ως σκοπό την διεξαγωγή ομαδικών εργασιών (Projects) σχετικά με το αντικείμενο της ενέργειας: Ηλεκτρικές Μηχανές, Ηλεκτρονικά Ισχύος, Ανανεώσιμες Πηγές Ενέργειας και ότι άλλο σχετικό. Τα Projects είναι τόσο αναπτυξιακού χαρακτήρα, όσο και εκπαιδευτικού. Τυχόν ενδιαφερόμενοι μπορούν να φέρουν ιδέες για Project που θα τους ενδιέφερε να ασχοληθούν."
+            },
+            "en": {
+                "description": "Energy Scientific Group is a team with the aim of conducting team projects concerning the fields of power and energy: Electric Motors, Power Electronics, Renewables, and other relevant topics. The Projects are both developmental and educational in nature. Interested parties with project ideas that they’d like to run are encouraged to contact us."
+            }
+        }
+    },
+    {
+        "id": 5,
+        "name": "Naval",
+        "name_short": "Naval",
+        "wallpaper": "/SG/Thumbnails/Naval-SG.png",
+        "images": ["/SG/logos/Naval.png"],
+        "logo": "/SG/logos/Naval-SG.png",
+        "info": {
+            "gr": {
+                "description": "Το Naval SG επικεντρώνεται στην αξιοποίηση τεχνολογιών αιχμής για την αναβάθμιση της ναυτιλίας. Μέσα από καινοτόμα projects που συνδυάζουν ναυπηγική, ηλεκτρολογία, μηχανολογία και τεχνητή νοημοσύνη, στοχεύει στην ανάπτυξη έξυπνων, αποδοτικών και βιώσιμων λύσεων που διαμορφώνουν το μέλλον των πλοίων και των θαλάσσιων μεταφορών."
+            },
+            "en": {
+                "description": "Naval SG focuses on leveraging cutting-edge technology to advance the maritime sector. Through innovative projects that combine naval architecture, electrical engineering, mechanical engineering, and artificial intelligence, it aims to develop intelligent, efficient, and sustainable solutions that shape the future of ships and marine transportation."
+            }
+        }
+    },
+    {
+        "id": 6,
+        "name": "Metaverse",
+        "name_short": "Metaverse",
+        "wallpaper": "/SG/Thumbnails/Metaverse-SG-thumbnail.png",
+        "images": ["/SG/logos/Meta.png"],
+        "logo": "/SG/logos/Metaverse-SG.png",
+        "info": {
+            "gr": {
+                "description": "Το Metaverse SG εξειδικεύεται σε τεχνολογίες VR, AR, MR και XR, συνδυάζοντας έρευνα και πρακτική ανάπτυξη. Η ομάδα δημιουργεί XR συστήματα για εκπαίδευση, προσομοιώσεις, human–AI interaction και τεχνική υποστήριξη. Υπάγεται στο IEEE SB UniWA και συνεργάζεται με το Metaverse Hub του CoNSeRT Lab, προωθώντας την καινοτομία και τις πρακτικές XR εφαρμογές."
+            },
+            "en": {
+                "description": "Metaverse SG specializes in Virtual, Augmented, Mixed, and Extended Reality, combining research and real-world development. The group builds XR systems for training, simulation, human–AI interaction, and engineering support. Operating under IEEE SB UniWA and collaborating with the CoNSeRT Lab Metaverse Hub, it promotes innovation and practical XR applications."
+            }
+        }
+    },
+    {
+        "id": 7,
+        "name": "Software",
+        "name_short": "Software",
+        "wallpaper": "/SG/Thumbnails/Software-SG-thumbnail.jpg",
+        "images": ["/SG/logos/Software.png"],
+        "logo": "/SG/logos/Software-SG.png",
+        "info": {
+            "gr": {
+                "description": "Το Software SG είναι η ομάδα που εστιάζει στην εκμάθηση προγραμματισμού, την ανάπτυξη λογισμικού και την έρευνα σε αλγορίθμους. Μέσα από πρακτικά projects και συμμετοχή σε διαγωνισμούς, τα μέλη χτίζουν ισχυρές βάσεις στην επίλυση προβλημάτων και τον σύγχρονο software engineering κύκλο."
+            },
+            "en": {
+                "description": "The Software SG is the group that focuses on learning programming, software development, and research in algorithms. Through hands-on projects and participation in competitions, its members build strong foundations in problem-solving and the modern software engineering lifecycle."
+            }
+        }
     }
-  }
 ]
