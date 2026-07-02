@@ -196,14 +196,14 @@
     "status": "Active",
     "thumbnail": "/projects/electronics/IEEEDuino.jpg",
     "images": ["/projects/electronics/IEEEDuino.jpg"],
-    "technologies": ["Arduino", "C/C++", "Docker", "MongoDB", "Next.js"],
+    "technologies": ["Arduino", "Embedded", "Sensors"],
     "info": {
       "gr": {
-        "description": "Το project ασχολείται με την ανάπτυξη και κατασκευή συστημάτων και εφαρμογών που που χρησιμοποιούν διάφορες πλακέτες  Αrduino και θα συμμετάσχουν στο διαγωνισμό IEEEDUINO. Συνδυάζει άμεσα το hardware με το software και δίνει στα μέλη της ομάδας την ευκαιρία να αποκτήσουν ουσιαστική εμπειρία στην πρακτική εφαρμογή των γνώσεών τους, μέσα από τον σχεδιασμό, την υλοποίηση και τη δοκιμή πραγματικών έργων.",
+        "description": "Το project ασχολείται με την ανάπτυξη και κατασκευή συστημάτων και εφαρμογών που χρησιμοποιούν διάφορες πλακέτες **Αrduino** και θα συμμετάσχουν στο διαγωνισμό IEEEDUINO. Συνδυάζει άμεσα το **hardware** με το **software** και δίνει στα μέλη της ομάδας την ευκαιρία να αποκτήσουν ουσιαστική εμπειρία στην πρακτική εφαρμογή των γνώσεών τους, μέσα από τον σχεδιασμό, την υλοποίηση και τη δοκιμή πραγματικών έργων.",
         "links": []
       },
       "en": {
-        "description": "This project focuses on the development and construction of systems and applications based on Arduino that will participate in the IEEEDUINO competition. It directly combines hardware and software, offering team members the opportunity to gain hands-on experience by designing, implementing, and testing real-world projects.",
+        "description": "This project focuses on the development and construction of systems and applications based on **Arduino** that will participate in the IEEEDUINO competition. It directly combines **hardware** and **software**, offering team members the opportunity to gain hands-on experience by designing, implementing, and testing real-world projects.",
         "links": []
       }
     }
@@ -218,11 +218,11 @@
     "technologies": ["3D Printing", "PCB", "Embedded", "Sensors", "CAD/CFD", "Python/C++"],
     "info": {
       "gr": {
-        "description": "Το UAV Project στοχεύει στη σχεδίαση και κατασκευή ενός αυτόνομου fixed-wing drone, ικανού να εκτελεί ακριβείς αποστολές μεταφοράς μικρών φορτίων. Στόχος μας είναι η δημιουργία ενός αυτόνομου και πλήρως λειτουργικού UAV, ειδικά σχεδιασμένου ώστε να καλύπτει τις ανάγκες της αποστολής — από την απογείωση μέχρι την προσγείωση.",
+        "description": "Το **UAV Project** στοχεύει στη σχεδίαση και κατασκευή ενός **αυτόνομου fixed-wing drone**, ικανού να εκτελεί **ακριβείς αποστολές μεταφοράς μικρών φορτίων**. Στόχος μας είναι η δημιουργία ενός **αυτόνομου και πλήρως λειτουργικού UAV**, ειδικά σχεδιασμένου ώστε να καλύπτει τις ανάγκες της αποστολής — από την απογείωση μέχρι την προσγείωση.\n\n🔧 Στο πλαίσιο του project, **μέρος των συστημάτων θα σχεδιαστεί και υλοποιηθεί εξ ολοκλήρου από την ομάδα**, με χαρακτηριστικό παράδειγμα την ανάπτυξη **custom flight controller, πλακέτας (PCB)** για τα ηλεκτρονικά και τους αισθητήρες, καθώς και του **εξατομικευμένου αεροδυναμικού πλαισίου (airframe).**\n\nΗ ανάπτυξη του συστήματος βασίζεται στη συνεργασία **πέντε τεχνικών πυλώνων**:\n\n \uD83E\uDDE0 **Control & Simulation** – Ανάπτυξη αλγορίθμων ελέγχου (όπως MPC) και μοντελοποίηση του συστήματος μέσω προσομοιώσεων.\n\n- \uD83D\uDD0C **Hardware** – Σχεδίαση πλακετών (PCB), ενσωμάτωση αισθητήρων και διαχείριση της ηλεκτρονικής αρχιτεκτονικής του drone.\n\n- \uD83D\uDCBB **Software** – Υλοποίηση του λογισμικού πτήσης, διασύνδεση με τα υπόλοιπα υποσυστήματα και διαχείριση της αποστολής.\n\n- ✈\uFE0F **Aerodynamics** – Σχεδίαση του αεροδυναμικού προφίλ και βελτιστοποίηση των χαρακτηριστικών πτήσης.\n\n- \uD83D\uDEE0 **Structure** – Κατασκευή του φυσικού πλαισίου, επιλογή υλικών και σχεδιασμός του συστήματος ενσωμάτωσης του payload.",
         "links": []
       },
       "en": {
-        "description": "The UAV Project aims at the design and construction of an autonomous fixed-wing drone, capable of carrying out precise small-payload missions. Our goal is to develop an autonomous and fully functional UAV, specifically designed to meet the mission requirements — from take-off to landing.",
+        "description": "The **UAV Project** aims at the design and construction of an **autonomous fixed-wing drone**, capable of carrying out **precise small-payload missions**. Our goal is to develop an **autonomous and fully functional UAV**, specifically designed to meet the mission requirements — from take-off to landing\n\n \uD83D\uDD27 Within the scope of the project, **part of the onboard systems will be designed and implemented entirely by the team**, including a **custom flight controller, dedicated PCB** for the electronics and sensors, as well as a **tailored aerodynamic airframe.**\n\nThe development of the system is based on the collaboration of **five technical pillars**:\n\n \uD83E\uDDE0 **Control & Simulation** – Development of control algorithms (such as MPC) and system modeling through simulations.\n\n \uD83D\uDD0C **Hardware** – PCB design, sensor integration, and management of the drone’s electronic architecture.\n\n \uD83D\uDCBB **Software** – Implementation of the flight software, integration with the remaining subsystems, and mission management.\n\n ✈\uFE0F **Aerodynamics** – Design of the aerodynamic profile and optimization of the flight characteristics.\n\n \uD83D\uDEE0 **Structure** – Construction of the physical airframe, material selection, and design of the payload integration system.",
         "links": []
       }
     }
