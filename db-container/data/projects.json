@@ -275,11 +275,11 @@
     "technologies": [],
     "info": {
       "gr": {
-        "description": "Έξυπνος AI βοηθός για μηχανικούς πλοίων, που υποστηρίζει τη διάγνωση και την ιχνηλάτηση βλαβών με βάση δεδομένα λειτουργίας και τεχνικά manuals. Αναλύει δεδομένα σε πραγματικό χρόνο και βελτιστοποιεί τη συντήρηση μέσω predictive analytics, μειώνοντας downtime και βελτιώνοντας την αξιοπιστία του εξοπλισμού.",
+        "description": "Στόχος αυτού του πρότζεκτ είναι η μελέτη βιωσιμότητας και η κατασκευή ενός αυτόματου συστήματος **ψύξης Φ/Β πλασίων**, προκειμένου να **βελτιωθεί ο βαθμός απόδοσης** ηλεκτροπαραγωγής τους.",
         "links": []
       },
       "en": {
-        "description": "Smart AI assistant for marine engineers, supporting fault diagnosis and troubleshooting based on operational data and technical manuals. It analyzes real-time data and optimizes maintenance through predictive analytics, reducing downtime and improving equipment reliability.",
+        "description": "This project aims to conduct a feasibility study and later construct an automated **cooling system for PV panels**, to **improve their efficiency.**",
         "links": []
       }
     }
@@ -294,11 +294,11 @@
     "technologies": [],
     "info": {
       "gr": {
-        "description": "Στόχος του πρότζεκτ είναι η επαναχρησιμοποίηση υλικών από end of life ηλεκτρονικές συσκευές, η κατανόηση της λειτουργίας τους μέσω της αντίστροφης μηχανικής (reverse engineering), καθώς και η δημιουργία νέων, χρήσιμων εφαρμογών. Το παραπάνω θα επιτευχθεί με την αποσυναρμολόγηση και μελέτη ηλεκτρονικών συσκευών που έχουν ολοκληρώσει τον κύκλο ζωής τους, την ανάκτηση και αξιοποίηση επιμέρους εξαρτημάτων, καθώς και τη σχεδίαση και ανάπτυξη νέων εφαρμογών βασισμένων σε αυτά.",
+        "description": "Στόχος του πρότζεκτ είναι η επαναχρησιμοποίηση υλικών από **end of life** ηλεκτρονικές συσκευές, η κατανόηση της λειτουργίας τους μέσω της αντίστροφης μηχανικής (reverse engineering), καθώς και η δημιουργία νέων, χρήσιμων εφαρμογών. Το παραπάνω θα επιτευχθεί με την αποσυναρμολόγηση και μελέτη ηλεκτρονικών συσκευών που έχουν ολοκληρώσει τον κύκλο ζωής τους, την ανάκτηση και αξιοποίηση επιμέρους εξαρτημάτων, καθώς και τη σχεδίαση και ανάπτυξη νέων εφαρμογών βασισμένων σε αυτά.",
         "links": []
       },
       "en": {
-        "description": "This project aims to reuse components from end-of-life electrical devices, understanding their function through reverse engineering, as well as the usage of salvaged and working components in the repair or construction of other devices.",
+        "description": "This project aims to reuse components from **end-of-life** electrical devices, understanding their function through reverse engineering, as well as the usage of salvaged and working components in the repair or construction of other devices.",
         "links": []
       }
     }
@@ -313,11 +313,11 @@
     "technologies": [],
     "info": {
       "gr": {
-        "description": "Στόχος του πρότζεκτ είναι η κατανόηση και αξιολόγηση των ιδιοτήτων ημιαγωγικών στοιχείων μέσα από τη μελέτη, τη μέτρηση και την ανάλυση δεδομένων που προκύπτουν από ανακυκλωμένα εξαρτήματα, με τελικό αποτέλεσμα τη δημιουργία ενός Χάρτη - Οδηγού Μέτρησης Ημιαγωγών. Ο Χάρτης αυτός θα αποτελέσει ένα χρήσιμο εργαλείο αναφοράς για φοιτητές και τεχνικούς, με στόχο την υποστήριξη της εκπαιδευτικής διαδικασίας αλλά και την κατανόηση της συμπεριφοράς των ημιαγωγών μέσα από πειραματικά δεδομένα και πρακτικές εφαρμογές.",
+        "description": "Στόχος του πρότζεκτ είναι η κατανόηση και αξιολόγηση των ιδιοτήτων ημιαγωγικών στοιχείων μέσα από τη μελέτη, τη μέτρηση και την ανάλυση δεδομένων που προκύπτουν από ανακυκλωμένα εξαρτήματα, με τελικό αποτέλεσμα τη δημιουργία ενός Χάρτη - Οδηγού Μέτρησης Ημιαγωγών.\n\n Ο Χάρτης αυτός θα αποτελέσει ένα χρήσιμο εργαλείο αναφοράς για φοιτητές και τεχνικούς, με στόχο την υποστήριξη της εκπαιδευτικής διαδικασίας αλλά και την κατανόηση της συμπεριφοράς των ημιαγωγών μέσα από πειραματικά δεδομένα και πρακτικές εφαρμογές.",
         "links": []
       },
       "en": {
-        "description": "The aim of the project is to understand and evaluate the properties of electronic semiconductor components through the study, measurement and analysis of data derived from recycled components, with the final result being the creation of a Semiconductor Measurement Guide Map. This Map will be a useful reference tool for students and technicians, aiming to support the educational process and the understanding of semiconductor behaviour through experimental data and practical applications.",
+        "description": "The aim of the project is to understand and evaluate the properties of electronic semiconductor components through the study, measurement and analysis of data derived from recycled components, with the final result being the creation of a Semiconductor Measurement Guide Map.\n\n This Map will be a useful reference tool for students and technicians, aiming to support the educational process and the understanding of semiconductor behaviour through experimental data and practical applications.",
         "links": []
       }
     }
@@ -332,11 +332,11 @@
     "technologies": [],
     "info": {
       "gr": {
-        "description": "Στόχος του πρότζεκτ είναι η βελτίωση απόδοσης, ποιότητας και χρόνου ζωής εγκαταστάσεων φωτισμού (εσωτερικών και εξωτερικών χώρων). Το παραπάνω θα επιτευχθεί με την χρήση μετρητών φωτεινής έντασης για την ρύθμιση της φωτεινής ροής των φωτιστικών σωμάτων προκειμένου να επιτευχθεί μια ελάχιστη ικανοποιητική τιμής φωτεινής έντασης επί της επιφάνειας εργασίας όλο το 24ωρο, σε συνδυασμό με ενα φωτοκύτταρο για αύξηση της έντασης από φωτισμό τύπου 'παρασκηνίου' (χαμηλή στάθμη για επίτευξη ορατότητας ασφάλειας) σε 'προσκηνίου' (υψηλή στάθμη για κανονική χρήση του χώρου) τις στιγμές που υπάρχει διέλευση πεζών/χρηστών του χώρου.",
+        "description": "Στόχος του πρότζεκτ είναι η **βελτίωση απόδοσης, ποιότητας και χρόνου ζωής εγκαταστάσεων φωτισμού** (εσωτερικών και εξωτερικών χώρων). Το παραπάνω θα επιτευχθεί με την χρήση **μετρητών φωτεινής έντασης** για την ρύθμιση της φωτεινής ροής των φωτιστικών σωμάτων προκειμένου να επιτευχθεί μια **ελάχιστη ικανοποιητική τιμής φωτεινής έντασης** επί της επιφάνειας εργασίας όλο το 24ωρο, σε συνδυασμό με ενα **φωτοκύτταρο** για αύξηση της έντασης από φωτισμό τύπου 'παρασκηνίου' (χαμηλή στάθμη για επίτευξη ορατότητας ασφάλειας) σε 'προσκηνίου' (υψηλή στάθμη για κανονική χρήση του χώρου) τις στιγμές που υπάρχει **διέλευση πεζών/χρηστών του χώρου**.",
         "links": []
       },
       "en": {
-        "description": "The project aims to improve the efficiency, quality, and lifespan of lighting installations (indoor and outdoor). The above will be achieved by using luminous intensity meters to regulate the luminous flux of the lighting fixtures to achieve a minimum satisfactory value of illumination on the work surface 24 hours a day, in combination with a motion sensor to change the intensity from 'background' type lighting (low level lighting to achieve safety visibility) to 'foreground' type lighting (high level lighting for normal use of the space) at times when there is pedestrian/user traffic.",
+        "description": "The project aims to **improve the efficiency, quality, and lifespan of lighting installations** (indoor and outdoor). The above will be achieved by using luminous intensity **meters to regulate the luminous flux** of the lighting fixtures to achieve a **minimum satisfactory value of illumination** on the work surface 24 hours a day, in combination with a **motion sensor** to change the intensity from 'background' type lighting (low level lighting to achieve safety visibility) to 'foreground' type lighting (high level lighting for normal use of the space) at times when there is **pedestrian/user traffic**.",
         "links": []
       }
     }
@@ -367,7 +367,7 @@
     "status": "Active",
     "thumbnail": "/projects/biomed/smart-predictive-wearable1.png",
     "images": ["/projects/biomed/smart-predictive-wearable1.png"],
-    "technologies": [],
+    "technologies": ["AI", "ML", "BioSensing", "Wearable"],
     "info": {
       "gr": {
         "description": "Το project επικεντρώνεται στην ανάπτυξη μιας φορητής συσκευής που παρακολουθεί συνεχώς πολλαπλούς παραμέτρους υγείας, όπως τον καρδιακό ρυθμό, τον κορεσμό οξυγόνου στο αίμα, την αρτηριακή πίεση, τον χρόνο διέλευσης του σφυγμού (PTT) και τον αναπνευστικό ρυθμό. Η συσκευή θα αξιολογεί αυτές τις τιμές σε σχέση με τα φυσιολογικά όρια και στέλνει ειδοποιήσεις στο τηλέφωνο όταν εντοπίζονται αποκλίσεις. Σε περιπτώσεις πολλαπλών ανωμαλιών, θα μπορεί να προτείνει πιθανές διαγνώσεις, παρέχοντας μια ολοκληρωμένη, σε πραγματικό χρόνο, επισκόπηση της υγείας του χρήστη.",
@@ -405,7 +405,7 @@
     "status": "Active",
     "thumbnail": "/projects/biomed/LIDAR-guided-cane2.png",
     "images": ["/projects/biomed/LIDAR-guided-cane1.png", "/projects/biomed/LIDAR-guided-cane2.png", "/projects/biomed/LIDAR-guided-cane3.png", "/projects/biomed/LIDAR-guided-cane4.png"],
-    "technologies": ["LIDAR", "Assistive Navigation", "CV"],
+    "technologies": ["LIDAR", "Assistive Navigation", "CV", "Real-Time Mapping"],
     "info": {
       "gr": {
         "description": "Το project αφορά την ανάπτυξη ενός “έξυπνου μπαστουνιού” για άτομα με προβλήματα όρασης, το οποίο αξιοποιεί την τεχνολογία LIDAR για να χαρτογραφεί τον περιβάλλοντα χώρο σε πραγματικό χρόνο. Συνδυάζοντας τις πληροφορίες αυτές με GPS και κάμερα, το σύστημα θα μπορεί να καθοδηγεί τον χρήστη με μεγαλύτερη ασφάλεια και αυτονομία, τόσο σε εσωτερικούς όσο και σε εξωτερικούς χώρους.",
