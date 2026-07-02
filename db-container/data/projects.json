@@ -63,7 +63,7 @@
     "status": "Active",
     "thumbnail": "/projects/metaverse/Drive-Safe-JR.png",
     "images": ["/projects/metaverse/Drive-Safe-JR.png"],
-    "technologies": ["CV", "Python", "Deep Learning"],
+    "technologies": ["AR", "Mobile App", "Traffic Education", "Gamification", "CV", "XR"],
     "info": {
       "gr": {
         "description": "Το DriveSafe JR είναι μια AR εφαρμογή για κινητές συσκευές, η οποία εντοπίζει πινακίδες κυκλοφορίας μέσω της κάμερας και μετατρέπει την κυκλοφοριακή αγωγή σε διαδραστική εμπειρία για παιδιά που βρίσκονται μέσα στο αυτοκίνητο. Μέσω κουίζ και σύντομων παιχνιδιών, ενισχύεται η μάθηση και η οδική συνείδηση από μικρή ηλικία.",
@@ -82,7 +82,7 @@
     "status": "Active",
     "thumbnail": "/projects/metaverse/UAV-Fixed-Wing.png",
     "images": ["/projects/metaverse/UAV-Fixed-Wing.png"],
-    "technologies": ["MR", "XR Training", "Medical Simulation", "Healthcare XR","Endoscopy", "Haptics", "Surgical Training"],
+    "technologies": ["MR", "AI Assistant", "Engineering", "Maintenance","Ship Mechanics", "XR", "Voice Interaction", "Digital Twins"],
     "info": {
       "gr": {
         "description": "Το AI Guide είναι ένας MR-βασισμένος βοηθός που υποστηρίζει μηχανικούς κατά την επιθεώρηση, συντήρηση, αντιμετώπιση βλαβών και εκπαίδευση. Ο χρήστης, φορώντας Quest 3, βλέπει χωρικά αγκυρωμένα overlays σε πραγματικό εξοπλισμό (βαλβίδες, αντλίες, πίνακες ισχύος) και λαμβάνει βήμα-βήμα οδηγίες. Το σύστημα διαθέτει AI backend με εγχειρίδια, SOPs, vector search και reasoning. Υποστηρίζει φωνητική αλληλεπίδραση, διάγνωση βλαβών, digital-twin εκπαίδευση, πρόσβαση σε τεχνική τεκμηρίωση και καταγραφή ενεργειών. Βασισμένο στο επίσημο roadmap, η πλατφόρμα εξελίσσεται από βασική MR διεπαφή σε πλήρη AI-καθοδηγούμενη λύση για πλοία και εκπαιδευτικά κέντρα.",
@@ -136,7 +136,7 @@
     "id": 8,
     "sg": "Software",
     "name": "Competitive Programming",
-    "status": "Active",
+    "status": "Inactive",
     "thumbnail": "/projects/software/competitive-programming.jpg",
     "images": ["/projects/software/competitive-programming.jpg","/projects/software/competitive-programming2.jpg"],
     "technologies": ["C++", "Algorithms", "Data Structures", "IEEEXtreme", "ICPC"],
