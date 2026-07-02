@@ -6,14 +6,14 @@
     "status": "Active",
     "thumbnail": "/projects/gamedev/CyberQuestScreen1.png",
     "images": ["/projects/gamedev/Thumbnail_CyberQuest.png","/projects/gamedev/CyberQuestPhoto.png","/projects/gamedev/CyberQuestScreen1.png","/projects/gamedev/CyberQuestScreen2.png","/projects/gamedev/CyberQuestScreen3.png"],
-    "technologies": ["Godot", "Photoshop", "GDScript", "Aseprite", "Pixelorama"],
+    "technologies": ["Godot", "Photoshop", "GDScript", "Aseprite", "Pixelorama", "2D"],
     "info": {
       "gr": {
-        "description": "Ανάπτυξη εκπαιδευτικού 2D παιχνιδιού για παιδιά δημοτικού με θέμα την ασφάλεια στο διαδίκτυο. Μέσα από διαδραστικές αποστολές, οι μαθητές μαθαίνουν πώς να προστατεύονται online, να αναγνωρίζουν κινδύνους και να υιοθετούν καλές πρακτικές για ασφαλή χρήση του διαδικτύου. Ακόμα οι εκπαιδευτικοί μπορούν να το αξιοποιήσουν ως εργαλείο για πιο ενεργό και ευχάριστο μάθημα πληροφορικής.\n\n🕹️  Το project αναπτύσσεται με μοντέρνες τεχνολογίες και έχει σχεδιαστεί ώστε να προσφέρει εκπαιδευτική αξία μέσα από διασκεδαστικό gameplay.",
+        "description": "**Cyber-Quest** is an interactive game designed for primary school students. Through storytelling and gameplay, it aims to raise children’s awareness and teach them how to behave safely online — what to watch out for, what to avoid, and some good practices to help them stay protected. Our goal is for this project to serve as a tool for teachers, who can integrate it into their computer science lessons.\n\n",
         "links": []
       },
       "en": {
-        "description": "Development of an educational 2D game for elementary school children focused on internet safety. Through interactive missions, students learn how to stay safe online, recognize potential risks, and adopt best practices for secure internet use. In addition, teachers can utilize it as a tool for a more engaging and enjoyable computer science lesson.\n\n🕹️  The project is developed using modern technologies and is designed to provide educational value through fun and engaging gameplay.",
+        "description": "Το **Cyber-Quest** είναι ένα διαδραστικό παιχνίδι σχεδιασμένο για μαθητές δημοτικού. Σκοπός είναι, μέσω των ιστοριών και του παιχνιδιού, τα παιδιά να ευαισθητοποιηθούν και να μάθουν για το πως πρέπει να συμπεριφέρονται στο διαδίκτυο, τι να προσέχουν, τι να αποφεύγουν και ποιές είναι κάποιες καλές πρακτικές για να μένουν ασφαλείς. Στόχος μας είναι το παρόν να αποτελέσει εργαλείο για εκπαιδευτικούς, οι οποίοι θα το αξιοποιήσουν στα πλαίσια του μαθήματος πληροφορικής.\n\n",
         "links": []
       }
     }
