@@ -2,5 +2,3 @@
 
 echo "Stopping and removing development containers..."
 docker compose -f docker-compose.yml down
-docker volume rm minio-data web-mongo-data
-echo "Removed external volumes"

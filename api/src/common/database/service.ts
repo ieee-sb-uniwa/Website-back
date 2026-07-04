@@ -1,5 +1,7 @@
 import { Model, FilterQuery, PipelineStage } from 'mongoose';
 
+import { getPublicFilesBaseUrl } from '../helpers';
+
 export const findAll = async <T>(
   model: Model<T>,
   options: {
@@ -34,12 +36,11 @@ export const findAll = async <T>(
   }
   
   const aggregatedData = await model.aggregate(pipeline);
-  
-  const baseUrl = process.env.MINIO_URL;
-  
+
   return aggregatedData.map((datum: any) => {
     let jsonString = JSON.stringify(datum);
-    jsonString = jsonString.replace(/"\//g, `"${baseUrl}/`);
+    const publicFilesBaseUrl = getPublicFilesBaseUrl();
+    jsonString = jsonString.replace(/"\//g, `"${publicFilesBaseUrl}/`);
     return JSON.parse(jsonString);
   });
 };
@@ -76,11 +77,10 @@ export const findOne = async <T>(
     return null;
   }
   
-  const baseUrl = process.env.MINIO_URL;
-  
   // Apply URL replacement to the first result
   let jsonString = JSON.stringify(aggregatedData[0]);
-  jsonString = jsonString.replace(/"\//g, `"${baseUrl}/`);
-  
+  const publicFilesBaseUrl = getPublicFilesBaseUrl();
+  jsonString = jsonString.replace(/"\//g, `"${publicFilesBaseUrl}/`);
+
   return JSON.parse(jsonString);
 };

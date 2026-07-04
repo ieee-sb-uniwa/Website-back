@@ -9,5 +9,6 @@ declare namespace NodeJS {
     ELYSIA_API_PORT: string;
     ENABLE_MONGO_CONNECTION: 'true' | 'false';
     ELYSIA_API_DOMAIN: string;
+    PUBLIC_FILES_URL: string;
   }
 }

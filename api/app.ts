@@ -16,7 +16,7 @@ const { corsAllowList } = getConfig("./config.yml");
 
 const PORT = process.env.PORT || 5000;
 
-if (process.env.ENABLE_MONGO_CONNECTION === "true") await connectMongo();
+await connectMongo();
 
 export const app = new Elysia();
 

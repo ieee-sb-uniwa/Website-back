@@ -1,0 +1,27 @@
+services:
+  web:
+    build:
+      target: dev
+    volumes:
+      - /app/node_modules
+    environment:
+      - API_URL=http://traefik/api
+      - NODE_ENV=development
+    develop:
+      watch:
+        - action: sync
+          path: ./web
+          target: /app
+
+  minio:
+    environment:
+      - MINIO_BROWSER_REDIRECT_URL=http://${SERVER_NAME}:${TRAEFIK_PORT}/minio-console
+      - MINIO_BROWSER=on
+    labels:
+      traefik.enable: "true"
+      traefik.http.routers.minio-console.rule: "PathPrefix(`/minio-console`)"
+      traefik.http.routers.minio-console.entrypoints: "web"
+      traefik.http.routers.minio-console.service: "minio-console-svc"
+      traefik.http.services.minio-console-svc.loadbalancer.server.port: "9001"
+      traefik.http.routers.minio-console.middlewares: "strip-minio-console-prefix"
+      traefik.http.middlewares.strip-minio-console-prefix.stripPrefix.prefixes: "/minio-console"

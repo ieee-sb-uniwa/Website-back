@@ -16,9 +16,6 @@ RUN bun install
 # Copy the rest of the application code
 COPY . .
 
-ENV ENABLE_MONGO_CONNECTION="true"
-ENV MINIO_URL="localhost"
-
 # Expose the application port (adjust based on your app's port)
 EXPOSE 5000
 

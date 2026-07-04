@@ -35,10 +35,8 @@ services:
       - ./.env
     environment:
       - MONGODB_URL=mongodb://${MONGO_INITDB_ROOT_USERNAME}:${MONGO_INITDB_ROOT_PASSWORD}@mongo:27017/${MONGO_INITDB_DATABASE}?authSource=admin
-      - MINIO_URL=http://${SERVER_NAME}:80/files
+      - PUBLIC_FILES_URL=${PUBLIC_FILES_URL:-/files}
     command: ["bun", "run", "start"]
-    # ports:
-    #   - 8000:5000
     volumes:
       - ./db-container/data:/app/db/data
     labels:
@@ -82,8 +80,6 @@ services:
       - ./.env
     volumes:
       - web-mongo-data:/data/db
-    # ports:
-    # - "27017:27017"
 
   minio:
     image: minio/minio:latest
@@ -92,21 +88,9 @@ services:
     env_file:
       - ./.env
     environment:
-      #- MINIO_BROWSER_REDIRECT_URL=http://${SERVER_NAME}:${TRAEFIK_PORT}/minio-console
-      #- MINIO_BROWSER_REDIRECT_URL=http://${SERVER_NAME}/minio-console
       - MINIO_BROWSER=off
     labels:
       - "traefik.enable=true"
-
-      ## ➤ MinIO Console
-      - "traefik.http.routers.minio-console.rule=PathPrefix(`/minio-console`)"
-      - "traefik.http.routers.minio-console.entrypoints=web"
-      - "traefik.http.routers.minio-console.service=minio-console-svc"
-      - "traefik.http.services.minio-console-svc.loadbalancer.server.port=9001"
-      - "traefik.http.routers.minio-console.middlewares=strip-minio-console-prefix"
-      - "traefik.http.middlewares.strip-minio-console-prefix.stripPrefix.prefixes=/minio-console"
-
-      ## ➤ MinIO S3 API
       - "traefik.http.routers.minio-api.rule=PathPrefix(`/files`)"
       - "traefik.http.routers.minio-api.entrypoints=web"
       - "traefik.http.routers.minio-api.service=minio-api-svc"
@@ -129,29 +113,33 @@ services:
         condition: service_healthy
     env_file:
       - ./.env
+    environment:
+      - NODE_ENV=${NODE_ENV}
+      - MINIO_ROOT_USER=${MINIO_ROOT_USER}
+      - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}
     develop:
       watch:
         - action: rebuild
           path: ./minio
 
- # web:
- #   container_name: web
- #   build:
- #     context: ./web
- #     args:
- #       NEXT_PUBLIC_API_URL: "http://api:5000"
- #       NEXT_PUBLIC_IMAGES_STORAGE_URL: "http://${SERVER_NAME}/files"
- #   env_file:
- #     - .env
- #   restart: always
- #   labels:
- #     - "traefik.enable=true"
- #     - "traefik.http.routers.web.rule=PathPrefix(`/`)"
- #     - "traefik.http.routers.web.entrypoints=web"
- #     - "traefik.http.services.web.loadbalancer.server.port=3000"
+  web:
+    container_name: web
+    build:
+      context: ./web
+      args:
+        NEXT_PUBLIC_IMAGES_STORAGE_URL: ${PUBLIC_FILES_URL:-/files}
+    env_file:
+      - ./.env
+    environment:
+      - API_URL=${API_URL:-http://${SERVER_NAME}:${TRAEFIK_PORT}/api}
+      - NEXT_PUBLIC_IMAGES_STORAGE_URL=${PUBLIC_FILES_URL:-/files}
+    restart: always
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.web.rule=PathPrefix(`/`)"
+      - "traefik.http.routers.web.entrypoints=web"
+      - "traefik.http.services.web.loadbalancer.server.port=3000"
 
 volumes:
   minio-data:
-    external: true
   web-mongo-data:
-    external: true
