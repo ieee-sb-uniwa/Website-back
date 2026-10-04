@@ -16,7 +16,7 @@ services:
       - MINIO_BROWSER=on
     labels:
       traefik.enable: "true"
-      traefik.http.routers.minio-console.rule: "PathPrefix(`/minio-console`)"
+      traefik.http.routers.minio-console.rule: "Host(`${SERVER_NAME}`) && PathPrefix(`/minio-console`)"
       traefik.http.routers.minio-console.entrypoints: "web"
       traefik.http.routers.minio-console.service: "minio-console-svc"
       traefik.http.services.minio-console-svc.loadbalancer.server.port: "9001"
