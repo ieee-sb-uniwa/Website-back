@@ -31,8 +31,6 @@ services:
     build: ./api
     restart: always
     container_name: bun-elysia-app
-    env_file:
-      - ./.env
     environment:
       - MONGODB_URL=mongodb://${MONGO_INITDB_ROOT_USERNAME}:${MONGO_INITDB_ROOT_PASSWORD}@mongo:27017/${MONGO_INITDB_DATABASE}?authSource=admin
       - PUBLIC_FILES_URL=${PUBLIC_FILES_URL:-/files}
@@ -76,8 +74,6 @@ services:
       - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
       - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
     restart: always
-    env_file:
-      - ./.env
     volumes:
       - web-mongo-data:/data/db
 
@@ -85,10 +81,10 @@ services:
     image: minio/minio:latest
     container_name: minio
     command: server /data --console-address ":9001"
-    env_file:
-      - ./.env
     environment:
       - MINIO_BROWSER=off
+      - MINIO_ROOT_USER=${MINIO_ROOT_USER}
+      - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.minio-api.rule=PathPrefix(`/files`)"
@@ -111,8 +107,6 @@ services:
     depends_on:
       minio:
         condition: service_healthy
-    env_file:
-      - ./.env
     environment:
       - NODE_ENV=${NODE_ENV}
       - MINIO_ROOT_USER=${MINIO_ROOT_USER}
@@ -128,8 +122,6 @@ services:
       context: ./web
       args:
         NEXT_PUBLIC_IMAGES_STORAGE_URL: ${PUBLIC_FILES_URL:-/files}
-    env_file:
-      - ./.env
     environment:
       - API_URL=${API_URL:-http://${SERVER_NAME}:${TRAEFIK_PORT}/api}
       - NEXT_PUBLIC_IMAGES_STORAGE_URL=${PUBLIC_FILES_URL:-/files}
