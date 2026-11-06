@@ -77,22 +77,26 @@ services:
     volumes:
       - web-mongo-data:/data/db
 
-  minio:
-    image: minio/minio:latest
-    container_name: minio
+  silo:
+    image: pgsty/silo:RELEASE.2026-10-26T00-00-00Z
+    container_name: silo
     command: server /data --console-address ":9001"
     environment:
       - MINIO_BROWSER=off
-      - MINIO_ROOT_USER=${MINIO_ROOT_USER}
-      - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}
+      - MINIO_ROOT_USER=${SILO_ROOT_USER:-${MINIO_ROOT_USER}}
+      - MINIO_ROOT_PASSWORD=${SILO_ROOT_PASSWORD:-${MINIO_ROOT_PASSWORD}}
+    networks:
+      default:
+        aliases:
+          - minio
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.minio-api.rule=Host(`${SERVER_NAME}`) && PathPrefix(`/files`)"
-      - "traefik.http.routers.minio-api.entrypoints=web"
-      - "traefik.http.routers.minio-api.service=minio-api-svc"
-      - "traefik.http.services.minio-api-svc.loadbalancer.server.port=9000"
+      - "traefik.http.routers.silo-api.rule=Host(`${SERVER_NAME}`) && PathPrefix(`/files`)"
+      - "traefik.http.routers.silo-api.entrypoints=web"
+      - "traefik.http.routers.silo-api.service=silo-api-svc"
+      - "traefik.http.services.silo-api-svc.loadbalancer.server.port=9000"
     volumes:
-      - minio-data:/data
+      - silo-data:/data
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
       interval: 30s
@@ -100,21 +104,21 @@ services:
       retries: 3
       start_period: 10s
 
-  minio-init:
-    container_name: minio-init
+  silo-init:
+    container_name: silo-init
     build:
-      context: ./minio
+      context: ./silo
     depends_on:
-      minio:
+      silo:
         condition: service_healthy
     environment:
       - NODE_ENV=${NODE_ENV}
-      - MINIO_ROOT_USER=${MINIO_ROOT_USER}
-      - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}
+      - MINIO_ROOT_USER=${SILO_ROOT_USER:-${MINIO_ROOT_USER}}
+      - MINIO_ROOT_PASSWORD=${SILO_ROOT_PASSWORD:-${MINIO_ROOT_PASSWORD}}
     develop:
       watch:
         - action: rebuild
-          path: ./minio
+          path: ./silo
 
   web:
     container_name: web
@@ -133,5 +137,5 @@ services:
       - "traefik.http.services.web.loadbalancer.server.port=3000"
 
 volumes:
-  minio-data:
+  silo-data:
   web-mongo-data:

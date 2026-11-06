@@ -32,8 +32,8 @@ source stop-docker.sh
 | SERVER_NAME | DNS name or IP address of the server | Sets the hostname for website services. |
 | MONGO_INITDB_DATABASE | Any string | Name of the database. |
 | NODE_ENV | `development` or `production` | `development` enables live sync and auto-restart; `production` serves the final builds. |
-| MINIO_ROOT_USER | Any string over 8 characters | Username for logging into the MinIO web console (dev only). |
-| MINIO_ROOT_PASSWORD | Any string over 8 characters | Password for logging into the MinIO web console (dev only). |
+| SILO_ROOT_USER / MINIO_ROOT_USER | Any string over 8 characters | Username for logging into the Silo web console (dev only). |
+| SILO_ROOT_PASSWORD / MINIO_ROOT_PASSWORD | Any string over 8 characters | Password for logging into the Silo web console (dev only). |
 | PUBLIC_FILES_BASE_URL | URL | Public base URL or path for files (used by API + web image optimization). Use `/files` for same-host routing. |
 | TRAEFIK_PORT | Port number | External port to access Traefik (default 80). |
 | API_URL | URL | API base URL for server actions (absolute URL required). |
@@ -41,16 +41,16 @@ source stop-docker.sh
 
 ### Development Features
 When set to `development`, the API service automatically syncs and restarts upon any file change inside `./api`.  
-Similarly, `minio-init` remains active and listens for changes in `./minio`, rebuilding and uploading updated files automatically.
+Similarly, `silo-init` remains active and listens for changes in `./silo`, rebuilding and uploading updated files automatically.
 
-MinIO console access is enabled only in development via `docker-compose.override.yml`.
+Silo console access is enabled only in development via `docker-compose.override.yml`.
 
 Production notes:
 - Set `NODE_ENV=production` and run `docker compose -f docker-compose.yml up -d`.
 - Ensure `PUBLIC_FILES_BASE_URL` matches your public domain (for example `https://example.com/files`).
 - Ensure `API_URL` points to the same domain (for example `https://example.com/api`).
 
-> **Note:** This setup allows only file uploads. To delete images, either use the MinIO web console or run the `stop-docker.sh` script.
+> **Note:** This setup allows only file uploads. To delete images, either use the Silo web console or run the `stop-docker.sh` script.
 
 ## Services Overview
 
@@ -65,8 +65,8 @@ The web service is the default entry point — any route not listed below is for
 | --- | --- |
 | `/` | Forwards to the web service (Next.js website). |
 | `/api` | API service routes. |
-| `/files` | Files served from the MinIO `files` bucket. |
-| `/minio-console/login` | Access to the MinIO web console (development only). |
+| `/files` | Files served from the Silo `files` bucket. |
+| `/silo-console/login` | Access to the Silo web console (development only; `/minio-console` also routed). |
 | `None` | Direct access to the MongoDB database (internal only). |
 
 ### WEB
@@ -105,16 +105,16 @@ Sample data structures can be found [here](./db-container/data/).
 Each document contains an `info` field, holding both Greek and English versions of the content.  
 The API selects the appropriate language and removes the `info` object from the final output.
 
-### MINIO
-MinIO acts as the file server for images and other assets.  
+### SILO
+[Silo](https://github.com/pgsty/silo) acts as the S3-compatible file server for images and other assets.  
 Only the `files` bucket is publicly accessible (read-only) through Traefik.
 
 All public image URLs should be relative and start with `/files/...`.
 
-To upload files, log in to the MinIO web console using the credentials specified in the `.env` file.
+To upload files, log in to the Silo web console using the credentials specified in the `.env` file.
 
-### MINIO-INIT
-This service initializes MinIO by uploading all files located in [`./minio/files/`](./minio/files/).
+### SILO-INIT
+This service initializes Silo by uploading all files located in [`./silo/files/`](./silo/files/).
 
 ## To-Do List
 1. Add support for `api/events?query=` — search for matching words in titles and descriptions.
