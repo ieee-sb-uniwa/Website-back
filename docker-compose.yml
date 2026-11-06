@@ -98,7 +98,11 @@ services:
     volumes:
       - ./versity/data/s3:/data/s3
       - ./versity/data/iam:/data/iam
-
+    develop:
+      watch:
+        - action: sync
+          path: ./versity/s3/files
+          target: /data/s3/files
     labels:
       - "traefik.enable=true"
 
@@ -121,57 +125,25 @@ services:
       - "traefik.http.services.versity-ui.loadbalancer.server.port=8080"
       - "traefik.http.services.versity-s3.loadbalancer.server.port=7070"
 
-#  versity-public-access:
-#    image: amazon/aws-cli:2.27.41
-#    container_name: versity-public-access
-#    restart: "no"
-#
-#    depends_on:
-#      versity:
-#        condition: service_started
-#
-#    entrypoint: ["/bin/sh", "-ec"]
-#
-#    environment:
-#      AWS_ACCESS_KEY_ID: ${S3_ROOT_ACCESS_KEY}
-#      AWS_SECRET_ACCESS_KEY: ${S3_ROOT_SECRET_KEY}
-#      AWS_DEFAULT_REGION: us-east-1
-#
-#      S3_ENDPOINT: http://versity:7070
-#      S3_BUCKET: files
-#
-#    command: |
-#      echo "Waiting for VersityGW..."
-#
-#      attempts=0
-#      until aws --endpoint-url "$$S3_ENDPOINT" \
-#        s3api list-buckets >/dev/null 2>&1; do
-#
-#        attempts=$$((attempts + 1))
-#
-#        if [ "$$attempts" -ge 60 ]; then
-#          echo "ERROR: VersityGW did not become available"
-#          exit 1
-#        fi
-#
-#        sleep 2
-#      done
-#
-#      echo "Configuring public access for bucket: $$S3_BUCKET"
-#
-#      aws --endpoint-url "$$S3_ENDPOINT" \
-#        s3api put-bucket-acl \
-#        --bucket "$$S3_BUCKET" \
-#        --acl public-read
-#
-#      echo "Verifying bucket ACL..."
-#
-#      aws --endpoint-url "$$S3_ENDPOINT" \
-#        s3api get-bucket-acl \
-#        --bucket "$$S3_BUCKET"
-#
-#      echo "Public access configuration completed."
+  versity-public-access:
+    build:
+      context: ./versity
+      dockerfile: Dockerfile
 
+    container_name: versity-public-access
+    restart: "no"
+
+    depends_on:
+      versity:
+        condition: service_started
+
+    environment:
+      AWS_ACCESS_KEY_ID: ${S3_ROOT_ACCESS_KEY}
+      AWS_SECRET_ACCESS_KEY: ${S3_ROOT_SECRET_KEY}
+      AWS_DEFAULT_REGION: ${AWS_DEFAULT_REGION:-us-east-1}
+
+      S3_ENDPOINT: http://versity:7070
+      S3_BUCKET: files
 
 #  web:
 #    container_name: web
@@ -190,5 +162,4 @@ services:
 #      - "traefik.http.services.web.loadbalancer.server.port=3000"
 
 volumes:
-#  minio-data:
   web-mongo-data:
