@@ -87,8 +87,6 @@ services:
       ROOT_SECRET_KEY: ${S3_ROOT_SECRET_KEY}
 
       VGW_PORT: ":7070"
-      VGW_WEBUI_PORT: ":8080"
-      VGW_WEBUI_PATH_PREFIX: /storage
       VGW_IAM_DIR: /data/iam
       VGW_BACKEND: posix
       VGW_BACKEND_ARGS: /data/s3
@@ -98,11 +96,7 @@ services:
     volumes:
       - ./versity/data/s3:/data/s3
       - ./versity/data/iam:/data/iam
-    develop:
-      watch:
-        - action: sync
-          path: ./versity/s3/files
-          target: /data/s3/files
+
     labels:
       - "traefik.enable=true"
 
@@ -116,13 +110,7 @@ services:
       - "traefik.http.routers.versity-files.entrypoints=web"
       - "traefik.http.routers.versity-files.service=versity-s3"
 
-      # WebGUI: example.com/storage/*
-      - "traefik.http.routers.versity-ui.rule=Host(`${SERVER_NAME}`) && PathPrefix(`/storage`)"
-      - "traefik.http.routers.versity-ui.entrypoints=web"
-      - "traefik.http.routers.versity-ui.service=versity-ui"
-
       # Backend ports
-      - "traefik.http.services.versity-ui.loadbalancer.server.port=8080"
       - "traefik.http.services.versity-s3.loadbalancer.server.port=7070"
 
   versity-public-access:
@@ -145,21 +133,21 @@ services:
       S3_ENDPOINT: http://versity:7070
       S3_BUCKET: files
 
-  web:
-    container_name: web
-    build:
-      context: ./web
-      args:
-        NEXT_PUBLIC_IMAGES_STORAGE_URL: ${PUBLIC_FILES_URL:-/files}
-    environment:
-      - API_URL=${API_URL:-http://${SERVER_NAME}:${TRAEFIK_PORT}/api}
-      - NEXT_PUBLIC_IMAGES_STORAGE_URL=${PUBLIC_FILES_URL:-/files}
-    restart: always
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.web.rule=Host(`${SERVER_NAME}`) && PathPrefix(`/`)"
-      - "traefik.http.routers.web.entrypoints=web"
-      - "traefik.http.services.web.loadbalancer.server.port=3000"
+#  web:
+#    container_name: web
+#    build:
+#      context: ./web
+#      args:
+#        NEXT_PUBLIC_IMAGES_STORAGE_URL: ${PUBLIC_FILES_URL:-/files}
+#    environment:
+#      - API_URL=${API_URL:-http://${SERVER_NAME}:${TRAEFIK_PORT}/api}
+#      - NEXT_PUBLIC_IMAGES_STORAGE_URL=${PUBLIC_FILES_URL:-/files}
+#    restart: always
+#    labels:
+#      - "traefik.enable=true"
+#      - "traefik.http.routers.web.rule=Host(`${SERVER_NAME}`) && PathPrefix(`/`)"
+#      - "traefik.http.routers.web.entrypoints=web"
+#      - "traefik.http.services.web.loadbalancer.server.port=3000"
 
 volumes:
   web-mongo-data:

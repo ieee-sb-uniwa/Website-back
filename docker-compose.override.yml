@@ -1,11 +1,25 @@
 services:
-  web:
-    build:
-      target: dev
-    volumes:
-      - /app/node_modules
+#  web:
+#    build:
+#      target: dev
+#    volumes:
+#      - /app/node_modules
+#    develop:
+#      watch:
+#        - action: sync
+#          path: ./web
+#          target: /app
+  versity:
+    environment:
+      VGW_WEBUI_PORT: ":8080"
+      VGW_WEBUI_PATH_PREFIX: /storage
+    labels:
+      - "traefik.http.routers.versity-ui.rule=Host(`${SERVER_NAME}`) && PathPrefix(`/storage`)"
+      - "traefik.http.routers.versity-ui.entrypoints=web"
+      - "traefik.http.routers.versity-ui.service=versity-ui"
+      - "traefik.http.services.versity-ui.loadbalancer.server.port=8080"
     develop:
       watch:
         - action: sync
-          path: ./web
-          target: /app
+          path: ./versity/s3/files
+          target: /data/s3/files
