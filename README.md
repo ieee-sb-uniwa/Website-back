@@ -32,8 +32,10 @@ source stop-docker.sh
 | SERVER_NAME | DNS name or IP address of the server | Sets the hostname for website services. |
 | MONGO_INITDB_DATABASE | Any string | Name of the database. |
 | NODE_ENV | `development` or `production` | `development` enables live sync and auto-restart; `production` serves the final builds. |
-| MINIO_ROOT_USER | Any string over 8 characters | Username for logging into the MinIO web console (dev only). |
-| MINIO_ROOT_PASSWORD | Any string over 8 characters | Password for logging into the MinIO web console (dev only). |
+| S3_ROOT_ACCESS_KEY | Any string (8+ characters) | Root access key for Versity. Also the username for the WebGUI (dev only). |
+| S3_ROOT_SECRET_KEY | Any string (8+ characters) | Root secret key for Versity. Also the password for the WebGUI (dev only). |
+| AWS_DEFAULT_REGION | Region string | Region used by `versity-public-access` (default `us-east-1`). |
+| PUBLIC_FILES_URL | URL or path | Public base URL or path for files (used by API + web image optimization). Use `/files` for same-host routing. |
 | PUBLIC_FILES_BASE_URL | URL | Public base URL or path for files (used by API + web image optimization). Use `/files` for same-host routing. |
 | TRAEFIK_PORT | Port number | External port to access Traefik (default 80). |
 | API_URL | URL | API base URL for server actions (absolute URL required). |
@@ -42,15 +44,15 @@ source stop-docker.sh
 ### Development Features
 When set to `development`, the API service automatically syncs and restarts upon any file change inside `./api`.  
 Similarly, `minio-init` remains active and listens for changes in `./minio`, rebuilding and uploading updated files automatically.
-
-MinIO console access is enabled only in development via `docker-compose.override.yml`.
+Files placed in `./versity/s3/files` are synced into the `files` bucket inside the Versity container, in development mode.
+The Versity WebGUI is enabled only in development, through `docker-compose.override.yaml`, which Compose loads automatically on top of `docker-compose.yml`.
 
 Production notes:
 - Set `NODE_ENV=production` and run `docker compose -f docker-compose.yml up -d`.
 - Ensure `PUBLIC_FILES_BASE_URL` matches your public domain (for example `https://example.com/files`).
 - Ensure `API_URL` points to the same domain (for example `https://example.com/api`).
 
-> **Note:** This setup allows only file uploads. To delete images, either use the MinIO web console or run the `stop-docker.sh` script.
+> **Note:** The WebGUI is protected only by the root S3 keys. Never expose the development stack to the public internet.
 
 ## Services Overview
 
@@ -65,8 +67,9 @@ The web service is the default entry point — any route not listed below is for
 | --- | --- |
 | `/` | Forwards to the web service (Next.js website). |
 | `/api` | API service routes. |
-| `/files` | Files served from the MinIO `files` bucket. |
-| `/minio-console/login` | Access to the MinIO web console (development only). |
+| `/files` | Public, read-only files from the Versity `files` bucket. |
+| `s3.<SERVER_NAME>` | Versity S3 API (host-based route, requires S3 credentials). |
+| `/storage` | Versity WebGUI (development only). |
 | `None` | Direct access to the MongoDB database (internal only). |
 
 ### WEB
@@ -105,16 +108,29 @@ Sample data structures can be found [here](./db-container/data/).
 Each document contains an `info` field, holding both Greek and English versions of the content.  
 The API selects the appropriate language and removes the `info` object from the final output.
 
-### MINIO
-MinIO acts as the file server for images and other assets.  
-Only the `files` bucket is publicly accessible (read-only) through Traefik.
+### VERSITY
+[Versity S3 Gateway](https://github.com/versity/versitygw) (`v1.7.0`) is the file server for images and other assets.
+It exposes an S3-compatible API and stores objects on the local filesystem (POSIX backend).
 
+| Item | Value |
+| --- | --- |
+| S3 API port (internal) | `7070` |
+| WebGUI port (internal, dev only) | `8080`, served under `/storage` |
+| Object data | `./versity/data/s3` (each top-level folder is a bucket) |
+| IAM data | `./versity/data/iam` |
+| Credentials | `S3_ROOT_ACCESS_KEY` / `S3_ROOT_SECRET_KEY` from `.env` |
+
+Only the `files` bucket is publicly readable, through Traefik at `/files`.
 All public image URLs should be relative and start with `/files/...`.
 
-To upload files, log in to the MinIO web console using the credentials specified in the `.env` file.
+**Uploading files**
+- **Development:** open `http://<SERVER_NAME>:<TRAEFIK_PORT>/storage` and log in with the S3 root keys, or drop files into `./versity/s3/files`, which `docker compose watch` syncs into the bucket.
+- **Production:** the WebGUI is disabled. Use any S3 client (AWS CLI, rclone, etc.) against `http://s3.<SERVER_NAME>:<TRAEFIK_PORT>` with the root keys.
 
-### MINIO-INIT
-This service initializes MinIO by uploading all files located in [`./minio/files/`](./minio/files/).
+**Deleting files:** use the WebGUI (development) or an S3 client. Files synced from `./versity/s3/files` are only copied in, so deleting the local file does not remove it from the bucket.
+
+### VERSITY-PUBLIC-ACCESS
+A one-shot helper container (`restart: "no"`) that runs after Versity starts. It connects to `http://versity:7070` with the root keys and configures the `files` bucket for public read access. It exits when done, which is expected.
 
 ## To-Do List
 1. Add support for `api/events?query=` — search for matching words in titles and descriptions.
