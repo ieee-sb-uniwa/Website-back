@@ -58,13 +58,13 @@ export default buildConfig({
   // This config helps us configure global or default features that the other editors can inherit
   editor: defaultLexical,
   db: mongooseAdapter({
-    url: process.env.DATABASE_URL || '',
+    url: process.env.MONGODB_URL || process.env.DATABASE_URL || '',
   }),
   collections: [Pages, Posts, Media, Categories, Users],
   cors: [getServerSideURL()].filter(Boolean),
   globals: [Header, Footer],
   plugins,
-  secret: process.env.PAYLOAD_SECRET,
+  secret: process.env.PAYLOAD_SECRET || 'temporary_secret_key_change_me',
   sharp,
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),

@@ -15,9 +15,11 @@ type Args = {
 }
 export default async function Page({ searchParams: searchParamsPromise }: Args) {
   const { q: query } = await searchParamsPromise
-  const payload = await getPayload({ config: configPromise })
+  let posts: any = { docs: [] }
+  try {
+    const payload = await getPayload({ config: configPromise })
 
-  const posts = await payload.find({
+    posts = await payload.find({
     collection: 'search',
     depth: 1,
     limit: 12,
@@ -57,7 +59,10 @@ export default async function Page({ searchParams: searchParamsPromise }: Args) 
           },
         }
       : {}),
-  })
+    })
+  } catch (error) {
+    // DB not reachable during build
+  }
 
   return (
     <div className="pt-24 pb-24">

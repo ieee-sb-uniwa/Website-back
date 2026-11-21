@@ -132,6 +132,34 @@ services:
       - "traefik.http.routers.web.entrypoints=web"
       - "traefik.http.services.web.loadbalancer.server.port=3000"
 
+  payload-cms:
+    container_name: payload-cms
+    build:
+      context: ./payload-cms
+    restart: always
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - MONGODB_URL=mongodb://${MONGO_INITDB_ROOT_USERNAME}:${MONGO_INITDB_ROOT_PASSWORD}@mongo:27017/${MONGO_INITDB_DATABASE}?authSource=admin
+      - DATABASE_URL=mongodb://${MONGO_INITDB_ROOT_USERNAME}:${MONGO_INITDB_ROOT_PASSWORD}@mongo:27017/${MONGO_INITDB_DATABASE}?authSource=admin
+      - PAYLOAD_SECRET=${PAYLOAD_SECRET}
+      - NEXT_PUBLIC_SERVER_URL=${CMS_URL:-http://localhost:${CMS_PORT:-3001}}
+    ports:
+      - "${CMS_PORT:-3001}:3000"
+    volumes:
+      - payload-media:/app/public/media
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.payload-cms.rule=(Host(`cms.${SERVER_NAME}`) || Host(`cms.localhost`))"
+      - "traefik.http.routers.payload-cms.entrypoints=web"
+      - "traefik.http.services.payload-cms.loadbalancer.server.port=3000"
+    depends_on:
+      mongo:
+        condition: service_started
+      traefik:
+        condition: service_healthy
+
 volumes:
   minio-data:
   web-mongo-data:
+  payload-media:
