@@ -3,6 +3,7 @@ import { nestedDocsPlugin } from '@payloadcms/plugin-nested-docs'
 import { redirectsPlugin } from '@payloadcms/plugin-redirects'
 import { seoPlugin } from '@payloadcms/plugin-seo'
 import { searchPlugin } from '@payloadcms/plugin-search'
+import { s3Storage } from '@payloadcms/storage-s3'
 import { Plugin } from 'payload'
 import { revalidateRedirects } from '@/hooks/revalidateRedirects'
 import { GenerateTitle, GenerateURL } from '@payloadcms/plugin-seo/types'
@@ -88,5 +89,27 @@ export const plugins: Plugin[] = [
         return [...defaultFields, ...searchFields]
       },
     },
+  }),
+  s3Storage({
+    collections: {
+      media: {
+        generateFileURL: ({ filename, prefix }) => {
+          const base = process.env.PUBLIC_FILES_URL || '/files'
+          return `${base}/${prefix ? `${prefix}/` : ''}${filename}`
+        },
+      },
+    },
+    bucket: process.env.S3_BUCKET || 'files',
+    config: {
+      endpoint: process.env.S3_ENDPOINT || 'http://minio:9000',
+      forcePathStyle: true,
+      region: process.env.S3_REGION || 'us-east-1',
+      credentials: {
+        accessKeyId: process.env.S3_ACCESS_KEY_ID || process.env.MINIO_ROOT_USER || 'admin',
+        secretAccessKey:
+          process.env.S3_SECRET_ACCESS_KEY || process.env.MINIO_ROOT_PASSWORD || 'admin123',
+      },
+    },
+    enabled: Boolean(process.env.S3_ENDPOINT || process.env.MINIO_ROOT_USER),
   }),
 ]
