@@ -77,44 +77,61 @@ services:
     volumes:
       - web-mongo-data:/data/db
 
-  minio:
-    image: minio/minio:latest
-    container_name: minio
-    command: server /data --console-address ":9001"
+  versity:
+    image: ghcr.io/versity/versitygw:v1.7.0
+    container_name: versity
+    restart: always
+
     environment:
-      - MINIO_BROWSER=off
-      - MINIO_ROOT_USER=${MINIO_ROOT_USER}
-      - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}
+      ROOT_ACCESS_KEY: ${S3_ROOT_ACCESS_KEY}
+      ROOT_SECRET_KEY: ${S3_ROOT_SECRET_KEY}
+
+      VGW_PORT: ":7070"
+      VGW_IAM_DIR: /data/iam
+      VGW_BACKEND: posix
+      VGW_BACKEND_ARGS: /data/s3
+
+      VGW_ACCESS_LOG: stdout
+
+    volumes:
+      - ./versity/data/s3:/data/s3
+      - ./versity/data/iam:/data/iam
+
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.minio-api.rule=Host(`${SERVER_NAME}`) && PathPrefix(`/files`)"
-      - "traefik.http.routers.minio-api.entrypoints=web"
-      - "traefik.http.routers.minio-api.service=minio-api-svc"
-      - "traefik.http.services.minio-api-svc.loadbalancer.server.port=9000"
-    volumes:
-      - minio-data:/data
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
-      interval: 30s
-      timeout: 5s
-      retries: 3
-      start_period: 10s
 
-  minio-init:
-    container_name: minio-init
+      # S3 API: s3.example.com
+      - "traefik.http.routers.versity-s3.rule=Host(`s3.${SERVER_NAME}`)"
+      - "traefik.http.routers.versity-s3.entrypoints=web"
+      - "traefik.http.routers.versity-s3.service=versity-s3"
+
+      # Public files: example.com/files/*
+      - "traefik.http.routers.versity-files.rule=Host(`${SERVER_NAME}`) && PathPrefix(`/files`)"
+      - "traefik.http.routers.versity-files.entrypoints=web"
+      - "traefik.http.routers.versity-files.service=versity-s3"
+
+      # Backend ports
+      - "traefik.http.services.versity-s3.loadbalancer.server.port=7070"
+
+  versity-public-access:
     build:
-      context: ./minio
+      context: ./versity
+      dockerfile: Dockerfile
+
+    container_name: versity-public-access
+    restart: "no"
+
     depends_on:
-      minio:
-        condition: service_healthy
+      versity:
+        condition: service_started
+
     environment:
-      - NODE_ENV=${NODE_ENV}
-      - MINIO_ROOT_USER=${MINIO_ROOT_USER}
-      - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}
-    develop:
-      watch:
-        - action: rebuild
-          path: ./minio
+      AWS_ACCESS_KEY_ID: ${S3_ROOT_ACCESS_KEY}
+      AWS_SECRET_ACCESS_KEY: ${S3_ROOT_SECRET_KEY}
+      AWS_DEFAULT_REGION: ${AWS_DEFAULT_REGION:-us-east-1}
+
+      S3_ENDPOINT: http://versity:7070
+      S3_BUCKET: files
 
   web:
     container_name: web
@@ -133,5 +150,4 @@ services:
       - "traefik.http.services.web.loadbalancer.server.port=3000"
 
 volumes:
-  minio-data:
   web-mongo-data:

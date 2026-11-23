@@ -9,16 +9,17 @@ services:
         - action: sync
           path: ./web
           target: /app
-
-  minio:
+  versity:
     environment:
-      - MINIO_BROWSER_REDIRECT_URL=http://${SERVER_NAME}:${TRAEFIK_PORT}/minio-console
-      - MINIO_BROWSER=on
+      VGW_WEBUI_PORT: ":8080"
+      VGW_WEBUI_PATH_PREFIX: /storage
     labels:
-      traefik.enable: "true"
-      traefik.http.routers.minio-console.rule: "Host(`${SERVER_NAME}`) && PathPrefix(`/minio-console`)"
-      traefik.http.routers.minio-console.entrypoints: "web"
-      traefik.http.routers.minio-console.service: "minio-console-svc"
-      traefik.http.services.minio-console-svc.loadbalancer.server.port: "9001"
-      traefik.http.routers.minio-console.middlewares: "strip-minio-console-prefix"
-      traefik.http.middlewares.strip-minio-console-prefix.stripPrefix.prefixes: "/minio-console"
+      - "traefik.http.routers.versity-ui.rule=Host(`${SERVER_NAME}`) && PathPrefix(`/storage`)"
+      - "traefik.http.routers.versity-ui.entrypoints=web"
+      - "traefik.http.routers.versity-ui.service=versity-ui"
+      - "traefik.http.services.versity-ui.loadbalancer.server.port=8080"
+    develop:
+      watch:
+        - action: sync
+          path: ./versity/s3/files
+          target: /data/s3/files
